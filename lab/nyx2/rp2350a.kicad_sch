@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "${NAME}")
-		(date "2025-05-07")
+		(date "2025-05-24")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
 		(comment 1 "https://github.com/xtremespb/frank")
@@ -377,6 +377,210 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:Conn_01x03_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5263,6 +5467,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 125.73) (xy 125.73 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d7834a1-b71d-4978-8faa-539891942f3c")
+	)
+	(wire
+		(pts
 			(xy 265.43 21.59) (xy 265.43 20.32)
 		)
 		(stroke
@@ -6003,6 +6217,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 128.27) (xy 125.73 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f31fab9f-c047-4c01-9dfc-74a8d4028daa")
+	)
+	(wire
+		(pts
 			(xy 33.02 34.29) (xy 38.1 34.29)
 		)
 		(stroke
@@ -6100,6 +6324,16 @@
 			(type default)
 		)
 		(uuid "fc294e56-35a5-4072-8f02-de52b0769e4d")
+	)
+	(wire
+		(pts
+			(xy 114.3 123.19) (xy 125.73 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc81673a-1350-408d-b935-c69bc728ff97")
 	)
 	(wire
 		(pts
@@ -6271,16 +6505,6 @@
 		)
 		(uuid "7efd116b-5454-45b9-a093-b547228a9c98")
 	)
-	(label "GPIO8"
-		(at 86.36 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "809e576e-7c47-46dd-b235-6af6b081c55e")
-	)
 	(label "XIN"
 		(at 66.04 45.72 180)
 		(effects
@@ -6301,6 +6525,26 @@
 		)
 		(uuid "aaefcf35-4408-4ffe-b069-c6f98df61a65")
 	)
+	(label "PSRAM_CE"
+		(at 86.36 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aeb2eabe-28f1-45a4-be5d-dc4fee1372ed")
+	)
+	(label "GPIO19"
+		(at 125.73 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b62175d5-2ab2-499a-8394-1893a79aa80c")
+	)
 	(label "QSPI_SD1"
 		(at 86.36 128.27 0)
 		(effects
@@ -6320,6 +6564,16 @@
 			(justify right bottom)
 		)
 		(uuid "dca5213b-5308-4469-a7ff-8806fb541d4c")
+	)
+	(label "GPIO8"
+		(at 125.73 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e20b3477-4477-405f-9420-10029b67d234")
 	)
 	(label "QSPI_SD0"
 		(at 137.16 86.36 0)
@@ -6360,6 +6614,16 @@
 			(justify left bottom)
 		)
 		(uuid "f89a4bc2-0cf2-4a29-b608-dae0aade3714")
+	)
+	(label "PSRAM_CE"
+		(at 125.73 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fa37246d-07c6-4fd0-a764-47b77697a39a")
 	)
 	(label "QSPI_SCLK"
 		(at 86.36 118.11 0)
@@ -10766,6 +11030,77 @@
 			(project "frank_rm2-2350A"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/aade15f9-043c-45d2-91a1-54a1b11ea0a5"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 109.22 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aac53e8d-5397-4b79-92b6-6fbcae3d60cb")
+		(property "Reference" "J6"
+			(at 109.855 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PSRAM CE Pin"
+			(at 109.855 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:Jumper (solder, 3 pins)"
+			(at 109.22 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 109.22 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "09d98db2-416c-4ff7-b829-238fc976d5df")
+		)
+		(pin "2"
+			(uuid "19642740-d233-4277-9820-e943d428357d")
+		)
+		(pin "1"
+			(uuid "b81c267b-8824-47cc-b3a7-681fd7549e03")
+		)
+		(instances
+			(project ""
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/aade15f9-043c-45d2-91a1-54a1b11ea0a5"
+					(reference "J6")
 					(unit 1)
 				)
 			)
