@@ -37,7 +37,9 @@ Currently there are the following versions of FRANK available:
 * [FRANK M1](./hardware/frank_m1) (latest hardware revision: 1.17)
 * [FRANK M2](./hardware/frank_m2) (latest hardware revision: 1.03)
 * [MiniFRANK RM1](./hardware/minifrank_rm1) (latest hardware revision: 2.07)
+* [MiniFRANK RM1P2](./hardware/minifrank_rm1p2) (latest hardware revision: 1.01)
 * [MiniFRANK RM2](./hardware/minifrank_rm2) (latest hardware revision: 1.02)
+* [MicroFRANK RM1P2](./hardware/microfrank_rm1p2) (latest hardware revision: 1.00)
 * [TurboFRANK](./hardware/turbofrank) (latest hardware revision: 1.07)
 
 ## Side Projects
@@ -45,3 +47,6 @@ Currently there are the following versions of FRANK available:
 * [HDMI2VGA](./hardware/hdmi2vga) - HDMI to VGA/Soft Composite passive adaptor (latest hardware revision: 2.03)
 * [USB2PS2](./hardware/usb2ps2) - USB to PS/2 adapter built on RP2040-Zero (latest hardware revision: 1.03)
 
+# Documentation
+
+Please refer to [rh1.tech/projects/frank](https://rh1.tech/projects/frank) for project documentation.
