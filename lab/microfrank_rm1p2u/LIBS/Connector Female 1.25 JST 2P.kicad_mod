@@ -407,7 +407,15 @@
 			)
 		)
 	)
-	(pad "1" thru_hole roundrect
+	(pad "1" thru_hole oval
+		(at 1.25 0)
+		(size 0.9 1.4)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a9946e38-9425-4a83-a330-c38b1b335c88")
+	)
+	(pad "2" thru_hole roundrect
 		(at 0 0)
 		(size 0.9 1.4)
 		(drill 0.6)
@@ -416,24 +424,16 @@
 		(roundrect_rratio 0.25)
 		(uuid "0fe75d96-4829-4484-8183-c67a878a6026")
 	)
-	(pad "2" thru_hole oval
-		(at 1.25 0)
-		(size 0.9 1.4)
-		(drill 0.6)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "a9946e38-9425-4a83-a330-c38b1b335c88")
-	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Connector_Hirose.3dshapes/Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical.wrl"
+	(model "${KIPRJMOD}/3D/JST - GH - Thru (V) - 2Pin - 1.25mm.stp"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0.6 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -180)
 		)
 	)
 )
