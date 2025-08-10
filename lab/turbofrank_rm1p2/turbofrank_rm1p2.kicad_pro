@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -58,24 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|221787109|71384800|c88cf054-620b-40e1-8415-211017b9cb27|ea456f0c-06d1-4e3f-9166-50d8ed045b87",
-          ""
-        ],
-        [
-          "net_conflict|164250000|108555000|2d738024-b9bf-4ee1-bbd2-377a95c71d92|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "npth_inside_courtyard|223300000|75155000|e9533945-5be1-4fe4-9900-5b79d27a4410|c88cf054-620b-40e1-8415-211017b9cb27",
-          ""
-        ],
-        [
-          "npth_inside_courtyard|223300000|83155000|19661b7c-8549-4e4d-9bb5-11cabc528dbe|c88cf054-620b-40e1-8415-211017b9cb27",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -277,18 +260,6 @@
       ],
       [
         "pin_to_pin|1511300|977900|0076f0f7-12b0-4914-9e4e-7abe4e1e3cc5|74c4fad0-cb97-45aa-a06b-e484d5d146f0|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/0b3076e2-1497-4f02-953d-15a48298b1c3|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/0b3076e2-1497-4f02-953d-15a48298b1c3|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/0b3076e2-1497-4f02-953d-15a48298b1c3",
-        ""
-      ],
-      [
-        "pin_to_pin|1701800|1003300|f5fa84b6-8b45-465c-8fce-ce09978d3571|eb6960d5-e308-42ba-9a41-04a55420c1c4|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b",
-        ""
-      ],
-      [
-        "pin_to_pin|1701800|901700|bbd9554f-9747-425a-a17e-e2fd4e974a5f|4bb88172-c46a-4e05-a514-803b0321344e|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b",
-        ""
-      ],
-      [
-        "pin_to_pin|1701800|952500|4bb88172-c46a-4e05-a514-803b0321344e|f5fa84b6-8b45-465c-8fce-ce09978d3571|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b|/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b0428261-dfd0-400d-9315-330db3acf46b",
         ""
       ],
       [
@@ -980,7 +951,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Footprint"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -1075,18 +1046,6 @@
     [
       "78140ad0-d884-4dff-ace1-861b407ad6b0",
       "RP2040"
-    ],
-    [
-      "c39d6473-021d-4e77-b3a8-3d8af644d0a6",
-      "Soft Composite"
-    ],
-    [
-      "3c6da5fe-fb21-4177-be3b-8c465e538d00",
-      "RS232"
-    ],
-    [
-      "b0428261-dfd0-400d-9315-330db3acf46b",
-      "RS232 Multiplexer"
     ],
     [
       "8e1d2653-2652-4c23-a022-1880219001a0",
