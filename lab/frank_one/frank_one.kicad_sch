@@ -1523,6 +1523,10 @@
 		(uuid "1e7bcb90-261b-4c9d-98fb-ef07e0ee4f1e")
 	)
 	(no_connect
+		(at 44.45 163.83)
+		(uuid "2f278a39-8d99-42a0-965f-2737150c581e")
+	)
+	(no_connect
 		(at 116.84 135.89)
 		(uuid "3b0d927e-4a9e-47cf-9f5e-78a0218378d0")
 	)
@@ -1565,6 +1569,10 @@
 	(no_connect
 		(at 116.84 158.75)
 		(uuid "910ba142-c706-4bd9-b3ce-9a31633a71a1")
+	)
+	(no_connect
+		(at 44.45 161.29)
+		(uuid "9add2d5e-b903-458e-89b2-fba6aab8cc90")
 	)
 	(no_connect
 		(at 116.84 110.49)
@@ -1709,6 +1717,16 @@
 			(type default)
 		)
 		(uuid "0a129703-e5c2-4661-a3de-c1312f55f985")
+	)
+	(wire
+		(pts
+			(xy 31.75 161.29) (xy 44.45 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bbed836-4e53-4ef1-8672-1129d0c7305e")
 	)
 	(wire
 		(pts
@@ -2269,6 +2287,16 @@
 			(type default)
 		)
 		(uuid "5fbf6ce9-7eb6-49a6-a869-63e96755e086")
+	)
+	(wire
+		(pts
+			(xy 31.75 163.83) (xy 44.45 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61181ce7-76e2-47aa-888a-d9842e97fc07")
 	)
 	(wire
 		(pts
@@ -4260,6 +4288,16 @@
 		)
 		(uuid "be419673-b492-4b30-82f8-43a33bc3ff10")
 	)
+	(label "AMP_OUTL"
+		(at 31.75 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1328e4d-d1d7-47d1-8355-734ea5b29c7e")
+	)
 	(label "GPIO12"
 		(at 31.75 85.09 0)
 		(effects
@@ -4339,6 +4377,16 @@
 			(justify left bottom)
 		)
 		(uuid "cdd5014c-969c-423e-98ce-eb1f52e087a7")
+	)
+	(label "AMP_OUTR"
+		(at 31.75 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cef38f4e-b63d-42e9-b8af-79f71b5829af")
 	)
 	(label "DAT2"
 		(at 31.75 107.95 0)
@@ -7970,7 +8018,7 @@
 	)
 	(sheet
 		(at 44.45 120.65)
-		(size 13.97 40.64)
+		(size 13.97 45.72)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7994,7 +8042,7 @@
 			)
 		)
 		(property "Sheetfile" "audio.kicad_sch"
-			(at 44.45 161.8746 0)
+			(at 44.45 166.9546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8146,6 +8194,26 @@
 		(pin "MONO_R" input
 			(at 44.45 158.75 180)
 			(uuid "b11ae145-d616-4b30-aeb3-82382b141c81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AMP_OUTL" input
+			(at 44.45 161.29 180)
+			(uuid "f1788f42-3c23-42bd-a8f0-8dba7757969f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AMP_OUTR" input
+			(at 44.45 163.83 180)
+			(uuid "c0f32c47-dfa2-4ec6-a989-6d5ab8bd2208")
 			(effects
 				(font
 					(size 1.27 1.27)
