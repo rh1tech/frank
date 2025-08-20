@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "${NAME} ${MODEL}")
-		(date "2025-08-13")
+		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
 		(comment 1 "https://github.com/xtremespb/frank")
@@ -2170,6 +2170,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 134.62) (xy 254 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c0929cc-5a6f-4a76-974a-52073925edbc")
+	)
+	(wire
+		(pts
 			(xy 69.85 105.41) (xy 82.55 105.41)
 		)
 		(stroke
@@ -2187,6 +2197,16 @@
 			(type default)
 		)
 		(uuid "4c6cbce3-72ca-4841-8398-7f3c6c65c345")
+	)
+	(wire
+		(pts
+			(xy 242.57 129.54) (xy 254 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d4d85c7-61fd-4366-959f-0662b8dcdaca")
 	)
 	(wire
 		(pts
@@ -2367,6 +2387,16 @@
 			(type default)
 		)
 		(uuid "6c1e4412-be47-44b4-af34-f44af407eb53")
+	)
+	(wire
+		(pts
+			(xy 242.57 132.08) (xy 254 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ec6f987-9c28-401a-a2c9-542d6a572a21")
 	)
 	(wire
 		(pts
@@ -2900,6 +2930,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 134.62) (xy 227.33 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dae6628f-9d7c-4fdb-92e3-f64450041b1a")
+	)
+	(wire
+		(pts
 			(xy 31.75 74.93) (xy 44.45 74.93)
 		)
 		(stroke
@@ -3050,6 +3090,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 129.54) (xy 227.33 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb826ea2-1139-4f5c-8ca4-52b89fa2a758")
+	)
+	(wire
+		(pts
 			(xy 104.14 138.43) (xy 116.84 138.43)
 		)
 		(stroke
@@ -3137,6 +3187,16 @@
 			(type default)
 		)
 		(uuid "f962ce19-40f0-4649-b54e-5fda30e8932d")
+	)
+	(wire
+		(pts
+			(xy 215.9 132.08) (xy 227.33 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa90d7be-f16a-407f-85d0-755179cce5c4")
 	)
 	(wire
 		(pts
@@ -3958,6 +4018,26 @@
 		)
 		(uuid "883e7044-4d6a-40f5-ac04-ab411f8ee3e1")
 	)
+	(label "AMP_IN_L"
+		(at 227.33 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "89b09d68-913b-4b4d-bfc3-e074e4e5fe36")
+	)
+	(label "AMP_IN_R"
+		(at 254 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8a3600a2-f6f2-4026-bcc7-da6ce6fdcde6")
+	)
 	(label "D+"
 		(at 31.75 36.83 0)
 		(effects
@@ -4017,6 +4097,16 @@
 			(justify left bottom)
 		)
 		(uuid "933e090e-9d34-4d13-ad23-310e9d697e90")
+	)
+	(label "VGA_AIN_R"
+		(at 254 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9388a074-d7a9-4a03-9693-703656c4db03")
 	)
 	(label "GPIO2"
 		(at 69.85 46.99 0)
@@ -4318,6 +4408,16 @@
 		)
 		(uuid "c3263832-3440-46d9-bfd4-68976720b824")
 	)
+	(label "AMP_OUTR"
+		(at 254 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c37e12d7-a47a-4f6d-bed4-f588c347d33c")
+	)
 	(label "SWD"
 		(at 69.85 120.65 0)
 		(effects
@@ -4408,7 +4508,7 @@
 		)
 		(uuid "d119fc48-d198-4780-a43c-2a0b86e2c73f")
 	)
-	(label "AMP_IN_R"
+	(label "VGA_AIN_R"
 		(at 31.75 64.77 0)
 		(effects
 			(font
@@ -4438,7 +4538,7 @@
 		)
 		(uuid "d98ba442-df0b-429e-93f1-eec8cf7f729c")
 	)
-	(label "AMP_IN_L"
+	(label "VGA_AIN_L"
 		(at 31.75 62.23 0)
 		(effects
 			(font
@@ -4457,6 +4557,16 @@
 			(justify left bottom)
 		)
 		(uuid "d9d94d45-6249-46e3-8f83-a9e61ad52fda")
+	)
+	(label "VGA_AIN_L"
+		(at 227.33 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dab0246c-6899-46ce-8741-719a109fdf91")
 	)
 	(label "AMP_IN_R"
 		(at 104.14 57.15 0)
@@ -4527,6 +4637,16 @@
 			(justify left bottom)
 		)
 		(uuid "e872092d-eb1c-4c7c-9c57-bc270d862a55")
+	)
+	(label "AMP_OUTL"
+		(at 227.33 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e9b5e550-826e-4e87-991b-89e074b04504")
 	)
 	(label "RP2_GPIO18"
 		(at 104.14 140.97 0)
@@ -4829,6 +4949,77 @@
 			(project "turbofrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 237.49 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c9c3212-037d-4fb9-910d-57b94e7678ab")
+		(property "Reference" "JP5"
+			(at 238.125 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VGA AUDIO R"
+			(at 238.125 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:Jumper (solder, 3 pins)"
+			(at 237.49 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 237.49 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "069048b3-8beb-45d0-9fd4-e13a52198313")
+		)
+		(pin "2"
+			(uuid "7b1e0686-6758-4432-9045-d1aaf654f008")
+		)
+		(pin "1"
+			(uuid "2a9168ee-08d2-401b-8fa2-0debf05d1df3")
+		)
+		(instances
+			(project "frank_one"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -5970,6 +6161,77 @@
 			(project "turbofrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 210.82 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4be1a4b-f688-48a3-9b42-84111595faee")
+		(property "Reference" "JP4"
+			(at 211.455 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VGA AUDIO L"
+			(at 211.455 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:Jumper (solder, 3 pins)"
+			(at 210.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 210.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c76df7bc-ced1-42de-8a69-a620acb14a94")
+		)
+		(pin "2"
+			(uuid "99b31a2c-a230-4b4f-8b63-5cc306556ecf")
+		)
+		(pin "1"
+			(uuid "caaae84b-d91d-45db-a9c0-986aa9f94b29")
+		)
+		(instances
+			(project "frank_one"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "JP4")
 					(unit 1)
 				)
 			)
