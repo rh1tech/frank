@@ -151,6 +151,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Pack04"
 			(pin_names
 				(offset 0)
@@ -1333,12 +1483,6 @@
 		)
 	)
 	(junction
-		(at 146.05 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "06537af2-186c-4210-96c8-65ebe9dbcfbe")
-	)
-	(junction
 		(at 142.24 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1379,6 +1523,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e17e00e5-fae4-42ab-8a01-e359a94c100c")
+	)
+	(junction
+		(at 147.32 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e92e8b5b-a3aa-422e-8d48-4824c4bb5aa7")
 	)
 	(junction
 		(at 128.27 57.15)
@@ -1508,6 +1658,26 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 85.09) (xy 148.59 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e3a6819-1dcb-4485-94c6-d6821f6de54e")
+	)
+	(wire
+		(pts
+			(xy 147.32 77.47) (xy 147.32 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52334e1d-0fc7-4a73-a772-c6c1cdd6007a")
+	)
+	(wire
+		(pts
 			(xy 142.24 110.49) (xy 142.24 118.11)
 		)
 		(stroke
@@ -1588,7 +1758,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 85.09) (xy 146.05 85.09)
+			(xy 140.97 85.09) (xy 147.32 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1705,16 +1875,6 @@
 			(type default)
 		)
 		(uuid "ca90051f-7dc3-473a-84e6-40ab1bcf6a77")
-	)
-	(wire
-		(pts
-			(xy 146.05 85.09) (xy 148.59 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cad065b4-2ef4-44f2-b5d4-c9f92b1fd320")
 	)
 	(wire
 		(pts
@@ -1886,16 +2046,16 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 146.05 85.09 0)
+		(at 147.32 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2c886f1d-d0e3-4aff-b4f3-3b63a5bfbb44")
-		(property "Reference" "#PWR096"
-			(at 146.05 88.9 0)
+		(uuid "089e76e1-6504-44f0-8285-77afa5dd5003")
+		(property "Reference" "#PWR095"
+			(at 147.32 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1904,15 +2064,16 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 146.05 80.01 0)
+			(at 147.3199 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 85.09 0)
+			(at 147.32 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1921,7 +2082,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 85.09 0)
+			(at 147.32 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1930,7 +2091,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 146.05 85.09 0)
+			(at 147.32 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1939,12 +2100,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "649d74b1-6f33-4cfe-884d-a17e7f08a231")
+			(uuid "bc95dbfb-23b8-4533-b29d-75eb1bddd6f7")
 		)
 		(instances
-			(project "minifrank_rm1"
+			(project "frank_exp"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c2a1b08b-9ebb-4afc-939e-a71a86aecee2"
-					(reference "#PWR096")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -2254,7 +2415,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "391dba26-ff80-4f1b-bff5-c48ba58e52de")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR097"
 			(at 142.24 144.78 0)
 			(effects
 				(font
@@ -2304,7 +2465,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c2a1b08b-9ebb-4afc-939e-a71a86aecee2"
-					(reference "#PWR098")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -2615,7 +2776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8636a5e4-d77a-4e27-8242-c451dc8d7fb1")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR096"
 			(at 162.56 85.09 0)
 			(effects
 				(font
@@ -2666,7 +2827,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c2a1b08b-9ebb-4afc-939e-a71a86aecee2"
-					(reference "#PWR097")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -2682,7 +2843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad010c1a-f0cc-461f-a485-b62f135afe1f")
-		(property "Reference" "J10"
+		(property "Reference" "J8"
 			(at 118.11 99.0599 0)
 			(effects
 				(font
@@ -3016,7 +3177,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c2a1b08b-9ebb-4afc-939e-a71a86aecee2"
-					(reference "J10")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -3310,6 +3471,154 @@
 			(project "microfrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c2a1b08b-9ebb-4afc-939e-a71a86aecee2"
 					(reference "RN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 147.32 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7cbc299-84ce-43f8-b209-fdce4c3396a0")
+		(property "Reference" "D2"
+			(at 149.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 144.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:Diode (SOD-323)"
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005006143480992.html"
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb42fd17-0b6b-403e-add0-41967efdd744")
+		)
+		(pin "2"
+			(uuid "3b8269bc-bbb2-4647-992c-624182e8cc65")
+		)
+		(instances
+			(project "frank_exp"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c2a1b08b-9ebb-4afc-939e-a71a86aecee2"
+					(reference "D2")
 					(unit 1)
 				)
 			)
