@@ -293,6 +293,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2384,7 +2534,17 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 67.31) (xy 118.11 81.28)
+			(xy 118.11 77.47) (xy 118.11 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64882253-6ad2-47ff-bdea-40e06c9bc412")
+	)
+	(wire
+		(pts
+			(xy 118.11 67.31) (xy 118.11 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3373,7 +3533,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "18785af5-3f52-4b16-92d8-37e861891db5")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR026"
 			(at 200.66 134.62 0)
 			(effects
 				(font
@@ -3423,7 +3583,7 @@
 		(instances
 			(project "fastbeta"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR021")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3438,7 +3598,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1cabdb6b-5365-49cb-a4ed-a33a57359663")
-		(property "Reference" "C10"
+		(property "Reference" "C7"
 			(at 193.929 129.4384 0)
 			(effects
 				(font
@@ -3546,7 +3706,7 @@
 		(instances
 			(project "fastbeta"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "C10")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -3562,7 +3722,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1fca2b5d-39ce-4182-b4a6-d884a52a566a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR024"
 			(at 166.37 124.46 0)
 			(effects
 				(font
@@ -3612,7 +3772,7 @@
 		(instances
 			(project "fastbeta"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR019")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3749,7 +3909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c886f1d-d0e3-4aff-b4f3-3b63a5bfbb44")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR022"
 			(at 118.11 71.12 0)
 			(effects
 				(font
@@ -3799,7 +3959,155 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR017")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 118.11 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "301181d5-3be1-455a-b1e8-fca550cc5bb7")
+		(property "Reference" "D2"
+			(at 120.65 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 115.57 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:Diode (SOD-323)"
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005006143480992.html"
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 118.11 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d0960c9-5c5e-4e6b-b694-348ef65067db")
+		)
+		(pin "2"
+			(uuid "f5bb0104-2783-4f3d-915c-55d479d341cb")
+		)
+		(instances
+			(project "fastbeta_pwt"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3935,7 +4243,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35288ac0-a1b1-4c3e-a0f7-47865b74dd7b")
-		(property "Reference" "C9"
+		(property "Reference" "C6"
 			(at 129.6416 78.359 0)
 			(effects
 				(font
@@ -4043,7 +4351,7 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "C9")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -4180,7 +4488,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37e0ae6f-952d-4281-921e-2a48c6f0ee44")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR025"
 			(at 198.12 113.03 0)
 			(effects
 				(font
@@ -4230,7 +4538,7 @@
 		(instances
 			(project "fastbeta"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR020")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -4246,7 +4554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "391dba26-ff80-4f1b-bff5-c48ba58e52de")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR021"
 			(at 106.68 140.97 0)
 			(effects
 				(font
@@ -4296,7 +4604,7 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR016")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -4757,7 +5065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8636a5e4-d77a-4e27-8242-c451dc8d7fb1")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR023"
 			(at 140.97 81.28 0)
 			(effects
 				(font
@@ -4808,7 +5116,7 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR018")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)

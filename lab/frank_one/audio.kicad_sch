@@ -5,7 +5,7 @@
 	(uuid "d788f764-34cb-4eaf-85d8-4a3d830ab970")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${MODEL}")
+		(title "${NAME} ${MODEL} (${BOARD})")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
@@ -495,7 +495,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 66.04) (xy 123.19 66.04)
+			(xy 102.87 66.04) (xy 123.19 66.04)
 		)
 		(stroke
 			(width 0)
@@ -515,7 +515,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 63.5) (xy 123.19 63.5)
+			(xy 102.87 63.5) (xy 123.19 63.5)
 		)
 		(stroke
 			(width 0)
@@ -655,7 +655,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 60.96) (xy 123.19 60.96)
+			(xy 102.87 60.96) (xy 123.19 60.96)
 		)
 		(stroke
 			(width 0)
@@ -665,7 +665,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 58.42) (xy 123.19 58.42)
+			(xy 102.87 58.42) (xy 123.19 58.42)
 		)
 		(stroke
 			(width 0)
@@ -675,7 +675,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 78.74) (xy 123.19 78.74)
+			(xy 102.87 78.74) (xy 123.19 78.74)
 		)
 		(stroke
 			(width 0)
@@ -685,7 +685,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 81.28) (xy 123.19 81.28)
+			(xy 102.87 81.28) (xy 123.19 81.28)
 		)
 		(stroke
 			(width 0)
@@ -705,7 +705,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 83.82) (xy 123.19 83.82)
+			(xy 102.87 83.82) (xy 123.19 83.82)
 		)
 		(stroke
 			(width 0)
@@ -910,20 +910,9 @@
 		)
 		(uuid "3bf3fa70-6465-4379-9f33-f6b3ec5edb38")
 	)
-	(hierarchical_label "AMP_OUTL"
-		(shape input)
-		(at 170.18 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "499e4e35-e913-49eb-930b-eb7c0648e6b1")
-	)
 	(hierarchical_label "AMP_IN_R"
 		(shape input)
-		(at 101.6 60.96 180)
+		(at 102.87 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -932,31 +921,31 @@
 		)
 		(uuid "513b0d1c-4449-4003-9525-82da21ef661b")
 	)
-	(hierarchical_label "AMP_OUTR"
+	(hierarchical_label "OUT_L"
 		(shape input)
-		(at 101.6 66.04 180)
+		(at 170.18 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "8924d6a3-5bc1-40f9-936c-a77d2c945d81")
+		(uuid "5c70b375-1479-435b-86fa-1d6ccce27c99")
 	)
-	(hierarchical_label "AMP_OUTL"
+	(hierarchical_label "OUT_L"
 		(shape input)
-		(at 101.6 63.5 180)
+		(at 102.87 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "942b37d1-16f3-4bd8-8c38-35bbea24759b")
+		(uuid "98422953-445e-489a-95d7-c2c4a79a06f3")
 	)
 	(hierarchical_label "AMP_IN_L"
 		(shape input)
-		(at 101.6 58.42 180)
+		(at 102.87 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -967,7 +956,7 @@
 	)
 	(hierarchical_label "MONO_L"
 		(shape input)
-		(at 101.6 81.28 180)
+		(at 102.87 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -989,7 +978,7 @@
 	)
 	(hierarchical_label "SHND"
 		(shape input)
-		(at 101.6 78.74 180)
+		(at 102.87 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -998,9 +987,31 @@
 		)
 		(uuid "bcb712ba-a888-4168-bd5c-3ea5d80a7c3f")
 	)
+	(hierarchical_label "OUT_R"
+		(shape input)
+		(at 102.87 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dc7a198a-43e4-49d0-8af7-9801bfbfd312")
+	)
+	(hierarchical_label "OUT_R"
+		(shape input)
+		(at 170.18 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e04e4c76-7acf-4e5d-849a-0094db65320c")
+	)
 	(hierarchical_label "MONO_R"
 		(shape input)
-		(at 101.6 83.82 180)
+		(at 102.87 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1019,17 +1030,6 @@
 			(justify right)
 		)
 		(uuid "f394d911-dc26-47be-b851-e3a8f563fe2f")
-	)
-	(hierarchical_label "AMP_OUTR"
-		(shape input)
-		(at 170.18 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fb89921a-0dd8-41d8-81a1-9f6f85e08f0c")
 	)
 	(hierarchical_label "PWM_L"
 		(shape input)
@@ -1052,7 +1052,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b820610-6871-46d3-8f04-789cc958f2d0")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR028"
 			(at 175.26 119.38 0)
 			(effects
 				(font
@@ -1102,7 +1102,7 @@
 		(instances
 			(project "minifrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/765ae3f7-f5ac-49b6-99ac-a22ffc934361"
-					(reference "#PWR031")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -1170,70 +1170,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 186.69 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 186.69 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 186.69 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 186.69 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 186.69 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 186.69 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 186.69 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 186.69 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "R"
@@ -1315,70 +1251,6 @@
 				(hide yes)
 			)
 		)
-		(property "Availability" ""
-			(at 170.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 170.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 170.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 170.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 170.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 170.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 170.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 170.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "ff540b25-b138-4560-b04f-4ba750650361")
 		)
@@ -1453,70 +1325,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -1617,6 +1425,13 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(instances
+			(project ""
+				(path "/06d82070-c96d-444d-841f-dc25c03a8b19/765ae3f7-f5ac-49b6-99ac-a22ffc934361"
+					(page "#")
+				)
 			)
 		)
 	)
@@ -1765,6 +1580,13 @@
 				(justify left)
 			)
 		)
+		(instances
+			(project ""
+				(path "/06d82070-c96d-444d-841f-dc25c03a8b19/765ae3f7-f5ac-49b6-99ac-a22ffc934361"
+					(page "#")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 123.19 92.71)
@@ -1849,6 +1671,13 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(instances
+			(project ""
+				(path "/06d82070-c96d-444d-841f-dc25c03a8b19/765ae3f7-f5ac-49b6-99ac-a22ffc934361"
+					(page "#")
+				)
 			)
 		)
 	)

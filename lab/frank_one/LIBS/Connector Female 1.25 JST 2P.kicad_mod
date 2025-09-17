@@ -407,7 +407,15 @@
 			)
 		)
 	)
-	(pad "1" thru_hole roundrect
+	(pad "1" thru_hole oval
+		(at 1.25 0)
+		(size 0.9 1.4)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a9946e38-9425-4a83-a330-c38b1b335c88")
+	)
+	(pad "2" thru_hole roundrect
 		(at 0 0)
 		(size 0.9 1.4)
 		(drill 0.6)
@@ -415,14 +423,6 @@
 		(remove_unused_layers no)
 		(roundrect_rratio 0.25)
 		(uuid "0fe75d96-4829-4484-8183-c67a878a6026")
-	)
-	(pad "2" thru_hole oval
-		(at 1.25 0)
-		(size 0.9 1.4)
-		(drill 0.6)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "a9946e38-9425-4a83-a330-c38b1b335c88")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/3D/JST - GH - Thru (V) - 2Pin - 1.25mm.stp"

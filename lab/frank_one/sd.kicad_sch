@@ -5,7 +5,7 @@
 	(uuid "e54a2d34-15de-4a83-a5a1-874852077e98")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${MODEL}")
+		(title "${NAME} ${MODEL} (${BOARD})")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
@@ -1193,6 +1193,30 @@
 		(at 219.71 129.54)
 		(uuid "106a45bc-2512-4054-a561-15c1ef5ffa95")
 	)
+	(no_connect
+		(at 133.35 83.82)
+		(uuid "2b7fbce4-28fd-40ce-82ff-0a88ec3020d5")
+	)
+	(no_connect
+		(at 176.53 106.68)
+		(uuid "5fcb958f-e662-49f5-b1cf-7a6a21dd48bc")
+	)
+	(no_connect
+		(at 100.33 78.74)
+		(uuid "9ce10377-cd05-4bea-80f0-e360d7f43e13")
+	)
+	(no_connect
+		(at 100.33 83.82)
+		(uuid "b3b617bd-18bb-44a5-af7f-9a5917e3e4d6")
+	)
+	(no_connect
+		(at 100.33 81.28)
+		(uuid "b3e46aec-90c0-4d91-a48e-5821414a7dc9")
+	)
+	(no_connect
+		(at 176.53 124.46)
+		(uuid "e0f144ee-5fb2-4c5c-b9bc-409f0f1ecf59")
+	)
 	(wire
 		(pts
 			(xy 133.35 81.28) (xy 143.51 81.28)
@@ -1215,16 +1239,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 83.82) (xy 143.51 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d1ff246-d6cd-4698-ad26-121fe001f566")
-	)
-	(wire
-		(pts
 			(xy 90.17 86.36) (xy 100.33 86.36)
 		)
 		(stroke
@@ -1232,16 +1246,6 @@
 			(type default)
 		)
 		(uuid "3aca12e0-b04e-43f6-979a-0d889f6434e1")
-	)
-	(wire
-		(pts
-			(xy 90.17 83.82) (xy 100.33 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ae887a0-945e-4bc1-a6fb-ceec6437f19c")
 	)
 	(wire
 		(pts
@@ -1285,16 +1289,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 78.74) (xy 100.33 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95cb8d80-157b-4b06-8452-9e823e969bb3")
-	)
-	(wire
-		(pts
 			(xy 133.35 73.66) (xy 157.48 73.66)
 		)
 		(stroke
@@ -1312,16 +1306,6 @@
 			(type default)
 		)
 		(uuid "be17ee58-ea7c-4ced-a16c-c5ee7c1f1c14")
-	)
-	(wire
-		(pts
-			(xy 90.17 81.28) (xy 100.33 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caf9c8d8-7258-4667-b3fd-6a5d58b69a52")
 	)
 	(hierarchical_label "CLK"
 		(shape input)
@@ -1356,39 +1340,6 @@
 		)
 		(uuid "0f28b9c8-1192-4730-a10b-b58e3987bcbe")
 	)
-	(hierarchical_label "DAT1"
-		(shape input)
-		(at 143.51 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "34172ce0-4d24-4471-8726-ea8a6a0f9dc1")
-	)
-	(hierarchical_label "DAT2"
-		(shape input)
-		(at 176.53 106.68 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "444129c5-ba03-4fd4-8659-b8afc48cc197")
-	)
-	(hierarchical_label "DET"
-		(shape input)
-		(at 90.17 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "50b36461-d129-406f-8671-c5657eaca1d9")
-	)
 	(hierarchical_label "DAT0"
 		(shape input)
 		(at 176.53 121.92 180)
@@ -1399,17 +1350,6 @@
 			(justify right)
 		)
 		(uuid "63c1c3d4-ac29-4a46-8af2-5e5fa9d4df4a")
-	)
-	(hierarchical_label "DAT1"
-		(shape input)
-		(at 176.53 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "74df3c51-fda2-4c10-8c7d-2596f098a3d8")
 	)
 	(hierarchical_label "CDDAT3"
 		(shape input)
@@ -1432,28 +1372,6 @@
 			(justify right)
 		)
 		(uuid "aea1af99-1121-45a9-a98f-66b1dfb51741")
-	)
-	(hierarchical_label "DAT2"
-		(shape input)
-		(at 90.17 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b0787732-0e9d-4884-b695-384992ae050e")
-	)
-	(hierarchical_label "POL"
-		(shape input)
-		(at 90.17 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b8dd74b3-1d97-4d8f-9a43-0afce9aa8123")
 	)
 	(hierarchical_label "CLK"
 		(shape input)
@@ -1504,7 +1422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
+		(property "Footprint" "FRANK:Capacitor (0603)"
 			(at 172.72 74.6252 0)
 			(effects
 				(font
@@ -1548,70 +1466,6 @@
 				)
 			)
 		)
-		(property "Availability" ""
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "50dceb1a-08fc-4f61-90aa-4e3ca1010dcc")
 		)
@@ -1637,7 +1491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32d9018f-5322-4d0e-9f88-962e404387e9")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR025"
 			(at 166.37 77.47 0)
 			(effects
 				(font
@@ -1687,7 +1541,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dc60a21e-e2a8-44e4-8fed-a917cef47d01"
-					(reference "#PWR026")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -1771,7 +1625,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45bb84f4-2222-46a3-9f08-91b9f7d99dbb")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR022"
 			(at 93.98 73.66 0)
 			(effects
 				(font
@@ -1822,7 +1676,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dc60a21e-e2a8-44e4-8fed-a917cef47d01"
-					(reference "#PWR025")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -1942,70 +1796,6 @@
 				(hide yes)
 			)
 		)
-		(property "Availability" ""
-			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 100.33 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "G5"
 			(uuid "41a669c5-78f5-45ae-a96d-d95c78406821")
 		)
@@ -2065,7 +1855,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7bc25bb-6151-427d-9071-a9a874ac7867")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR024"
 			(at 139.7 78.74 0)
 			(effects
 				(font
@@ -2116,7 +1906,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dc60a21e-e2a8-44e4-8fed-a917cef47d01"
-					(reference "#PWR029")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -2132,7 +1922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb64ad72-0f49-41b6-a9be-7d239255dc4a")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR026"
 			(at 170.18 119.38 0)
 			(effects
 				(font
@@ -2183,7 +1973,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dc60a21e-e2a8-44e4-8fed-a917cef47d01"
-					(reference "#PWR030")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -2251,70 +2041,6 @@
 				(hide yes)
 			)
 		)
-		(property "Availability" ""
-			(at 199.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 199.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 199.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 199.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 199.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 199.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 199.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 199.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "4ec34ec5-cad6-458e-a443-96c42c16e935")
 		)
@@ -2362,7 +2088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2f5c919-155c-4f11-a373-a9afd9e62bd7")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR023"
 			(at 93.98 76.2 0)
 			(effects
 				(font
@@ -2413,7 +2139,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dc60a21e-e2a8-44e4-8fed-a917cef47d01"
-					(reference "#PWR028")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -2430,7 +2156,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e404351f-a461-4cf2-baee-4fef9296c2d1")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR021"
 			(at 93.98 71.12 0)
 			(effects
 				(font
@@ -2481,7 +2207,7 @@
 		(instances
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dc60a21e-e2a8-44e4-8fed-a917cef47d01"
-					(reference "#PWR024")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
