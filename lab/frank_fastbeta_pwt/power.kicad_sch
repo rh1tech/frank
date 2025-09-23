@@ -825,37 +825,35 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Schottky_Small"
+		(symbol "Device:D_Schottky"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at -1.27 2.032 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "D_Schottky_Small"
-				(at -7.112 -2.032 0)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 90)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -864,7 +862,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 0 90)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -872,7 +870,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Schottky diode, small symbol"
+			(property "Description" "Schottky diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -899,10 +897,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "D_Schottky_Small_0_1"
+			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
-						(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -914,7 +912,19 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 0) (xy 0.762 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -924,23 +934,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "D_Schottky_Small_1_1"
+			(symbol "D_Schottky_1_1"
 				(pin passive line
-					(at -2.54 0 0)
-					(length 1.778)
+					(at -3.81 0 0)
+					(length 2.54)
 					(name "K"
 						(effects
 							(font
@@ -957,8 +955,8 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 0 180)
-					(length 1.778)
+					(at 3.81 0 180)
+					(length 2.54)
 					(name "A"
 						(effects
 							(font
@@ -2144,6 +2142,12 @@
 		(uuid "1e282b10-cc1a-4315-80ee-72018f59b999")
 	)
 	(junction
+		(at 123.19 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c2ac743-0e4c-46d9-b3a6-3f7375dfee6f")
+	)
+	(junction
 		(at 193.04 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2172,12 +2176,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5d63563-d2e3-43e4-899d-13a065764370")
-	)
-	(junction
-		(at 123.19 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7e144eb-75a0-47f2-9805-0a95b260cc32")
 	)
 	(no_connect
 		(at 105.41 95.25)
@@ -2222,6 +2220,16 @@
 			(type default)
 		)
 		(uuid "214c7815-a59d-44a9-b36a-6fd5f05da0cc")
+	)
+	(wire
+		(pts
+			(xy 121.92 105.41) (xy 123.19 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29ec6e7b-5fea-4015-aa98-08662aa7b809")
 	)
 	(wire
 		(pts
@@ -2305,16 +2313,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 105.41) (xy 123.19 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5602e080-f3da-46d9-bc06-ef95eab6900f")
-	)
-	(wire
-		(pts
 			(xy 190.5 109.22) (xy 193.04 109.22)
 		)
 		(stroke
@@ -2325,6 +2323,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 105.41) (xy 114.3 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d5e14f2-f856-4caf-a19e-d52e5d63bf2d")
+	)
+	(wire
+		(pts
 			(xy 111.76 92.71) (xy 123.19 92.71)
 		)
 		(stroke
@@ -2332,6 +2340,16 @@
 			(type default)
 		)
 		(uuid "86a39760-13c9-4e47-ac62-2d0acb1e2393")
+	)
+	(wire
+		(pts
+			(xy 123.19 105.41) (xy 123.19 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9964c029-9d64-447d-a194-a6108733e3a4")
 	)
 	(wire
 		(pts
@@ -2493,16 +2511,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 105.41 270)
+		(at 113.03 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "198ee7f8-0040-4340-b56b-78fcaf1ad1e3")
 		(property "Reference" "#PWR04"
-			(at 111.76 105.41 0)
+			(at 113.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2511,16 +2528,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 105.4099 90)
+			(at 107.188 107.188 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 105.41 0)
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2529,7 +2546,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 105.41 0)
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2538,7 +2555,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 105.41 0)
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2813,8 +2830,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky_Small")
-		(at 120.65 105.41 180)
+		(lib_id "Device:D_Schottky")
+		(at 118.11 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2822,7 +2839,7 @@
 		(dnp no)
 		(uuid "34ffd629-ead2-4876-95a8-7bff37000fd5")
 		(property "Reference" "D1"
-			(at 120.65 103.124 0)
+			(at 118.11 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2830,15 +2847,15 @@
 			)
 		)
 		(property "Value" "IN1589"
-			(at 120.65 110.49 90)
+			(at 118.11 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Inductor (Radial_D7.2mm_P3.00mm)"
-			(at 120.65 105.41 90)
+		(property "Footprint" "FRANK:Diode (SOD81 P2.54mm Vertical AnodeUp)"
+			(at 118.11 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2847,7 +2864,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 105.41 90)
+			(at 118.11 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2855,8 +2872,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky diode, small symbol"
-			(at 120.65 105.41 0)
+		(property "Description" "Schottky diode"
+			(at 118.11 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +3310,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "FRANK:Inductor (Radial_D7.2mm_P3.00mm)"
 			(at 140.97 109.22 0)
 			(effects
 				(font
