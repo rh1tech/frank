@@ -1,11 +1,11 @@
-PCBNEW-LibModule-V1  2025-09-13 19:47:44
+PCBNEW-LibModule-V1  2025-10-05 20:43:11
 # encoding utf-8
 Units mm
 $INDEX
 KTT0005B
 $EndINDEX
 $MODULE KTT0005B
-Po 0 0 0 15 68c5bc50 00000000 ~~
+Po 0 0 0 15 68e2ca4f 00000000 ~~
 Li KTT0005B
 Cd KTT0005B
 Kw Integrated Circuit
