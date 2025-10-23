@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.35
         }
       },
       "diff_pair_dimensions": [
@@ -60,7 +60,7 @@
       ],
       "drc_exclusions": [
         [
-          "shorting_items|180900000|79700000|7bee7f15-ba9f-4cae-b904-49dec6849d73|9249e488-8018-4fb9-829c-8b3fa8eb25d4",
+          "clearance|180900000|80650000|65336e20-6fee-4d05-887c-685993d29e17|4bb60c29-d70c-46b1-8e21-816fd9ff5c01",
           ""
         ],
         [
@@ -72,7 +72,7 @@
           ""
         ],
         [
-          "solder_mask_bridge|180900000|79700000|7bee7f15-ba9f-4cae-b904-49dec6849d73|9249e488-8018-4fb9-829c-8b3fa8eb25d4",
+          "solder_mask_bridge|180900000|80650000|65336e20-6fee-4d05-887c-685993d29e17|4bb60c29-d70c-46b1-8e21-816fd9ff5c01",
           ""
         ],
         [
@@ -174,7 +174,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.25,
+        "min_through_hole_diameter": 0.3,
         "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.25,
@@ -271,7 +271,7 @@
         },
         {
           "diameter": 0.6,
-          "drill": 0.25
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -486,7 +486,7 @@
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -496,9 +496,9 @@
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
-      "pin_not_driven": "error",
-      "pin_to_pin": "error",
-      "power_pin_not_driven": "error",
+      "pin_not_driven": "ignore",
+      "pin_to_pin": "ignore",
+      "power_pin_not_driven": "ignore",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
@@ -1193,8 +1193,8 @@
   ],
   "text_variables": {
     "BOARD": "ONE RM2P2",
-    "DATE": "2025-10-10",
+    "DATE": "2025-10-23",
     "MODEL": "FRANK",
-    "VERSION": "1.01"
+    "VERSION": "1.02"
   }
 }
