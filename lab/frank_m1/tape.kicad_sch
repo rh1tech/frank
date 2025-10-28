@@ -76,15 +76,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "C_0_1"
 				(polyline
 					(pts
@@ -205,15 +196,6 @@
 				)
 			)
 			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -451,6 +433,24 @@
 						)
 					)
 					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -8.89 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "RN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1032,107 +1032,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_1"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_1_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -1381,6 +1280,10 @@
 		(uuid "212bb813-42db-480a-a004-ee0f529ad155")
 	)
 	(no_connect
+		(at 85.09 96.52)
+		(uuid "654c0fe9-7460-427a-9714-f82e362d28ac")
+	)
+	(no_connect
 		(at 85.09 105.41)
 		(uuid "8741e8ae-1d2a-4056-9310-c12c40bb33c9")
 	)
@@ -1624,7 +1527,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Resistor (0805)"
+		(property "Footprint" "FRANK:R_0805_2012Metric"
 			(at 123.698 105.41 90)
 			(effects
 				(font
@@ -1633,7 +1536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
+		(property "Datasheet" "~"
 			(at 121.92 105.41 0)
 			(effects
 				(font
@@ -1642,7 +1545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 105.41 0)
 			(effects
 				(font
@@ -1874,7 +1777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18fe2694-2cd3-4f21-a45b-81a920310064")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR075"
 			(at 140.97 116.84 0)
 			(effects
 				(font
@@ -1925,7 +1828,7 @@
 		(instances
 			(project "frank_m1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/599e2208-d0f7-4f1d-beb8-3b4e6272cb10"
-					(reference "#PWR070")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -1941,7 +1844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22e66cae-d0bf-49dd-9723-38ac5ca9aa2a")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR079"
 			(at 226.06 114.3 0)
 			(effects
 				(font
@@ -1992,7 +1895,7 @@
 		(instances
 			(project "frank_m1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/599e2208-d0f7-4f1d-beb8-3b4e6272cb10"
-					(reference "#PWR074")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -2008,7 +1911,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2da75c39-1813-4be0-a8fd-3f0522215927")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR078"
 			(at 226.06 109.22 0)
 			(effects
 				(font
@@ -2059,7 +1962,7 @@
 		(instances
 			(project "frank_m1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/599e2208-d0f7-4f1d-beb8-3b4e6272cb10"
-					(reference "#PWR073")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -2397,7 +2300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810121716_Korean-Hroparts-Elec-PJ-320D-4A_C95562.pdf"
+		(property "Datasheet" "~"
 			(at 80.01 105.41 0)
 			(effects
 				(font
@@ -2585,6 +2488,9 @@
 		(pin "T"
 			(uuid "a76f255e-e6ec-45f6-9e59-6f4e9b238de9")
 		)
+		(pin "RN"
+			(uuid "791363c2-cda8-4fa5-bfff-c6d8c5407a1e")
+		)
 		(instances
 			(project "38NJU24"
 				(path "/621f55f1-01af-437d-a2cb-120cc66267c2/515a4f72-cb81-48fc-85c2-f3287291ee9a"
@@ -2601,7 +2507,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 85.09 107.95 90)
 		(unit 1)
@@ -2611,7 +2516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a33a5a7-dc40-45d5-9346-a5e73b26252a")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR074"
 			(at 91.44 107.95 0)
 			(effects
 				(font
@@ -2668,7 +2573,7 @@
 			)
 			(project "frank_m1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/599e2208-d0f7-4f1d-beb8-3b4e6272cb10"
-					(reference "#PWR069")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -2683,7 +2588,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6afc18aa-b89c-47b3-bfac-bbed7c96e0b0")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR076"
 			(at 215.9 101.6 0)
 			(effects
 				(font
@@ -2733,7 +2638,7 @@
 		(instances
 			(project "frank_m1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/599e2208-d0f7-4f1d-beb8-3b4e6272cb10"
-					(reference "#PWR071")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -2749,7 +2654,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2288cc4-3a5f-40a8-8c78-b523d89f524c")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR077"
 			(at 226.06 104.14 0)
 			(effects
 				(font
@@ -2800,7 +2705,7 @@
 		(instances
 			(project "frank_m1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/599e2208-d0f7-4f1d-beb8-3b4e6272cb10"
-					(reference "#PWR072")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -2815,7 +2720,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a508c4bd-8407-46fe-8f4a-0a662909daed")
-		(property "Reference" "C23"
+		(property "Reference" "C28"
 			(at 118.999 91.3384 0)
 			(effects
 				(font
@@ -2833,7 +2738,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
+		(property "Footprint" "FRANK:C_0805_2012Metric"
 			(at 120.9548 86.36 0)
 			(effects
 				(font
@@ -2842,7 +2747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
+		(property "Datasheet" "~"
 			(at 121.92 90.17 0)
 			(effects
 				(font
@@ -2851,7 +2756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 121.92 90.17 0)
 			(effects
 				(font
@@ -3067,7 +2972,7 @@
 		(instances
 			(project "frank_m1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/599e2208-d0f7-4f1d-beb8-3b4e6272cb10"
-					(reference "C23")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -3098,7 +3003,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Resistor (0805)"
+		(property "Footprint" "FRANK:R_0805_2012Metric"
 			(at 123.698 97.79 90)
 			(effects
 				(font
@@ -3107,7 +3012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
+		(property "Datasheet" "~"
 			(at 121.92 97.79 0)
 			(effects
 				(font
@@ -3116,7 +3021,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 97.79 0)
 			(effects
 				(font
@@ -3363,7 +3268,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Resistor (0805)"
+		(property "Footprint" "FRANK:R_0805_2012Metric"
 			(at 123.698 113.03 90)
 			(effects
 				(font
@@ -3372,7 +3277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
+		(property "Datasheet" "~"
 			(at 121.92 113.03 0)
 			(effects
 				(font
@@ -3381,7 +3286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 113.03 0)
 			(effects
 				(font

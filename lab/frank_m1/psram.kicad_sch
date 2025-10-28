@@ -76,15 +76,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "C_0_1"
 				(polyline
 					(pts
@@ -379,107 +370,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_1"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_1_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Jumper:SolderJumper_2_Open"
 			(pin_numbers
 				(hide yes)
@@ -488,7 +378,7 @@
 				(offset 0)
 				(hide yes)
 			)
-			(exclude_from_sim yes)
+			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
@@ -1050,7 +940,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c9cc415-24b5-4884-ac4c-0dc5a0300c95")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0135"
 			(at 148.59 111.76 0)
 			(effects
 				(font
@@ -1101,7 +991,7 @@
 		(instances
 			(project "minifrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "#PWR0117")
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -1117,7 +1007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6edb26c8-a2d6-4b0c-9cb3-7d7dd852f441")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR0136"
 			(at 158.75 83.82 0)
 			(effects
 				(font
@@ -1167,7 +1057,7 @@
 		(instances
 			(project "minifrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "#PWR0118")
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
@@ -1183,7 +1073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fad558e-ddd8-47a6-9d00-94d3ee4e2ebb")
-		(property "Reference" "U10"
+		(property "Reference" "U11"
 			(at 142.24 91.4399 0)
 			(effects
 				(font
@@ -1264,7 +1154,7 @@
 		(instances
 			(project "minifrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "U10")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -1279,7 +1169,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "adb1a53b-d5fd-4040-922b-c10d890df339")
-		(property "Reference" "C28"
+		(property "Reference" "C38"
 			(at 131.191 86.4616 0)
 			(effects
 				(font
@@ -1297,7 +1187,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
+		(property "Footprint" "FRANK:C_0805_2012Metric"
 			(at 129.2352 91.44 0)
 			(effects
 				(font
@@ -1306,7 +1196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
+		(property "Datasheet" "~"
 			(at 128.27 87.63 0)
 			(effects
 				(font
@@ -1315,7 +1205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 128.27 87.63 0)
 			(effects
 				(font
@@ -1342,7 +1232,7 @@
 		(instances
 			(project "minifrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "C28")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -1426,7 +1316,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 128.27 95.25 0)
 		(unit 1)
@@ -1435,7 +1324,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c76622e5-65e8-4bd9-aa46-19f51970c43e")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0134"
 			(at 128.27 101.6 0)
 			(effects
 				(font
@@ -1485,7 +1374,7 @@
 		(instances
 			(project "minifrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "#PWR0116")
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
