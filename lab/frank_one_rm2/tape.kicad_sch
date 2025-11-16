@@ -458,6 +458,24 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 5.08 -8.89 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "RN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -1381,6 +1399,10 @@
 		(uuid "212bb813-42db-480a-a004-ee0f529ad155")
 	)
 	(no_connect
+		(at 85.09 96.52)
+		(uuid "228a2503-3868-4d01-9b50-5fb47847f78d")
+	)
+	(no_connect
 		(at 85.09 105.41)
 		(uuid "8741e8ae-1d2a-4056-9310-c12c40bb33c9")
 	)
@@ -1608,7 +1630,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "019bb726-3e18-48aa-9e3d-a59fed7ef649")
-		(property "Reference" "R12"
+		(property "Reference" "R7"
 			(at 119.634 105.156 90)
 			(effects
 				(font
@@ -1858,7 +1880,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "R12")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -1874,7 +1896,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18fe2694-2cd3-4f21-a45b-81a920310064")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR034"
 			(at 140.97 116.84 0)
 			(effects
 				(font
@@ -1925,7 +1947,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "#PWR043")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -1941,7 +1963,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22e66cae-d0bf-49dd-9723-38ac5ca9aa2a")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR038"
 			(at 226.06 114.3 0)
 			(effects
 				(font
@@ -1992,7 +2014,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "#PWR047")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -2008,7 +2030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2da75c39-1813-4be0-a8fd-3f0522215927")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR037"
 			(at 226.06 109.22 0)
 			(effects
 				(font
@@ -2059,7 +2081,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "#PWR046")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -2075,7 +2097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c44f6b9-07c1-4018-bb29-2596ca428f45")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 185.42 91.44 0)
 			(effects
 				(font
@@ -2354,7 +2376,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -2397,7 +2419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810121716_Korean-Hroparts-Elec-PJ-320D-4A_C95562.pdf"
+		(property "Datasheet" "~"
 			(at 80.01 105.41 0)
 			(effects
 				(font
@@ -2585,6 +2607,9 @@
 		(pin "T"
 			(uuid "a76f255e-e6ec-45f6-9e59-6f4e9b238de9")
 		)
+		(pin "RN"
+			(uuid "9e7f0757-e44d-46f6-947d-2cfc2f5c2def")
+		)
 		(instances
 			(project "38NJU24"
 				(path "/621f55f1-01af-437d-a2cb-120cc66267c2/515a4f72-cb81-48fc-85c2-f3287291ee9a"
@@ -2611,7 +2636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a33a5a7-dc40-45d5-9346-a5e73b26252a")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR033"
 			(at 91.44 107.95 0)
 			(effects
 				(font
@@ -2668,7 +2693,7 @@
 			)
 			(project "minifrank_rm1"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "#PWR042")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -2683,7 +2708,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6afc18aa-b89c-47b3-bfac-bbed7c96e0b0")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR035"
 			(at 215.9 101.6 0)
 			(effects
 				(font
@@ -2733,7 +2758,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "#PWR044")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -2749,7 +2774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2288cc4-3a5f-40a8-8c78-b523d89f524c")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR036"
 			(at 226.06 104.14 0)
 			(effects
 				(font
@@ -2800,7 +2825,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "#PWR045")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -2815,7 +2840,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a508c4bd-8407-46fe-8f4a-0a662909daed")
-		(property "Reference" "C3"
+		(property "Reference" "C2"
 			(at 118.999 91.3384 0)
 			(effects
 				(font
@@ -3067,7 +3092,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "C3")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -3082,7 +3107,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc341e43-e60b-404c-8c49-fff00a3b56ce")
-		(property "Reference" "R11"
+		(property "Reference" "R6"
 			(at 119.634 97.536 90)
 			(effects
 				(font
@@ -3332,7 +3357,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "R11")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -3347,7 +3372,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5bc66db-a0d5-4ad8-b9a9-401b5b34aa40")
-		(property "Reference" "R13"
+		(property "Reference" "R8"
 			(at 119.634 112.776 90)
 			(effects
 				(font
@@ -3597,7 +3622,7 @@
 		(instances
 			(project "frank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8f57fa0b-80dc-4c8c-9148-33c48d230b70"
-					(reference "R13")
+					(reference "R8")
 					(unit 1)
 				)
 			)

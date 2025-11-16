@@ -63,24 +63,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -358,10 +341,28 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 5.08 -8.89 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "RN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_1"
+		(symbol "power:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -426,7 +427,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_1_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -440,7 +441,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -462,6 +463,10 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(no_connect
+		(at 181.61 95.25)
+		(uuid "415f47ae-496a-49c6-bf91-31d52593372a")
 	)
 	(wire
 		(pts
@@ -1039,7 +1044,6 @@
 		(uuid "fe24b9db-f191-49a1-8628-8714ad7ab769")
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 175.26 113.03 0)
 		(unit 1)
@@ -1048,7 +1052,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b820610-6871-46d3-8f04-789cc958f2d0")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR099"
 			(at 175.26 119.38 0)
 			(effects
 				(font
@@ -1098,7 +1102,7 @@
 		(instances
 			(project "minifrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150"
-					(reference "#PWR094")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -1141,7 +1145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810121716_Korean-Hroparts-Elec-PJ-320D-4A_C95562.pdf"
+		(property "Datasheet" "~"
 			(at 186.69 104.14 0)
 			(effects
 				(font
@@ -1241,6 +1245,9 @@
 		(pin "T"
 			(uuid "0eaba033-c44d-453b-8d29-b12108b7160e")
 		)
+		(pin "RN"
+			(uuid "0c70c6ca-b9f6-467f-9849-848bb4b022fa")
+		)
 		(instances
 			(project "minifrank_rm1p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150"
@@ -1284,7 +1291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aliexpress.com/item/1005001649158434.html"
+		(property "Datasheet" "~"
 			(at 170.18 74.93 0)
 			(effects
 				(font
@@ -1424,7 +1431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aliexpress.com/item/1005001649158434.html"
+		(property "Datasheet" "~"
 			(at 170.18 63.5 0)
 			(effects
 				(font
