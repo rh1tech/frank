@@ -1,12 +1,12 @@
 (footprint "Crystal (HC49-S)"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "SMD Crystal HC-49-SD http://cdn-reichelt.de/documents/datenblatt/B400/xxx-HC49-SMD.pdf, 11.4x4.7mm^2 package")
 	(tags "SMD SMT crystal")
 	(property "Reference" "REF**"
-		(at 0 -3.55 0)
+		(at 0 -1.6 0)
 		(layer "F.SilkS")
 		(uuid "1e698910-640f-4aa7-ac31-57a9f0f2a08a")
 		(effects
@@ -24,19 +24,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "e893b4b8-4d91-41c5-b0ca-dda610e4bc91")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -245,15 +232,16 @@
 	(pad "1" smd rect
 		(at -4.25 0)
 		(size 4.5 2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "f3a0545e-5362-44fc-beec-c53b80d35bc7")
 	)
 	(pad "2" smd rect
 		(at 4.25 0)
 		(size 4.5 2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "dff06b4f-c46a-4f00-9143-f9a760e2135d")
 	)
+	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_HC49-SD.wrl"
 		(offset
 			(xyz 0 0 0)

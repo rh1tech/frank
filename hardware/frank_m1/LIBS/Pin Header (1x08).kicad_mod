@@ -1,7 +1,7 @@
 (footprint "Pin Header (1x08)"
-	(version 20241229)
+	(version 20240108)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "8.0")
 	(layer "F.Cu")
 	(descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
 	(tags "Through hole pin header THT 1x08 2.54mm single row")
@@ -20,11 +20,23 @@
 	(property "Value" "Pin Header (1x08)"
 		(at 0 20.11 0)
 		(layer "F.Fab")
-		(hide yes)
 		(uuid "d4a9ac10-b1de-47d7-870b-64a03843df14")
 		(effects
 			(font
 				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2df582fa-c5fa-45e2-8ea2-66b938cf13b5")
+		(effects
+			(font
+				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -56,6 +68,46 @@
 		)
 	)
 	(attr through_hole)
+	(fp_line
+		(start -1.33 -1.33)
+		(end -1.33 19.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "1950c777-a357-42b3-a6c2-afb1abf81be6")
+	)
+	(fp_line
+		(start -1.33 -1.33)
+		(end 1.33 -1.33)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "2a0fd468-f274-4596-9975-369a25566bbc")
+	)
+	(fp_line
+		(start -1.33 19.11)
+		(end 1.33 19.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "49aa99f9-4765-4783-a29a-bca7e29e68c3")
+	)
+	(fp_line
+		(start 1.33 -1.33)
+		(end 1.33 19.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "e2a749ce-6be1-4d9c-9f5a-76674dfe9dc3")
+	)
 	(fp_line
 		(start -1.33 -1.33)
 		(end -1.33 19.11)
@@ -261,7 +313,6 @@
 		(remove_unused_layers no)
 		(uuid "a3732d2c-ad8c-4009-b7a6-1acbce6b3a60")
 	)
-	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.wrl"
 		(offset
 			(xyz 0 0 0)

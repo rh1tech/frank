@@ -5,8 +5,8 @@
 	(uuid "5bd2f9a2-a920-4263-b7cf-b5c22cf6f398")
 	(paper "A4")
 	(title_block
-		(title "FRANK M1")
-		(date "2025-04-09")
+		(title "${NAME} ${MODEL}")
+		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
 		(comment 1 "https://github.com/xtremespb/frank")
@@ -494,7 +494,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_1"
+		(symbol "power:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -559,7 +559,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_1_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -573,7 +573,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -595,14 +595,139 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VBUS"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(no_connect
-		(at 137.16 93.98)
+		(at 138.43 93.98)
 		(uuid "81f90c75-2af7-4033-8f7e-75b250d08dcf")
 	)
 	(wire
 		(pts
-			(xy 134.62 88.9) (xy 137.16 88.9)
+			(xy 135.89 88.9) (xy 138.43 88.9)
 		)
 		(stroke
 			(width 0)
@@ -610,9 +735,19 @@
 		)
 		(uuid "eb344507-295c-48d1-ba3a-94e8f923bd0a")
 	)
+	(wire
+		(pts
+			(xy 135.89 91.44) (xy 138.43 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed29322d-0118-47b2-b378-7b472951c733")
+	)
 	(hierarchical_label "ZGPIO26"
 		(shape input)
-		(at 137.16 104.14 180)
+		(at 138.43 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -623,7 +758,7 @@
 	)
 	(hierarchical_label "ZGPIO7"
 		(shape input)
-		(at 162.56 106.68 0)
+		(at 163.83 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -634,7 +769,7 @@
 	)
 	(hierarchical_label "ZGPIO14"
 		(shape input)
-		(at 137.16 109.22 180)
+		(at 138.43 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -645,7 +780,7 @@
 	)
 	(hierarchical_label "ZGPIO2"
 		(shape input)
-		(at 162.56 93.98 0)
+		(at 163.83 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -656,7 +791,7 @@
 	)
 	(hierarchical_label "ZGPIO9"
 		(shape input)
-		(at 154.94 114.3 270)
+		(at 156.21 114.3 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -667,7 +802,7 @@
 	)
 	(hierarchical_label "ZGPIO10"
 		(shape input)
-		(at 152.4 114.3 270)
+		(at 153.67 114.3 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -678,7 +813,7 @@
 	)
 	(hierarchical_label "ZGPIO11"
 		(shape input)
-		(at 149.86 114.3 270)
+		(at 151.13 114.3 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -689,7 +824,7 @@
 	)
 	(hierarchical_label "ZGPIO12"
 		(shape input)
-		(at 147.32 114.3 270)
+		(at 148.59 114.3 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -700,7 +835,7 @@
 	)
 	(hierarchical_label "ZGPIO0"
 		(shape input)
-		(at 162.56 88.9 0)
+		(at 163.83 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -711,7 +846,7 @@
 	)
 	(hierarchical_label "ZGPIO13"
 		(shape input)
-		(at 144.78 114.3 270)
+		(at 146.05 114.3 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -720,20 +855,9 @@
 		)
 		(uuid "6b1bfd52-f0bd-4eb9-901b-f2c23382a5c0")
 	)
-	(hierarchical_label "ZVBUS"
-		(shape input)
-		(at 134.62 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6b79ae41-e672-4178-9f05-2d0773aa3055")
-	)
 	(hierarchical_label "ZGPIO28"
 		(shape input)
-		(at 137.16 99.06 180)
+		(at 138.43 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -744,7 +868,7 @@
 	)
 	(hierarchical_label "ZGPIO15"
 		(shape input)
-		(at 137.16 106.68 180)
+		(at 138.43 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -755,7 +879,7 @@
 	)
 	(hierarchical_label "ZGPIO1"
 		(shape input)
-		(at 162.56 91.44 0)
+		(at 163.83 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -766,7 +890,7 @@
 	)
 	(hierarchical_label "ZGPIO5"
 		(shape input)
-		(at 162.56 101.6 0)
+		(at 163.83 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -777,7 +901,7 @@
 	)
 	(hierarchical_label "ZGPIO29"
 		(shape input)
-		(at 137.16 96.52 180)
+		(at 138.43 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -788,7 +912,7 @@
 	)
 	(hierarchical_label "ZGPIO8"
 		(shape input)
-		(at 162.56 109.22 0)
+		(at 163.83 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -799,7 +923,7 @@
 	)
 	(hierarchical_label "ZGPIO3"
 		(shape input)
-		(at 162.56 96.52 0)
+		(at 163.83 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -810,7 +934,7 @@
 	)
 	(hierarchical_label "ZGPIO27"
 		(shape input)
-		(at 137.16 101.6 180)
+		(at 138.43 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -821,7 +945,7 @@
 	)
 	(hierarchical_label "ZGPIO6"
 		(shape input)
-		(at 162.56 104.14 0)
+		(at 163.83 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -832,7 +956,7 @@
 	)
 	(hierarchical_label "ZGPIO4"
 		(shape input)
-		(at 162.56 99.06 0)
+		(at 163.83 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -842,8 +966,75 @@
 		(uuid "f4530561-17f6-46db-af96-48e83062c254")
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 135.89 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19337abb-9388-48bc-a33a-8b7097bd5997")
+		(property "Reference" "#PWR092"
+			(at 139.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 132.08 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 135.89 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76b5ac47-5a27-4043-b195-2f5d62b37441")
+		)
+		(instances
+			(project ""
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/fddc4167-45e2-4dc5-97ca-2de47a569f97"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FRANK:RP_2040_Zero")
-		(at 149.86 97.79 0)
+		(at 151.13 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -851,8 +1042,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "506f9b4e-3802-4d23-8d62-47ff0d8f9d00")
-		(property "Reference" "U5"
-			(at 149.86 81.28 0)
+		(property "Reference" "U7"
+			(at 151.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -860,7 +1051,7 @@
 			)
 		)
 		(property "Value" "RP2040-Zero"
-			(at 149.86 83.82 0)
+			(at 151.13 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -869,7 +1060,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:Raspberry Pi Zero"
-			(at 140.97 92.71 0)
+			(at 142.24 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -878,7 +1069,7 @@
 			)
 		)
 		(property "Datasheet" "https://files.waveshare.com/upload/f/fd/Rp2040_datasheet.pdf"
-			(at 140.97 92.71 0)
+			(at 142.24 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -887,7 +1078,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 97.79 0)
+			(at 151.13 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -896,7 +1087,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005006354505058.html"
-			(at 149.86 97.79 0)
+			(at 151.13 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -976,16 +1167,15 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/fddc4167-45e2-4dc5-97ca-2de47a569f97"
-					(reference "U5")
+					(reference "U7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 137.16 91.44 270)
+		(at 135.89 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -993,8 +1183,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2ec1fa8-205e-4048-80db-e6b1ef4be611")
-		(property "Reference" "#PWR066"
-			(at 130.81 91.44 0)
+		(property "Reference" "#PWR093"
+			(at 129.54 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1003,7 +1193,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.35 91.4399 90)
+			(at 132.08 91.4399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1012,7 +1202,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 91.44 0)
+			(at 135.89 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1021,7 +1211,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 91.44 0)
+			(at 135.89 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1030,7 +1220,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 91.44 0)
+			(at 135.89 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1044,7 +1234,7 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/fddc4167-45e2-4dc5-97ca-2de47a569f97"
-					(reference "#PWR066")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)

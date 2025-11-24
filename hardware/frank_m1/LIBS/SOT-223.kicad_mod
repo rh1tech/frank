@@ -1,12 +1,12 @@
 (footprint "SOT-223"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "module CMS SOT223 4 pins")
 	(tags "CMS SOT")
 	(property "Reference" "REF**"
-		(at -5.1 -0.17 90)
+		(at 0 -0.17 90)
 		(layer "F.SilkS")
 		(uuid "095b50a5-76ce-476b-aa10-37a37fa441f1")
 		(effects
@@ -24,19 +24,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "a08f01ff-4bea-41a1-8e4a-5323457e6edb")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -116,7 +103,7 @@
 			(width 0.12)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "27420593-f422-495a-9e17-88a99bcd8a3d")
 	)
@@ -210,45 +197,35 @@
 		(layer "F.Fab")
 		(uuid "9d748ff0-f43a-42f3-a9ff-3a463972b1ca")
 	)
-	(fp_text user "${REFERENCE}"
-		(at 0 0 90)
-		(layer "F.Fab")
-		(uuid "aff1cd04-29c5-47f0-8349-1badf43ec67b")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
 	(pad "1" smd roundrect
 		(at -3.15 -2.3)
 		(size 2 1.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "6c38c733-73aa-46ef-9aa8-0adc47a79448")
 	)
 	(pad "2" smd roundrect
 		(at -3.15 0)
 		(size 2 1.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "553b4aa3-b4fc-45ee-9bbe-5eb8183ee7d8")
 	)
 	(pad "2" smd roundrect
 		(at 3.15 0)
 		(size 2 3.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "118e82e2-9099-4e46-a269-1e2cb8448d5e")
 	)
 	(pad "3" smd roundrect
 		(at -3.15 2.3)
 		(size 2 1.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "5046df04-2b74-45a5-867e-e33a5e51e59c")
 	)
+	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.wrl"
 		(offset
 			(xyz 0 0 0)
