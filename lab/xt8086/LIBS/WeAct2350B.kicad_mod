@@ -1,4 +1,4 @@
-(footprint "WeAct2550B"
+(footprint "WeAct2350B"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -60,10 +60,10 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "9a38eda8-cc8d-4985-b159-74c604a58db6")
+		(uuid "585909f1-39fe-4a10-90a0-94321d3ce06f")
 	)
 	(fp_line
-		(start -21 19.8)
+		(start -21 -15.5)
 		(end -21 -21.5)
 		(stroke
 			(width 0.12)
@@ -71,6 +71,16 @@
 		)
 		(layer "F.SilkS")
 		(uuid "7ba62eca-9a98-42c6-8776-5a0343b2ba87")
+	)
+	(fp_line
+		(start -21 19.8)
+		(end -21 13.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1da23d22-e3fe-4b1a-851c-7f0d4900827a")
 	)
 	(fp_line
 		(start -21 19.8)
@@ -91,46 +101,6 @@
 		)
 		(layer "F.SilkS")
 		(uuid "43890906-25df-45d8-96bc-7637db9b2f78")
-	)
-	(fp_line
-		(start -21.27 -21.7)
-		(end 20.7 -21.7)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "ad2d1f0b-0302-49a2-ac1c-bccc42f8e917")
-	)
-	(fp_line
-		(start -21.27 20.43)
-		(end -21.27 -21.7)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "68ffdbec-e037-474c-aa7f-bcf29e60591e")
-	)
-	(fp_line
-		(start 20.7 -21.7)
-		(end 20.7 20.43)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "e44ff03f-96d7-4608-b4c2-7c16a55771c7")
-	)
-	(fp_line
-		(start 20.7 20.43)
-		(end -21.27 20.43)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "ae3b8b59-8956-428e-9bf6-27e72b0a8e3f")
 	)
 	(fp_line
 		(start -20.9 19.7)
@@ -230,14 +200,6 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "7e767bd4-8f42-4833-8b93-a6ebf9d9e6dc")
-	)
-	(pad "3V3" thru_hole circle
-		(at 9.74 11.51 180)
-		(size 1.7 1.7)
-		(drill 1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "87ad9437-7ee0-402f-8e5b-aa4c6c408ead")
 	)
 	(pad "4" thru_hole circle
 		(at -9.31 16.09 90)
@@ -599,22 +561,6 @@
 		(remove_unused_layers no)
 		(uuid "e8aa40e2-7216-40bb-97e6-9a9c2088c6a7")
 	)
-	(pad "CLK" thru_hole circle
-		(at 9.74 6.43 180)
-		(size 1.7 1.7)
-		(drill 1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "570a1958-1edb-472b-8557-44193328b7ba")
-	)
-	(pad "DIO" thru_hole circle
-		(at 9.74 8.97 180)
-		(size 1.7 1.7)
-		(drill 1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "44a09c08-8fc1-4776-b9b6-34174d81129a")
-	)
 	(pad "EN" thru_hole circle
 		(at -16.93 -16.93 90)
 		(size 1.7 1.7)
@@ -663,14 +609,6 @@
 		(remove_unused_layers no)
 		(uuid "bdd92187-9cc7-454d-be82-5ca38c094341")
 	)
-	(pad "GND" thru_hole circle
-		(at 9.74 3.89 180)
-		(size 1.7 1.7)
-		(drill 1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "c9ba6f27-5530-45d0-ac1f-a2c4b1b6ed62")
-	)
 	(pad "REF" thru_hole circle
 		(at -14.39 18.63 90)
 		(size 1.7 1.7)
@@ -698,13 +636,24 @@
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x15_P2.54mm_Vertical.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz -19.5 -16 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -90)
+		)
+	)
+	(model "${KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x15_P2.54mm_Vertical.step"
+		(offset
+			(xyz -19.5 19.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
 		)
 	)
 )
