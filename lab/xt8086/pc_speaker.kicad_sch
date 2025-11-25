@@ -635,6 +635,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Protea:1N4148"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V 0.15A standard switching diode, DO-35"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Protea:CMT-7525-80-SMT-TR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1301,6 +1468,18 @@
 		(uuid "0fb74643-6d67-487d-9465-bde3275373c5")
 	)
 	(junction
+		(at 127 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a74c0e9-9ce1-48a9-9b21-aa4a22be98a0")
+	)
+	(junction
+		(at 127 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b63bcc34-dbec-4dbc-b478-4970691dffd9")
+	)
+	(junction
 		(at 156.21 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1317,6 +1496,16 @@
 	(no_connect
 		(at 165.1 90.17)
 		(uuid "fccce06c-6d90-4f71-9b49-3d6e914caa8f")
+	)
+	(wire
+		(pts
+			(xy 127 83.82) (xy 127 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09a5c1be-e317-451b-a0e5-6a2fd1e429db")
 	)
 	(wire
 		(pts
@@ -1390,6 +1579,26 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 95.25) (xy 127 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74cdc2d0-ac95-40b9-b811-73c36dc100bb")
+	)
+	(wire
+		(pts
+			(xy 120.65 93.98) (xy 120.65 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b287479-8c6a-47d3-8a48-339a369843d2")
+	)
+	(wire
+		(pts
 			(xy 127 92.71) (xy 137.16 92.71)
 		)
 		(stroke
@@ -1410,16 +1619,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 83.82) (xy 127 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a1134b0-6785-4451-9d6e-158f6bb92dfa")
-	)
-	(wire
-		(pts
 			(xy 172.72 90.17) (xy 184.15 90.17)
 		)
 		(stroke
@@ -1430,7 +1629,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 92.71) (xy 127 99.06)
+			(xy 127 92.71) (xy 127 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1510,6 +1709,26 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 86.36) (xy 127 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9485267-d56b-4ff3-9e9c-b95f3c1b671e")
+	)
+	(wire
+		(pts
+			(xy 127 86.36) (xy 127 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbc8aa07-a0e2-4b55-9c1b-a8713606ad66")
+	)
+	(wire
+		(pts
 			(xy 127 109.22) (xy 127 111.76)
 		)
 		(stroke
@@ -1517,6 +1736,16 @@
 			(type default)
 		)
 		(uuid "eadfd1f1-cb26-4082-92d5-818abb4ce64e")
+	)
+	(wire
+		(pts
+			(xy 127 95.25) (xy 127 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6d23bb2-2e4d-428a-8c35-f6d4a18993a3")
 	)
 	(wire
 		(pts
@@ -2128,6 +2357,108 @@
 			(project "xt8086"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/128bfa67-3568-45ab-9ac5-06e6eea36fac"
 					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Protea:1N4148")
+		(at 120.65 90.17 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c2f853e-cb50-4346-91ae-af3cf00f73e3")
+		(property "Reference" "D1"
+			(at 123.698 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 117.856 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:Diode (SOD-323)"
+			(at 120.65 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 120.65 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 120.65 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 120.65 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 120.65 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005707644429.html"
+			(at 120.65 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 120.65 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a5d4881-39ce-4d2d-8224-83d4f83e586d")
+		)
+		(pin "2"
+			(uuid "94d993d4-1552-4e27-b786-51870b255c82")
+		)
+		(instances
+			(project "xt8086"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/128bfa67-3568-45ab-9ac5-06e6eea36fac"
+					(reference "D1")
 					(unit 1)
 				)
 			)
