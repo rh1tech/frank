@@ -5,7 +5,7 @@
 	(uuid "5bd2f9a2-a920-4263-b7cf-b5c22cf6f398")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${MODEL}")
+		(title "${NAME} ${VARIANT}")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
@@ -595,131 +595,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VBUS"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VBUS"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VBUS\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VBUS_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VBUS_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(no_connect
 		(at 138.43 93.98)
@@ -810,6 +685,17 @@
 			(justify right)
 		)
 		(uuid "2e08c2f5-284a-4956-90c7-89ad6bf4c6f6")
+	)
+	(hierarchical_label "VBUS"
+		(shape input)
+		(at 135.89 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f380145-0ce1-4191-8cb3-e64a1ad91fb3")
 	)
 	(hierarchical_label "ZGPIO11"
 		(shape input)
@@ -966,73 +852,6 @@
 		(uuid "f4530561-17f6-46db-af96-48e83062c254")
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 135.89 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19337abb-9388-48bc-a33a-8b7097bd5997")
-		(property "Reference" "#PWR092"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 132.08 88.8999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 135.89 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76b5ac47-5a27-4043-b195-2f5d62b37441")
-		)
-		(instances
-			(project ""
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/fddc4167-45e2-4dc5-97ca-2de47a569f97"
-					(reference "#PWR092")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "FRANK:RP_2040_Zero")
 		(at 151.13 97.79 0)
 		(unit 1)
@@ -1042,7 +861,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "506f9b4e-3802-4d23-8d62-47ff0d8f9d00")
-		(property "Reference" "U7"
+		(property "Reference" "U10"
 			(at 151.13 81.28 0)
 			(effects
 				(font
@@ -1096,78 +915,78 @@
 			)
 		)
 		(pin "17"
-			(uuid "4b487e44-3fde-41b9-93ed-52ad930e46cd")
+			(uuid "bed8e4bf-26e4-4f7a-bb8f-4f3565830e8b")
 		)
 		(pin "12"
-			(uuid "5f2d0656-38d8-4e19-8e5b-c7432c714d23")
+			(uuid "8a04d3b5-70e0-410e-af20-bb9ebf11997a")
 		)
 		(pin "13"
-			(uuid "078c1bf2-b226-46a4-bdd8-be6a017e5774")
+			(uuid "acb9ef01-dcb9-49f2-8bb8-1aca2f699228")
 		)
 		(pin "11"
-			(uuid "ed6aba97-f9b8-4bf0-96af-59eee369ff29")
+			(uuid "c6bac47f-bfb2-42dd-81c4-13396044eaa8")
 		)
 		(pin "16"
-			(uuid "7c0c6788-28e6-400c-b3f6-aec5ee4bff52")
+			(uuid "b46d693b-2204-4352-aa6c-a15fe4497954")
 		)
 		(pin "10"
-			(uuid "8c15a8d2-5c74-4ded-94e4-00f9a9652498")
+			(uuid "656e239a-24e5-4fef-9653-127b85a0f3b7")
 		)
 		(pin "20"
-			(uuid "483036d6-f5e3-4638-a504-1776064813d4")
+			(uuid "09a1eb05-b12b-4711-9487-7d510e984f7f")
 		)
 		(pin "21"
-			(uuid "23095e49-4a4f-416b-922f-51066bc55dd8")
+			(uuid "837b7ff1-37af-442a-86cb-bf820869bce3")
 		)
 		(pin "22"
-			(uuid "7becdd0a-4951-4241-8037-77c8786017ff")
+			(uuid "8aa67ca7-b4e2-4c07-b57b-868ab63032b5")
 		)
 		(pin "23"
-			(uuid "1efd30b3-4d6f-4d2e-a54e-80d4346531a8")
+			(uuid "1e57fd5a-d2f4-4946-b957-3836cc3bb4ed")
 		)
 		(pin "3"
-			(uuid "0222a783-b3ee-46f9-aea5-e8d1a0d9af4d")
+			(uuid "7124960d-73c6-414b-bd9f-f67914ab02de")
 		)
 		(pin "4"
-			(uuid "d7c4c474-1cfc-4510-b5fb-eda4a9f54e19")
+			(uuid "e97f57bd-2869-4983-b22e-1568720b62eb")
 		)
 		(pin "5"
-			(uuid "e786bec1-8519-4f01-8dd6-886da26770c8")
+			(uuid "a44a8a54-793f-418e-b812-830e1731f219")
 		)
 		(pin "6"
-			(uuid "96709a79-31ee-47d1-ad3b-a177c463b92e")
+			(uuid "6e2f880d-260d-4760-8c6f-e10aebcf62ad")
 		)
 		(pin "7"
-			(uuid "6978ba95-8706-4e93-b6c4-0323219fc103")
+			(uuid "78509526-674c-42f6-8e69-01e46426f79d")
 		)
 		(pin "8"
-			(uuid "c1347afe-ad99-4047-a970-2eb9648b551d")
+			(uuid "fe834e87-8cd1-47fe-81be-4a1628f055c1")
 		)
 		(pin "9"
-			(uuid "398fc938-6017-4c8c-9d08-3ba48440ce82")
+			(uuid "de655531-32a9-450b-8aba-4bf3ffe13eb7")
 		)
 		(pin "1"
-			(uuid "13a1926a-8e6f-44a2-a032-d1ddd4eb3d5d")
+			(uuid "0433ec58-9488-48c3-af00-052f0774f7f2")
 		)
 		(pin "15"
-			(uuid "b7423a78-0061-49ee-8cdf-d87dc4adbde3")
+			(uuid "702336df-32c6-40f6-88c5-d0514af74343")
 		)
 		(pin "2"
-			(uuid "7b1895af-5ed5-4492-a85b-fe6537255a38")
+			(uuid "99f0b3fb-42a5-464a-bd7f-6543838e1b0d")
 		)
 		(pin "18"
-			(uuid "1a1d8518-216a-48cf-8063-a09f25f95e44")
+			(uuid "0f51d26b-278b-4820-a31b-7fcebc633274")
 		)
 		(pin "19"
-			(uuid "2017505f-56df-4d0b-84ec-9fd7542253ba")
+			(uuid "61883a33-067f-4f37-bcd7-93584264d798")
 		)
 		(pin "14"
-			(uuid "2aa4f917-fa68-4cff-a0d6-a2203ef4ab01")
+			(uuid "93f971ff-4a1e-432b-bfe0-c9743feb0e8d")
 		)
 		(instances
-			(project "frank2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/fddc4167-45e2-4dc5-97ca-2de47a569f97"
-					(reference "U7")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/5b185905-9f78-4858-8124-bf2008ef8c19"
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -1183,7 +1002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2ec1fa8-205e-4048-80db-e6b1ef4be611")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR0134"
 			(at 129.54 91.44 0)
 			(effects
 				(font
@@ -1229,12 +1048,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4eabcc2c-221a-4c79-bab2-66846db1a919")
+			(uuid "e8e215b9-dad1-419c-9caa-602d27006d5c")
 		)
 		(instances
-			(project "frank2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/fddc4167-45e2-4dc5-97ca-2de47a569f97"
-					(reference "#PWR093")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/5b185905-9f78-4858-8124-bf2008ef8c19"
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
