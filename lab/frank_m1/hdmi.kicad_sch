@@ -5,14 +5,14 @@
 	(uuid "82e2d228-49f5-4b21-835c-969dc21b86be")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${VARIANT}")
+		(title "${NAME} ${MODEL}")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
 		(comment 1 "https://github.com/xtremespb/frank")
 	)
 	(lib_symbols
-		(symbol "Device:C"
+		(symbol "FRANK:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -68,6 +68,15 @@
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -142,7 +151,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Schottky"
+		(symbol "FRANK:D_Schottky"
 			(pin_numbers
 				(hide yes)
 			)
@@ -197,6 +206,15 @@
 				)
 			)
 			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -266,121 +284,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -871,6 +774,130 @@
 						)
 					)
 					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FRANK:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1661,7 +1688,7 @@
 		(uuid "f5f90f0a-23b7-494f-948b-d05b1a029e59")
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 166.37 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1737,7 +1764,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 176.53 120.65 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1813,7 +1840,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 166.37 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1955,7 +1982,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 166.37 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2031,7 +2058,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "FRANK:C")
 		(at 163.83 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2109,7 +2136,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 156.21 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2318,7 +2345,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 176.53 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2536,7 +2563,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 166.37 128.27 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2612,7 +2639,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "FRANK:D_Schottky")
 		(at 151.13 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2760,7 +2787,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 156.21 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)

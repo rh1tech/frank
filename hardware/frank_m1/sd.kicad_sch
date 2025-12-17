@@ -5,7 +5,7 @@
 	(uuid "e54a2d34-15de-4a83-a5a1-874852077e98")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${VARIANT}")
+		(title "${NAME} ${MODEL}")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
@@ -362,7 +362,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "FRANK:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -418,6 +418,15 @@
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -812,7 +821,7 @@
 		(uuid "d3cbda62-a18f-4d93-9910-e137aa07d0b5")
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "FRANK:C")
 		(at 152.4 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)

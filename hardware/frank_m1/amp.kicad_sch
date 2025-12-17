@@ -5,7 +5,7 @@
 	(uuid "9d488c28-e24d-4704-bae8-e1b23a2997e4")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${VARIANT}")
+		(title "${NAME} ${MODEL}")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
@@ -428,7 +428,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Small"
+		(symbol "FRANK:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -493,6 +493,15 @@
 					(hide yes)
 				)
 			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
@@ -541,237 +550,6 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
 					(name "~"
 						(effects
 							(font
@@ -1182,6 +960,255 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FRANK:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FRANK:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2989,7 +3016,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 121.92 127 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3131,7 +3158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 142.24 127 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3340,7 +3367,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 198.12 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3480,7 +3507,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 121.92 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3622,7 +3649,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 82.55 96.52 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3764,7 +3791,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 90.17 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4065,7 +4092,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 186.69 97.79 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4205,7 +4232,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 90.17 96.52 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4347,7 +4374,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 111.76 157.48 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4619,7 +4646,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 101.6 137.16 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4759,7 +4786,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 186.69 143.51 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4769,21 +4796,21 @@
 		(fields_autoplaced yes)
 		(uuid "5f6715a0-96fe-44f4-81d9-34b57f4fc8e1")
 		(property "Reference" "R63"
-			(at 184.15 144.7801 0)
+			(at 189.23 142.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "20K"
-			(at 184.15 142.2401 0)
+			(at 189.23 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "FRANK:R_0805_2012Metric"
@@ -4902,7 +4929,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 142.24 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5044,7 +5071,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 179.07 104.14 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5184,7 +5211,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 186.69 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5832,7 +5859,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 111.76 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6041,7 +6068,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "FRANK:R_Small")
 		(at 115.57 69.85 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6181,7 +6208,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "FRANK:R_Small")
 		(at 158.75 87.63 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6321,7 +6348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 132.08 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6952,7 +6979,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 142.24 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7158,7 +7185,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 176.53 137.16 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7364,7 +7391,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 82.55 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7506,7 +7533,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 101.6 127 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7646,7 +7673,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "FRANK:R_Small")
 		(at 189.23 73.66 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7786,7 +7813,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 100.33 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7926,7 +7953,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 198.12 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8131,7 +8158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 176.53 127 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8271,7 +8298,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "FRANK:C_Small")
 		(at 120.65 157.48 180)
 		(unit 1)
 		(exclude_from_sim no)
