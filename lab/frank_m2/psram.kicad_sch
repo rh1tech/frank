@@ -12,7 +12,7 @@
 		(comment 1 "https://github.com/xtremespb/frank")
 	)
 	(lib_symbols
-		(symbol "Device:C"
+		(symbol "FRANK:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -68,6 +68,15 @@
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -940,7 +949,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c9cc415-24b5-4884-ac4c-0dc5a0300c95")
-		(property "Reference" "#PWR0135"
+		(property "Reference" "#PWR0136"
 			(at 148.59 111.76 0)
 			(effects
 				(font
@@ -986,12 +995,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "67e567ca-12a6-475b-b8a3-3200f852adcb")
+			(uuid "e6c9c719-6901-41b7-b270-0bc3840feb3b")
 		)
 		(instances
-			(project "minifrank_rm1p2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "#PWR0135")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/97d31b2d-9c9e-412d-af4f-dd22ed5b5a3b"
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
@@ -1007,7 +1016,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6edb26c8-a2d6-4b0c-9cb3-7d7dd852f441")
-		(property "Reference" "#PWR0136"
+		(property "Reference" "#PWR0137"
 			(at 158.75 83.82 0)
 			(effects
 				(font
@@ -1052,12 +1061,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2677518b-78e9-44c9-89ca-284a1a3c99a9")
+			(uuid "15804c62-9fb8-4e95-9ca9-15f08dd107d9")
 		)
 		(instances
-			(project "minifrank_rm1p2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "#PWR0136")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/97d31b2d-9c9e-412d-af4f-dd22ed5b5a3b"
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -1128,32 +1137,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "e0633d35-5d71-484a-b3ce-d85609440535")
+			(uuid "a5596d83-3ef6-4a04-a908-d73775f1d4b0")
 		)
 		(pin "2"
-			(uuid "d4c7bdf5-e591-43fe-b7b3-a918c447c087")
+			(uuid "c3d2e914-2faf-4c20-977b-eb71cda43803")
 		)
 		(pin "3"
-			(uuid "0f145ecb-5e8c-4a60-ab94-513ad85dab92")
+			(uuid "ec14e073-686d-4125-bbf7-09e7233549b8")
 		)
 		(pin "4"
-			(uuid "522c11d3-e889-46b6-83c2-30116a2b8e47")
+			(uuid "826cd9fb-9162-4a91-97e5-9c4521a2e802")
 		)
 		(pin "5"
-			(uuid "b202184d-5839-4b1e-bb34-fc3eb6bb0103")
+			(uuid "4251cc35-8eb6-41db-aace-738a873d38f3")
 		)
 		(pin "6"
-			(uuid "a9e729d0-843e-417f-8845-3e5a311420cd")
+			(uuid "2859a927-da3d-458c-b1d7-ea37abeee860")
 		)
 		(pin "7"
-			(uuid "244c2788-0d69-4069-8f04-49d126e84e13")
+			(uuid "e36a98bc-10ed-4678-be02-583cbf8d23fd")
 		)
 		(pin "8"
-			(uuid "c505bde3-e55b-4d77-b92d-a3e31e09b9c7")
+			(uuid "c6ed6533-0cad-45f1-88c0-78262b2e39a6")
 		)
 		(instances
-			(project "minifrank_rm1p2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/97d31b2d-9c9e-412d-af4f-dd22ed5b5a3b"
 					(reference "U11")
 					(unit 1)
 				)
@@ -1161,7 +1170,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "FRANK:C")
 		(at 128.27 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1169,7 +1178,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "adb1a53b-d5fd-4040-922b-c10d890df339")
-		(property "Reference" "C38"
+		(property "Reference" "C39"
 			(at 131.191 86.4616 0)
 			(effects
 				(font
@@ -1224,15 +1233,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2f187a04-7b79-43da-8dbd-2f9f6bbe9f81")
+			(uuid "78cabe5b-49a9-4f12-a688-f05a1c266c0b")
 		)
 		(pin "2"
-			(uuid "5b0d5a01-143a-41a9-aeb9-16b1e59bf1f9")
+			(uuid "f9e961a8-ffd5-47fc-85bf-cba334843b09")
 		)
 		(instances
-			(project "minifrank_rm1p2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "C38")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/97d31b2d-9c9e-412d-af4f-dd22ed5b5a3b"
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -1301,14 +1310,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b2e5ffe7-0dc4-4c97-828f-8256e2186cfc")
+			(uuid "0c28da49-a94e-46e3-8f8c-c045c721e1a0")
 		)
 		(pin "2"
-			(uuid "41c60d02-abb3-4532-8555-265bf05423ab")
+			(uuid "65613475-f228-4f32-aabe-1a9b99705b77")
 		)
 		(instances
-			(project "minifrank_rm1p2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/97d31b2d-9c9e-412d-af4f-dd22ed5b5a3b"
 					(reference "JP3")
 					(unit 1)
 				)
@@ -1324,7 +1333,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c76622e5-65e8-4bd9-aa46-19f51970c43e")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR0135"
 			(at 128.27 101.6 0)
 			(effects
 				(font
@@ -1369,12 +1378,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7fde3bf5-1440-41cb-a397-738468e6be8a")
+			(uuid "dca6d0c9-69c8-42a2-b5d4-e0062a235fd9")
 		)
 		(instances
-			(project "minifrank_rm1p2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/69959616-34ef-45d1-8eb1-8ce60ead3b7b"
-					(reference "#PWR0134")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/97d31b2d-9c9e-412d-af4f-dd22ed5b5a3b"
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)

@@ -12,7 +12,7 @@
 		(comment 1 "https://github.com/xtremespb/frank")
 	)
 	(lib_symbols
-		(symbol "Device:C"
+		(symbol "FRANK:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -68,6 +68,15 @@
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -142,7 +151,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Schottky"
+		(symbol "FRANK:D_Schottky"
 			(pin_numbers
 				(hide yes)
 			)
@@ -197,6 +206,15 @@
 				)
 			)
 			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -266,121 +284,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -871,6 +774,130 @@
 						)
 					)
 					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FRANK:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1661,7 +1688,7 @@
 		(uuid "f5f90f0a-23b7-494f-948b-d05b1a029e59")
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 166.37 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1669,7 +1696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "087b9add-468f-46f7-862a-07ce9b0e8a21")
-		(property "Reference" "R40"
+		(property "Reference" "R15"
 			(at 162.56 111.76 90)
 			(effects
 				(font
@@ -1730,14 +1757,14 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "R40")
+					(reference "R15")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 176.53 120.65 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1745,7 +1772,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0ed8da71-445b-41e4-83d8-cab00d58f782")
-		(property "Reference" "R44"
+		(property "Reference" "R19"
 			(at 172.72 119.38 90)
 			(effects
 				(font
@@ -1806,14 +1833,14 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "R44")
+					(reference "R19")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 166.37 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1821,7 +1848,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c78e6c8-1e96-48b9-a990-8f4a927d522f")
-		(property "Reference" "R39"
+		(property "Reference" "R14"
 			(at 162.56 99.06 90)
 			(effects
 				(font
@@ -1882,7 +1909,7 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "R39")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -1898,7 +1925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c886f1d-d0e3-4aff-b4f3-3b63a5bfbb44")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR041"
 			(at 151.13 74.93 0)
 			(effects
 				(font
@@ -1948,14 +1975,14 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR065")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 166.37 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1963,7 +1990,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30c6935a-bae6-47b9-ac7e-633b33236df8")
-		(property "Reference" "R41"
+		(property "Reference" "R16"
 			(at 162.56 114.3 90)
 			(effects
 				(font
@@ -2024,14 +2051,14 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "R41")
+					(reference "R16")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "FRANK:C")
 		(at 163.83 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2039,7 +2066,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35288ac0-a1b1-4c3e-a0f7-47865b74dd7b")
-		(property "Reference" "C24"
+		(property "Reference" "C14"
 			(at 162.6616 82.169 0)
 			(effects
 				(font
@@ -2102,14 +2129,14 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "C24")
+					(reference "C14")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 156.21 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2117,7 +2144,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "362ccc75-1f22-45b2-b2c2-304e26596adf")
-		(property "Reference" "R37"
+		(property "Reference" "R12"
 			(at 152.4 106.68 90)
 			(effects
 				(font
@@ -2178,7 +2205,7 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "R37")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -2194,7 +2221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "391dba26-ff80-4f1b-bff5-c48ba58e52de")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR040"
 			(at 139.7 144.78 0)
 			(effects
 				(font
@@ -2244,7 +2271,7 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR064")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -2260,7 +2287,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8636a5e4-d77a-4e27-8242-c451dc8d7fb1")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR042"
 			(at 173.99 85.09 0)
 			(effects
 				(font
@@ -2311,14 +2338,14 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "#PWR066")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 176.53 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2326,7 +2353,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d13a545-b175-443c-9bc1-737c1183dd5f")
-		(property "Reference" "R43"
+		(property "Reference" "R18"
 			(at 172.72 104.14 90)
 			(effects
 				(font
@@ -2387,7 +2414,7 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "R43")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -2403,7 +2430,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad010c1a-f0cc-461f-a485-b62f135afe1f")
-		(property "Reference" "J8"
+		(property "Reference" "J5"
 			(at 115.57 99.0599 0)
 			(effects
 				(font
@@ -2529,14 +2556,14 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "J8")
+					(reference "J5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 166.37 128.27 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2544,7 +2571,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cfbd2b3b-6e32-4ace-aef9-740b27a19758")
-		(property "Reference" "R42"
+		(property "Reference" "R17"
 			(at 162.56 127 90)
 			(effects
 				(font
@@ -2605,14 +2632,14 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "R42")
+					(reference "R17")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "FRANK:D_Schottky")
 		(at 151.13 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2620,7 +2647,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d2f75a15-49b6-42e9-8d43-1df06a5c4f8d")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 153.67 77.47 0)
 			(effects
 				(font
@@ -2753,14 +2780,14 @@
 		(instances
 			(project "frank_m2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 156.21 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2768,7 +2795,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e7854425-9b11-435b-a532-a21d93fc17dc")
-		(property "Reference" "R38"
+		(property "Reference" "R13"
 			(at 152.4 121.92 90)
 			(effects
 				(font
@@ -2829,7 +2856,7 @@
 		(instances
 			(project "frank2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/db853a64-9343-4a36-b5b8-71001392b936"
-					(reference "R38")
+					(reference "R13")
 					(unit 1)
 				)
 			)
