@@ -5,14 +5,291 @@
 	(uuid "d788f764-34cb-4eaf-85d8-4a3d830ab970")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${VARIANT}")
+		(title "${NAME} ${MODEL}")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
 		(comment 1 "https://github.com/xtremespb/frank")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
+		(symbol "FRANK:AudioJack_3.5mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J12"
+				(at -7.1119 -4.0097 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "PJ-320D"
+				(at 2.54 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "FRANK:Jack (3.5mm, PJ-320D)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "AliExpress" "https://www.aliexpress.com/item/4001158231104.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Availability" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Check_prices" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description_1" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MF" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MP" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Package" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "SnapEDA_Link" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AudioJack_3.5mm_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end -6.35 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0.635 -5.715) (xy 1.27 -5.08) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 3.81)
+					(end -5.08 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AudioJack_3.5mm_1_1"
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -8.89 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "RN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FRANK:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -175,211 +452,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FRANK:AudioJack_3.5mm"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "AJ2"
-				(at -7.1119 -4.0097 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "Audio Out"
-				(at 2.54 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "LIBS:Jack_3.5mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jack*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AudioJack_3.5mm_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end -6.35 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 0.635 -5.715) (xy 1.27 -5.08) (xy 2.54 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 3.81)
-					(end -5.08 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AudioJack_3.5mm_1_1"
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "T"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -8.89 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "RN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "GND_1"
+		(symbol "power:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -444,7 +517,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_1_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -458,7 +531,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -482,12 +555,12 @@
 		)
 	)
 	(no_connect
-		(at 185.42 100.33)
-		(uuid "db5eddf2-d6b6-47af-b356-602ca6034e13")
+		(at 181.61 95.25)
+		(uuid "415f47ae-496a-49c6-bf91-31d52593372a")
 	)
 	(wire
 		(pts
-			(xy 173.99 109.22) (xy 185.42 109.22)
+			(xy 175.26 104.14) (xy 181.61 104.14)
 		)
 		(stroke
 			(width 0)
@@ -497,7 +570,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 127) (xy 127 127)
+			(xy 116.84 121.92) (xy 123.19 121.92)
 		)
 		(stroke
 			(width 0)
@@ -507,7 +580,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 80.01) (xy 198.12 80.01)
+			(xy 175.26 74.93) (xy 194.31 74.93)
 		)
 		(stroke
 			(width 0)
@@ -517,7 +590,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 71.12) (xy 127 71.12)
+			(xy 101.6 66.04) (xy 123.19 66.04)
 		)
 		(stroke
 			(width 0)
@@ -527,7 +600,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 76.2) (xy 127 76.2)
+			(xy 102.87 71.12) (xy 123.19 71.12)
 		)
 		(stroke
 			(width 0)
@@ -537,7 +610,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 68.58) (xy 127 68.58)
+			(xy 101.6 63.5) (xy 123.19 63.5)
 		)
 		(stroke
 			(width 0)
@@ -547,7 +620,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 78.74) (xy 127 78.74)
+			(xy 102.87 73.66) (xy 123.19 73.66)
 		)
 		(stroke
 			(width 0)
@@ -557,7 +630,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 100.33) (xy 127 100.33)
+			(xy 116.84 95.25) (xy 123.19 95.25)
 		)
 		(stroke
 			(width 0)
@@ -567,7 +640,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 73.66) (xy 127 73.66)
+			(xy 102.87 68.58) (xy 123.19 68.58)
 		)
 		(stroke
 			(width 0)
@@ -577,7 +650,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 124.46) (xy 127 124.46)
+			(xy 116.84 119.38) (xy 123.19 119.38)
 		)
 		(stroke
 			(width 0)
@@ -587,7 +660,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 68.58) (xy 198.12 68.58)
+			(xy 175.26 63.5) (xy 194.31 63.5)
 		)
 		(stroke
 			(width 0)
@@ -597,7 +670,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 110.49) (xy 127 110.49)
+			(xy 116.84 105.41) (xy 123.19 105.41)
 		)
 		(stroke
 			(width 0)
@@ -607,7 +680,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 121.92) (xy 127 121.92)
+			(xy 116.84 116.84) (xy 123.19 116.84)
 		)
 		(stroke
 			(width 0)
@@ -617,7 +690,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 71.12) (xy 198.12 71.12)
+			(xy 175.26 66.04) (xy 194.31 66.04)
 		)
 		(stroke
 			(width 0)
@@ -627,7 +700,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 129.54) (xy 127 129.54)
+			(xy 116.84 124.46) (xy 123.19 124.46)
 		)
 		(stroke
 			(width 0)
@@ -637,7 +710,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 104.14) (xy 185.42 104.14)
+			(xy 175.26 99.06) (xy 181.61 99.06)
 		)
 		(stroke
 			(width 0)
@@ -647,7 +720,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 111.76) (xy 179.07 111.76)
+			(xy 181.61 106.68) (xy 175.26 106.68)
 		)
 		(stroke
 			(width 0)
@@ -657,7 +730,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 119.38) (xy 127 119.38)
+			(xy 116.84 114.3) (xy 123.19 114.3)
 		)
 		(stroke
 			(width 0)
@@ -667,7 +740,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 105.41) (xy 127 105.41)
+			(xy 116.84 100.33) (xy 123.19 100.33)
 		)
 		(stroke
 			(width 0)
@@ -677,7 +750,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 66.04) (xy 127 66.04)
+			(xy 101.6 60.96) (xy 123.19 60.96)
 		)
 		(stroke
 			(width 0)
@@ -687,7 +760,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 63.5) (xy 127 63.5)
+			(xy 101.6 58.42) (xy 123.19 58.42)
 		)
 		(stroke
 			(width 0)
@@ -697,7 +770,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 83.82) (xy 127 83.82)
+			(xy 101.6 78.74) (xy 123.19 78.74)
 		)
 		(stroke
 			(width 0)
@@ -707,7 +780,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 86.36) (xy 127 86.36)
+			(xy 101.6 81.28) (xy 123.19 81.28)
 		)
 		(stroke
 			(width 0)
@@ -717,7 +790,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 111.76) (xy 179.07 118.11)
+			(xy 175.26 106.68) (xy 175.26 113.03)
 		)
 		(stroke
 			(width 0)
@@ -727,7 +800,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 88.9) (xy 127 88.9)
+			(xy 101.6 83.82) (xy 123.19 83.82)
 		)
 		(stroke
 			(width 0)
@@ -737,7 +810,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 107.95) (xy 127 107.95)
+			(xy 116.84 102.87) (xy 123.19 102.87)
 		)
 		(stroke
 			(width 0)
@@ -747,7 +820,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 102.87) (xy 127 102.87)
+			(xy 116.84 97.79) (xy 123.19 97.79)
 		)
 		(stroke
 			(width 0)
@@ -757,7 +830,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 82.55) (xy 198.12 82.55)
+			(xy 175.26 77.47) (xy 194.31 77.47)
 		)
 		(stroke
 			(width 0)
@@ -767,7 +840,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 81.28) (xy 127 81.28)
+			(xy 102.87 76.2) (xy 123.19 76.2)
 		)
 		(stroke
 			(width 0)
@@ -776,7 +849,7 @@
 		(uuid "fbfbe42d-a2e6-4e2b-b0b8-82a296e09281")
 	)
 	(label "AMP_PAM_OUTL_M"
-		(at 106.68 73.66 0)
+		(at 102.87 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -786,7 +859,7 @@
 		(uuid "1068f7ca-68d8-4aba-8ece-1f6bc95ff5ba")
 	)
 	(label "AMP_PAM_OUTL_M"
-		(at 198.12 71.12 180)
+		(at 194.31 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -796,7 +869,7 @@
 		(uuid "6e7c0574-2add-4eb9-b9a3-82b89107f2c5")
 	)
 	(label "AMP_PAM_OUTR_P"
-		(at 106.68 81.28 0)
+		(at 102.87 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -806,7 +879,7 @@
 		(uuid "76ef1b46-6b6b-4bdc-8bea-cc1583902e49")
 	)
 	(label "AMP_PAM_OUTR_M"
-		(at 106.68 78.74 0)
+		(at 102.87 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -816,7 +889,7 @@
 		(uuid "8d0745ad-35b1-4a22-ab42-a63d9f20720b")
 	)
 	(label "AMP_PAM_OUTR_M"
-		(at 198.12 82.55 180)
+		(at 194.31 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -826,7 +899,7 @@
 		(uuid "90239c0f-9605-445b-bebb-0e1d5886bf55")
 	)
 	(label "AMP_PAM_OUTL_P"
-		(at 198.12 68.58 180)
+		(at 194.31 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -836,7 +909,7 @@
 		(uuid "9ea3ad93-81ff-4816-8ea1-7f9574d17eb6")
 	)
 	(label "AMP_PAM_OUTR_P"
-		(at 198.12 80.01 180)
+		(at 194.31 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -846,7 +919,7 @@
 		(uuid "cdf7b967-2d0f-4c1e-914b-e34475f1d734")
 	)
 	(label "AMP_PAM_OUTL_P"
-		(at 106.68 76.2 0)
+		(at 102.87 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -855,9 +928,20 @@
 		)
 		(uuid "e589ba9c-82b1-41a9-8ee6-80eb87917018")
 	)
+	(hierarchical_label "AMP_OUTL"
+		(shape input)
+		(at 175.26 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "079e7eec-2506-4ada-856d-d65c355b952a")
+	)
 	(hierarchical_label "PWM_OUT_R"
 		(shape input)
-		(at 120.65 105.41 180)
+		(at 116.84 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -868,7 +952,7 @@
 	)
 	(hierarchical_label "TDA_SCLK"
 		(shape input)
-		(at 120.65 129.54 180)
+		(at 116.84 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -879,7 +963,7 @@
 	)
 	(hierarchical_label "TDA_L"
 		(shape input)
-		(at 120.65 121.92 180)
+		(at 116.84 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -890,7 +974,7 @@
 	)
 	(hierarchical_label "TDA_DATA"
 		(shape input)
-		(at 120.65 119.38 180)
+		(at 116.84 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -901,7 +985,7 @@
 	)
 	(hierarchical_label "TDA_LRCK"
 		(shape input)
-		(at 120.65 124.46 180)
+		(at 116.84 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -912,7 +996,7 @@
 	)
 	(hierarchical_label "PWM_OUT_L"
 		(shape input)
-		(at 120.65 102.87 180)
+		(at 116.84 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -923,7 +1007,7 @@
 	)
 	(hierarchical_label "PWM_R"
 		(shape input)
-		(at 120.65 110.49 180)
+		(at 116.84 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -934,7 +1018,7 @@
 	)
 	(hierarchical_label "AMP_IN_R"
 		(shape input)
-		(at 106.68 66.04 180)
+		(at 101.6 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -943,31 +1027,20 @@
 		)
 		(uuid "513b0d1c-4449-4003-9525-82da21ef661b")
 	)
-	(hierarchical_label "OUT_L"
+	(hierarchical_label "AMP_OUTL"
 		(shape input)
-		(at 173.99 104.14 180)
+		(at 101.6 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "5c70b375-1479-435b-86fa-1d6ccce27c99")
-	)
-	(hierarchical_label "OUT_L"
-		(shape input)
-		(at 106.68 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "98422953-445e-489a-95d7-c2c4a79a06f3")
+		(uuid "65184c62-5a29-4063-8e1c-72bc7da7e9b2")
 	)
 	(hierarchical_label "AMP_IN_L"
 		(shape input)
-		(at 106.68 63.5 180)
+		(at 101.6 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -978,7 +1051,7 @@
 	)
 	(hierarchical_label "MONO_L"
 		(shape input)
-		(at 106.68 86.36 180)
+		(at 101.6 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -989,7 +1062,7 @@
 	)
 	(hierarchical_label "PWM_BEEP"
 		(shape input)
-		(at 120.65 100.33 180)
+		(at 116.84 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -998,9 +1071,20 @@
 		)
 		(uuid "ab42f382-040f-47df-87ae-c2111682da49")
 	)
+	(hierarchical_label "AMP_OUTR"
+		(shape input)
+		(at 175.26 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bc00eded-b115-4174-b00f-3751a87c0cb3")
+	)
 	(hierarchical_label "SHND"
 		(shape input)
-		(at 106.68 83.82 180)
+		(at 101.6 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1009,31 +1093,20 @@
 		)
 		(uuid "bcb712ba-a888-4168-bd5c-3ea5d80a7c3f")
 	)
-	(hierarchical_label "OUT_R"
+	(hierarchical_label "AMP_OUTR"
 		(shape input)
-		(at 106.68 71.12 180)
+		(at 101.6 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "dc7a198a-43e4-49d0-8af7-9801bfbfd312")
-	)
-	(hierarchical_label "OUT_R"
-		(shape input)
-		(at 173.99 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e04e4c76-7acf-4e5d-849a-0094db65320c")
+		(uuid "d0083056-24a3-4cf6-a485-7a260f614a26")
 	)
 	(hierarchical_label "MONO_R"
 		(shape input)
-		(at 106.68 88.9 180)
+		(at 101.6 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1044,7 +1117,7 @@
 	)
 	(hierarchical_label "TDA_R"
 		(shape input)
-		(at 120.65 127 180)
+		(at 116.84 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1055,7 +1128,7 @@
 	)
 	(hierarchical_label "PWM_L"
 		(shape input)
-		(at 120.65 107.95 180)
+		(at 116.84 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1065,17 +1138,16 @@
 		(uuid "fe24b9db-f191-49a1-8628-8714ad7ab769")
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 179.07 118.11 0)
+		(at 175.26 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3b820610-6871-46d3-8f04-789cc958f2d0")
-		(property "Reference" "#PWR?"
-			(at 179.07 124.46 0)
+		(property "Reference" "#PWR082"
+			(at 175.26 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1084,7 +1156,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.197 122.5042 0)
+			(at 175.387 117.4242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1092,7 +1164,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 118.11 0)
+			(at 175.26 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1101,7 +1173,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 118.11 0)
+			(at 175.26 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1110,7 +1182,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 118.11 0)
+			(at 175.26 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1119,12 +1191,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9758afa7-1605-4a28-b568-fbeb7951a1b3")
+			(uuid "143b22f6-ca05-433e-bdf2-1fc8577d1c38")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150"
-					(reference "#PWR?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9"
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -1132,15 +1204,15 @@
 	)
 	(symbol
 		(lib_id "FRANK:AudioJack_3.5mm")
-		(at 190.5 109.22 180)
+		(at 186.69 104.14 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "548d90bd-1dfc-40c9-9d58-b92cb64d6bbc")
-		(property "Reference" "J?"
-			(at 197.6119 105.2103 0)
+		(property "Reference" "J12"
+			(at 193.8019 100.1303 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1149,7 +1221,7 @@
 			)
 		)
 		(property "Value" "PJ-320D"
-			(at 187.96 97.79 0)
+			(at 184.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1159,7 +1231,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:Jack (3.5mm, PJ-320D)"
-			(at 190.5 109.22 0)
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1168,7 +1240,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 109.22 0)
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1177,7 +1249,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 190.5 109.22 0)
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1186,7 +1258,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/4001158231104.html"
-			(at 190.5 109.22 0)
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1194,182 +1266,102 @@
 				(hide yes)
 			)
 		)
-		(property "Attrition Qty" ""
-			(at 190.5 109.22 0)
+		(property "Availability" ""
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Category" ""
-			(at 190.5 109.22 0)
+		(property "Check_prices" ""
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Class" ""
-			(at 190.5 109.22 0)
+		(property "Description_1" ""
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Crystal Type" ""
-			(at 190.5 109.22 0)
+		(property "MF" ""
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency" ""
-			(at 190.5 109.22 0)
+		(property "MP" ""
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Stability" ""
-			(at 190.5 109.22 0)
+		(property "Package" ""
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance" ""
-			(at 190.5 109.22 0)
+		(property "Price" ""
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Load Capacitance" ""
-			(at 190.5 109.22 0)
+		(property "SnapEDA_Link" ""
+			(at 186.69 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "R"
-			(uuid "9add6b77-0d0f-4c62-a025-8c50ddc7e205")
+			(uuid "dd772f65-162f-445d-afd6-8b6f357c1b7c")
 		)
 		(pin "S"
-			(uuid "62e386c0-037c-4de0-9ead-aee890b3feb1")
+			(uuid "dae37315-41b9-4fd1-a397-4988d2490772")
 		)
 		(pin "T"
-			(uuid "0eaba033-c44d-453b-8d29-b12108b7160e")
+			(uuid "0d43965a-0038-4ea6-98ef-31b93d1db2b5")
 		)
 		(pin "RN"
-			(uuid "6ddd7686-53c7-4cf5-8afe-c59bbf8cda6e")
+			(uuid "1885ac99-4d76-4490-a819-95cf6a5bcf4a")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150"
-					(reference "J?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9"
+					(reference "J12")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 173.99 80.01 0)
+		(lib_id "FRANK:Conn_01x02_Pin")
+		(at 170.18 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "5d72edea-f1b2-4cc9-a476-80674787f0df")
-		(property "Reference" "J?"
-			(at 174.625 74.93 0)
+		(property "Reference" "J11"
+			(at 170.815 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1377,7 +1369,7 @@
 			)
 		)
 		(property "Value" "PAM R"
-			(at 174.625 77.47 0)
+			(at 170.815 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1385,7 +1377,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:Connector Female 1.25 JST 2P"
-			(at 173.99 80.01 0)
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1393,8 +1385,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aliexpress.com/item/1005001649158434.html"
-			(at 173.99 80.01 0)
+		(property "Datasheet" "~"
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +1395,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 173.99 80.01 0)
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1412,7 +1404,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005001649158434.html"
-			(at 184.404 87.376 0)
+			(at 180.594 82.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1420,176 +1412,96 @@
 				(hide yes)
 			)
 		)
-		(property "Attrition Qty" ""
-			(at 173.99 80.01 0)
+		(property "Availability" ""
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Category" ""
-			(at 173.99 80.01 0)
+		(property "Check_prices" ""
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Class" ""
-			(at 173.99 80.01 0)
+		(property "Description_1" ""
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Crystal Type" ""
-			(at 173.99 80.01 0)
+		(property "MF" ""
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency" ""
-			(at 173.99 80.01 0)
+		(property "MP" ""
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Stability" ""
-			(at 173.99 80.01 0)
+		(property "Package" ""
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance" ""
-			(at 173.99 80.01 0)
+		(property "Price" ""
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Load Capacitance" ""
-			(at 173.99 80.01 0)
+		(property "SnapEDA_Link" ""
+			(at 170.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "ff540b25-b138-4560-b04f-4ba750650361")
+			(uuid "c3b668aa-db3d-4a5c-894f-07637f694f0f")
 		)
 		(pin "1"
-			(uuid "8fefea1f-ebb4-4a6f-bff3-ec9b4a88a4c3")
+			(uuid "3a575323-e49d-4714-96e7-1e2fa8be576c")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150"
-					(reference "J?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9"
+					(reference "J11")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 173.99 68.58 0)
+		(lib_id "FRANK:Conn_01x02_Pin")
+		(at 170.18 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "93f94f67-d2d1-4fe6-bd94-078544eca7f6")
-		(property "Reference" "J?"
-			(at 174.625 63.5 0)
+		(property "Reference" "J10"
+			(at 170.815 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1597,7 +1509,7 @@
 			)
 		)
 		(property "Value" "PAM L"
-			(at 174.625 66.04 0)
+			(at 170.815 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1605,7 +1517,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:Connector Female 1.25 JST 2P"
-			(at 173.99 68.58 0)
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1613,8 +1525,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aliexpress.com/item/1005001649158434.html"
-			(at 173.99 68.58 0)
+		(property "Datasheet" "~"
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1623,7 +1535,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 173.99 68.58 0)
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1632,7 +1544,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005001649158434.html"
-			(at 185.928 56.896 0)
+			(at 182.118 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1640,167 +1552,87 @@
 				(hide yes)
 			)
 		)
-		(property "Attrition Qty" ""
-			(at 173.99 68.58 0)
+		(property "Availability" ""
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Category" ""
-			(at 173.99 68.58 0)
+		(property "Check_prices" ""
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Class" ""
-			(at 173.99 68.58 0)
+		(property "Description_1" ""
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Crystal Type" ""
-			(at 173.99 68.58 0)
+		(property "MF" ""
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency" ""
-			(at 173.99 68.58 0)
+		(property "MP" ""
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Stability" ""
-			(at 173.99 68.58 0)
+		(property "Package" ""
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance" ""
-			(at 173.99 68.58 0)
+		(property "Price" ""
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Load Capacitance" ""
-			(at 173.99 68.58 0)
+		(property "SnapEDA_Link" ""
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 173.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 173.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 173.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 173.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 173.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 173.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 173.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 173.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "2d14f018-3c34-4772-ae7a-db53c9a1cb16")
+			(uuid "beadefc4-0189-49bc-8774-09a540e7e1e3")
 		)
 		(pin "1"
-			(uuid "4d43574c-33ee-49b4-b785-1f49f5a578fc")
+			(uuid "6d77005e-7289-4678-9e83-32ca71f459b3")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150"
-					(reference "J?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9"
+					(reference "J10")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 127 116.84)
+		(at 123.19 111.76)
 		(size 20.32 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1816,7 +1648,7 @@
 		)
 		(uuid "0dccd710-fd54-4e53-9f08-059759dd7a75")
 		(property "Sheetname" "TDA"
-			(at 127 116.1284 0)
+			(at 123.19 111.0484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1825,7 +1657,7 @@
 			)
 		)
 		(property "Sheetfile" "tda.kicad_sch"
-			(at 127 132.6646 0)
+			(at 123.19 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1835,8 +1667,8 @@
 			)
 		)
 		(pin "TDA_DATA" input
-			(at 127 119.38 180)
-			(uuid "87f06b17-2150-4cfd-8618-4e1517ed5c26")
+			(at 123.19 114.3 180)
+			(uuid "d8a27daf-1c8f-42a9-a903-017c653692e6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1845,8 +1677,8 @@
 			)
 		)
 		(pin "TDA_L" input
-			(at 127 121.92 180)
-			(uuid "b8ec7985-1ed1-4a3d-b75f-db1d8d648041")
+			(at 123.19 116.84 180)
+			(uuid "29428080-2ac5-4735-b2fb-2a59d618d4c4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1855,8 +1687,8 @@
 			)
 		)
 		(pin "TDA_LRCK" input
-			(at 127 124.46 180)
-			(uuid "42d50eab-2653-4601-bb5d-4347e122517d")
+			(at 123.19 119.38 180)
+			(uuid "3d8b7f7e-130a-465e-aa77-b8ae62c1000d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1865,8 +1697,8 @@
 			)
 		)
 		(pin "TDA_R" input
-			(at 127 127 180)
-			(uuid "3aa68d52-24a6-402a-b9d1-05cd00defcc3")
+			(at 123.19 121.92 180)
+			(uuid "583c006c-e539-40d8-a6a5-f79fea397a4a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1875,8 +1707,8 @@
 			)
 		)
 		(pin "TDA_SCLK" input
-			(at 127 129.54 180)
-			(uuid "136823b2-97dc-485b-8d81-dc03c015221b")
+			(at 123.19 124.46 180)
+			(uuid "5f4b8e31-d97c-4014-b9c7-d3850b94cc76")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1885,15 +1717,15 @@
 			)
 		)
 		(instances
-			(project ""
-				(path "/06d82070-c96d-444d-841f-dc25c03a8b19/765ae3f7-f5ac-49b6-99ac-a22ffc934361"
-					(page "#")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9"
+					(page "43")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 127 60.96)
+		(at 123.19 55.88)
 		(size 20.32 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1909,7 +1741,7 @@
 		)
 		(uuid "3a0b6cee-28de-4cf4-a8a0-557e76ef8313")
 		(property "Sheetname" "Amplifier"
-			(at 127 60.2484 0)
+			(at 123.19 55.1684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1918,7 +1750,7 @@
 			)
 		)
 		(property "Sheetfile" "amp.kicad_sch"
-			(at 127 92.0246 0)
+			(at 123.19 86.9446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1928,8 +1760,8 @@
 			)
 		)
 		(pin "AMP_IN_L" input
-			(at 127 63.5 180)
-			(uuid "c0f5a254-cb45-4667-8eed-d8e68c82e6c4")
+			(at 123.19 58.42 180)
+			(uuid "977fa5cd-5c5a-4650-a178-989eb7304958")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,8 +1770,8 @@
 			)
 		)
 		(pin "AMP_IN_R" input
-			(at 127 66.04 180)
-			(uuid "35255585-8699-475e-baab-1adf38193857")
+			(at 123.19 60.96 180)
+			(uuid "87b4a0d5-a72f-4ae8-8bec-821135c086da")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1948,8 +1780,8 @@
 			)
 		)
 		(pin "AMP_OUTL" input
-			(at 127 68.58 180)
-			(uuid "c1002430-8375-49fc-a9d0-1a29a2bd426b")
+			(at 123.19 63.5 180)
+			(uuid "5192fbbc-5178-401d-a520-8862f8627f14")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1958,8 +1790,8 @@
 			)
 		)
 		(pin "AMP_OUTR" input
-			(at 127 71.12 180)
-			(uuid "c62835c7-3add-4d2d-997a-6ae2d501b700")
+			(at 123.19 66.04 180)
+			(uuid "0191c5d0-baf9-4baa-a412-d21c5d138ce7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1968,8 +1800,8 @@
 			)
 		)
 		(pin "AMP_PAM_OUTL_M" input
-			(at 127 73.66 180)
-			(uuid "3dbe96a8-f3f1-42ad-ae2d-0c58e21483f5")
+			(at 123.19 68.58 180)
+			(uuid "c5ec25bc-3d17-44bf-b22a-4a30766a852b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1978,8 +1810,8 @@
 			)
 		)
 		(pin "AMP_PAM_OUTL_P" input
-			(at 127 76.2 180)
-			(uuid "a4590dbd-6ab9-415f-98ef-c9bf61340e4d")
+			(at 123.19 71.12 180)
+			(uuid "76a7cf1f-6487-472a-be34-e5500f8a6902")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1988,8 +1820,8 @@
 			)
 		)
 		(pin "AMP_PAM_OUTR_M" input
-			(at 127 78.74 180)
-			(uuid "438d9146-7d4a-4fba-94f6-ca489cab26bf")
+			(at 123.19 73.66 180)
+			(uuid "449ac095-19fa-4cfa-83e4-4607b1fd1521")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,8 +1830,8 @@
 			)
 		)
 		(pin "AMP_PAM_OUTR_P" input
-			(at 127 81.28 180)
-			(uuid "de156e2d-5561-4fea-b4ac-01adf832d415")
+			(at 123.19 76.2 180)
+			(uuid "0f01c4cc-f395-45e8-ab26-f16433e857a7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2008,8 +1840,8 @@
 			)
 		)
 		(pin "SHND" input
-			(at 127 83.82 180)
-			(uuid "8ef78dd6-9fd6-458a-ad73-2d103d86a138")
+			(at 123.19 78.74 180)
+			(uuid "5e70aca2-2dd2-4bba-b9eb-886960aa9437")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2018,8 +1850,8 @@
 			)
 		)
 		(pin "MONO_R" input
-			(at 127 88.9 180)
-			(uuid "2f265e42-1b4b-4814-9bc1-b0b7960243be")
+			(at 123.19 83.82 180)
+			(uuid "74b4743d-09f7-4f3f-a9d4-1f2d4e5fb8d1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2028,8 +1860,8 @@
 			)
 		)
 		(pin "MONO_L" input
-			(at 127 86.36 180)
-			(uuid "935a7742-ae17-43ae-b7d3-c433ea795108")
+			(at 123.19 81.28 180)
+			(uuid "ef2d79af-41de-4393-89fb-657085413d8f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2038,15 +1870,15 @@
 			)
 		)
 		(instances
-			(project ""
-				(path "/06d82070-c96d-444d-841f-dc25c03a8b19/765ae3f7-f5ac-49b6-99ac-a22ffc934361"
-					(page "#")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9"
+					(page "44")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 127 97.79)
+		(at 123.19 92.71)
 		(size 20.32 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2062,7 +1894,7 @@
 		)
 		(uuid "dfdb40d1-6b7d-4a5b-ad0a-2259a10d95ae")
 		(property "Sheetname" "PWM"
-			(at 127 97.0784 0)
+			(at 123.19 91.9984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2071,7 +1903,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm.kicad_sch"
-			(at 127 113.6146 0)
+			(at 123.19 108.5346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2081,8 +1913,8 @@
 			)
 		)
 		(pin "PWM_L" input
-			(at 127 107.95 180)
-			(uuid "a426546b-2dfa-48ee-bf20-e4bef62423d0")
+			(at 123.19 102.87 180)
+			(uuid "9c9c63f5-09f7-4608-bb4f-77b11073c057")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2091,8 +1923,8 @@
 			)
 		)
 		(pin "PWM_R" input
-			(at 127 110.49 180)
-			(uuid "8c496039-2148-48fe-a503-681f293c7885")
+			(at 123.19 105.41 180)
+			(uuid "5bc8577d-3d3e-4d39-bbb7-b37b028e2337")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2101,8 +1933,8 @@
 			)
 		)
 		(pin "PWM_BEEP" input
-			(at 127 100.33 180)
-			(uuid "f8e968e6-51d9-4737-b3a3-88e0bd3744be")
+			(at 123.19 95.25 180)
+			(uuid "e0dc2aee-1e55-44e9-bae4-026e8e5add65")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2111,8 +1943,8 @@
 			)
 		)
 		(pin "PWM_OUT_L" input
-			(at 127 102.87 180)
-			(uuid "fd5b5ae0-8e4e-4066-8d45-ee4f7159bf47")
+			(at 123.19 97.79 180)
+			(uuid "2f29d28f-9c81-4ce5-a736-3e5645aa6e42")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2121,8 +1953,8 @@
 			)
 		)
 		(pin "PWM_OUT_R" input
-			(at 127 105.41 180)
-			(uuid "703967f1-3bfc-43a4-aa4b-deb00adcdb24")
+			(at 123.19 100.33 180)
+			(uuid "c043d43c-f528-4334-b7e5-c7491c4177a8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2131,9 +1963,9 @@
 			)
 		)
 		(instances
-			(project ""
-				(path "/06d82070-c96d-444d-841f-dc25c03a8b19/765ae3f7-f5ac-49b6-99ac-a22ffc934361"
-					(page "#")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9"
+					(page "42")
 				)
 			)
 		)

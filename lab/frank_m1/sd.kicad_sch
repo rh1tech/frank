@@ -5,7 +5,7 @@
 	(uuid "e54a2d34-15de-4a83-a5a1-874852077e98")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${VARIANT}")
+		(title "${NAME} ${MODEL}")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
@@ -362,7 +362,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "FRANK:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -418,6 +418,15 @@
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -720,46 +729,56 @@
 		)
 	)
 	(junction
-		(at 123.19 97.79)
+		(at 162.56 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f6faedef-d247-4049-b6ac-2591f34f19ee")
+		(uuid "512e9db4-5884-4b88-8f1e-1ac3ffad68f3")
 	)
 	(no_connect
-		(at 185.42 113.03)
+		(at 218.44 130.81)
 		(uuid "106a45bc-2512-4054-a561-15c1ef5ffa95")
 	)
 	(no_connect
-		(at 142.24 107.95)
+		(at 175.26 125.73)
 		(uuid "589f6ee3-167e-490e-8dd4-d89c1b16a04b")
 	)
 	(no_connect
-		(at 142.24 90.17)
+		(at 175.26 107.95)
 		(uuid "9e1d4163-59e9-4dd9-88d7-7e611ec08783")
 	)
 	(wire
 		(pts
-			(xy 123.19 92.71) (xy 123.19 97.79)
+			(xy 162.56 115.57) (xy 156.21 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "81aa82f9-4a8f-4782-b997-aee2ee2cfd13")
+		(uuid "c4829962-80ba-4592-96a5-3fb8a194e375")
 	)
 	(wire
 		(pts
-			(xy 142.24 97.79) (xy 123.19 97.79)
+			(xy 162.56 115.57) (xy 175.26 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e89ee5b-2189-4eca-9a9a-fd76c8457d30")
+		(uuid "d898ba4e-ec45-4689-814f-17ff005db2d5")
+	)
+	(wire
+		(pts
+			(xy 162.56 120.65) (xy 162.56 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ff6cb3-856b-4d14-8585-d830ef4c7f85")
 	)
 	(hierarchical_label "CMD"
 		(shape input)
-		(at 142.24 95.25 180)
+		(at 175.26 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -770,7 +789,7 @@
 	)
 	(hierarchical_label "DAT0"
 		(shape input)
-		(at 142.24 105.41 180)
+		(at 175.26 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -781,7 +800,7 @@
 	)
 	(hierarchical_label "CDDAT3"
 		(shape input)
-		(at 142.24 92.71 180)
+		(at 175.26 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -792,7 +811,7 @@
 	)
 	(hierarchical_label "CLK"
 		(shape input)
-		(at 142.24 100.33 180)
+		(at 175.26 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -802,216 +821,16 @@
 		(uuid "d3cbda62-a18f-4d93-9910-e137aa07d0b5")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 123.19 105.41 0)
+		(lib_id "FRANK:C")
+		(at 152.4 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9bf4cde7-c4be-4f59-abcf-3be5b9dd886d")
-		(property "Reference" "#PWR025"
-			(at 123.19 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 129.54 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5f23665-34af-42c9-8078-d4f7bd9d97cf")
-		)
-		(instances
-			(project "fastfrank"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/2e81912e-397c-4129-8da5-abf37a4f2667"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 123.19 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c1a2ae57-9656-487c-92dd-1a634bf2fa14")
-		(property "Reference" "#PWR024"
-			(at 123.19 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 123.19 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 123.19 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3fa33197-3d50-434c-a733-9b0b34ee787f")
-		)
-		(instances
-			(project "fastfrank"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/2e81912e-397c-4129-8da5-abf37a4f2667"
-					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 142.24 102.87 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cb64ad72-0f49-41b6-a9be-7d239255dc4a")
-		(property "Reference" "#PWR026"
-			(at 135.89 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 138.43 102.8699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7e38a0e9-4fc7-4f21-a255-4a22348a1c6a")
-		)
-		(instances
-			(project "turbofrank"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/2e81912e-397c-4129-8da5-abf37a4f2667"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 123.19 101.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dd634246-01ca-4fe8-bc4f-7812ab182c74")
-		(property "Reference" "C11"
-			(at 120.269 102.7684 0)
+		(uuid "2b272323-4cf1-4256-8053-ccca6508e686")
+		(property "Reference" "C36"
+			(at 151.2316 112.649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1020,7 +839,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 120.269 100.457 0)
+			(at 153.543 112.649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1028,8 +847,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Combined 0805 CR"
-			(at 122.2248 97.79 0)
+		(property "Footprint" "FRANK:C_0805_2012Metric"
+			(at 156.21 114.6048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1038,7 +857,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 101.6 0)
+			(at 152.4 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1047,7 +866,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 123.19 101.6 0)
+			(at 152.4 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1056,61 +875,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 123.19 101.6 0)
+			(at 152.4 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1119,15 +884,215 @@
 			)
 		)
 		(pin "1"
-			(uuid "8c3bb8dc-96d2-44d6-9b25-919ec82f35d4")
+			(uuid "9c1c8055-e9db-4b24-a24b-57562373076d")
 		)
 		(pin "2"
-			(uuid "95974436-26f8-43f4-9654-127e75159f67")
+			(uuid "f03572be-6c00-4d4f-8848-47c574651a90")
 		)
 		(instances
-			(project "fastfrank"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/2e81912e-397c-4129-8da5-abf37a4f2667"
-					(reference "C11")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dbf06091-211f-46b3-925d-d56e297fd0d1"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 162.56 120.65 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32d9018f-5322-4d0e-9f88-962e404387e9")
+		(property "Reference" "#PWR0126"
+			(at 162.56 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 162.56 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 162.56 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95c24f42-bd0d-44f3-887f-053ad0eb81cb")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dbf06091-211f-46b3-925d-d56e297fd0d1"
+					(reference "#PWR0126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 148.59 115.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c4e3820-b9b0-4365-898e-b2c3b730f8f8")
+		(property "Reference" "#PWR0125"
+			(at 142.24 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 148.59 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "501e5f20-604a-485f-9eb0-c3890a678891")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dbf06091-211f-46b3-925d-d56e297fd0d1"
+					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 120.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb64ad72-0f49-41b6-a9be-7d239255dc4a")
+		(property "Reference" "#PWR0127"
+			(at 168.91 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 120.6499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5077c98d-1741-484b-b9b0-4a4f82c8ed85")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dbf06091-211f-46b3-925d-d56e297fd0d1"
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -1135,7 +1100,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Micro_SD_Card")
-		(at 165.1 97.79 0)
+		(at 198.12 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1143,8 +1108,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfd949e8-2da7-4fad-9a77-49c9cbc5d0d9")
-		(property "Reference" "J3"
-			(at 165.735 78.74 0)
+		(property "Reference" "J15"
+			(at 198.755 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1152,7 +1117,7 @@
 			)
 		)
 		(property "Value" "104031-0811"
-			(at 165.735 81.28 0)
+			(at 198.755 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1160,7 +1125,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:MicroSD (SMD, long)"
-			(at 194.31 90.17 0)
+			(at 227.33 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1169,7 +1134,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
-			(at 165.1 97.79 0)
+			(at 198.12 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,7 +1143,7 @@
 			)
 		)
 		(property "Description" "Micro SD Card Socket"
-			(at 165.1 97.79 0)
+			(at 198.12 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,61 +1152,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005004214252441.html"
-			(at 165.1 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 165.1 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 165.1 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 165.1 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 165.1 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 165.1 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 165.1 97.79 0)
+			(at 198.12 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1250,36 +1161,36 @@
 			)
 		)
 		(pin "1"
-			(uuid "4ec34ec5-cad6-458e-a443-96c42c16e935")
+			(uuid "dc2134fe-f1e6-4717-a4c3-afe6b7da4dc0")
 		)
 		(pin "2"
-			(uuid "e6436029-9fb8-41b0-9548-0ec46aff7c24")
+			(uuid "b10a7954-46d1-4767-a746-d5a4076a626b")
 		)
 		(pin "3"
-			(uuid "f5e07d59-1bbb-49e0-a86f-05468ac46975")
+			(uuid "0100dd75-47df-4376-8cd3-6ad4ec80d658")
 		)
 		(pin "4"
-			(uuid "f4a5ee57-3f7b-478b-aa4a-addf6b812ecd")
+			(uuid "8d31e102-4ec7-43a2-8e34-8dbb8385d06e")
 		)
 		(pin "5"
-			(uuid "f236111f-bb5d-4abd-a7cd-340669edaff1")
+			(uuid "b47040a4-f29b-4cd7-a85b-5a474872d49f")
 		)
 		(pin "6"
-			(uuid "36335d52-cccd-4144-afaf-ba1a104138d6")
+			(uuid "5c672029-3440-4734-8cff-db62fa1c3770")
 		)
 		(pin "7"
-			(uuid "fbacb6b2-f656-4bf1-a42b-67704f8e6089")
+			(uuid "7f9b1463-f91c-44d3-adbc-6fc26d1ac5b4")
 		)
 		(pin "8"
-			(uuid "6e7de12b-446a-47bb-8d5e-e1ab9e66f4ff")
+			(uuid "1a994f64-5923-4abe-9f73-8f4ce9622d7b")
 		)
 		(pin "9"
-			(uuid "300ce790-acf4-4b00-b472-f58f43e46b52")
+			(uuid "cef44c5c-23f2-4a12-8bb6-36598808cf11")
 		)
 		(instances
-			(project "turbofrank"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/2e81912e-397c-4129-8da5-abf37a4f2667"
-					(reference "J3")
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/dbf06091-211f-46b3-925d-d56e297fd0d1"
+					(reference "J15")
 					(unit 1)
 				)
 			)

@@ -5,176 +5,14 @@
 	(uuid "77839abf-af89-4296-9faf-787064d771e9")
 	(paper "A4")
 	(title_block
-		(title "${NAME} ${VARIANT}")
+		(title "${NAME} ${MODEL}")
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
 		(comment 1 "https://github.com/xtremespb/frank")
 	)
 	(lib_symbols
-		(symbol "Device:C_Polarized_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized_Small"
-				(at 0.254 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_Small_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.8542)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.8542)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:C_Small"
+		(symbol "FRANK:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -314,7 +152,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
+		(symbol "FRANK:R_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -650,131 +488,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "R_Small_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_1_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_1_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1003,44 +716,32 @@
 		)
 	)
 	(junction
-		(at 161.29 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ecbe502-f0b2-46cc-aee5-72405ca824d6")
-	)
-	(junction
-		(at 166.37 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40a7e54f-98a7-4656-b8da-87edfdfb755b")
-	)
-	(junction
-		(at 186.69 90.17)
+		(at 186.69 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a63c5b2-0426-4dcc-bae0-98bebcbc0b67")
 	)
 	(junction
-		(at 186.69 95.25)
+		(at 186.69 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99b5caf2-57ce-4a85-af8f-72c3f58f94de")
 	)
 	(junction
-		(at 146.05 63.5)
+		(at 166.37 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f1b922af-fc0b-452f-a0c4-39b79fd45d34")
+		(uuid "9a14a7cb-f777-4081-8576-46473bbaec47")
 	)
 	(junction
-		(at 166.37 97.79)
+		(at 166.37 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe824420-e2bf-4979-8fd2-ee7a68a4d7c4")
 	)
 	(wire
 		(pts
-			(xy 176.53 92.71) (xy 176.53 109.22)
+			(xy 176.53 88.9) (xy 176.53 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1050,17 +751,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 63.5) (xy 137.16 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06597146-3233-4d18-b2df-27d34fd1d7f9")
-	)
-	(wire
-		(pts
-			(xy 186.69 90.17) (xy 191.77 90.17)
+			(xy 186.69 86.36) (xy 191.77 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1070,7 +761,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 95.25) (xy 186.69 99.06)
+			(xy 186.69 91.44) (xy 186.69 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1080,17 +771,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 63.5) (xy 142.24 63.5)
+			(xy 166.37 69.85) (xy 166.37 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "134ae140-34dd-451c-8d2e-1ec0f1632adc")
+		(uuid "15aff146-61da-428c-9bd7-5e809dd62b18")
 	)
 	(wire
 		(pts
-			(xy 160.02 97.79) (xy 166.37 97.79)
+			(xy 160.02 93.98) (xy 166.37 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1100,7 +791,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 115.57) (xy 166.37 114.3)
+			(xy 157.48 115.57) (xy 157.48 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1110,7 +801,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 78.74) (xy 186.69 81.28)
+			(xy 186.69 74.93) (xy 186.69 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1120,17 +811,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 63.5) (xy 161.29 63.5)
+			(xy 166.37 81.28) (xy 166.37 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5035810e-d40f-4f32-aeb0-97f0e03f0b5a")
+		(uuid "32be8b09-0737-47f1-a54f-5e48b6b1b78e")
 	)
 	(wire
 		(pts
-			(xy 99.06 95.25) (xy 121.92 95.25)
+			(xy 99.06 91.44) (xy 121.92 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1140,7 +831,17 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 92.71) (xy 160.02 92.71)
+			(xy 157.48 106.68) (xy 166.37 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fdbddb4-79fe-4634-b24f-744e09842ab7")
+	)
+	(wire
+		(pts
+			(xy 176.53 88.9) (xy 160.02 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1150,7 +851,17 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 90.17) (xy 121.92 90.17)
+			(xy 166.37 114.3) (xy 166.37 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b59b5b1-ae82-4711-afbd-f251ce5a20bc")
+	)
+	(wire
+		(pts
+			(xy 99.06 86.36) (xy 121.92 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1160,7 +871,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 97.79) (xy 116.84 106.68)
+			(xy 116.84 93.98) (xy 116.84 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1170,7 +881,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 97.79) (xy 166.37 109.22)
+			(xy 166.37 93.98) (xy 166.37 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1180,7 +891,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 95.25) (xy 191.77 95.25)
+			(xy 186.69 91.44) (xy 191.77 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1190,27 +901,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 72.39) (xy 161.29 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8142d0b8-3b4a-4974-86c1-307238bba8a6")
-	)
-	(wire
-		(pts
-			(xy 151.13 72.39) (xy 146.05 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81f777b5-efd2-40a1-b524-8a9c39aea59c")
-	)
-	(wire
-		(pts
-			(xy 160.02 90.17) (xy 186.69 90.17)
+			(xy 160.02 86.36) (xy 186.69 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1220,47 +911,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 63.5) (xy 166.37 97.79)
+			(xy 157.48 109.22) (xy 157.48 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8f9ad6ff-b2d4-41fa-a435-aceb7be75e8b")
+		(uuid "baa0ba0a-ed25-4e1d-aa13-a3833095b062")
 	)
 	(wire
 		(pts
-			(xy 156.21 63.5) (xy 161.29 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "980044a3-0472-4789-9fb0-11ef30910ad4")
-	)
-	(wire
-		(pts
-			(xy 151.13 63.5) (xy 146.05 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98a34546-22ee-4cf6-a675-521103617955")
-	)
-	(wire
-		(pts
-			(xy 170.18 63.5) (xy 166.37 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8103545-11e9-4267-9e56-86cde126cb92")
-	)
-	(wire
-		(pts
-			(xy 121.92 97.79) (xy 116.84 97.79)
+			(xy 121.92 93.98) (xy 116.84 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1270,27 +931,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 63.5) (xy 175.26 63.5)
+			(xy 166.37 106.68) (xy 166.37 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cdf9e955-fe66-4b8b-8767-c6a56f340b82")
+		(uuid "d6d7c0ba-1216-49da-8f3f-f592d2f6efa2")
 	)
 	(wire
 		(pts
-			(xy 156.21 72.39) (xy 161.29 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5f18c3e-3b44-4285-8fdb-6675a023edd5")
-	)
-	(wire
-		(pts
-			(xy 99.06 92.71) (xy 121.92 92.71)
+			(xy 99.06 88.9) (xy 121.92 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1300,17 +951,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 63.5) (xy 146.05 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da68d770-8895-4deb-a171-a96eaa3c5f76")
-	)
-	(wire
-		(pts
-			(xy 186.69 106.68) (xy 186.69 104.14)
+			(xy 186.69 102.87) (xy 186.69 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1320,7 +961,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 86.36) (xy 186.69 90.17)
+			(xy 186.69 82.55) (xy 186.69 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1330,7 +971,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 95.25) (xy 186.69 95.25)
+			(xy 160.02 91.44) (xy 186.69 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1340,7 +981,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 119.38) (xy 176.53 114.3)
+			(xy 176.53 115.57) (xy 176.53 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1350,7 +991,7 @@
 	)
 	(hierarchical_label "TDA_LRCK"
 		(shape input)
-		(at 99.06 92.71 180)
+		(at 99.06 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1361,7 +1002,7 @@
 	)
 	(hierarchical_label "TDA_R"
 		(shape input)
-		(at 191.77 90.17 0)
+		(at 191.77 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1372,7 +1013,7 @@
 	)
 	(hierarchical_label "TDA_DATA"
 		(shape input)
-		(at 99.06 95.25 180)
+		(at 99.06 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1383,7 +1024,7 @@
 	)
 	(hierarchical_label "TDA_SCLK"
 		(shape input)
-		(at 99.06 90.17 180)
+		(at 99.06 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1394,7 +1035,7 @@
 	)
 	(hierarchical_label "TDA_L"
 		(shape input)
-		(at 191.77 95.25 0)
+		(at 191.77 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1404,1597 +1045,17 @@
 		(uuid "e11a02a6-8d3e-42aa-84b7-4cb910c4db17")
 	)
 	(symbol
-		(lib_id "FRANK:TDA1387T")
-		(at 140.97 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e2cc523-be82-484c-be19-613a037a4dc1")
-		(property "Reference" "U?"
-			(at 140.97 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TDA1387T"
-			(at 140.97 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:SO-8"
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.datasheet.hk/view_download.php?id=1130619&file=0065%5Ctda1387_515565.pdf"
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/32995595000.html"
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Crystal Type" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Stability" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Tolerance" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "463c94b3-e5ee-45ef-9005-01ecaa721476")
-		)
-		(pin "2"
-			(uuid "174e7e10-32b6-411d-8eba-f28d7e6956a6")
-		)
-		(pin "3"
-			(uuid "f5add975-0ef3-4a7f-b3c4-4377a2b3e53b")
-		)
-		(pin "4"
-			(uuid "55422660-2228-4c70-b8c0-63c3dfb293c7")
-		)
-		(pin "5"
-			(uuid "5273bee9-9b36-4564-b5cc-25f5ec0725f6")
-		)
-		(pin "6"
-			(uuid "f7971bfe-eab7-4efd-a4b8-6b12cbd0b2de")
-		)
-		(pin "7"
-			(uuid "89d91aee-a5c5-41f6-904e-bd7043a92ce0")
-		)
-		(pin "8"
-			(uuid "20ef42b9-c76f-44d2-8b13-74b3f46ab30d")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 186.69 101.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "429be403-f2b8-4785-bb49-28a9b25400e4")
-		(property "Reference" "R?"
-			(at 184.15 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470R"
-			(at 188.976 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0603, S)"
-			(at 186.69 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 186.69 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 186.69 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 186.69 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 186.69 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Crystal Type" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Stability" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Tolerance" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 186.69 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89cb6e3e-68ea-4827-ba5f-575817f6a462")
-		)
-		(pin "2"
-			(uuid "602fd584-8000-4c8e-bdb5-3e92ac27ada6")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 186.69 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4489bbbf-d956-4346-bf6a-1c06d67ce660")
-		(property "Reference" "#PWR?"
-			(at 186.69 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 186.69 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ae59a611-592f-4601-a3d1-07b547cf2741")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 186.69 78.74 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5dcc5cbc-583a-4b4a-bab9-2f2f155a2713")
-		(property "Reference" "#PWR?"
-			(at 186.69 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 186.69 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "96648b99-a237-4f52-87f4-86d540511367")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 153.67 63.5 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6270ad7a-0db8-44d7-821f-dd60c77703da")
-		(property "Reference" "C?"
-			(at 153.924 60.452 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100u"
-			(at 153.924 66.294 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Crystal Type" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Stability" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Tolerance" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 153.67 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f121aa1f-96e5-4bba-9196-38dd852a77d2")
-		)
-		(pin "2"
-			(uuid "2ceb11fa-a40d-4bc6-b477-380e0b258e5e")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 177.8 63.5 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "70157ea0-1fa2-41cc-946e-dd4a8f1da116")
-		(property "Reference" "#PWR?"
-			(at 184.15 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 181.61 63.4999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e668dc6-ff6a-449a-bf23-5ac9d5e81578")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 172.72 63.5 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7d788214-f764-4c3f-b197-a22083520f94")
-		(property "Reference" "C?"
-			(at 172.974 60.452 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 172.974 66.294 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
-			(at 172.72 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 172.72 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 172.72 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 172.72 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 172.72 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Crystal Type" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Stability" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Tolerance" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 172.72 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c0566fb-a0ec-40ac-8aeb-f9b930add708")
-		)
-		(pin "2"
-			(uuid "d55da978-4d76-4923-b90e-ce7454c4b095")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "R_Small_1")
-		(lib_id "Device:R_Small")
-		(at 139.7 63.5 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7dae4989-0424-47b6-9479-0dd18d2d3450")
-		(property "Reference" "R?"
-			(at 139.7 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 139.7 61.214 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0603, S)"
-			(at 139.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 139.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 139.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 139.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Crystal Type" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Stability" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Tolerance" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 139.7 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d3122228-47e2-4d24-a9df-8422d4e1f2d5")
-		)
-		(pin "2"
-			(uuid "d09666fd-4e55-4b36-a0ea-6ceb07fa973b")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "R_Small_1")
-		(lib_id "Device:R_Small")
-		(at 186.69 83.82 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "81f2386e-8d1b-4448-b8a4-4088468a3661")
-		(property "Reference" "R?"
-			(at 184.15 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470R"
-			(at 188.976 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0603, S)"
-			(at 186.69 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 186.69 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 186.69 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 186.69 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 186.69 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Crystal Type" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Stability" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Tolerance" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 186.69 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7b977c31-50d3-4a2d-b9a1-08f33419ef01")
-		)
-		(pin "2"
-			(uuid "759ab34b-33c5-4e5f-8e56-05c6f012fe0b")
-		)
-		(instances
-			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VBUS")
-		(at 134.62 63.5 90)
+		(at 166.37 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8af78336-26d8-44ec-bf67-dfdf33be7c50")
-		(property "Reference" "#PWR?"
-			(at 138.43 63.5 0)
+		(uuid "0270c189-4827-4468-ab2b-cf9f3947369e")
+		(property "Reference" "#PWR089"
+			(at 166.37 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3003,16 +1064,15 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 130.81 63.4999 90)
+			(at 166.37 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 63.5 0)
+			(at 166.37 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3021,7 +1081,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 63.5 0)
+			(at 166.37 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3030,7 +1090,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 134.62 63.5 0)
+			(at 166.37 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3039,44 +1099,44 @@
 			)
 		)
 		(pin "1"
-			(uuid "f94d7176-666f-4448-8624-db91ca8e9045")
+			(uuid "6b6a70f0-872a-4b73-a358-97b5d36aa24a")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "#PWR?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 153.67 72.39 90)
+		(lib_id "FRANK:R_Small")
+		(at 166.37 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "98482742-38aa-4cdd-97a0-17ade04e30c2")
-		(property "Reference" "C?"
-			(at 153.924 69.342 90)
+		(uuid "05211acd-3438-43a5-9c8c-c44adda4937e")
+		(property "Reference" "R82"
+			(at 163.83 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1u"
-			(at 153.924 75.184 90)
+		(property "Value" "100R"
+			(at 168.656 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
-			(at 153.67 72.39 0)
+		(property "Footprint" "FRANK:R_0805_2012Metric"
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3084,8 +1144,306 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 153.67 72.39 0)
+		(property "Datasheet" "~"
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b703a8e-0f33-41e0-9b6c-0773c6221cba")
+		)
+		(pin "2"
+			(uuid "84646508-0aec-4caa-8f46-788e3df2249d")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "R82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:TDA1387T")
+		(at 140.97 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e2cc523-be82-484c-be19-613a037a4dc1")
+		(property "Reference" "U6"
+			(at 140.97 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TDA1387T"
+			(at 140.97 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:SO-8"
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "DOCUMENTATION"
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/32995595000.html"
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d80e3886-1c1c-4caf-8498-1e7758fb74fe")
+		)
+		(pin "2"
+			(uuid "88a6da9e-8eb6-4544-b0fc-1dd3eec62f34")
+		)
+		(pin "3"
+			(uuid "e71e1272-25d0-4076-98b6-91f25f8b276c")
+		)
+		(pin "4"
+			(uuid "bea31d24-cde9-4020-908f-b6836098dbdb")
+		)
+		(pin "5"
+			(uuid "e67768ac-e7ca-4d4f-8f79-503d93757354")
+		)
+		(pin "6"
+			(uuid "847e7347-0015-4114-9c2b-f55fe16b5fc1")
+		)
+		(pin "7"
+			(uuid "bb0fcbe7-db13-453e-8698-7ad151d3181a")
+		)
+		(pin "8"
+			(uuid "9dbb66db-8000-4804-b2d9-9b1ebda9b940")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:C_Small")
+		(at 166.37 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "263ce2d7-f350-4b46-92ff-bdf44547fc13")
+		(property "Reference" "C21"
+			(at 169.418 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 163.576 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:C_0805_2012Metric"
+			(at 166.37 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3094,7 +1452,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 153.67 72.39 0)
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3103,7 +1461,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 153.67 72.39 0)
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3111,168 +1469,220 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 153.67 72.39 0)
+		(property "Availability" ""
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Attrition Qty" ""
-			(at 153.67 72.39 90)
+		(property "Check_prices" ""
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Category" ""
-			(at 153.67 72.39 90)
+		(property "Description_1" ""
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Class" ""
-			(at 153.67 72.39 90)
+		(property "MF" ""
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Crystal Type" ""
-			(at 153.67 72.39 90)
+		(property "MP" ""
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency" ""
-			(at 153.67 72.39 90)
+		(property "Package" ""
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Stability" ""
-			(at 153.67 72.39 90)
+		(property "Price" ""
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance" ""
-			(at 153.67 72.39 90)
+		(property "SnapEDA_Link" ""
+			(at 166.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 153.67 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "0eea5198-2c78-4e28-a369-2226a967489d")
+			(uuid "b254e2bf-d4db-4eb8-b613-012f1a52c575")
 		)
 		(pin "2"
-			(uuid "1a2632d9-66f0-4fe2-9209-ed626f71ac58")
+			(uuid "9ac2863d-8d80-400d-b074-ad170a5f4452")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "C?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R_Small")
+		(at 186.69 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "429be403-f2b8-4785-bb49-28a9b25400e4")
+		(property "Reference" "R49"
+			(at 184.15 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470R"
+			(at 188.976 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:R_0805_2012Metric"
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 186.69 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3f3b0dd-a129-40f4-b1d5-499b5f3223f0")
+		)
+		(pin "2"
+			(uuid "3403b44c-7cec-4f7f-8e3e-dbfb15629270")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -3280,16 +1690,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 106.68 0)
+		(at 186.69 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "98d6b354-b052-4f4a-a6fe-494c3ec82fce")
-		(property "Reference" "#PWR?"
-			(at 116.84 113.03 0)
+		(uuid "4489bbbf-d956-4346-bf6a-1c06d67ce660")
+		(property "Reference" "#PWR093"
+			(at 186.69 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3298,7 +1708,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 111.76 0)
+			(at 186.69 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3306,7 +1716,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 106.68 0)
+			(at 186.69 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3315,7 +1725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 106.68 0)
+			(at 186.69 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3324,7 +1734,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 106.68 0)
+			(at 186.69 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3333,44 +1743,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ac59484-7bcd-4031-8962-150d4156c7c6")
+			(uuid "c501be42-9620-4512-8e42-6807fe0dd128")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "#PWR?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 176.53 111.76 0)
+		(lib_id "power:GND")
+		(at 186.69 74.93 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ac6e11b5-6364-4775-af9e-e96e77f86dd8")
-		(property "Reference" "C?"
-			(at 179.578 112.014 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 173.736 112.014 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
-			(at 176.53 111.76 0)
+		(fields_autoplaced yes)
+		(uuid "5dcc5cbc-583a-4b4a-bab9-2f2f155a2713")
+		(property "Reference" "#PWR092"
+			(at 186.69 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3378,8 +1773,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 176.53 111.76 0)
+		(property "Value" "GND"
+			(at 186.69 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3387,8 +1790,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 176.53 111.76 0)
+		(property "Datasheet" ""
+			(at 186.69 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3396,160 +1799,8 @@
 				(hide yes)
 			)
 		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 176.53 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 176.53 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Crystal Type" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Stability" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Frequency Tolerance" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 176.53 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 176.53 111.76 90)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3558,15 +1809,218 @@
 			)
 		)
 		(pin "1"
-			(uuid "880c4fc7-e96d-449e-85aa-8f0f783ac032")
-		)
-		(pin "2"
-			(uuid "a2643e13-b2bd-4442-83fc-026e1e338d38")
+			(uuid "b97ba37c-821d-4745-b99a-34ca72ea6437")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "C?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R_Small")
+		(at 186.69 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "81f2386e-8d1b-4448-b8a4-4088468a3661")
+		(property "Reference" "R48"
+			(at 184.15 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470R"
+			(at 188.976 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:R_0805_2012Metric"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f6b6441d-f427-4aff-8617-47b47f9d7b48")
+		)
+		(pin "2"
+			(uuid "87604f35-f6ac-402f-9626-d1b582aaf0f4")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 116.84 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98d6b354-b052-4f4a-a6fe-494c3ec82fce")
+		(property "Reference" "#PWR087"
+			(at 116.84 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6be6768-fe72-46c2-91b9-34a6a2540b3c")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -3580,9 +2034,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5ddb95f-d1cc-4588-8a59-0f3f888aa801")
-		(property "Reference" "#PWR?"
+		(uuid "9eac107f-2067-4462-ab3a-78ed09bb195f")
+		(property "Reference" "#PWR090"
 			(at 166.37 121.92 0)
 			(effects
 				(font
@@ -3627,28 +2080,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "81749b15-7d6a-412f-8ed8-4a7ed78ea2bf")
+			(uuid "7f0dec41-e8ba-48d7-a07b-174dc344722f")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "#PWR?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 166.37 111.76 0)
+		(lib_id "FRANK:C_Small")
+		(at 176.53 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ec95f4fd-3cca-47e2-83c2-02832ed27e92")
-		(property "Reference" "C?"
-			(at 169.418 112.014 90)
+		(uuid "ac6e11b5-6364-4775-af9e-e96e77f86dd8")
+		(property "Reference" "C22"
+			(at 179.578 108.204 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3656,15 +2109,15 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 163.576 112.014 90)
+			(at 173.736 108.204 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
-			(at 166.37 111.76 0)
+		(property "Footprint" "FRANK:C_0805_2012Metric"
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3672,8 +2125,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 166.37 111.76 0)
+		(property "Datasheet" "~"
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3682,7 +2135,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 166.37 111.76 0)
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,7 +2144,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 166.37 111.76 0)
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3699,168 +2152,80 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 166.37 111.76 0)
+		(property "Availability" ""
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Attrition Qty" ""
-			(at 166.37 111.76 90)
+		(property "Check_prices" ""
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Category" ""
-			(at 166.37 111.76 90)
+		(property "Description_1" ""
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Class" ""
-			(at 166.37 111.76 90)
+		(property "MF" ""
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Crystal Type" ""
-			(at 166.37 111.76 90)
+		(property "MP" ""
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency" ""
-			(at 166.37 111.76 90)
+		(property "Package" ""
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Stability" ""
-			(at 166.37 111.76 90)
+		(property "Price" ""
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance" ""
-			(at 166.37 111.76 90)
+		(property "SnapEDA_Link" ""
+			(at 176.53 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Normal Temperature Frequency Tolerance" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" ""
-			(at 166.37 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "86346aa8-1322-4984-a39a-281e16f1f6da")
+			(uuid "2e4718a4-e00e-4875-a0fb-80c34f08ab1a")
 		)
 		(pin "2"
-			(uuid "6509c87a-4106-45fc-86a6-0c4be02092de")
+			(uuid "319bccce-86c8-4277-be1d-65ecf60f4c0f")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "C?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -3868,16 +2233,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 176.53 119.38 0)
+		(at 157.48 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f10922f2-ba55-4c8f-bf70-cbf03eceff05")
-		(property "Reference" "#PWR?"
-			(at 176.53 125.73 0)
+		(uuid "e5ddb95f-d1cc-4588-8a59-0f3f888aa801")
+		(property "Reference" "#PWR088"
+			(at 157.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,7 +2251,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 176.53 124.46 0)
+			(at 157.48 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3894,7 +2259,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 119.38 0)
+			(at 157.48 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3903,7 +2268,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 119.38 0)
+			(at 157.48 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3912,7 +2277,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 119.38 0)
+			(at 157.48 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3921,12 +2286,218 @@
 			)
 		)
 		(pin "1"
-			(uuid "2dfef270-51d2-4d68-99f0-6105031680d7")
+			(uuid "459e1c68-6a5c-4f1f-b5ea-effed0db4fda")
 		)
 		(instances
 			(project "frank_m1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/6a6eab1f-a855-4ee1-a96d-4ac2965e5150/0dccd710-fd54-4e53-9f08-059759dd7a75"
-					(reference "#PWR?")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:C_Small")
+		(at 157.48 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec95f4fd-3cca-47e2-83c2-02832ed27e92")
+		(property "Reference" "C20"
+			(at 160.528 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 154.686 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:C_0805_2012Metric"
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5db8977a-8090-454b-9050-dcdb274abb25")
+		)
+		(pin "2"
+			(uuid "8e0984dc-5164-4c2f-a493-3aa439579bff")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f10922f2-ba55-4c8f-bf70-cbf03eceff05")
+		(property "Reference" "#PWR091"
+			(at 176.53 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f59c0a16-3755-4727-a5d8-262b4b96cff4")
+		)
+		(instances
+			(project "frank_m1"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/0dccd710-fd54-4e53-9f08-059759dd7a75"
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
