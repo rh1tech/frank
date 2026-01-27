@@ -375,25 +375,6 @@
 		(uuid "db66574c-f56c-44ec-9177-cf81a54d6a4f")
 	)
 	(pad "1" smd rect
-		(at 1.5 -1.3)
-		(size 1.015 2.265)
-		(drill
-			(offset -0.0075 -0.2675)
-		)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "0804e6d0-a50a-4487-a6c9-2894f2c79e9e")
-	)
-	(pad "1" thru_hole oval
-		(at 1.5 0)
-		(size 1.015 1.765)
-		(drill 0.73
-			(offset -0.0075 -0.0175)
-		)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "69ed067e-a1c6-4e65-8e3c-c8eab60f9459")
-	)
-	(pad "2" smd rect
 		(at 0 -1.3)
 		(size 1.015 2.265)
 		(drill
@@ -402,7 +383,7 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "c21f8d31-4955-4f8d-97de-13f403011d4d")
 	)
-	(pad "2" thru_hole roundrect
+	(pad "1" thru_hole roundrect
 		(at 0 0)
 		(size 1.015 1.765)
 		(drill 0.73
@@ -412,6 +393,25 @@
 		(remove_unused_layers no)
 		(roundrect_rratio 0.242718)
 		(uuid "d2971a2b-6e25-41d7-acfd-90d9bac8a5e0")
+	)
+	(pad "2" smd rect
+		(at 1.5 -1.3)
+		(size 1.015 2.265)
+		(drill
+			(offset -0.0075 -0.2675)
+		)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0804e6d0-a50a-4487-a6c9-2894f2c79e9e")
+	)
+	(pad "2" thru_hole oval
+		(at 1.5 0)
+		(size 1.015 1.765)
+		(drill 0.73
+			(offset -0.0075 -0.0175)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "69ed067e-a1c6-4e65-8e3c-c8eab60f9459")
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical.wrl"

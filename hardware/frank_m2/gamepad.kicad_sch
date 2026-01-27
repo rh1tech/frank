@@ -5,9 +5,9 @@
 	(uuid "7ded2772-0c87-4b10-a665-814cfafe7775")
 	(paper "A4")
 	(title_block
-		(title "FRANK M2")
-		(date "2025-08-20")
-		(rev "1.04")
+		(title "${NAME} ${MODEL}")
+		(date "${DATE}")
+		(rev "${VERSION}")
 		(company "Mikhail Matveev")
 		(comment 1 "https://github.com/xtremespb/frank")
 	)
@@ -145,130 +145,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -745,29 +621,26 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_1"
-			(power)
+		(symbol "FRANK:R"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
+			(property "Reference" "R"
+				(at 2.032 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
+			(property "Value" "R"
+				(at 0 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -775,6 +648,15 @@
 				)
 			)
 			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -783,7 +665,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -792,7 +674,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -801,7 +683,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -810,13 +692,12 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_1_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -824,10 +705,10 @@
 					)
 				)
 			)
-			(symbol "GND_1_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -836,6 +717,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1217,7 +1116,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "07ec014e-13f2-4dff-b2b3-eb05115e3a2b")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR0103"
 			(at 147.32 119.38 0)
 			(effects
 				(font
@@ -1263,16 +1162,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "fcb2d8dc-418c-459f-a3df-d3bff40e22fc")
+			(uuid "3fed11ad-ede9-4f39-a3f8-3c3a08812ea0")
 		)
 		(instances
-			(project ""
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/91039a09-82d7-4099-8414-fc5647ada98f"
-					(reference "#PWR033")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b085e7bf-95c6-4d62-b8ec-fd94d25a70e5"
+					(reference "#PWR0103")
 					(unit 1)
 				)
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/e9da9b3c-e9c6-4677-bc99-391052f7625b"
-					(reference "#PWR036")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c50ad372-63d4-4886-82fc-368d1bd37a5f"
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -1287,7 +1186,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37fb8b98-c433-47f3-81a5-b5cc620d96bd")
-		(property "Reference" "D5"
+		(property "Reference" "D3"
 			(at 144.78 109.22 0)
 			(effects
 				(font
@@ -1312,7 +1211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83335/bzx384g.pdf"
+		(property "Datasheet" "~"
 			(at 147.32 109.22 0)
 			(effects
 				(font
@@ -1321,7 +1220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Zener diode"
 			(at 147.32 109.22 0)
 			(effects
 				(font
@@ -1340,19 +1239,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "fd7c19cd-5578-4008-afad-1fe197614563")
+			(uuid "3e09f47b-e161-4e1e-9814-de0eea406bdc")
 		)
 		(pin "2"
-			(uuid "f3cfb4a7-8cb0-431e-ae1b-44f19af76cd3")
+			(uuid "034c3e7f-0dbd-4cc6-80d7-d94414497687")
 		)
 		(instances
-			(project ""
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/91039a09-82d7-4099-8414-fc5647ada98f"
-					(reference "D5")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b085e7bf-95c6-4d62-b8ec-fd94d25a70e5"
+					(reference "D3")
 					(unit 1)
 				)
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/e9da9b3c-e9c6-4677-bc99-391052f7625b"
-					(reference "D6")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c50ad372-63d4-4886-82fc-368d1bd37a5f"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -1368,7 +1267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64a487a7-d18a-4c39-ba88-effe77dfade1")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR0104"
 			(at 160.02 102.87 0)
 			(effects
 				(font
@@ -1413,16 +1312,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "293d9d6d-10bd-4077-9a47-56db234247d6")
+			(uuid "9949b79f-150f-45a4-9023-be19c2e8bdaa")
 		)
 		(instances
-			(project ""
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/91039a09-82d7-4099-8414-fc5647ada98f"
-					(reference "#PWR032")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b085e7bf-95c6-4d62-b8ec-fd94d25a70e5"
+					(reference "#PWR0104")
 					(unit 1)
 				)
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/e9da9b3c-e9c6-4677-bc99-391052f7625b"
-					(reference "#PWR035")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c50ad372-63d4-4886-82fc-368d1bd37a5f"
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -1437,7 +1336,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a6138cd-6131-47ac-97bb-048cfcb8ef56")
-		(property "Reference" "J7"
+		(property "Reference" "J12"
 			(at 177.8 86.36 0)
 			(effects
 				(font
@@ -1446,7 +1345,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D-SUB 9 Male"
+		(property "Value" "GP2"
 			(at 173.99 83.82 0)
 			(effects
 				(font
@@ -1465,7 +1364,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/578/original-3313093.pdf"
+		(property "Datasheet" "~"
 			(at 176.53 99.06 0)
 			(effects
 				(font
@@ -1493,47 +1392,46 @@
 			)
 		)
 		(pin "1"
-			(uuid "537e7eac-5649-484e-9c71-89566dad7d4a")
+			(uuid "2a778e4d-d389-40ed-9090-f4abb788990f")
 		)
 		(pin "2"
-			(uuid "8b2b68c3-ce7d-4f2b-bf46-617e226ebca1")
+			(uuid "bbd90a50-8cd3-4abd-a612-6b3723987b5d")
 		)
 		(pin "3"
-			(uuid "0763b8d6-0a06-4f60-a75b-9253ae32f625")
+			(uuid "f86be175-47ad-4e4f-b03e-41babbcfef78")
 		)
 		(pin "4"
-			(uuid "9a07069e-081e-4943-8b3f-49f4496ade28")
+			(uuid "f8b92479-6027-4c04-abe5-d361debdde3e")
 		)
 		(pin "5"
-			(uuid "683a1629-91d2-4d19-ae5d-034069dc7a7f")
+			(uuid "93e3de75-e951-4638-b81b-c3d0fc4f6ef4")
 		)
 		(pin "6"
-			(uuid "8ed7c7f5-7aa3-488d-bb96-b28213127910")
+			(uuid "0f818f54-96fe-4cb3-b970-38cde5d60352")
 		)
 		(pin "7"
-			(uuid "f60ab6aa-2d5e-43be-9c16-153d686f9154")
+			(uuid "d6114335-5d26-4321-a736-7a45d0cb75a3")
 		)
 		(pin "8"
-			(uuid "36b5b2b8-e72e-4806-bdc6-29167348887c")
+			(uuid "b7646439-4f8a-4313-a33e-3671c7bc347f")
 		)
 		(pin "9"
-			(uuid "985855b5-7a0d-4f37-b6d0-cddbc7dbe748")
+			(uuid "fe01414e-e187-42a1-a13a-fcbae36a87e3")
 		)
 		(instances
-			(project ""
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/91039a09-82d7-4099-8414-fc5647ada98f"
-					(reference "J7")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b085e7bf-95c6-4d62-b8ec-fd94d25a70e5"
+					(reference "J12")
 					(unit 1)
 				)
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/e9da9b3c-e9c6-4677-bc99-391052f7625b"
-					(reference "J8")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c50ad372-63d4-4886-82fc-368d1bd37a5f"
+					(reference "J13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 161.29 96.52 270)
 		(unit 1)
@@ -1543,7 +1441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94c34e60-b773-43f4-b82d-d3b330870294")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR0105"
 			(at 154.94 96.52 0)
 			(effects
 				(font
@@ -1589,23 +1487,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "efb3b5c7-54ed-4bfb-add8-bd5e2aaf907e")
+			(uuid "39289c4b-6ae7-4c3d-bb00-470f1b423a64")
 		)
 		(instances
-			(project ""
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/91039a09-82d7-4099-8414-fc5647ada98f"
-					(reference "#PWR031")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b085e7bf-95c6-4d62-b8ec-fd94d25a70e5"
+					(reference "#PWR0105")
 					(unit 1)
 				)
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/e9da9b3c-e9c6-4677-bc99-391052f7625b"
-					(reference "#PWR034")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c50ad372-63d4-4886-82fc-368d1bd37a5f"
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "FRANK:R")
 		(at 152.4 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1613,7 +1511,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1dd8d25-dfbe-4345-af99-320762b8adbb")
-		(property "Reference" "R12"
+		(property "Reference" "R65"
 			(at 149.86 101.6 90)
 			(effects
 				(font
@@ -1629,7 +1527,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Resistor (0805)"
+		(property "Footprint" "FRANK:R_0805_2012Metric"
 			(at 152.4 105.918 90)
 			(effects
 				(font
@@ -1638,7 +1536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
+		(property "Datasheet" "~"
 			(at 152.4 104.14 0)
 			(effects
 				(font
@@ -1647,7 +1545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 152.4 104.14 0)
 			(effects
 				(font
@@ -1666,19 +1564,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "06d8a2bf-2998-4218-94a7-813fb87e7525")
+			(uuid "2442bd95-77fd-48ef-89e4-2998d1054959")
 		)
 		(pin "2"
-			(uuid "1456a914-4e77-48e8-ba67-87835e4ac0fa")
+			(uuid "ba1d45c8-31a6-493d-b919-23ae8a49663d")
 		)
 		(instances
-			(project ""
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/91039a09-82d7-4099-8414-fc5647ada98f"
-					(reference "R12")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/b085e7bf-95c6-4d62-b8ec-fd94d25a70e5"
+					(reference "R65")
 					(unit 1)
 				)
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/e9da9b3c-e9c6-4677-bc99-391052f7625b"
-					(reference "R13")
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c50ad372-63d4-4886-82fc-368d1bd37a5f"
+					(reference "R66")
 					(unit 1)
 				)
 			)
