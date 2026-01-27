@@ -5,9 +5,9 @@
 	(uuid "defca79b-8c85-4533-9b24-11b56eef478e")
 	(paper "A4")
 	(title_block
-		(title "FRANK M2")
-		(date "2025-08-20")
-		(rev "1.04")
+		(title "${NAME} ${MODEL}")
+		(date "${DATE}")
+		(rev "${VERSION}")
 		(company "Mikhail Matveev")
 		(comment 1 "https://github.com/xtremespb/frank")
 	)
@@ -421,7 +421,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_8"
+		(symbol "power:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -486,7 +486,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_8_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -500,7 +500,7 @@
 					)
 				)
 			)
-			(symbol "GND_8_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -650,7 +650,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 102.87) (xy 163.83 102.87)
+			(xy 139.7 100.33) (xy 160.02 100.33)
 		)
 		(stroke
 			(width 0)
@@ -660,7 +660,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 100.33) (xy 163.83 100.33)
+			(xy 139.7 97.79) (xy 160.02 97.79)
 		)
 		(stroke
 			(width 0)
@@ -670,7 +670,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 105.41) (xy 163.83 105.41)
+			(xy 139.7 102.87) (xy 160.02 102.87)
 		)
 		(stroke
 			(width 0)
@@ -680,7 +680,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 95.25) (xy 163.83 95.25)
+			(xy 139.7 92.71) (xy 160.02 92.71)
 		)
 		(stroke
 			(width 0)
@@ -690,7 +690,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 113.03) (xy 163.83 113.03)
+			(xy 139.7 110.49) (xy 160.02 110.49)
 		)
 		(stroke
 			(width 0)
@@ -700,7 +700,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 107.95) (xy 163.83 107.95)
+			(xy 139.7 105.41) (xy 160.02 105.41)
 		)
 		(stroke
 			(width 0)
@@ -710,7 +710,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 97.79) (xy 163.83 97.79)
+			(xy 139.7 95.25) (xy 160.02 95.25)
 		)
 		(stroke
 			(width 0)
@@ -720,7 +720,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 110.49) (xy 163.83 110.49)
+			(xy 139.7 107.95) (xy 160.02 107.95)
 		)
 		(stroke
 			(width 0)
@@ -730,74 +730,73 @@
 	)
 	(hierarchical_label "TFT_SCL"
 		(shape input)
-		(at 163.83 100.33 0)
+		(at 160.02 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "39127d09-7991-41c7-9573-2955348e945e")
-	)
-	(hierarchical_label "TFT_RST"
-		(shape input)
-		(at 163.83 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3bb150a3-e024-4526-a359-f439a2a2322c")
+		(uuid "1dd51735-c611-4043-a20d-b2562f4b79ac")
 	)
 	(hierarchical_label "TFT_BL"
 		(shape input)
-		(at 163.83 113.03 0)
+		(at 160.02 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "4bf90321-e940-49fa-b8bc-0d501a70ba56")
+		(uuid "3ec9219e-7ffa-4b32-9ab7-1355be1d3528")
 	)
 	(hierarchical_label "TFT_DC"
 		(shape input)
-		(at 163.83 107.95 0)
+		(at 160.02 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "612e63bd-8e14-4901-a801-1d6270f50601")
+		(uuid "95d7f61e-68ee-442e-95e2-1532c5bc33b8")
 	)
 	(hierarchical_label "TFT_SDA"
 		(shape input)
-		(at 163.83 102.87 0)
+		(at 160.02 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "691007a3-a265-48fc-885c-0f6c1fbbbd2e")
+		(uuid "9f72a5a5-7344-4030-b064-a9d8ca3f237c")
 	)
 	(hierarchical_label "TFT_CS"
 		(shape input)
-		(at 163.83 110.49 0)
+		(at 160.02 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "c250a2ae-8d7d-43e7-b685-27e58ff51565")
+		(uuid "af3152be-a3d0-43e9-bcc0-523527a19e4a")
+	)
+	(hierarchical_label "TFT_RST"
+		(shape input)
+		(at 160.02 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e2009c52-c4c4-491f-a8b8-1020f57daab6")
 	)
 	(symbol
-		(lib_name "GND_8")
 		(lib_id "power:GND")
-		(at 163.83 95.25 90)
+		(at 160.02 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -805,8 +804,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20857e43-4456-4c0c-80b3-bc858326d72c")
-		(property "Reference" "#PWR069"
-			(at 170.18 95.25 0)
+		(property "Reference" "#PWR056"
+			(at 166.37 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -815,7 +814,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 95.2499 90)
+			(at 163.83 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -824,7 +823,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 95.25 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -833,7 +832,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 95.25 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -842,7 +841,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 95.25 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -851,12 +850,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc9b4015-0c71-41ac-861e-d4fc47b18814")
+			(uuid "dacb6712-2eb5-47a8-a172-cad15ea7c316")
 		)
 		(instances
-			(project "turbofrank"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/05a34d6b-821f-4841-a010-fe0016ebb2f4"
-					(reference "#PWR069")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/3504beb8-2939-46b0-9c32-2648908a1056"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -864,7 +863,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 163.83 97.79 270)
+		(at 160.02 92.71 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -872,8 +871,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "767015f5-7bc0-41de-a657-2ae018f9314b")
-		(property "Reference" "#PWR070"
-			(at 160.02 97.79 0)
+		(property "Reference" "#PWR055"
+			(at 156.21 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -882,7 +881,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 167.64 97.7899 90)
+			(at 163.83 92.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -891,7 +890,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 97.79 0)
+			(at 160.02 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -900,7 +899,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 97.79 0)
+			(at 160.02 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -909,7 +908,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 163.83 97.79 0)
+			(at 160.02 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -918,12 +917,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "facc2bf1-0235-4e52-a082-697ca75f7071")
+			(uuid "75830588-bd01-4e9f-84ee-82866a5718a4")
 		)
 		(instances
-			(project ""
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/05a34d6b-821f-4841-a010-fe0016ebb2f4"
-					(reference "#PWR070")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/3504beb8-2939-46b0-9c32-2648908a1056"
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -931,7 +930,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Pin")
-		(at 138.43 102.87 0)
+		(at 134.62 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -939,8 +938,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d24155c0-486e-4df7-b632-8d01667da949")
-		(property "Reference" "J14"
-			(at 139.065 90.17 0)
+		(property "Reference" "J7"
+			(at 135.255 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -948,15 +947,15 @@
 			)
 		)
 		(property "Value" "Pin Header 1x08"
-			(at 139.065 92.71 0)
+			(at 135.255 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Pin Header (1x08)"
-			(at 138.43 102.87 0)
+		(property "Footprint" "FRANK:Connector Female 1.25 JST 8P"
+			(at 134.62 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -965,7 +964,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 138.43 102.87 0)
+			(at 134.62 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -974,7 +973,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 138.43 102.87 0)
+			(at 134.62 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -983,7 +982,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005007039504981.html"
-			(at 138.43 102.87 0)
+			(at 134.62 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -991,34 +990,98 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 134.62 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 134.62 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 134.62 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 134.62 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 134.62 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 134.62 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 134.62 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 134.62 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
-			(uuid "32d4f4ad-d4f3-4729-85ba-d1dd61d5ee2c")
+			(uuid "2549b34c-fccc-4e93-8158-d35c014ccd81")
 		)
 		(pin "3"
-			(uuid "6dd0c965-ed4b-4e3c-88db-3d947844f3fd")
+			(uuid "f9b314e7-3e6e-4362-84bf-3d1ac95bb29c")
 		)
 		(pin "4"
-			(uuid "86a2e737-0a98-4d9f-bc4f-a8d8b0d72738")
+			(uuid "4f0dd632-bd39-4ce9-9114-cb662b9555b1")
 		)
 		(pin "7"
-			(uuid "6d5ec25d-d450-4975-8ec7-396b1575fd9b")
+			(uuid "86b527b9-38c1-4cc9-b4b5-fc3c6915643f")
 		)
 		(pin "6"
-			(uuid "e5f28a81-9288-4ba2-bfdc-5851ff642d4b")
+			(uuid "13feede3-f1e2-4601-ab90-f4e74e6e353d")
 		)
 		(pin "5"
-			(uuid "97b98fe7-bb9c-4ba2-a0ef-12067600dfaf")
+			(uuid "3f5a0b19-710f-4823-8eb8-32809be3d53d")
 		)
 		(pin "2"
-			(uuid "689ae419-c356-4133-b52e-aaff9fcfe868")
+			(uuid "2ae06d72-cc31-4c74-9174-4afd83843b76")
 		)
 		(pin "8"
-			(uuid "c39efab2-8f8c-44bb-ac0e-736f916fb543")
+			(uuid "2340f6ae-b677-42da-bcaf-c99317dea50d")
 		)
 		(instances
-			(project "turbofrank"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/05a34d6b-821f-4841-a010-fe0016ebb2f4"
-					(reference "J14")
+			(project "frank_m2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/3504beb8-2939-46b0-9c32-2648908a1056"
+					(reference "J7")
 					(unit 1)
 				)
 			)

@@ -1,7 +1,7 @@
 (footprint "Pin Header (2x18)"
-	(version 20241229)
+	(version 20240108)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "8.0")
 	(layer "F.Cu")
 	(descr "Through hole straight pin header, 2x18, 2.54mm pitch, double rows")
 	(tags "Through hole pin header THT 2x18 2.54mm double row")
@@ -19,11 +19,23 @@
 	(property "Value" "Pin Header (2x18)"
 		(at 1.27 45.51 0)
 		(layer "F.Fab")
-		(hide yes)
 		(uuid "80e01307-5b12-476b-8153-ca60ed048d63")
 		(effects
 			(font
 				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "884cc6f1-8abd-4c9b-9229-27f641148a28")
+		(effects
+			(font
+				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -55,6 +67,46 @@
 		)
 	)
 	(attr through_hole)
+	(fp_line
+		(start -1.33 -1.33)
+		(end -1.33 44.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "5169e344-fca9-496d-8678-bdfbdb8728bb")
+	)
+	(fp_line
+		(start -1.33 -1.33)
+		(end 3.87 -1.33)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "43776894-4021-4a04-b2cf-d8da24d5d43c")
+	)
+	(fp_line
+		(start -1.33 44.51)
+		(end 3.87 44.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "c018b2e4-5122-4925-9c07-bd5376820a50")
+	)
+	(fp_line
+		(start 3.87 -1.33)
+		(end 3.87 44.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "ff1e79ce-4529-43ec-99de-e45121e5c219")
+	)
 	(fp_line
 		(start -1.33 -1.33)
 		(end -1.33 44.51)
@@ -484,7 +536,6 @@
 		(remove_unused_layers no)
 		(uuid "9f584b99-38fb-4172-b2c0-46102d8314c1")
 	)
-	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x18_P2.54mm_Vertical.wrl"
 		(offset
 			(xyz 0 0 0)
