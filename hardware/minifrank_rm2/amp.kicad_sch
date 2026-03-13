@@ -5,11 +5,11 @@
 	(uuid "9d488c28-e24d-4704-bae8-e1b23a2997e4")
 	(paper "A4")
 	(title_block
-		(title "${NAME}")
-		(date "2025-05-10")
+		(title "${NAME} ${MODEL}")
+		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
-		(comment 1 "https://github.com/xtremespb/frank")
+		(comment 1 "https://github.com/rh1tech/frank")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
@@ -266,7 +266,169 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Small"
+		(symbol "Device:C_Polarized_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_Small_0_1"
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FRANK:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -406,7 +568,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "FRANK:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -530,7 +692,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_1"
+		(symbol "power:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -595,7 +757,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_1_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -609,7 +771,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -758,856 +920,674 @@
 		)
 	)
 	(junction
-		(at 168.91 123.19)
+		(at 194.31 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1be0a16f-28ff-4d3d-9c7e-9774ead0a01e")
+		(uuid "0c0b8c35-8855-4b71-ae59-705c9420a89a")
 	)
 	(junction
-		(at 181.61 83.82)
+		(at 119.38 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2c369110-e1a3-4ddd-b14b-7c15cfdf5c43")
+		(uuid "0f43fcd1-6f59-418b-ad91-6116af5507a8")
 	)
 	(junction
-		(at 167.64 83.82)
+		(at 163.83 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "411bb3b9-d4bb-4ace-93c8-b40d1cc751ca")
+		(uuid "118504d3-211e-43ed-b689-d2388ddf3a4a")
 	)
 	(junction
-		(at 143.51 123.19)
+		(at 119.38 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4a67c29e-3604-42a6-ba4f-f489bff1359f")
+		(uuid "1fbad4fd-0e41-43a6-a57c-26b210d5c0e3")
 	)
 	(junction
-		(at 199.39 123.19)
+		(at 194.31 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "659dc311-c863-4bef-82b5-76ee9f6d3b07")
+		(uuid "271f72fc-7f61-4341-938d-745ab1a9c33f")
 	)
 	(junction
-		(at 95.25 88.9)
+		(at 138.43 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "65a44ff2-693a-4e50-bfcd-f2c8f41ed9ff")
+		(uuid "3b5c5b35-6ece-4943-afc4-3d0ddda7a179")
 	)
 	(junction
-		(at 191.77 83.82)
+		(at 176.53 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7ea3f4b6-c56a-4b40-8ab7-14a40a271e87")
+		(uuid "3bb99d8b-7ca4-438b-b3ad-14eadd890310")
 	)
 	(junction
-		(at 124.46 137.16)
+		(at 128.27 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "84d860b1-1bab-456a-93a7-524693577757")
+		(uuid "82de90c6-fc62-4faf-9d04-f05d64a71d6b")
 	)
 	(junction
-		(at 143.51 113.03)
+		(at 186.69 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9a34b636-ce60-4c14-b21e-d20b83b525d4")
+		(uuid "90435ce0-c912-4c44-b393-75934a0fea37")
 	)
 	(junction
-		(at 102.87 93.98)
+		(at 97.79 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "be902567-e134-47dd-96e7-d8c71f99263d")
+		(uuid "9be09851-597b-4e73-aff6-f8cc2a837550")
 	)
 	(junction
-		(at 133.35 137.16)
+		(at 162.56 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c1218982-d64e-4f07-883c-e7667ea87487")
+		(uuid "9d2abaf1-b644-403e-bd9d-f6dd69ac74f8")
 	)
 	(junction
-		(at 124.46 101.6)
+		(at 163.83 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c2ca2bc4-b697-40a0-a279-27d7a48b55bd")
+		(uuid "b2e13b77-f6cf-4f1e-9018-c959600d04ab")
 	)
 	(junction
-		(at 199.39 113.03)
+		(at 90.17 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "df671dd1-affd-4129-9f37-3f4714203f11")
+		(uuid "b51be218-c4ee-416b-9dca-c238d771c80a")
 	)
 	(junction
-		(at 168.91 113.03)
+		(at 138.43 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e3fc7a2a-21a3-4b48-ba9c-d068b07d0fbf")
+		(uuid "fd5bac5f-614c-4d19-8a48-a8fda7067deb")
 	)
 	(wire
 		(pts
-			(xy 147.32 142.24) (xy 143.51 142.24)
+			(xy 162.56 73.66) (xy 176.53 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "09f4d9a3-1fa0-49f4-8490-47879e114272")
+		(uuid "0d512338-4924-4ec6-bb73-0aa72762ca0d")
 	)
 	(wire
 		(pts
-			(xy 102.87 123.19) (xy 111.76 123.19)
+			(xy 138.43 96.52) (xy 142.24 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0bfde67c-7f4a-47f0-aebe-6430096ac5c9")
+		(uuid "0e5296c5-ae08-4199-8938-ba8dd7afb6af")
 	)
 	(wire
 		(pts
-			(xy 95.25 86.36) (xy 95.25 88.9)
+			(xy 128.27 127) (xy 142.24 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0e362c29-bedd-40ee-a929-de9a9baae6b6")
+		(uuid "0f15f517-a2c8-4b4e-ba0c-884413d6d3e7")
 	)
 	(wire
 		(pts
-			(xy 167.64 83.82) (xy 181.61 83.82)
+			(xy 133.35 113.03) (xy 138.43 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "11db44da-9293-45ad-a92a-747ecdde3928")
+		(uuid "1f6b5e04-4d94-45cc-835c-4f98cdcfe7d6")
 	)
 	(wire
 		(pts
-			(xy 199.39 123.19) (xy 218.44 123.19)
+			(xy 138.43 102.87) (xy 146.05 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1502cd58-e5a0-4839-9c20-afe1d4f6a850")
+		(uuid "269801f2-1e14-483c-866d-4388e71f3f90")
 	)
 	(wire
 		(pts
-			(xy 143.51 106.68) (xy 143.51 113.03)
+			(xy 119.38 85.09) (xy 119.38 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "16db6853-1556-4cd0-865d-395756e7b435")
+		(uuid "3a38be8f-be8d-4426-ab0e-e9016caf4fa3")
 	)
 	(wire
 		(pts
-			(xy 199.39 113.03) (xy 218.44 113.03)
+			(xy 128.27 127) (xy 128.27 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "19228695-e3cc-4c1e-be43-b25c9f9129f0")
+		(uuid "3c795ffa-7ff4-44e7-bdcb-623b5400a1c0")
 	)
 	(wire
 		(pts
-			(xy 138.43 113.03) (xy 143.51 113.03)
+			(xy 97.79 83.82) (xy 97.79 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b1dba44-3546-4a01-b8da-5efe80e06f37")
+		(uuid "41d08c61-07ff-4cd3-b98b-8b9b89c2c682")
 	)
 	(wire
 		(pts
-			(xy 102.87 93.98) (xy 102.87 123.19)
+			(xy 186.69 102.87) (xy 194.31 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c3c6f45-e04a-48a6-8821-00a974d30dbb")
+		(uuid "48144548-c2d7-4548-8d05-8826bc571c67")
 	)
 	(wire
 		(pts
-			(xy 158.75 123.19) (xy 168.91 123.19)
+			(xy 111.76 102.87) (xy 125.73 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27179106-435a-465e-b5fe-2465acff0169")
+		(uuid "5059dcdb-85aa-4dd6-b429-56ea70f4db40")
 	)
 	(wire
 		(pts
-			(xy 191.77 113.03) (xy 199.39 113.03)
+			(xy 78.74 78.74) (xy 90.17 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "276d0648-6833-4ed2-8d9e-d4d3cae2e0d5")
+		(uuid "5561be8b-106a-42a4-9134-f71a6504aaf5")
 	)
 	(wire
 		(pts
-			(xy 138.43 123.19) (xy 143.51 123.19)
+			(xy 90.17 66.04) (xy 90.17 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2a12c92c-396f-4b84-a7e6-192c756bb15b")
+		(uuid "5643257f-8393-47b7-b3e4-69304688d6ac")
 	)
 	(wire
 		(pts
-			(xy 168.91 104.14) (xy 168.91 113.03)
+			(xy 111.76 113.03) (xy 125.73 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ae19418-9863-4fd4-821d-36cd48758f4c")
+		(uuid "5d1588fd-59cf-44c5-9c51-890cd7849c24")
 	)
 	(wire
 		(pts
-			(xy 83.82 88.9) (xy 95.25 88.9)
+			(xy 163.83 113.03) (xy 163.83 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2bf3f7c2-0320-4522-87bd-2894bc72e472")
+		(uuid "63bfd670-4fe3-4d12-ab25-53e4b1d60a9e")
 	)
 	(wire
 		(pts
-			(xy 181.61 83.82) (xy 181.61 87.63)
+			(xy 153.67 102.87) (xy 163.83 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f4575c7-edd1-4e29-a4ca-04fb74895001")
+		(uuid "67c9d324-ae1c-4429-8284-c072a33bfc68")
 	)
 	(wire
 		(pts
-			(xy 102.87 43.18) (xy 102.87 45.72)
+			(xy 162.56 73.66) (xy 162.56 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f5050a8-4f33-43dd-9959-d38c9a7090c3")
+		(uuid "7652c770-c2f7-4117-84f6-677d76ef680e")
 	)
 	(wire
 		(pts
-			(xy 191.77 83.82) (xy 209.55 83.82)
+			(xy 162.56 91.44) (xy 167.64 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31c68804-12d2-4cc8-a4f9-c747ac6d8fe6")
+		(uuid "770ecc40-3e4b-4223-a16d-bd5fe72b09d8")
 	)
 	(wire
 		(pts
-			(xy 167.64 101.6) (xy 172.72 101.6)
+			(xy 119.38 127) (xy 128.27 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "383b153f-e1b5-4211-b0f7-f407686a8cfb")
+		(uuid "772c8948-73ab-43f2-b212-1d8251be2f75")
 	)
 	(wire
 		(pts
-			(xy 133.35 152.4) (xy 133.35 146.05)
+			(xy 119.38 77.47) (xy 119.38 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "38bcfcca-cd87-47d0-b18d-e413843139fb")
+		(uuid "7fa4dd8d-bffe-4188-a994-9cd8b13e5293")
 	)
 	(wire
 		(pts
-			(xy 124.46 83.82) (xy 167.64 83.82)
+			(xy 119.38 142.24) (xy 119.38 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "44cdd325-aac3-4c3f-8bbf-59b510ac8add")
+		(uuid "828af06d-1f97-4f34-b70b-f9fe6d209adb")
 	)
 	(wire
 		(pts
-			(xy 116.84 113.03) (xy 130.81 113.03)
+			(xy 78.74 83.82) (xy 97.79 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45e3b400-a8d5-46b4-b3aa-b28568b00c58")
+		(uuid "8991117b-3f02-4424-ab51-f32cfc6aa944")
 	)
 	(wire
 		(pts
-			(xy 124.46 101.6) (xy 124.46 137.16)
+			(xy 119.38 91.44) (xy 142.24 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54a9da8d-9384-47f2-817e-fb98aa8bf60e")
+		(uuid "89a35128-a32f-482b-9217-578baa64591e")
 	)
 	(wire
 		(pts
-			(xy 168.91 113.03) (xy 186.69 113.03)
+			(xy 90.17 76.2) (xy 90.17 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "577e05a6-1bea-4077-890c-8da65c3aa6c9")
+		(uuid "8b29f361-75f4-4f2f-b00f-1ec95c97105e")
 	)
 	(wire
 		(pts
-			(xy 181.61 83.82) (xy 191.77 83.82)
+			(xy 90.17 102.87) (xy 106.68 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58f77bf5-243c-4211-9ec8-c64d760a241c")
+		(uuid "8bffaae3-9135-45b6-8d22-f21a1ba84b9e")
 	)
 	(wire
 		(pts
-			(xy 168.91 123.19) (xy 186.69 123.19)
+			(xy 97.79 113.03) (xy 106.68 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c6773da-ee1c-4430-89fc-675cb243882d")
+		(uuid "8c026d1a-dcfd-4932-b5a6-f707e0de2494")
 	)
 	(wire
 		(pts
-			(xy 143.51 113.03) (xy 151.13 113.03)
+			(xy 138.43 132.08) (xy 138.43 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5cd06372-42d6-4af9-b93d-b3c80b207f51")
+		(uuid "906d090f-3ace-4042-8c30-7257ed50a3cc")
 	)
 	(wire
 		(pts
-			(xy 95.25 113.03) (xy 111.76 113.03)
+			(xy 194.31 113.03) (xy 213.36 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5d3d7095-fcdf-49ba-af17-ec8077d9f5ac")
+		(uuid "93dc3fa4-c387-4c77-894a-fbd4b3e639b6")
 	)
 	(wire
 		(pts
-			(xy 116.84 123.19) (xy 130.81 123.19)
+			(xy 163.83 113.03) (xy 181.61 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "64337a65-32dd-47e1-a909-846d27340749")
+		(uuid "96ba839f-fd44-4b67-93a7-3021079b7a5f")
 	)
 	(wire
 		(pts
-			(xy 143.51 123.19) (xy 151.13 123.19)
+			(xy 186.69 73.66) (xy 186.69 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6e2a2c1f-a7bc-4783-8e9d-19d419946ff9")
+		(uuid "97146839-0cae-46ae-8378-36ce581543ad")
 	)
 	(wire
 		(pts
-			(xy 124.46 87.63) (xy 124.46 83.82)
+			(xy 157.48 93.98) (xy 163.83 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f002fec-1b48-4821-a0ff-97cc838d5f6f")
+		(uuid "983b249c-e92f-4c1e-a587-b73b14fdc868")
 	)
 	(wire
 		(pts
-			(xy 191.77 83.82) (xy 191.77 87.63)
+			(xy 133.35 102.87) (xy 138.43 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f640581-5f56-40ad-b7c7-c0209eb375a8")
+		(uuid "9d3cfa9e-8f79-4536-8193-bea116a97eec")
 	)
 	(wire
 		(pts
-			(xy 133.35 137.16) (xy 133.35 140.97)
+			(xy 153.67 113.03) (xy 163.83 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "770e8caa-c30e-4e5d-af0d-2312d8f1fbfc")
+		(uuid "9e317503-2bc9-4d19-8995-a1771f3a3d68")
 	)
 	(wire
 		(pts
-			(xy 124.46 101.6) (xy 147.32 101.6)
+			(xy 194.31 100.33) (xy 194.31 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "801f6e7e-2f30-49a2-837a-252eb7a32f57")
+		(uuid "acd7adef-d506-4d6c-a640-508d0f2bec41")
 	)
 	(wire
 		(pts
-			(xy 162.56 104.14) (xy 168.91 104.14)
+			(xy 186.69 113.03) (xy 194.31 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86162efb-2df7-4912-a445-f11c150fb2f6")
+		(uuid "bad5ab4b-6224-494e-8459-88cd891af034")
 	)
 	(wire
 		(pts
-			(xy 199.39 125.73) (xy 199.39 123.19)
+			(xy 194.31 102.87) (xy 213.36 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "877376a2-f23d-4af7-bcaf-9781e841ee94")
+		(uuid "bb6ccdd0-ca7c-427d-b14e-1ea20a6de62f")
 	)
 	(wire
 		(pts
-			(xy 95.25 88.9) (xy 95.25 113.03)
+			(xy 176.53 73.66) (xy 176.53 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a5b645d-2599-4be6-a673-8ec9ba10a814")
+		(uuid "bc2e0742-2fa8-4ffa-984c-1c5d35332373")
 	)
 	(wire
 		(pts
-			(xy 143.51 142.24) (xy 143.51 123.19)
+			(xy 119.38 73.66) (xy 162.56 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8adc64b5-79dd-4079-9fb5-62b146f3c3b2")
+		(uuid "bf7aefec-ddd1-404b-8cc3-4a88975ef8ae")
 	)
 	(wire
 		(pts
-			(xy 167.64 83.82) (xy 167.64 86.36)
+			(xy 138.43 113.03) (xy 146.05 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8dc7a90e-5fc4-46cf-a763-4f8845afebf6")
+		(uuid "c381f840-f6d8-4b2c-be9c-05e997ea911b")
 	)
 	(wire
 		(pts
-			(xy 124.46 137.16) (xy 133.35 137.16)
+			(xy 119.38 127) (xy 119.38 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e991abc-1ec3-4c26-8471-8aa76476e447")
+		(uuid "c59e8791-8c45-4267-8dfe-2089daa403c3")
 	)
 	(wire
 		(pts
-			(xy 158.75 113.03) (xy 168.91 113.03)
+			(xy 194.31 115.57) (xy 194.31 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a3207624-70c3-4384-b676-2f7ad30d04e2")
+		(uuid "cbb4b5eb-5065-4d2c-9a23-44ac2efe1513")
 	)
 	(wire
 		(pts
-			(xy 102.87 53.34) (xy 102.87 78.74)
+			(xy 138.43 96.52) (xy 138.43 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a856d480-823e-43b2-b4f9-bc210b6936f7")
+		(uuid "ce41373b-8be1-4e80-998f-2e2109e88423")
 	)
 	(wire
 		(pts
-			(xy 124.46 137.16) (xy 124.46 139.7)
+			(xy 163.83 93.98) (xy 163.83 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aa8a3f95-d013-4d6e-b859-d5b4a743df65")
+		(uuid "d192a081-7c85-43fc-851f-788230cbbb0a")
 	)
 	(wire
 		(pts
-			(xy 124.46 95.25) (xy 124.46 101.6)
+			(xy 157.48 129.54) (xy 163.83 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aabf9a43-165f-4fe7-8a24-fa7ae702374c")
+		(uuid "d29f4bf7-1f06-4b75-b26a-4ebdadf885c2")
 	)
 	(wire
 		(pts
-			(xy 168.91 123.19) (xy 168.91 139.7)
+			(xy 128.27 142.24) (xy 128.27 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "adf4e915-798c-4bd7-ad79-d7a7c4ef507e")
+		(uuid "d45e9b6f-9bf6-43c4-a3d0-b5cffe894f78")
 	)
 	(wire
 		(pts
-			(xy 102.87 86.36) (xy 102.87 93.98)
+			(xy 200.66 73.66) (xy 204.47 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b12da8c1-967d-4d56-8fec-a6d7cf15aa12")
+		(uuid "db982069-06e8-45bf-9e0c-9ed02790a146")
 	)
 	(wire
 		(pts
-			(xy 95.25 43.18) (xy 95.25 45.72)
+			(xy 176.53 73.66) (xy 186.69 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be091b21-3137-414c-aac9-3fec9dd1dcd1")
+		(uuid "e08e480a-1faf-4223-906f-bb08d2c98179")
 	)
 	(wire
 		(pts
-			(xy 191.77 123.19) (xy 199.39 123.19)
+			(xy 97.79 76.2) (xy 97.79 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c10358d4-7045-4c9e-8afb-4108c96abea6")
+		(uuid "ec669c96-2564-43f1-a3b0-19a5085d7104")
 	)
 	(wire
 		(pts
-			(xy 83.82 93.98) (xy 102.87 93.98)
+			(xy 142.24 132.08) (xy 138.43 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c5109c6c-6754-4787-bf69-a8c0c319e699")
+		(uuid "edbaa2dd-53ba-4dc9-9f05-0a2ad9e24b25")
 	)
 	(wire
 		(pts
-			(xy 162.56 139.7) (xy 168.91 139.7)
+			(xy 97.79 66.04) (xy 97.79 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cae439cb-6faa-4bc7-bf08-15b9f769b477")
+		(uuid "ef517c3c-6afc-4ff6-b77e-bdad3b4da1c1")
 	)
 	(wire
 		(pts
-			(xy 133.35 137.16) (xy 147.32 137.16)
+			(xy 186.69 73.66) (xy 193.04 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e48857ef-edc3-4835-8f9f-82361a6f48ad")
+		(uuid "f2067cbb-bfc3-4861-98cf-b29f10dd03d5")
 	)
 	(wire
 		(pts
-			(xy 199.39 110.49) (xy 199.39 113.03)
+			(xy 90.17 78.74) (xy 90.17 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e96a745c-5240-4e5a-a0be-cafe03e41f60")
+		(uuid "f9022a4a-bb28-4dd2-a9ac-8d57bd246c53")
 	)
 	(wire
 		(pts
-			(xy 124.46 152.4) (xy 124.46 147.32)
+			(xy 163.83 102.87) (xy 181.61 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f3dee828-87ca-44d6-bf6b-3529aa58904b")
+		(uuid "fc060e1d-efef-4b72-9e66-6789bea7c62c")
 	)
 	(wire
 		(pts
-			(xy 95.25 53.34) (xy 95.25 78.74)
+			(xy 119.38 91.44) (xy 119.38 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f71624c5-761c-4225-bc28-973750a2207e")
-	)
-	(wire
-		(pts
-			(xy 143.51 106.68) (xy 147.32 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9636438-d573-4064-9d82-69556539f789")
+		(uuid "ff5299f6-94c8-42e3-90ec-6800832a6801")
 	)
 	(hierarchical_label "AMP_IN_L"
 		(shape input)
-		(at 83.82 88.9 180)
+		(at 78.74 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "2843d109-a687-428c-97ec-153da2fd7bc8")
-	)
-	(hierarchical_label "AMP_OUTR"
-		(shape input)
-		(at 218.44 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e74514fb-d00e-4f85-9e55-5bc28c70420a")
-	)
-	(hierarchical_label "AMP_IN_R"
-		(shape input)
-		(at 83.82 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f9454842-12a6-45d5-af32-5bda1b161d0b")
+		(uuid "0d5ca52d-d32c-4d49-9e26-8a1190fd6d9f")
 	)
 	(hierarchical_label "AMP_OUTL"
 		(shape input)
-		(at 218.44 113.03 0)
+		(at 213.36 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "ff83ff4d-696d-45c1-9a87-f4b1105e4bc0")
+		(uuid "c44b8ec9-ef42-4b79-b0b2-07d7641c1186")
+	)
+	(hierarchical_label "AMP_IN_R"
+		(shape input)
+		(at 78.74 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cd238fca-b0d5-4a59-84df-769f6eb4dff4")
+	)
+	(hierarchical_label "AMP_OUTR"
+		(shape input)
+		(at 213.36 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f4eeae89-80ca-48c5-9eea-b1f38d793f71")
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 199.39 129.54 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01cd1f91-deb9-41c1-9c44-63cbb42bbf25")
-		(property "Reference" "R15"
-			(at 196.85 130.8101 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "20K"
-			(at 196.85 128.2701 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 201.168 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 199.39 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 199.39 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 199.39 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 199.39 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b50eb7dc-9b02-40d0-9917-fc071f46346e")
-		)
-		(pin "2"
-			(uuid "cda93068-efff-446c-ab59-3ebf08156e54")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 189.23 113.03 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "04e150f4-9bdf-434d-b5d7-4d05edc6640d")
-		(property "Reference" "C6"
-			(at 189.484 109.982 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 189.484 115.824 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
-			(at 189.23 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 189.23 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 189.23 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 189.23 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1713"
-			(at 189.23 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "374d5bbb-a12d-4724-a34e-c5ad829e49c3")
-		)
-		(pin "2"
-			(uuid "9a8f8a5e-5504-4160-9e48-e7dbc217d02b")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 172.72 101.6 90)
+		(at 194.31 92.71 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "06ecbaf1-64db-494c-9e76-391bc79dbd46")
-		(property "Reference" "#PWR021"
-			(at 179.07 101.6 0)
+		(uuid "01de2c29-7d1a-44e8-a93b-c43223c48ee2")
+		(property "Reference" "#PWR0104"
+			(at 194.31 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1616,7 +1596,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 177.1142 101.473 0)
+			(at 194.183 88.3158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1624,7 +1604,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 101.6 0)
+			(at 194.31 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1633,7 +1613,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 101.6 0)
+			(at 194.31 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1642,7 +1622,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 101.6 0)
+			(at 194.31 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1651,554 +1631,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "329bb3b4-be17-42d5-b0be-39d0e0ea8feb")
+			(uuid "99e3de82-fe60-4a47-9e0e-fc8f17e84994")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 124.46 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2863b3aa-e1ef-4bac-a852-df504edbbcbd")
-		(property "Reference" "#PWR024"
-			(at 124.46 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 124.587 156.7942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "61ccbb53-077c-4ee9-a93e-abd8a20163ab")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 102.87 82.55 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3efbfedb-c94d-4de7-befb-d9e8047d02c0")
-		(property "Reference" "R8"
-			(at 100.584 84.328 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 105.156 83.566 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 104.648 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 102.87 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 102.87 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 102.87 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17414"
-			(at 102.87 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4c6a59a4-51ce-40db-a0d3-ae996e96e967")
-		)
-		(pin "2"
-			(uuid "218962d8-0c8f-4742-826f-a31d93ab2856")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 95.25 43.18 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4ce62580-1c5e-4c4b-89f8-c8cc85c32318")
-		(property "Reference" "#PWR016"
-			(at 95.25 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 95.123 38.7858 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.25 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ba58b058-c1d3-4f31-8e75-26eaee07d0ff")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 102.87 43.18 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4f105eef-ba6a-4d02-92be-58ab4cff2679")
-		(property "Reference" "#PWR017"
-			(at 102.87 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 102.743 38.7858 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "151571df-f0df-4bee-968b-25bd15248337")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 134.62 113.03 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ddc42f6-4390-4d4e-b92f-e492e7b9b7e7")
-		(property "Reference" "R11"
-			(at 136.398 115.316 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 135.636 110.744 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 134.62 111.252 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 134.62 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 134.62 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17414"
-			(at 134.62 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bcc0a2c6-75c6-4517-b971-448bf2b234b0")
-		)
-		(pin "2"
-			(uuid "ab51eec5-9dbd-4c8a-8d43-bf3eed2508f7")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 95.25 49.53 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5de17c59-8e07-48d6-9578-c4a06d5eeb7f")
-		(property "Reference" "R5"
-			(at 92.964 51.308 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2K"
-			(at 97.536 50.546 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 97.028 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 95.25 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 95.25 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 95.25 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 95.25 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1efd97e7-fcb8-4e98-9d17-deb2a681ac32")
-		)
-		(pin "2"
-			(uuid "96850d04-4dc6-45f6-afb1-b57349cce3f2")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 154.94 113.03 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ec12992-7d5b-42d0-885a-567755e5ee02")
-		(property "Reference" "R12"
-			(at 156.718 115.316 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "47K"
-			(at 155.956 110.744 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 154.94 111.252 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 154.94 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 154.94 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 154.94 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8134133f-a8c5-4047-ba1a-e332288f6b09")
-		)
-		(pin "2"
-			(uuid "f133b2f5-a101-4d22-a32c-6c68b70da04f")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R12")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -2206,34 +1644,32 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 170.18 93.98 0)
-		(unit 3)
+		(at 149.86 129.54 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5ef7ff78-2200-4e8a-af97-466d9e0b7188")
-		(property "Reference" "U2"
-			(at 168.91 92.7099 0)
+		(uuid "05e47dcf-a547-4f78-b35c-a3624d1f0f0c")
+		(property "Reference" "U11"
+			(at 149.86 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "LM358"
-			(at 168.91 95.2499 0)
+			(at 149.86 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "FRANK:SO-8"
-			(at 170.18 93.98 0)
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2242,7 +1678,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 170.18 93.98 0)
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2251,7 +1687,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 170.18 93.98 0)
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2260,7 +1696,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005006785079218.html"
-			(at 170.18 93.98 0)
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,909 +1704,75 @@
 				(hide yes)
 			)
 		)
-		(pin "6"
-			(uuid "cea6b67e-7dc6-4512-a257-4b9c9d4fe7bd")
-		)
-		(pin "2"
-			(uuid "cecc6922-c48c-423d-b59f-ca074e4c62c6")
-		)
-		(pin "8"
-			(uuid "7de7f9f2-a416-45ad-b1be-fd8c586414d1")
-		)
-		(pin "4"
-			(uuid "a4247944-6869-4f49-b6ba-2b2d23af52fd")
-		)
-		(pin "7"
-			(uuid "8517c890-9244-475a-93e4-6ec81dc9ac4f")
-		)
-		(pin "5"
-			(uuid "c3e0ccc3-87d8-4124-bc2c-dc0280fdebd4")
-		)
-		(pin "3"
-			(uuid "ffacdeac-74f0-4c75-901d-be69c1911a2d")
-		)
-		(pin "1"
-			(uuid "fcce427e-222f-4c81-be8d-217f39358cb5")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "U2")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 114.3 123.19 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "77e22e91-b495-49a2-b3a9-bd9a39c54a30")
-		(property "Reference" "C7"
-			(at 114.554 120.142 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 114.554 125.984 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
-			(at 114.3 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 114.3 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 114.3 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 114.3 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1713"
-			(at 114.3 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "48083244-b65d-49a7-aa3d-cae5ca6b99bc")
-		)
-		(pin "2"
-			(uuid "181ee244-25cf-446c-a86b-bb4f97fb172c")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 154.94 104.14 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "83b1dcc6-316b-4269-91ce-b84326a2b171")
-		(property "Reference" "U2"
-			(at 154.94 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM358"
-			(at 154.94 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:SO-8"
-			(at 154.94 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 154.94 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 154.94 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005006785079218.html"
-			(at 154.94 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "d4955de7-92a7-4d12-9ee7-8a8fe9e6bc97")
-		)
-		(pin "2"
-			(uuid "cecc6922-c48c-423d-b59f-ca074e4c62c7")
-		)
-		(pin "8"
-			(uuid "f2763883-6c5c-42ac-813b-3dfb026a267b")
-		)
-		(pin "4"
-			(uuid "82ab2919-821b-4488-b358-47939293d912")
-		)
-		(pin "7"
-			(uuid "ca1cd8a1-cef4-4551-87f7-f75d6ecb23b5")
-		)
-		(pin "5"
-			(uuid "013927be-152b-48cc-8705-d7833bece518")
-		)
-		(pin "3"
-			(uuid "ffacdeac-74f0-4c75-901d-be69c1911a2e")
-		)
-		(pin "1"
-			(uuid "fcce427e-222f-4c81-be8d-217f39358cb6")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "U2")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 189.23 123.19 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "846aa966-e3e6-43ba-8b73-48b26b7134d5")
-		(property "Reference" "C8"
-			(at 189.484 120.142 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 189.484 125.984 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
-			(at 189.23 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 189.23 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 189.23 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 189.23 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1713"
-			(at 189.23 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3f73704a-9b9c-4524-8619-ec7da182841f")
-		)
-		(pin "2"
-			(uuid "f5bcfa0e-72cd-42f3-8559-c060c90be752")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 133.35 143.51 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8ad30954-e1c9-45fc-ae08-d89d01cb4a80")
-		(property "Reference" "C9"
-			(at 130.302 143.256 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 136.144 143.256 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
-			(at 133.35 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 133.35 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 133.35 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 133.35 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1713"
-			(at 133.35 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2578350b-c31b-46cf-a91a-d66070e10ca4")
-		)
-		(pin "2"
-			(uuid "8784ce15-521b-4d7b-8e64-2ec8acb32fd9")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 199.39 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f821b32-0678-43c3-9c67-e420dfbfa2e9")
-		(property "Reference" "#PWR023"
-			(at 199.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 199.517 137.7442 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4ce49992-3e41-4c86-b568-755f34d0ff34")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 124.46 143.51 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a4dc7b05-4729-43ee-b1f7-8cdae111eebd")
-		(property "Reference" "R16"
-			(at 122.174 145.288 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 126.746 144.526 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 126.238 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 124.46 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 124.46 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17414"
-			(at 124.46 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "61cbb46c-c880-4d55-94ae-1e42339f3278")
-		)
-		(pin "2"
-			(uuid "f7c07af3-60ec-4d94-acb8-8b46c3387c62")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 199.39 102.87 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a91624ec-f177-4169-8a0d-6afe98ff09e4")
-		(property "Reference" "#PWR022"
-			(at 199.39 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 199.263 98.4758 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a64b63f3-2907-472f-9c23-4690883e8759")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 154.94 123.19 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b0f41542-11d6-48ba-b87e-a5eaa3027120")
-		(property "Reference" "R14"
-			(at 156.718 125.476 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "47K"
-			(at 155.956 120.904 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 154.94 121.412 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 154.94 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 154.94 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 154.94 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "33ce364b-105f-40cf-9749-e7109b14bac0")
-		)
-		(pin "2"
-			(uuid "2ad41067-abbc-40bd-b6ba-ebae0c7cf848")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 133.35 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b1f33599-e6b9-4278-8595-a632ab478631")
-		(property "Reference" "#PWR025"
-			(at 133.35 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 133.477 156.7942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 133.35 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b429a461-5a07-4889-96c8-beed28413c7f")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 134.62 123.19 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b40ea3a0-2081-4823-8676-c56f8105fe30")
-		(property "Reference" "R13"
-			(at 136.398 125.476 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 135.636 120.904 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 134.62 121.412 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 134.62 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 134.62 123.19 0)
+		(property "Availability" ""
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
-			(at 134.62 123.19 0)
+		(property "Check_prices" ""
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f5a5862f-021d-44f6-b652-adf5ca162ef9")
-		)
-		(pin "2"
-			(uuid "b3c1ed37-db0c-4ccc-989b-00cdfde7e770")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R13")
-					(unit 1)
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 154.94 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b638e1cb-4186-4be4-8dce-f39259502273")
-		(property "Reference" "U2"
-			(at 154.94 129.54 0)
+		(property "Description_1" ""
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LM358"
-			(at 154.94 132.08 0)
+		(property "MF" ""
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "FRANK:SO-8"
-			(at 154.94 139.7 0)
+		(property "MP" ""
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 154.94 139.7 0)
+		(property "Package" ""
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 154.94 139.7 0)
+		(property "Price" ""
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005006785079218.html"
-			(at 154.94 139.7 0)
+		(property "SnapEDA_Link" ""
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "6"
 			(uuid "95c5a473-6cc4-49bf-ae33-9e74a8fce8c8")
 		)
 		(pin "2"
-			(uuid "60d41cb4-5034-4080-8fc3-f9f849980e96")
+			(uuid "87da9ab6-8faf-473d-bef5-39a3b881b2bc")
 		)
 		(pin "8"
 			(uuid "f2763883-6c5c-42ac-813b-3dfb026a267c")
@@ -3185,32 +1787,1182 @@
 			(uuid "80727387-59c1-4014-893e-74a358027b5b")
 		)
 		(pin "3"
-			(uuid "137b12db-ad9f-4917-b243-d818335db8c8")
+			(uuid "7b22dfe6-d9d8-42ac-a432-8ff0e17b9e7c")
 		)
 		(pin "1"
-			(uuid "7cbc281e-9027-497d-aa92-03a129c5180e")
+			(uuid "d0661726-e462-4152-ac2a-b00fc9a4d667")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "U2")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "U11")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 181.61 92.71 0)
+		(lib_id "FRANK:R")
+		(at 129.54 102.87 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bc896ed4-cb6c-4272-be80-d999a7de7a05")
-		(property "Reference" "#PWR019"
-			(at 181.61 99.06 0)
+		(uuid "0f11dcf0-20b9-46a1-bf3d-96efb9ef85e9")
+		(property "Reference" "R43"
+			(at 131.318 105.156 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 130.556 100.584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 129.54 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c253026a-085b-44c4-96fc-2d27a563cddd")
+		)
+		(pin "2"
+			(uuid "cd422e1f-4068-4288-bfa1-6e30ec95d95f")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 149.86 102.87 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18a0810c-7e13-451f-8b25-5c267d9a0fe3")
+		(property "Reference" "R45"
+			(at 151.638 105.156 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "47K"
+			(at 150.876 100.584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 149.86 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "48640148-3f1a-450f-8440-9b78b9131d4c")
+		)
+		(pin "2"
+			(uuid "bc1db656-0b4b-4b63-9d69-24e9fe6143df")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 129.54 113.03 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "32f3b239-a074-4174-8bc2-f884f6b80236")
+		(property "Reference" "R44"
+			(at 131.318 115.316 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 130.556 110.744 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 129.54 111.252 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 129.54 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d3670b8-8502-41a8-aa5f-614d2df0bd7a")
+		)
+		(pin "2"
+			(uuid "53f45f66-a685-477c-b397-395d6b5a76b7")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 90.17 72.39 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34e39e27-82e1-4b46-98cf-bec6dda71149")
+		(property "Reference" "R39"
+			(at 87.884 74.168 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 92.456 73.406 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 91.948 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 90.17 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "683e1664-cbd6-4b07-a618-799274c168fc")
+		)
+		(pin "2"
+			(uuid "1a5c6b9e-47fb-4f97-b203-b9fe5b3b24a7")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 149.86 93.98 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40d72899-06b1-49bb-b84b-9827eb146d1b")
+		(property "Reference" "U11"
+			(at 149.86 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM358"
+			(at 149.86 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:SO-8"
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005006785079218.html"
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 149.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "d80469a8-4a44-4f75-8c59-c02a05f2b76e")
+		)
+		(pin "2"
+			(uuid "cecc6922-c48c-423d-b59f-ca074e4c62c7")
+		)
+		(pin "8"
+			(uuid "f2763883-6c5c-42ac-813b-3dfb026a267b")
+		)
+		(pin "4"
+			(uuid "82ab2919-821b-4488-b358-47939293d912")
+		)
+		(pin "7"
+			(uuid "fd92fbd9-6ace-44fc-8dc8-2272accb1b3d")
+		)
+		(pin "5"
+			(uuid "eb27c49d-959b-4905-957c-37c01f9caba1")
+		)
+		(pin "3"
+			(uuid "ffacdeac-74f0-4c75-901d-be69c1911a2e")
+		)
+		(pin "1"
+			(uuid "fcce427e-222f-4c81-be8d-217f39358cb6")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "U11")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 196.85 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "45a771ec-6b71-4462-b024-a97155e2de06")
+		(property "Reference" "R49"
+			(at 199.898 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 194.818 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 196.85 71.882 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 196.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a113f9b1-840c-4c9e-8c74-337400069c88")
+		)
+		(pin "2"
+			(uuid "2c31b195-b50e-4148-827a-b8413c2f007c")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 97.79 72.39 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49944c99-e3bd-4fab-b0a5-88e1a3c8a08c")
+		(property "Reference" "R40"
+			(at 95.504 74.168 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 100.076 73.406 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 99.568 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 97.79 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e41c4b42-9208-4ff6-97e0-ee8bf71cc4a9")
+		)
+		(pin "2"
+			(uuid "cdf0c3c5-a3f9-4ef2-80d7-05a1227f185a")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 119.38 133.35 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d77f1e1-276a-474e-8292-3db3d753100b")
+		(property "Reference" "R42"
+			(at 117.094 135.128 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 121.666 134.366 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 121.158 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "174ee388-fa18-428f-8ef0-dbfbba706fc5")
+		)
+		(pin "2"
+			(uuid "9501c6f3-c2df-47b6-b414-c1ed9623d51b")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "52743d04-9612-493f-bc06-4bfed91c13fa")
+		(property "Reference" "#PWR0103"
+			(at 186.69 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3219,7 +2971,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.737 97.1042 0)
+			(at 186.817 86.9442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3227,7 +2979,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 92.71 0)
+			(at 186.69 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3236,7 +2988,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 92.71 0)
+			(at 186.69 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3245,7 +2997,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 181.61 92.71 0)
+			(at 186.69 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3254,29 +3006,659 @@
 			)
 		)
 		(pin "1"
-			(uuid "9406cc1b-08c6-4234-9038-23290578f1ed")
+			(uuid "f94dff31-f20c-436c-a122-a017c91a840e")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR019")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 199.39 106.68 0)
+		(lib_id "power:GND")
+		(at 176.53 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "52e2c5e8-d6dc-426f-bb25-cba4c7c5e8df")
+		(property "Reference" "#PWR0102"
+			(at 176.53 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.657 86.9442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f854a89-bfc2-4cb5-b309-9a306d7cd930")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:C_Small")
+		(at 109.22 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53a047e3-7efb-4fb0-8b7b-b8665e675c7f")
+		(property "Reference" "C37"
+			(at 109.474 109.982 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 109.474 115.824 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:C_0603_1608Metric"
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4387eeea-22ec-46f3-9e38-6038c0fddc6e")
+		)
+		(pin "2"
+			(uuid "341e20aa-c89c-4015-9a97-cb54180e281e")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 194.31 119.38 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c482f169-915a-444c-9402-3c0246bf088a")
-		(property "Reference" "R10"
-			(at 201.93 105.4099 0)
+		(uuid "5f6715a0-96fe-44f4-81d9-34b57f4fc8e1")
+		(property "Reference" "R48"
+			(at 196.85 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "20K"
+			(at 196.85 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 196.088 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11ba447c-4c0e-4583-8d01-9ab43214b132")
+		)
+		(pin "2"
+			(uuid "4be18236-a6d7-40f2-8460-97c6aefa5fa9")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 149.86 113.03 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6afc2237-5640-4633-9533-2ba32b5856b9")
+		(property "Reference" "R46"
+			(at 151.638 115.316 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "47K"
+			(at 150.876 110.744 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 149.86 111.252 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 149.86 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b7c075fb-7a19-4d41-885c-8c446afbc084")
+		)
+		(pin "2"
+			(uuid "aba53e46-1bd5-4bf0-ae99-5fca149d2612")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:C_Small")
+		(at 186.69 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f22d1a4-435a-46b5-b556-4456151da0a2")
+		(property "Reference" "C42"
+			(at 183.642 79.756 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 189.484 79.756 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:C_0603_1608Metric"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 186.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c89ffbfb-e9f7-4b7e-9b48-35632694c7a1")
+		)
+		(pin "2"
+			(uuid "f3eab329-d256-4a6a-a5a4-f6c7d0aba7ce")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 194.31 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "706a03da-596e-4bdb-aa6c-99e44d9e9aec")
+		(property "Reference" "R47"
+			(at 196.85 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,7 +3667,7 @@
 			)
 		)
 		(property "Value" "20K"
-			(at 201.93 107.9499 0)
+			(at 196.85 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,8 +3675,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 197.612 106.68 90)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 192.532 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3302,8 +3684,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 199.39 106.68 0)
+		(property "Datasheet" "~"
+			(at 194.31 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3311,8 +3693,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 199.39 106.68 0)
+		(property "Description" "Resistor"
+			(at 194.31 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3321,7 +3703,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 199.39 106.68 0)
+			(at 194.31 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3329,8 +3711,64 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 199.39 106.68 0)
+		(property "Availability" ""
+			(at 194.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 194.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 194.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 194.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 194.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 194.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 194.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 194.31 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,269 +3776,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "1bdd5f63-507b-423b-ae9e-70fa8be4c60c")
+			(uuid "72ec6c4f-db2c-4628-b757-1f7d90ba72a1")
 		)
 		(pin "2"
-			(uuid "86c872ca-8176-4f98-a9d6-436075664ab4")
+			(uuid "435a63de-14cc-44f3-b856-f329a9876793")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R10")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R47")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 95.25 82.55 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ccf6bac6-dbb4-4d08-b6fb-3643a86edf70")
-		(property "Reference" "R7"
-			(at 92.964 84.328 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 97.536 83.566 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 97.028 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 95.25 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 95.25 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 95.25 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17414"
-			(at 95.25 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "982eef86-9015-4a7b-b83d-59968d622e6a")
-		)
-		(pin "2"
-			(uuid "3863699c-e0a3-425f-9a49-8afeb41aebcf")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 209.55 83.82 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfebbd64-be9a-471c-9c40-10f9d041ed04")
-		(property "Reference" "#PWR018"
-			(at 205.74 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 213.36 83.8199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 209.55 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "632d86e7-7cac-475d-a357-d9641fced9a4")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 191.77 90.17 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e059d282-900a-41b5-92c1-be1b3e719d3c")
-		(property "Reference" "C4"
-			(at 188.722 89.916 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 194.564 89.916 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
-			(at 191.77 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 191.77 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 191.77 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 191.77 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1711"
-			(at 191.77 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a277cf71-c3ac-43ab-bae1-1802cc6677a4")
-		)
-		(pin "2"
-			(uuid "0f3c64bf-5187-4c9c-9da4-84886dc13596")
-		)
-		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 191.77 92.71 0)
+		(at 97.79 66.04 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e2c3d1a6-fbc5-497a-b7d2-7b2832454c60")
-		(property "Reference" "#PWR020"
-			(at 191.77 99.06 0)
+		(uuid "72abe9f3-5f9c-4c49-9da7-83b49017db12")
+		(property "Reference" "#PWR098"
+			(at 97.79 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3609,7 +3809,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 191.897 97.1042 0)
+			(at 97.663 61.6458 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3617,7 +3817,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 191.77 92.71 0)
+			(at 97.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3626,7 +3826,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.77 92.71 0)
+			(at 97.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3635,7 +3835,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 191.77 92.71 0)
+			(at 97.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3644,28 +3844,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "79e5da16-a8b7-49ef-b1b1-1020ee293078")
+			(uuid "61bd767a-fcd9-4b8f-9be0-4ad329214083")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "#PWR020")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 114.3 113.03 90)
+		(lib_id "Device:C_Polarized_Small")
+		(at 176.53 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e59a95c3-337e-4375-ae8b-8f3058cbf3fc")
-		(property "Reference" "C5"
-			(at 114.554 109.982 90)
+		(uuid "75caecaa-27bd-4179-b0f2-5a0eec0e0a90")
+		(property "Reference" "C39"
+			(at 173.482 79.756 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3673,24 +3873,15 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 114.554 115.824 90)
+			(at 179.324 79.756 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
-			(at 114.3 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 114.3 113.03 0)
+		(property "Footprint" "FRANK:Capacitor (3528, tantalum, polar)"
+			(at 176.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3698,8 +3889,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 114.3 113.03 0)
+		(property "Datasheet" "~"
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 176.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3708,7 +3908,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 114.3 113.03 0)
+			(at 176.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3716,8 +3916,64 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1713"
-			(at 114.3 113.03 0)
+		(property "Availability" ""
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 176.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3725,31 +3981,96 @@
 			)
 		)
 		(pin "1"
-			(uuid "533dcf0a-c3c6-4750-8787-84717673bc13")
+			(uuid "15322943-d969-4348-932a-b305ed10cd5a")
 		)
 		(pin "2"
-			(uuid "42363498-6aa7-4219-b859-0be9babdb736")
+			(uuid "34cb7f2c-bc61-4974-a70d-7f59e4f63f4a")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "C5")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "C39")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 124.46 91.44 180)
+		(lib_id "power:GND")
+		(at 194.31 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ed1ae7da-bf72-418d-8869-0abb95904d35")
-		(property "Reference" "R9"
-			(at 122.174 93.218 90)
+		(uuid "7cb8b2bc-ea1c-412a-b94f-479243bc5be8")
+		(property "Reference" "#PWR0105"
+			(at 194.31 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 194.437 127.5842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 194.31 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "446202e9-f4a7-4151-ab92-d9dedca30d36")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 119.38 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fdce5dd-3117-4710-859b-91cbb550053f")
+		(property "Reference" "R41"
+			(at 117.094 83.058 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3758,7 +4079,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 126.746 92.456 90)
+			(at 121.666 82.296 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3766,8 +4087,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 126.238 91.44 90)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 121.158 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3775,8 +4096,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 124.46 91.44 0)
+		(property "Datasheet" "~"
+			(at 119.38 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3784,8 +4105,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 124.46 91.44 0)
+		(property "Description" "Resistor"
+			(at 119.38 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3794,7 +4115,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 124.46 91.44 0)
+			(at 119.38 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,8 +4123,64 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
-			(at 124.46 91.44 0)
+		(property "Availability" ""
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 119.38 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3811,47 +4188,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "0aaf11e7-92b9-4d67-a16c-cf0dbbacc2e1")
+			(uuid "6164e49c-7da2-403f-b64c-6bab52ae11b1")
 		)
 		(pin "2"
-			(uuid "bee20588-f356-4a93-8050-3966f28347db")
+			(uuid "66508aa9-ce5a-45be-bed2-144f762a1052")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R9")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "R41")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 181.61 90.17 180)
+		(lib_id "power:VBUS")
+		(at 204.47 73.66 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f0cb6ff0-65eb-4092-8b2e-9c45d97639da")
-		(property "Reference" "C3"
-			(at 178.562 89.916 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 184.404 89.916 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Capacitor (0805)"
-			(at 181.61 90.17 0)
+		(fields_autoplaced yes)
+		(uuid "9b0e2759-fc29-4c2e-a1ae-952ca5abb745")
+		(property "Reference" "#PWR0106"
+			(at 200.66 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,8 +4221,381 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 181.61 90.17 0)
+		(property "Value" "VBUS"
+			(at 208.28 73.6599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 204.47 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0bd6cb39-1e13-460b-945a-f4d805ea8a2d")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 165.1 83.82 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dd4bf93-5dad-4730-a219-5ba2524a382b")
+		(property "Reference" "U11"
+			(at 163.83 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM358"
+			(at 163.83 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FRANK:SO-8"
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005006785079218.html"
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "cea6b67e-7dc6-4512-a257-4b9c9d4fe7bd")
+		)
+		(pin "2"
+			(uuid "cecc6922-c48c-423d-b59f-ca074e4c62c6")
+		)
+		(pin "8"
+			(uuid "62e942fd-8348-489a-a4af-ef21d319fbfd")
+		)
+		(pin "4"
+			(uuid "1f6952fe-477d-4648-9745-83b360507732")
+		)
+		(pin "7"
+			(uuid "8517c890-9244-475a-93e4-6ec81dc9ac4f")
+		)
+		(pin "5"
+			(uuid "c3e0ccc3-87d8-4124-bc2c-dc0280fdebd4")
+		)
+		(pin "3"
+			(uuid "ffacdeac-74f0-4c75-901d-be69c1911a2d")
+		)
+		(pin "1"
+			(uuid "fcce427e-222f-4c81-be8d-217f39358cb5")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "U11")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 90.17 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1b12f2f-babf-406b-b4aa-9578ffeb5b17")
+		(property "Reference" "#PWR097"
+			(at 90.17 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.043 61.6458 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 90.17 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72b54653-c010-481f-8344-5d7b5aafad96")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 167.64 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b74ba771-5e81-4f98-8c08-d3946301833e")
+		(property "Reference" "#PWR0101"
+			(at 173.99 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.0342 91.313 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 167.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a95b365-3307-4879-a43e-fa707ce52d24")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:C_Small")
+		(at 184.15 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca072791-3f03-44bf-ade2-8c15a2fd0315")
+		(property "Reference" "C41"
+			(at 184.404 109.982 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 184.404 115.824 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:C_0603_1608Metric"
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3869,7 +4604,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 181.61 90.17 0)
+			(at 184.15 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3878,7 +4613,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 181.61 90.17 0)
+			(at 184.15 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,68 +4621,112 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1713"
-			(at 181.61 90.17 0)
+		(property "Availability" ""
+			(at 184.15 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "2b465c0f-9aa7-4394-abb2-14f23ee7d42b")
+			(uuid "20e5f39e-1391-4421-861a-90c6d0b87ecd")
 		)
 		(pin "2"
-			(uuid "0d674838-2aa6-42f6-a898-6a7177889f17")
+			(uuid "b9970302-c1ce-4898-91a7-c648c4d1dba4")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "C3")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "C41")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 102.87 49.53 180)
+		(lib_id "FRANK:C_Small")
+		(at 109.22 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fa810d99-b4fa-4806-abea-12fbe8bab36a")
-		(property "Reference" "R6"
-			(at 100.584 51.308 90)
+		(uuid "d0c6c10f-eed1-49ca-a664-455eec302b78")
+		(property "Reference" "C36"
+			(at 109.474 99.822 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "2K"
-			(at 105.156 50.546 90)
+		(property "Value" "10u"
+			(at 109.474 105.664 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:Resistor (0805)"
-			(at 104.648 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28952/mcs0402at-mct0603at-mcu0805at-mca1206at.pdf"
-			(at 102.87 49.53 0)
+		(property "Footprint" "FRANK:C_0603_1608Metric"
+			(at 109.22 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3955,8 +4734,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 102.87 49.53 0)
+		(property "Datasheet" "~"
+			(at 109.22 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3964,8 +4743,8 @@
 				(hide yes)
 			)
 		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005005945735199.html"
-			(at 102.87 49.53 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,8 +4752,73 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 102.87 49.53 0)
+		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
+			(at 109.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 109.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 109.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 109.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 109.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 109.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 109.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 109.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 109.22 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3982,15 +4826,425 @@
 			)
 		)
 		(pin "1"
-			(uuid "5085c42b-8bbc-4b02-a7ec-30c53012412d")
+			(uuid "5a66ea48-c10f-4bc0-847f-e2ecbe5b7c8a")
 		)
 		(pin "2"
-			(uuid "a9bb9881-a2bd-4720-82f6-df1fef10656c")
+			(uuid "c930da71-5615-4cf5-b187-1a2472f520a5")
 		)
 		(instances
-			(project "minifrank_rm1"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/11d45d08-0d6a-4028-9002-1966a3c57bf3/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
-					(reference "R6")
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 128.27 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "efbe9b0a-1608-4f32-a6fe-a4190a6b1d71")
+		(property "Reference" "#PWR0100"
+			(at 128.27 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.397 146.6342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "605ad089-5188-407b-96f3-e73eaf082fac")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:C_Small")
+		(at 184.15 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7425a64-1b22-4844-9371-dd7ea4373f1e")
+		(property "Reference" "C40"
+			(at 184.404 99.822 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 184.404 105.664 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:C_0603_1608Metric"
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 184.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcc9fa7b-5634-45a4-8e23-604e6e00f068")
+		)
+		(pin "2"
+			(uuid "cbf20715-fc2b-433e-9740-1e8717d2df76")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:C_Small")
+		(at 128.27 133.35 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb72f98b-7efe-4d3f-9560-3466161dfb3d")
+		(property "Reference" "C38"
+			(at 125.222 133.096 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 131.064 133.096 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:C_0603_1608Metric"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "75916f75-eae7-4b4a-9b60-ab2a16868b41")
+		)
+		(pin "2"
+			(uuid "21a99bb2-1308-490e-a06f-ba906700d7c8")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 119.38 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fde10896-a753-4e36-ab94-dd59a45af7ad")
+		(property "Reference" "#PWR099"
+			(at 119.38 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 119.507 146.6342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 119.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f11b450d-4c5f-433b-94a9-87b6bbd3a6e6")
+		)
+		(instances
+			(project "tinyfrank_rm2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/9d0ad236-240c-42bd-9e4a-79b0506e7ea9/3a0b6cee-28de-4cf4-a8a0-557e76ef8313"
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
