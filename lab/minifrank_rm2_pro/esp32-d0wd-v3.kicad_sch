@@ -4957,6 +4957,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 34.29) (xy 163.83 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7f1273e-e24e-418c-a6fa-82b3a2f03bc4")
+	)
+	(wire
+		(pts
 			(xy 41.91 76.2) (xy 48.26 76.2)
 		)
 		(stroke
@@ -5175,6 +5185,16 @@
 		)
 		(uuid "5120a296-7229-4381-962b-8c10ce3f47a7")
 	)
+	(label "U0RXD"
+		(at 163.83 34.29 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55daa2e5-5dc8-4ac4-b231-6a76b98edeed")
+	)
 	(label "XTAL_P"
 		(at 213.36 90.17 0)
 		(effects
@@ -5195,6 +5215,16 @@
 		)
 		(uuid "63982d8c-d0ee-49fd-bd84-14838fa88cb2")
 	)
+	(label "U0TXD"
+		(at 161.29 34.29 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b75938d-4642-434a-8c51-9c040f45cdab")
+	)
 	(label "XTAL_N"
 		(at 153.67 30.48 270)
 		(effects
@@ -5214,6 +5244,26 @@
 			(justify right bottom)
 		)
 		(uuid "886399b7-7d8b-4682-9987-b0075eed0bdb")
+	)
+	(label "U0TXD"
+		(at 204.47 66.04 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3f8f6fc-b686-4e7c-af8a-e2b4c5e3b296")
+	)
+	(label "U0RXD"
+		(at 194.31 66.04 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4e54e92-1e28-4766-945c-f98a02d89452")
 	)
 	(label "CAP1"
 		(at 143.51 30.48 270)
@@ -5509,17 +5559,6 @@
 		)
 		(uuid "81a6b097-e937-4ce3-b102-ae1bba7657ed")
 	)
-	(hierarchical_label "U0RXD"
-		(shape input)
-		(at 194.31 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "82ee90a4-816c-47c4-91d1-7fcc7f3f80d0")
-	)
 	(hierarchical_label "SHD{slash}SD2"
 		(shape input)
 		(at 74.93 170.18 180)
@@ -5629,17 +5668,6 @@
 			(justify right)
 		)
 		(uuid "ab3edd32-f662-4709-994c-14d0ea478649")
-	)
-	(hierarchical_label "U0TXD"
-		(shape input)
-		(at 204.47 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "aea796c0-5eea-4b59-9ac2-e541366ba29c")
 	)
 	(hierarchical_label "RTS"
 		(shape input)
@@ -5751,17 +5779,6 @@
 		)
 		(uuid "d2ed765d-b894-4019-8e36-c717b18b417b")
 	)
-	(hierarchical_label "U0TXD"
-		(shape input)
-		(at 161.29 34.29 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d42001d7-bed6-4e53-a51f-8f75fd39fe81")
-	)
 	(hierarchical_label "CHIP_PU"
 		(shape input)
 		(at 49.53 115.57 90)
@@ -5861,17 +5878,6 @@
 		)
 		(uuid "e89c86dd-4805-4a31-b27f-90680a5e7c53")
 	)
-	(hierarchical_label "U0RXD"
-		(shape input)
-		(at 163.83 54.61 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e96c7bb6-6c5f-43eb-b24b-e41fd176f67c")
-	)
 	(hierarchical_label "GPIO0"
 		(shape input)
 		(at 214.63 40.64 0)
@@ -5947,7 +5953,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "05a9f9f4-7af8-474d-8ad4-4d46c4cd0f66")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR078"
 			(at 156.21 58.42 0)
 			(effects
 				(font
@@ -5997,7 +6003,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR093")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -6012,7 +6018,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "09064532-1e9e-4e1e-a9a2-7040f905e46c")
-		(property "Reference" "C46"
+		(property "Reference" "C42"
 			(at 205.486 45.72 90)
 			(effects
 				(font
@@ -6028,7 +6034,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 208.28 45.72 0)
 			(effects
 				(font
@@ -6090,7 +6096,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C46")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -6106,7 +6112,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0972648c-aa43-4349-b71b-8d6a2691bc42")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR089"
 			(at 257.81 82.55 0)
 			(effects
 				(font
@@ -6156,7 +6162,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR0104")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -6172,7 +6178,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a8864af-1e5d-46fa-ab27-74d50efa571a")
-		(property "Reference" "C38"
+		(property "Reference" "C34"
 			(at 55.626 86.614 90)
 			(effects
 				(font
@@ -6190,7 +6196,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 60.6552 83.82 0)
 			(effects
 				(font
@@ -6244,7 +6250,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C38")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -6259,7 +6265,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0bf907c1-020c-4242-99c7-6e7fc6b45e47")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR086"
 			(at 233.68 132.08 0)
 			(effects
 				(font
@@ -6309,7 +6315,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR0101")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -6416,7 +6422,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "187ca4e6-9782-4fb4-9df5-9ffc63b6c564")
-		(property "Reference" "C48"
+		(property "Reference" "C44"
 			(at 227.33 120.904 0)
 			(effects
 				(font
@@ -6434,7 +6440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 234.6452 125.73 0)
 			(effects
 				(font
@@ -6488,7 +6494,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C48")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -6503,7 +6509,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1bdc051d-87be-490e-af08-adddfa7a4be9")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR081"
 			(at 185.42 54.61 0)
 			(effects
 				(font
@@ -6553,7 +6559,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR096")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -6568,7 +6574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1d094e7f-0018-42e4-91bf-887c81e648b0")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR085"
 			(at 220.98 163.83 0)
 			(effects
 				(font
@@ -6618,7 +6624,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR0100")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -6633,7 +6639,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "258a327d-0993-4636-9a4a-9ad817928c6e")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR088"
 			(at 238.76 148.59 0)
 			(effects
 				(font
@@ -6683,7 +6689,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR0103")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -6698,7 +6704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25956872-72b0-447f-aaef-921850df20eb")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR075"
 			(at 140.97 48.26 0)
 			(effects
 				(font
@@ -6748,7 +6754,7 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR090")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -6764,7 +6770,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27e0b0d5-bfa6-4e98-94e3-05dd7160becc")
-		(property "Reference" "C41"
+		(property "Reference" "C37"
 			(at 67.056 48.514 90)
 			(effects
 				(font
@@ -6782,7 +6788,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 72.0852 45.72 0)
 			(effects
 				(font
@@ -6836,7 +6842,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C41")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -6852,7 +6858,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "28b24203-2b2a-44c0-807f-12d489319167")
-		(property "Reference" "C39"
+		(property "Reference" "C35"
 			(at 56.896 48.514 90)
 			(effects
 				(font
@@ -6870,7 +6876,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 61.9252 45.72 0)
 			(effects
 				(font
@@ -6924,7 +6930,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C39")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -6939,7 +6945,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e98188d-8149-4e97-8e88-94c53b6cef85")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR080"
 			(at 185.42 34.29 0)
 			(effects
 				(font
@@ -6989,7 +6995,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR095")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -7004,7 +7010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "33753d39-a3c5-4a17-bc82-0c0e610cfaf7")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR083"
 			(at 208.28 34.29 0)
 			(effects
 				(font
@@ -7054,7 +7060,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR098")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -7069,7 +7075,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35bf7821-e46e-4d9a-9f1f-2b37b00b0590")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR084"
 			(at 208.28 54.61 0)
 			(effects
 				(font
@@ -7119,7 +7125,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR099")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -7135,7 +7141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37e3c0d2-9f5d-42f3-b6b1-1632155f6f80")
-		(property "Reference" "U10"
+		(property "Reference" "U9"
 			(at 165.9733 125.73 0)
 			(effects
 				(font
@@ -7382,7 +7388,7 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "U10")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -7474,7 +7480,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4965e59b-5462-4a54-bb47-7e457742e62c")
-		(property "Reference" "R36"
+		(property "Reference" "R32"
 			(at 202.438 71.12 90)
 			(effects
 				(font
@@ -7543,7 +7549,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "R36")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -7559,7 +7565,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4db79207-516e-4538-bcf5-1a32d7c97dd7")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR079"
 			(at 172.72 74.93 0)
 			(effects
 				(font
@@ -7610,7 +7616,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR094")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -7626,7 +7632,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e90449e-febe-47d3-b9d6-d9667f787422")
-		(property "Reference" "C36"
+		(property "Reference" "C32"
 			(at 37.846 86.614 90)
 			(effects
 				(font
@@ -7644,7 +7650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 42.8752 83.82 0)
 			(effects
 				(font
@@ -7698,7 +7704,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C36")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -7713,7 +7719,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "58aa34f6-2e11-4240-8fee-0ed5cf58a549")
-		(property "Reference" "C45"
+		(property "Reference" "C41"
 			(at 194.056 129.54 90)
 			(effects
 				(font
@@ -7729,7 +7735,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 196.85 129.54 0)
 			(effects
 				(font
@@ -7791,7 +7797,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C45")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -7807,7 +7813,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6630e033-8e68-4321-8415-c9e200fb5452")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR072"
 			(at 134.62 72.39 0)
 			(effects
 				(font
@@ -7858,7 +7864,7 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR087")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -7873,7 +7879,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69f42c8b-d8cd-4a5e-b1c4-5261ee90ce87")
-		(property "Reference" "#PWR0105"
+		(property "Reference" "#PWR090"
 			(at 266.7 66.04 0)
 			(effects
 				(font
@@ -7923,7 +7929,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR0105")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -7938,7 +7944,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "728382b8-2b72-4682-922c-4f5118c4a72a")
-		(property "Reference" "C44"
+		(property "Reference" "C40"
 			(at 182.626 45.72 90)
 			(effects
 				(font
@@ -7954,7 +7960,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 185.42 45.72 0)
 			(effects
 				(font
@@ -8016,7 +8022,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C44")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -8032,7 +8038,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a19c14d-392b-4a79-bd5b-b5d1a6f1622c")
-		(property "Reference" "C40"
+		(property "Reference" "C36"
 			(at 64.516 86.614 90)
 			(effects
 				(font
@@ -8050,7 +8056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 69.5452 83.82 0)
 			(effects
 				(font
@@ -8104,7 +8110,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C40")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -8119,7 +8125,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7befc64e-1327-4219-83e3-5d4d6154d865")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR077"
 			(at 151.13 124.46 0)
 			(effects
 				(font
@@ -8169,7 +8175,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR092")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -8184,7 +8190,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7c72287d-2325-40c8-aada-f26559e293db")
-		(property "Reference" "C47"
+		(property "Reference" "C43"
 			(at 219.456 153.67 90)
 			(effects
 				(font
@@ -8200,7 +8206,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 220.98 151.13 0)
 			(effects
 				(font
@@ -8262,7 +8268,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C47")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -8277,7 +8283,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80cbd189-ef08-4964-9ca1-ba8f32ee386a")
-		(property "Reference" "C50"
+		(property "Reference" "C46"
 			(at 241.554 124.46 0)
 			(effects
 				(font
@@ -8295,7 +8301,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 246.38 117.1448 0)
 			(effects
 				(font
@@ -8349,7 +8355,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C50")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -8365,7 +8371,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8218ab57-7c82-4328-8e84-8b7853f9ae2a")
-		(property "Reference" "C43"
+		(property "Reference" "C39"
 			(at 77.216 48.514 90)
 			(effects
 				(font
@@ -8383,7 +8389,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 82.2452 45.72 0)
 			(effects
 				(font
@@ -8437,7 +8443,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C43")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -8452,7 +8458,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8442c52c-d343-46d7-abc4-ed81c6125cf3")
-		(property "Reference" "R34"
+		(property "Reference" "R30"
 			(at 183.388 34.29 90)
 			(effects
 				(font
@@ -8521,7 +8527,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "R34")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -8536,8 +8542,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8ae88085-e463-457b-b19b-6c9c19fef204")
-		(property "Reference" "R32"
-			(at 159.258 41.91 90)
+		(property "Reference" "R28"
+			(at 162.56 37.084 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8545,7 +8551,7 @@
 			)
 		)
 		(property "Value" "499R"
-			(at 163.576 41.91 90)
+			(at 162.56 47.498 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8605,7 +8611,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "R32")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -8620,7 +8626,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8fc95703-0e17-4330-a8b3-a784fe19b9e7")
-		(property "Reference" "R38"
+		(property "Reference" "R34"
 			(at 242.57 111.252 90)
 			(effects
 				(font
@@ -8689,7 +8695,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "R38")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -8804,7 +8810,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93707aa8-3fc8-4653-b84b-87ea96530b40")
-		(property "Reference" "C37"
+		(property "Reference" "C33"
 			(at 46.736 48.514 90)
 			(effects
 				(font
@@ -8822,7 +8828,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 51.7652 45.72 0)
 			(effects
 				(font
@@ -8876,7 +8882,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C37")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -8891,7 +8897,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "94606305-dce1-4ee4-9efd-2cea15911a92")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR068"
 			(at 40.64 59.69 0)
 			(effects
 				(font
@@ -8941,7 +8947,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR083")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -8956,7 +8962,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9790b1ba-b3df-4d0b-9c90-e05b6c217956")
-		(property "Reference" "R37"
+		(property "Reference" "R33"
 			(at 206.248 34.29 90)
 			(effects
 				(font
@@ -9025,7 +9031,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "R37")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -9040,7 +9046,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "986cd63c-6121-4f8b-92b7-b4e19e726eec")
-		(property "Reference" "C51"
+		(property "Reference" "C47"
 			(at 259.1816 72.009 0)
 			(effects
 				(font
@@ -9058,7 +9064,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 264.16 73.9648 0)
 			(effects
 				(font
@@ -9112,7 +9118,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C51")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -9127,7 +9133,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d2b59cf-6859-47ed-8e42-c40bb40fe43f")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR067"
 			(at 40.64 39.37 0)
 			(effects
 				(font
@@ -9177,7 +9183,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR082")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -9337,7 +9343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9df47fd-de83-4da9-be14-fbcfdaec967c")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR074"
 			(at 132.08 76.2 0)
 			(effects
 				(font
@@ -9388,7 +9394,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR089")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -9403,7 +9409,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af2502f2-81f5-40d1-9d9c-c479debecbcc")
-		(property "Reference" "R35"
+		(property "Reference" "R31"
 			(at 192.278 71.12 90)
 			(effects
 				(font
@@ -9472,7 +9478,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "R35")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -9487,7 +9493,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b4e004a6-35c3-4e23-a668-f599d01283d0")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR070"
 			(at 41.91 97.79 0)
 			(effects
 				(font
@@ -9537,7 +9543,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR085")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -9552,7 +9558,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b773b0db-9c65-497c-a2e5-2da79d77178c")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR076"
 			(at 148.59 58.42 0)
 			(effects
 				(font
@@ -9602,7 +9608,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR091")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -9695,7 +9701,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b9fb0dc0-4c05-4e41-83e6-3ce69762cede")
-		(property "Reference" "C42"
+		(property "Reference" "C38"
 			(at 73.406 86.614 90)
 			(effects
 				(font
@@ -9713,7 +9719,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 78.4352 83.82 0)
 			(effects
 				(font
@@ -9767,7 +9773,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C42")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -9783,7 +9789,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bbb7098d-5735-423f-871b-76f89e998082")
-		(property "Reference" "C35"
+		(property "Reference" "C31"
 			(at 36.068 48.514 90)
 			(effects
 				(font
@@ -9801,7 +9807,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 41.6052 45.72 0)
 			(effects
 				(font
@@ -9855,7 +9861,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C35")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -9870,7 +9876,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c09b038a-72ed-4b91-8670-3fcc264eb5ee")
-		(property "Reference" "C49"
+		(property "Reference" "C45"
 			(at 232.156 153.67 90)
 			(effects
 				(font
@@ -9886,7 +9892,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 233.68 151.13 0)
 			(effects
 				(font
@@ -9948,7 +9954,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C49")
+					(reference "C45")
 					(unit 1)
 				)
 			)
@@ -9963,7 +9969,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5853b73-9463-483a-810d-159181ba2e10")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR069"
 			(at 45.72 74.93 0)
 			(effects
 				(font
@@ -10013,7 +10019,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR084")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -10028,7 +10034,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "de7af0a1-6bac-47fa-b7c2-e76c137878f2")
-		(property "Reference" "R33"
+		(property "Reference" "R29"
 			(at 184.15 107.696 90)
 			(effects
 				(font
@@ -10097,7 +10103,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "R33")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -10112,7 +10118,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e236bcf5-1477-44ad-9fb7-2460e1c18cea")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR087"
 			(at 233.68 163.83 0)
 			(effects
 				(font
@@ -10162,7 +10168,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR0102")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -10177,7 +10183,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eabb9232-2d7a-4676-831e-c229a7efd768")
-		(property "Reference" "C52"
+		(property "Reference" "C48"
 			(at 259.334 96.52 0)
 			(effects
 				(font
@@ -10195,7 +10201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (0603, S)"
+		(property "Footprint" "FRANK:C_0603_1608Metric"
 			(at 264.16 89.2048 0)
 			(effects
 				(font
@@ -10249,7 +10255,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "C52")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -10264,7 +10270,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2f1cb01-7201-411e-8dd8-2472689960ff")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR071"
 			(at 68.58 77.47 0)
 			(effects
 				(font
@@ -10314,7 +10320,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR086")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -10330,7 +10336,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7a137ad-86d4-4c96-811f-a00e4f2977aa")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR073"
 			(at 132.08 73.66 0)
 			(effects
 				(font
@@ -10381,7 +10387,7 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR088")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -10396,7 +10402,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f872700b-6671-4105-80d6-517839556794")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR082"
 			(at 196.85 142.24 0)
 			(effects
 				(font
@@ -10446,7 +10452,7 @@
 		(instances
 			(project "protea32"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/c1073c0f-d034-4041-90ff-1ccb73f60006"
-					(reference "#PWR097")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
