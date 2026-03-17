@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.15
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -59,7 +59,20 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_over_copper|135675000|126883012|b0ac1d1a-dea6-47bb-aed6-d6c5ad8cc7a4|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|135675000|134883012|6f5af222-1549-49bb-a28a-cc419ba34c69|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "solder_mask_bridge|148325000|51995000|c15c4fc8-f193-4238-87a5-8429244c47c2|15eb4b95-f84c-4617-88e9-4bb6617098b5",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
