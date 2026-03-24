@@ -1584,12 +1584,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 254 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e8d30ef9-c46d-40cf-a74f-27d712690741")
-	)
 	(no_connect
 		(at 63.5 110.49)
 		(uuid "04aa9c21-b845-4f0f-aba5-58b56e70db39")
@@ -1806,7 +1800,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 35.56) (xy 236.22 35.56)
+			(xy 252.73 33.02) (xy 240.03 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2026,16 +2020,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 58.42) (xy 254 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83f6282e-2c73-40df-b774-c8a7cd81fb57")
-	)
-	(wire
-		(pts
 			(xy 63.5 74.93) (xy 76.2 74.93)
 		)
 		(stroke
@@ -2046,7 +2030,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 40.64) (xy 236.22 40.64)
+			(xy 252.73 38.1) (xy 240.03 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2273,16 +2257,6 @@
 			(type default)
 		)
 		(uuid "b2930fc7-3ef9-4359-b215-88714f727dff")
-	)
-	(wire
-		(pts
-			(xy 233.68 58.42) (xy 233.68 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b707d4af-0007-4ee4-9c20-07d75140551d")
 	)
 	(wire
 		(pts
@@ -2594,6 +2568,16 @@
 		)
 		(uuid "15971975-632a-4022-954b-6c2273796429")
 	)
+	(label "ESP_RST"
+		(at 260.35 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d522d9c-761d-4d60-bbfe-e2275e22b36b")
+	)
 	(label "D+"
 		(at 63.5 34.29 0)
 		(effects
@@ -2613,6 +2597,16 @@
 			(justify left bottom)
 		)
 		(uuid "20a98d9f-56a5-4e37-94ec-ac17949e6730")
+	)
+	(label "RUN"
+		(at 240.03 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "258e3e11-87d6-4066-8a67-11f276faf906")
 	)
 	(label "GPIO3"
 		(at 63.5 46.99 0)
@@ -2635,7 +2629,7 @@
 		(uuid "262b84b1-1f79-4abf-b31f-0b7a9c2bb1c9")
 	)
 	(label "SWD"
-		(at 248.92 40.64 180)
+		(at 252.73 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2733,6 +2727,26 @@
 			(justify left bottom)
 		)
 		(uuid "3bfc9f6b-0f55-437f-a883-78576a4f7bb1")
+	)
+	(label "RUN"
+		(at 260.35 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3dffaa01-c3ef-44ac-8311-516f3cc51128")
+	)
+	(label "ESP_RST"
+		(at 240.03 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3f254363-dce3-4b4b-a3c2-48a7fdbe6187")
 	)
 	(label "GPIO19"
 		(at 30.48 173.99 0)
@@ -2904,16 +2918,6 @@
 		)
 		(uuid "69b85b3a-a4d0-4aea-911c-36fc7dfe6c76")
 	)
-	(label "ESP_RST"
-		(at 233.68 60.96 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6d9d8c93-bc72-49e7-937b-5ae34b9ba25b")
-	)
 	(label "GPIO2"
 		(at 194.31 53.34 180)
 		(effects
@@ -2925,7 +2929,7 @@
 		(uuid "7319c062-db4a-4be0-9b09-1ea86621790f")
 	)
 	(label "SWCLK"
-		(at 248.92 35.56 180)
+		(at 252.73 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3406,7 +3410,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 236.22 38.1 90)
+		(at 240.03 35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3415,7 +3419,7 @@
 		(fields_autoplaced yes)
 		(uuid "008e6774-3894-497b-acf4-0cfca0070cee")
 		(property "Reference" "#PWR013"
-			(at 242.57 38.1 0)
+			(at 246.38 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3424,7 +3428,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 38.0999 90)
+			(at 243.84 35.5599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3433,7 +3437,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 38.1 0)
+			(at 240.03 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3442,7 +3446,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 38.1 0)
+			(at 240.03 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3451,7 +3455,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 38.1 0)
+			(at 240.03 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3473,7 +3477,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
-		(at 231.14 38.1 0)
+		(at 234.95 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3481,7 +3485,7 @@
 		(dnp no)
 		(uuid "071131c8-16e4-4ae2-91e2-42f662000f9b")
 		(property "Reference" "J3"
-			(at 231.14 29.464 0)
+			(at 234.95 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3489,7 +3493,7 @@
 			)
 		)
 		(property "Value" "DEBUG"
-			(at 231.14 32.004 0)
+			(at 234.95 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3497,7 +3501,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3506,7 +3510,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/154/basics-us_2-54mm-125848.pdf"
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3515,7 +3519,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3524,7 +3528,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005007039504981.html"
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3533,7 +3537,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3542,7 +3546,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3551,7 +3555,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3560,7 +3564,7 @@
 			)
 		)
 		(property "Crystal Type" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3569,7 +3573,7 @@
 			)
 		)
 		(property "Frequency" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3578,7 +3582,7 @@
 			)
 		)
 		(property "Frequency Stability" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3587,7 +3591,7 @@
 			)
 		)
 		(property "Frequency Tolerance" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3596,7 +3600,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3605,7 +3609,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3614,7 +3618,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3623,7 +3627,7 @@
 			)
 		)
 		(property "Normal Temperature Frequency Tolerance" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,7 +3636,7 @@
 			)
 		)
 		(property "Operating Temperature" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3641,7 +3645,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3650,7 +3654,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3659,7 +3663,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3668,7 +3672,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 231.14 38.1 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4133,24 +4137,24 @@
 	)
 	(symbol
 		(lib_id "KMR221G_LFS:KMR221G_LFS")
-		(at 233.68 58.42 0)
+		(at 240.03 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3c7ffac5-af90-41d3-9333-974b3710d4c3")
-		(property "Reference" "S3"
-			(at 243.84 50.8 0)
+		(uuid "2d27afd8-35b4-415e-811d-ed7df11c83a9")
+		(property "Reference" "S6"
+			(at 250.19 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ESP Reset"
-			(at 243.84 53.34 0)
+		(property "Value" "RP Reset"
+			(at 250.19 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4158,7 +4162,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:KMR_2"
-			(at 250.19 153.34 0)
+			(at 256.54 169.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4168,7 +4172,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/KMR221G LFS.pdf"
-			(at 250.19 253.34 0)
+			(at 256.54 269.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4178,7 +4182,7 @@
 			)
 		)
 		(property "Description" "C & K COMPONENTS - KMR221G LFS - SWITCH, SPST, 0.05A, 32VDC, SMD"
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4187,7 +4191,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/1005007359248990.html"
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4196,7 +4200,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4204,7 +4208,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4212,7 +4216,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4220,7 +4224,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4228,7 +4232,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4236,7 +4240,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4244,7 +4248,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4252,7 +4256,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4260,7 +4264,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 233.68 58.42 0)
+			(at 240.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,7 +4272,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 250.19 453.34 0)
+			(at 256.54 469.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4278,7 +4282,7 @@
 			)
 		)
 		(property "Mouser Part Number" "611-KMR221G-LFS"
-			(at 250.19 553.34 0)
+			(at 256.54 569.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4288,7 +4292,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=611-KMR221G-LFS"
-			(at 250.19 653.34 0)
+			(at 256.54 669.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4298,7 +4302,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "C & K COMPONENTS"
-			(at 250.19 753.34 0)
+			(at 256.54 769.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4308,7 +4312,214 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "KMR221G LFS"
-			(at 250.19 853.34 0)
+			(at 256.54 869.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "099b9d04-6366-43ed-9fce-85cd3d2d38ff")
+		)
+		(pin "2"
+			(uuid "3cec03c6-1204-4222-b064-712917b8f555")
+		)
+		(pin "3"
+			(uuid "9530cbd7-bd9d-4cb6-8041-a8eb229c0ce3")
+		)
+		(pin "4"
+			(uuid "27d6d13e-f601-4379-a052-c9ddfd495018")
+		)
+		(instances
+			(project "minifrank_rm2p2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "S6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KMR221G_LFS:KMR221G_LFS")
+		(at 240.03 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c7ffac5-af90-41d3-9333-974b3710d4c3")
+		(property "Reference" "S3"
+			(at 250.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP Reset"
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FRANK:KMR_2"
+			(at 256.54 153.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/KMR221G LFS.pdf"
+			(at 256.54 253.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "C & K COMPONENTS - KMR221G LFS - SWITCH, SPST, 0.05A, 32VDC, SMD"
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/1005007359248990.html"
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 256.54 453.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "611-KMR221G-LFS"
+			(at 256.54 553.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=611-KMR221G-LFS"
+			(at 256.54 653.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "C & K COMPONENTS"
+			(at 256.54 753.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "KMR221G LFS"
+			(at 256.54 853.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5232,7 +5443,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 254 58.42 180)
+		(at 240.03 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5240,7 +5451,7 @@
 		(dnp no)
 		(uuid "a74774a4-147f-4a58-8d3d-33d0298e798f")
 		(property "Reference" "#PWR014"
-			(at 254 52.07 0)
+			(at 233.68 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5249,7 +5460,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 254.0001 54.61 90)
+			(at 236.22 60.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5258,7 +5469,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 58.42 0)
+			(at 240.03 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5267,7 +5478,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 58.42 0)
+			(at 240.03 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5276,7 +5487,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 254 58.42 0)
+			(at 240.03 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6220,6 +6431,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 240.03 77.47 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee4e4a7e-3cbe-4ea3-aa22-cdc1d2a65ca4")
+		(property "Reference" "#PWR0116"
+			(at 233.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b9d1f3c-9fce-44c2-a1ca-536828cb5da3")
+		)
+		(instances
+			(project "minifrank_rm2p2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 260.35 60.96 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f008fcdb-9741-45b5-ad07-651e222cccd0")
+		(property "Reference" "#PWR0119"
+			(at 266.7 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 264.16 60.9601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 260.35 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e8957ce-a65a-4fdc-80bf-dc4fb6f28cf1")
+		)
+		(instances
+			(project "minifrank_rm2p2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FRANK:SW_Push_1234VW")
 		(at 212.09 60.96 0)
 		(unit 1)
@@ -6439,6 +6782,72 @@
 			(project "minifrank_rm2p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 260.35 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f931fc20-f603-46f0-a29d-63372ddadc03")
+		(property "Reference" "#PWR0118"
+			(at 266.7 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 264.16 77.4701 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86b47e3d-a146-4a08-ba6b-e42b28a0cfb6")
+		)
+		(instances
+			(project "minifrank_rm2p2"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
