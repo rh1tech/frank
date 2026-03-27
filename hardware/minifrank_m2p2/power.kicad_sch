@@ -1495,156 +1495,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FRANK:D_Schottky"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Schottky diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Schottky_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Schottky_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "FRANK:MW7211A"
 			(pin_names
 				(offset 1.016)
@@ -4483,7 +4333,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 62.23) (xy 148.59 62.23)
+			(xy 140.97 62.23) (xy 170.18 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4600,16 +4450,6 @@
 			(type default)
 		)
 		(uuid "c7c8e578-61a0-4b31-a6f1-b4c2348eba68")
-	)
-	(wire
-		(pts
-			(xy 156.21 62.23) (xy 170.18 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfd407e9-1af4-4ff4-8777-0b9b3803ee47")
 	)
 	(wire
 		(pts
@@ -5192,7 +5032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0705d4d7-ccc0-4c88-8504-fef6e77b0e48")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR021"
 			(at 71.12 132.08 0)
 			(effects
 				(font
@@ -5242,7 +5082,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR018")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5421,7 +5261,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1086dcd6-1a8c-4934-be7a-85bae8c2e56f")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR047"
 			(at 250.19 36.83 0)
 			(effects
 				(font
@@ -5471,7 +5311,7 @@
 		(instances
 			(project "minifrank_rm2p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR044")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -5793,7 +5633,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16af7a68-c3f7-495d-aa45-9bc13074c76f")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR020"
 			(at 68.58 113.03 0)
 			(effects
 				(font
@@ -5843,7 +5683,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR017")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -5858,7 +5698,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "19356067-83eb-4051-a914-d663d750cf74")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR045"
 			(at 242.57 50.8 0)
 			(effects
 				(font
@@ -5908,7 +5748,7 @@
 		(instances
 			(project "minifrank_rm2p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR042")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -5923,7 +5763,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a8ee83e-ee1f-4368-a966-178f24fb57eb")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR031"
 			(at 138.43 87.63 0)
 			(effects
 				(font
@@ -5974,7 +5814,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR028")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -5989,7 +5829,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1ea83630-ec8c-4eb8-9ae4-eeaa734a9bf5")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR030"
 			(at 135.89 82.55 0)
 			(effects
 				(font
@@ -6040,7 +5880,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR027")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6056,7 +5896,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "227138b5-e371-468a-ac87-787a26496ee2")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR049"
 			(at 264.16 71.12 0)
 			(effects
 				(font
@@ -6107,7 +5947,7 @@
 		(instances
 			(project "minifrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR046")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -6122,7 +5962,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2486575e-764e-4201-9f00-e83ed55535cd")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR036"
 			(at 177.8 87.63 0)
 			(effects
 				(font
@@ -6172,7 +6012,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR033")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -6187,7 +6027,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27512f6e-fb49-45c0-abf7-e0ad9f02be8a")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR046"
 			(at 248.92 91.44 0)
 			(effects
 				(font
@@ -6237,7 +6077,7 @@
 		(instances
 			(project "minifrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR043")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -6593,7 +6433,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3397a833-d25d-43b0-8349-2a79451c653e")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR028"
 			(at 135.89 59.69 0)
 			(effects
 				(font
@@ -6644,7 +6484,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR025")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -6659,7 +6499,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3a36c44e-bd0b-406c-9ba3-598893a55ec0")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR035"
 			(at 177.8 69.85 0)
 			(effects
 				(font
@@ -6710,7 +6550,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR032")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -7220,7 +7060,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4c893dd3-6e15-40ff-afe6-95f360e54ae5")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR023"
 			(at 80.01 60.96 0)
 			(effects
 				(font
@@ -7270,7 +7110,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR020")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -7286,7 +7126,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e2e4dcd-6895-4dc5-a144-80829425b8d3")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR041"
 			(at 227.33 115.57 0)
 			(effects
 				(font
@@ -7337,7 +7177,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR038")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -7656,7 +7496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5946d400-d340-4114-b119-4a55fd5f07d4")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR034"
 			(at 151.13 36.83 0)
 			(effects
 				(font
@@ -7707,7 +7547,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR031")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -7722,7 +7562,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a2976ea-e43d-4357-9347-f9733e0043ab")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR024"
 			(at 91.44 44.45 0)
 			(effects
 				(font
@@ -7772,7 +7612,7 @@
 		(instances
 			(project "minifrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR021")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7788,7 +7628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bd93ce1-65f2-4fb4-8a42-5ba9e786b876")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR043"
 			(at 238.76 120.65 0)
 			(effects
 				(font
@@ -7839,7 +7679,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR040")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -7940,7 +7780,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d674015-79ef-44d7-bcc5-f3efe50b4814")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR022"
 			(at 80.01 44.45 0)
 			(effects
 				(font
@@ -7990,7 +7830,7 @@
 		(instances
 			(project "minifrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR019")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8723,7 +8563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98e091a8-067b-4d1d-9f2d-1f0fdd53ac0e")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR033"
 			(at 157.48 90.17 0)
 			(effects
 				(font
@@ -8773,7 +8613,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR030")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -8788,7 +8628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "99347a43-f9f5-4312-b22a-19836b601c0a")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR029"
 			(at 135.89 67.31 0)
 			(effects
 				(font
@@ -8839,7 +8679,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR026")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -9095,7 +8935,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4ef39ad-4b94-42a6-9ec6-996534d97eda")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR042"
 			(at 232.41 50.8 0)
 			(effects
 				(font
@@ -9145,7 +8985,7 @@
 		(instances
 			(project "minifrank_rm2p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR039")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -9475,7 +9315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8ec551f-aaff-4362-b14a-90a6f85fa1a5")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR044"
 			(at 238.76 144.78 0)
 			(effects
 				(font
@@ -9525,7 +9365,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR041")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -9540,7 +9380,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad699939-8a72-4c45-808f-e5e8cdacfaa5")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR025"
 			(at 91.44 60.96 0)
 			(effects
 				(font
@@ -9590,7 +9430,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR022")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -9897,7 +9737,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b80139e5-ee7d-4c37-a4b4-64b411dcd37e")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR038"
 			(at 214.63 50.8 0)
 			(effects
 				(font
@@ -9947,7 +9787,7 @@
 		(instances
 			(project "minifrank_rm2p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR035")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -9963,7 +9803,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd9be35f-bb6a-4342-80f4-2ba373bd1620")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR019"
 			(at 57.15 125.73 0)
 			(effects
 				(font
@@ -10013,7 +9853,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR016")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -10029,7 +9869,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c04c67ce-37a1-4e6a-985f-bdec03ae14fb")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR037"
 			(at 214.63 36.83 0)
 			(effects
 				(font
@@ -10079,7 +9919,7 @@
 		(instances
 			(project "minifrank_rm2p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR034")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -10245,7 +10085,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c16b37c2-5a08-4356-bd1a-bb7f701c2f75")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR039"
 			(at 220.98 50.8 0)
 			(effects
 				(font
@@ -10295,155 +10135,7 @@
 		(instances
 			(project "minifrank_rm2p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FRANK:D_Schottky")
-		(at 152.4 62.23 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c550c561-df02-4980-b053-5d280d67bc03")
-		(property "Reference" "D1"
-			(at 152.4 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5819WS"
-			(at 152.4 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FRANK:Diode (SOD-323)"
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005006143480992.html"
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Availability" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 152.4 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "00a302f0-baad-46d5-9b1f-b7824c39abd6")
-		)
-		(pin "2"
-			(uuid "b310697b-06c9-4e33-8fa1-6dc6713d4897")
-		)
-		(instances
-			(project "tinyfrank_rm2"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "D1")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -10670,7 +10362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8489d61-1029-42c7-80d3-3d6bd7d0f02b")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR026"
 			(at 91.44 110.49 0)
 			(effects
 				(font
@@ -10720,7 +10412,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR023")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -10821,7 +10513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d01f7c50-4820-4da3-afcf-062624520b5d")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR032"
 			(at 130.81 36.83 0)
 			(effects
 				(font
@@ -10872,7 +10564,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR029")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -10887,7 +10579,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d0a31d23-e495-48d6-940b-9c4f107aac2c")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR048"
 			(at 250.19 50.8 0)
 			(effects
 				(font
@@ -10937,7 +10629,7 @@
 		(instances
 			(project "minifrank_rm2p2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR045")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -10953,7 +10645,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d59cb942-5253-491b-bc3c-d0f0d4cf68ad")
-		(property "Reference" "S4"
+		(property "Reference" "S5"
 			(at 217.17 72.3899 0)
 			(effects
 				(font
@@ -11068,7 +10760,7 @@
 		(instances
 			(project ""
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "S4")
+					(reference "S5")
 					(unit 1)
 				)
 			)
@@ -11084,7 +10776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d912360b-b98b-446e-85af-72588e83557d")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR018"
 			(at 36.83 77.47 0)
 			(effects
 				(font
@@ -11134,7 +10826,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR015")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -11150,7 +10842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0b63f75-39db-426e-8f40-aa48c9b22fc1")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR040"
 			(at 227.33 113.03 0)
 			(effects
 				(font
@@ -11201,7 +10893,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR037")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -11511,7 +11203,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edb2d62e-8c6d-43e2-820f-ae7e5cbda2e6")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR027"
 			(at 91.44 147.32 0)
 			(effects
 				(font
@@ -11561,7 +11253,7 @@
 		(instances
 			(project "tinyfrank_rm2"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR024")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
