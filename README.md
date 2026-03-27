@@ -1,8 +1,8 @@
 # FRANK
 
-FRANK is a versatile hardware emulation platform based on Raspberry Pico and Raspberry Zero. It is a hardware fork of the [Murmulator](https://murmulator.ru/) project by [Alex Ekb](https://t.me/Alex_Eburg), incorporating numerous additional features.
+FRANK is a versatile hardware emulation platform based on the Raspberry Pi Pico and Raspberry Pi Zero. It is inspired by the [Murmulator](https://murmulator.ru/) project by [Alex Ekb](https://t.me/Alex_Eburg), incorporating numerous additional features.
 
-The name "FRANK" is derived from "Frankenstein" as it integrates various components from different projects, similar to how Dr. Frankenstein created his monster from different parts. This combination enables FRANK to offer a unique and powerful set of capabilities.
+The name "FRANK" is derived from "Frankenstein", as it integrates components from various projects — much like Dr. Frankenstein assembled his monster from different parts. This combination gives FRANK a unique and powerful set of capabilities.
 
 ## Supported Platforms
 
@@ -10,8 +10,8 @@ FRANK supports emulation for a variety of platforms, including:
 
 * ZX Spectrum (48K, 128K and other models, including clones)
 * IBM PC XT 8088
-* BK-0011М (soviet 8 bit home computer)
-* Radio 86RK (soviet 8 bit home computer)
+* BK-0011М (Soviet 8-bit home computer)
+* Radio 86RK (Soviet 8-bit home computer)
 * Atari 800
 * NES/Famicom (also known as Dendy)
 * Sega Master System
@@ -29,23 +29,22 @@ FRANK supports emulation for a variety of platforms, including:
 * DOOM
 * Macintosh 512K
 * MurmulatorOS
+* And many more
 
 ## FRANK Models
 
 Currently there are the following versions of FRANK available:
 
-* [FRANK M1](./hardware/frank_m1) (latest hardware revision: 1.17)
-* [FRANK M2](./hardware/frank_m2) (latest hardware revision: 1.03)
-* [MiniFRANK RM1](./hardware/minifrank_rm1) (latest hardware revision: 2.07)
-* [MiniFRANK RM1P2](./hardware/minifrank_rm1p2) (latest hardware revision: 1.01)
-* [MiniFRANK RM2](./hardware/minifrank_rm2) (latest hardware revision: 1.02)
-* [MicroFRANK RM1P2](./hardware/microfrank_rm1p2) (latest hardware revision: 1.00)
-* [TurboFRANK](./hardware/turbofrank) (latest hardware revision: 1.07)
+* [FRANK M1](./hardware/frank_m1) (latest hardware revision: 2.06)
+* [FRANK M2](./hardware/frank_m2) (latest hardware revision: 2.06)
+* [MiniFRANK M2](./hardware/minifrank_m2) (latest hardware revision: 1.04)
+* [MicroFRANK M1P1](./hardware/microfrank_m1p1) (latest hardware revision: 1.07)
+* [TurboFRANK M1P2](./hardware/turbofrank_m1p2) (latest hardware revision: 1.01)
 
-## Side Projects
+## Tools
 
-* [HDMI2VGA](./hardware/hdmi2vga) - HDMI to VGA/Soft Composite passive adaptor (latest hardware revision: 2.03)
-* [USB2PS2](./hardware/usb2ps2) - USB to PS/2 adapter built on RP2040-Zero (latest hardware revision: 1.03)
+* [HDMI2VGA](./tools/hdmi2vga) - HDMI to VGA/Soft Composite passive adapter (latest hardware revision: 2.04)
+* [USB2PS2](./tools/usb2ps2) - USB to PS/2 adapter built on RP2040 (latest hardware revision: 1.03)
 
 # Documentation
 
