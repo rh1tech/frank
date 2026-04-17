@@ -12,7 +12,7 @@
 		(comment 1 "TDB")
 	)
 	(lib_symbols
-		(symbol "MCU_Intel:8086_Min_Mode"
+		(symbol "xt8086:8086_Min_Mode"
 			(pin_names
 				(offset 1.016)
 			)
@@ -834,7 +834,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "xt8086:GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -949,7 +949,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VBUS"
+		(symbol "xt8086:VBUS"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -1331,17 +1331,6 @@
 		)
 		(uuid "7cec36ba-19c6-4b8d-9ee8-663d62eef6fa")
 	)
-	(hierarchical_label "A16{slash}S3"
-		(shape input)
-		(at 168.91 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7d202c81-988c-4069-979d-38a32dceb96d")
-	)
 	(hierarchical_label "M{slash}IO"
 		(shape input)
 		(at 168.91 130.81 0)
@@ -1363,17 +1352,6 @@
 			(justify left)
 		)
 		(uuid "8ceb60e4-2125-4a93-85ba-402a5848722b")
-	)
-	(hierarchical_label "A17{slash}S4"
-		(shape input)
-		(at 168.91 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "98540d09-c077-47b0-9123-6442e3793802")
 	)
 	(hierarchical_label "DEN"
 		(shape input)
@@ -1397,6 +1375,17 @@
 		)
 		(uuid "ac9aef4b-66c6-4160-8d0a-f2e2261f01b3")
 	)
+	(hierarchical_label "A18{slash}S5"
+		(shape input)
+		(at 168.91 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ae5687d0-b1db-4fce-92e8-7477a45a45a2")
+	)
 	(hierarchical_label "AD1"
 		(shape input)
 		(at 168.91 77.47 0)
@@ -1418,6 +1407,17 @@
 			(justify left)
 		)
 		(uuid "befba546-58cf-49b7-ac42-1043549f3529")
+	)
+	(hierarchical_label "A16{slash}S3"
+		(shape input)
+		(at 168.91 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c6e71846-9df1-43f0-9415-7f388d7950cf")
 	)
 	(hierarchical_label "HLDA"
 		(shape input)
@@ -1474,18 +1474,7 @@
 		)
 		(uuid "ded0827d-7d8f-451d-9ee1-24ff8014416a")
 	)
-	(hierarchical_label "A19{slash}S6"
-		(shape input)
-		(at 168.91 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e4272a48-6c40-4bf0-a873-f0c1215dc2dd")
-	)
-	(hierarchical_label "A18{slash}S5"
+	(hierarchical_label "A17{slash}S4"
 		(shape input)
 		(at 168.91 120.65 0)
 		(effects
@@ -1494,10 +1483,21 @@
 			)
 			(justify left)
 		)
-		(uuid "f0f6ed7b-92cf-4b00-8966-80428bfcb108")
+		(uuid "ef90a379-b305-4ab8-b7ce-46d3f20b5c1f")
+	)
+	(hierarchical_label "A19{slash}S6"
+		(shape input)
+		(at 168.91 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f857ee88-f2f8-4d2f-b65b-75fea6ef19d0")
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 151.13 54.61 0)
 		(unit 1)
 		(body_style 1)
@@ -1574,7 +1574,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 153.67 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -1652,7 +1652,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_Intel:8086_Min_Mode")
+		(lib_id "xt8086:8086_Min_Mode")
 		(at 151.13 100.33 0)
 		(unit 1)
 		(body_style 1)
@@ -1685,7 +1685,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-40_W15.24mm"
+		(property "Footprint" "xt8086:DIP-40_W15.24mm"
 			(at 152.4 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -1709,6 +1709,17 @@
 			)
 		)
 		(property "Description" "8086 (minimum mode), 16-Bit HMOS Microprocessor, PDIP-40"
+			(at 151.13 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/DIP/legacy"
 			(at 151.13 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -1849,7 +1860,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 148.59 146.05 0)
 		(unit 1)
 		(body_style 1)

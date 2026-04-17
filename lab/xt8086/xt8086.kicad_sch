@@ -12,7 +12,146 @@
 		(comment 1 "TDB")
 	)
 	(lib_symbols
-		(symbol "C_1"
+		(symbol "xt8086:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "xt8086:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -101,7 +240,7 @@
 					)
 				)
 			)
-			(symbol "C_1_0_1"
+			(symbol "C_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762) (xy 2.032 0.762)
@@ -127,7 +266,7 @@
 					)
 				)
 			)
-			(symbol "C_1_1_1"
+			(symbol "C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -167,7 +306,185 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x03_Pin"
+		(symbol "xt8086:C_Polarized_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_0_1"
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "xt8086:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -389,7 +706,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x04_Pin"
+		(symbol "xt8086:Conn_01x04_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -652,7 +969,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_02x20_Odd_Even"
+		(symbol "xt8086:Conn_02x20_Odd_Even"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1912,564 +2229,33 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:C_Polarized_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized_Small"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.8542)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.8542)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:LED"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Light emitting diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED_0_1"
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
+		(symbol "xt8086:GND"
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2479,7 +2265,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2500,7 +2286,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2511,7 +2297,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2522,23 +2308,13 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -2546,10 +2322,10 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
 					(name ""
 						(effects
 							(font
@@ -2565,28 +2341,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "KMR221G_LFS:KMR221G_LFS"
+		(symbol "xt8086:KMR221G_LFS"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2796,7 +2554,208 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "xt8086:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "xt8086:MountingHole"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2895,7 +2854,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "R_1"
+		(symbol "xt8086:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2982,7 +2941,7 @@
 					)
 				)
 			)
-			(symbol "R_1_0_1"
+			(symbol "R_0_1"
 				(rectangle
 					(start -1.016 -2.54)
 					(end 1.016 2.54)
@@ -2995,7 +2954,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1_1"
+			(symbol "R_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -3035,7 +2994,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SN74LS04N:SN74LS04N"
+		(symbol "xt8086:SN74LS04N"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3425,7 +3384,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SN74LS74ANE4:SN74LS74ANE4"
+		(symbol "xt8086:SN74LS74ANE4"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3815,261 +3774,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:VBUS"
+		(symbol "xt8086:VBUS"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -6410,7 +6115,7 @@
 		(uuid "fd3389e6-b66a-4e77-9414-14f6c6b60c85")
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 66.04 38.1 270)
 		(unit 1)
 		(body_style 1)
@@ -6489,7 +6194,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
+		(lib_id "xt8086:Conn_01x04_Pin")
 		(at 193.04 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -6519,7 +6224,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
+		(property "Footprint" "xt8086:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
 			(at 193.04 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -6574,7 +6279,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 160.02 125.73 0)
 		(mirror x)
 		(unit 1)
@@ -6652,7 +6357,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 66.04 128.27 180)
 		(unit 1)
 		(body_style 1)
@@ -6729,7 +6434,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "xt8086:C_Polarized_Small")
 		(at 66.04 132.08 180)
 		(unit 1)
 		(body_style 1)
@@ -6761,7 +6466,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "xt8086:CP_Radial_D6.3mm_P2.50mm"
 			(at 66.04 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -6994,17 +6699,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 66.04 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Minimum Qty" ""
 			(at 66.04 132.08 0)
 			(hide yes)
@@ -7098,7 +6792,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 105.41 157.48 90)
 		(unit 1)
 		(body_style 1)
@@ -7176,8 +6870,7 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
-		(lib_id "Device:C")
+		(lib_id "xt8086:C")
 		(at 71.12 132.08 180)
 		(unit 1)
 		(body_style 1)
@@ -7209,7 +6902,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:C_0805_2012Metric"
+		(property "Footprint" "xt8086:C_0805_2012Metric"
 			(at 70.1548 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7442,17 +7135,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 71.12 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Minimum Qty" ""
 			(at 71.12 132.08 0)
 			(hide yes)
@@ -7546,7 +7228,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 217.17 115.57 90)
 		(unit 1)
 		(body_style 1)
@@ -7624,7 +7306,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "xt8086:C_Polarized_Small")
 		(at 165.1 129.54 0)
 		(mirror x)
 		(unit 1)
@@ -7657,7 +7339,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "xt8086:CP_Radial_D6.3mm_P2.50mm"
 			(at 165.1 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7890,17 +7572,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 165.1 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Minimum Qty" ""
 			(at 165.1 129.54 0)
 			(hide yes)
@@ -7994,7 +7665,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 66.04 52.07 270)
 		(unit 1)
 		(body_style 1)
@@ -8073,7 +7744,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 198.12 142.24 90)
 		(unit 1)
 		(body_style 1)
@@ -8152,7 +7823,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "xt8086:C")
 		(at 160.02 129.54 0)
 		(mirror x)
 		(unit 1)
@@ -8185,7 +7856,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:C_0805_2012Metric"
+		(property "Footprint" "xt8086:C_0805_2012Metric"
 			(at 160.9852 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -8418,17 +8089,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 160.02 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Minimum Qty" ""
 			(at 160.02 129.54 0)
 			(hide yes)
@@ -8522,7 +8182,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "xt8086:+3V3")
 		(at 217.17 129.54 270)
 		(unit 1)
 		(body_style 1)
@@ -8577,7 +8237,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 217.17 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8601,7 +8261,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 60.96 142.24 90)
 		(unit 1)
 		(body_style 1)
@@ -8678,7 +8338,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 217.17 100.33 90)
 		(unit 1)
 		(body_style 1)
@@ -8756,7 +8416,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "xt8086:R")
 		(at 210.82 129.54 90)
 		(unit 1)
 		(body_style 1)
@@ -8787,7 +8447,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:R_0805_2012Metric"
+		(property "Footprint" "xt8086:R_0805_2012Metric"
 			(at 210.82 131.318 90)
 			(hide yes)
 			(show_name no)
@@ -8957,7 +8617,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 135.89 53.34 270)
 		(unit 1)
 		(body_style 1)
@@ -9035,7 +8695,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 213.36 86.36 90)
 		(unit 1)
 		(body_style 1)
@@ -9114,7 +8774,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "xt8086:+3V3")
 		(at 135.89 55.88 270)
 		(unit 1)
 		(body_style 1)
@@ -9168,7 +8828,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 135.89 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9192,7 +8852,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 123.19 154.94 270)
 		(unit 1)
 		(body_style 1)
@@ -9269,7 +8929,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 66.04 59.69 90)
 		(unit 1)
 		(body_style 1)
@@ -9347,7 +9007,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMR221G_LFS:KMR221G_LFS")
+		(lib_id "xt8086:KMR221G_LFS")
 		(at 196.85 113.03 0)
 		(unit 1)
 		(body_style 1)
@@ -9378,7 +9038,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:KMR_2"
+		(property "Footprint" "xt8086:KMR_2"
 			(at 213.36 207.95 0)
 			(hide yes)
 			(show_name no)
@@ -9596,7 +9256,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "xt8086:+3V3")
 		(at 200.66 86.36 90)
 		(unit 1)
 		(body_style 1)
@@ -9650,7 +9310,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 200.66 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9674,7 +9334,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 196.85 115.57 270)
 		(unit 1)
 		(body_style 1)
@@ -9752,7 +9412,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x20_Odd_Even")
+		(lib_id "xt8086:Conn_02x20_Odd_Even")
 		(at 205.74 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -9783,7 +9443,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:PinHeader_2x20_P2.54mm_Vertical"
+		(property "Footprint" "xt8086:PinHeader_2x20_P2.54mm_Vertical"
 			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9946,7 +9606,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 227.33 144.78 90)
 		(unit 1)
 		(body_style 1)
@@ -10025,7 +9685,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 165.1 125.73 0)
 		(mirror x)
 		(unit 1)
@@ -10103,7 +9763,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 113.03 129.54 0)
 		(mirror y)
 		(unit 1)
@@ -10182,7 +9842,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 170.18 139.7 270)
 		(mirror x)
 		(unit 1)
@@ -10261,7 +9921,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SN74LS74ANE4:SN74LS74ANE4")
+		(lib_id "xt8086:SN74LS74ANE4")
 		(at 128.27 139.7 0)
 		(unit 1)
 		(body_style 1)
@@ -10292,7 +9952,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:DIP14"
+		(property "Footprint" "xt8086:DIP14"
 			(at 152.4 234.62 0)
 			(hide yes)
 			(show_name no)
@@ -10439,7 +10099,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMR221G_LFS:KMR221G_LFS")
+		(lib_id "xt8086:KMR221G_LFS")
 		(at 196.85 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -10470,7 +10130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:KMR_2"
+		(property "Footprint" "xt8086:KMR_2"
 			(at 213.36 192.71 0)
 			(hide yes)
 			(show_name no)
@@ -10688,7 +10348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "xt8086:MountingHole")
 		(at 160.02 187.96 0)
 		(unit 1)
 		(body_style 1)
@@ -10721,7 +10381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Mounting Hole (2.7mm)"
+		(property "Footprint" "xt8086:Mounting Hole (2.7mm)"
 			(at 160.02 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -10775,7 +10435,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "xt8086:MountingHole")
 		(at 160.02 182.88 0)
 		(unit 1)
 		(body_style 1)
@@ -10808,7 +10468,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Mounting Hole (2.7mm)"
+		(property "Footprint" "xt8086:Mounting Hole (2.7mm)"
 			(at 160.02 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -10862,7 +10522,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "xt8086:MountingHole")
 		(at 160.02 193.04 0)
 		(unit 1)
 		(body_style 1)
@@ -10895,7 +10555,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Mounting Hole (2.7mm)"
+		(property "Footprint" "xt8086:Mounting Hole (2.7mm)"
 			(at 160.02 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -10949,7 +10609,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 193.04 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -11027,7 +10687,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "xt8086:R")
 		(at 71.12 59.69 90)
 		(unit 1)
 		(body_style 1)
@@ -11057,7 +10717,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:R_0805_2012Metric"
+		(property "Footprint" "xt8086:R_0805_2012Metric"
 			(at 71.12 61.468 90)
 			(hide yes)
 			(show_name no)
@@ -11117,7 +10777,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "xt8086:MountingHole")
 		(at 160.02 177.8 0)
 		(unit 1)
 		(body_style 1)
@@ -11150,7 +10810,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:Mounting Hole (2.7mm)"
+		(property "Footprint" "xt8086:Mounting Hole (2.7mm)"
 			(at 160.02 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -11204,7 +10864,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SN74LS04N:SN74LS04N")
+		(lib_id "xt8086:SN74LS04N")
 		(at 100.33 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -11236,7 +10896,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:DIP14"
+		(property "Footprint" "xt8086:DIP14"
 			(at 78.74 237.16 0)
 			(hide yes)
 			(show_name no)
@@ -11383,7 +11043,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "xt8086:LED")
 		(at 203.2 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -11414,7 +11074,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:LED (0805)"
+		(property "Footprint" "xt8086:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 203.2 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -11569,6 +11229,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 203.2 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "73a77cbc-c0d9-45a9-8aac-16702a2ebfed")
 		)
@@ -11585,8 +11256,7 @@
 		)
 	)
 	(symbol
-		(lib_name "R_1")
-		(lib_id "Device:R")
+		(lib_id "xt8086:R")
 		(at 71.12 44.45 90)
 		(unit 1)
 		(body_style 1)
@@ -11616,7 +11286,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:R_0805_2012Metric"
+		(property "Footprint" "xt8086:R_0805_2012Metric"
 			(at 71.12 46.228 90)
 			(hide yes)
 			(show_name no)
@@ -11676,7 +11346,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 66.04 44.45 90)
 		(unit 1)
 		(body_style 1)
@@ -11754,7 +11424,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
+		(lib_id "xt8086:Conn_01x03_Pin")
 		(at 222.25 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -11784,7 +11454,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
+		(property "Footprint" "xt8086:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
 			(at 222.25 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11916,17 +11586,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 222.25 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Minimum Qty" ""
 			(at 222.25 144.78 0)
 			(hide yes)
@@ -12023,7 +11682,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 71.12 128.27 180)
 		(unit 1)
 		(body_style 1)
@@ -12100,7 +11759,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 196.85 100.33 270)
 		(unit 1)
 		(body_style 1)
@@ -12178,7 +11837,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "xt8086:GND")
 		(at 199.39 129.54 270)
 		(unit 1)
 		(body_style 1)
@@ -12257,7 +11916,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "xt8086:+3V3")
 		(at 198.12 144.78 270)
 		(unit 1)
 		(body_style 1)
@@ -12336,7 +11995,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "xt8086:VBUS")
 		(at 220.98 38.1 0)
 		(unit 1)
 		(body_style 1)
