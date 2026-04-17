@@ -12,7 +12,456 @@
 		(comment 1 "https://github.com/rh1tech/frank")
 	)
 	(lib_symbols
-		(symbol "Amplifier_Operational:LM358"
+		(symbol "TinyFRANK:C_Polarized_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_0_1"
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TinyFRANK:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TinyFRANK:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TinyFRANK:LM358"
 			(pin_names
 				(offset 0.127)
 			)
@@ -284,341 +733,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized_Small"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.8542)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.8542)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "FRANK:C_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "FRANK:R"
+		(symbol "TinyFRANK:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -758,122 +873,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:VBUS"
+		(symbol "TinyFRANK:VBUS"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -1672,7 +1672,7 @@
 		(uuid "f4eeae89-80ca-48c5-9eea-b1f38d793f71")
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 194.31 92.71 180)
 		(unit 1)
 		(body_style 1)
@@ -1749,7 +1749,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
+		(lib_id "TinyFRANK:LM358")
 		(at 149.86 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -1780,7 +1780,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:SO-8"
+		(property "Footprint" "TinyFRANK:SO-8"
 			(at 149.86 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -1791,7 +1791,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+		(property "Datasheet" ""
 			(at 149.86 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -1802,100 +1802,9 @@
 				)
 			)
 		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+		(property "Description" ""
 			(at 149.86 129.54 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005006785079218.html"
-			(at 149.86 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Availability" ""
-			(at 149.86 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 149.86 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 149.86 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 149.86 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 149.86 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 149.86 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 149.86 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 149.86 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1938,7 +1847,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 129.54 102.87 270)
 		(unit 1)
 		(body_style 1)
@@ -1970,7 +1879,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 129.54 101.092 90)
 			(hide yes)
 			(show_name no)
@@ -2014,8 +1923,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 129.54 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2024,8 +1934,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 129.54 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2034,8 +1945,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 129.54 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2044,8 +1956,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 129.54 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2054,8 +1967,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 129.54 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2064,8 +1978,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 129.54 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2074,8 +1989,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 129.54 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2084,8 +2000,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 129.54 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 129.54 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 129.54 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2110,7 +2049,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 149.86 102.87 270)
 		(unit 1)
 		(body_style 1)
@@ -2142,7 +2081,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 149.86 101.092 90)
 			(hide yes)
 			(show_name no)
@@ -2186,8 +2125,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 149.86 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2196,8 +2136,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 149.86 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2206,8 +2147,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 149.86 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2216,8 +2158,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 149.86 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2226,8 +2169,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 149.86 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2236,8 +2180,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 149.86 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2246,8 +2191,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 149.86 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2256,8 +2202,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 149.86 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 149.86 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 149.86 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2282,7 +2251,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 129.54 113.03 270)
 		(unit 1)
 		(body_style 1)
@@ -2314,7 +2283,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 129.54 111.252 90)
 			(hide yes)
 			(show_name no)
@@ -2358,8 +2327,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 129.54 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2368,8 +2338,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 129.54 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2378,8 +2349,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 129.54 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2388,8 +2360,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 129.54 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2398,8 +2371,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 129.54 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2408,8 +2382,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 129.54 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2418,8 +2393,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 129.54 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2428,8 +2404,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 129.54 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 129.54 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 129.54 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2454,7 +2453,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 90.17 72.39 180)
 		(unit 1)
 		(body_style 1)
@@ -2486,7 +2485,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 91.948 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -2530,8 +2529,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 90.17 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2540,8 +2540,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 90.17 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2550,8 +2551,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 90.17 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2560,8 +2562,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 90.17 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2570,8 +2573,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 90.17 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2580,8 +2584,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 90.17 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2590,8 +2595,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 90.17 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2600,8 +2606,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 90.17 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 90.17 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 90.17 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2626,7 +2655,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
+		(lib_id "TinyFRANK:LM358")
 		(at 149.86 93.98 0)
 		(unit 2)
 		(body_style 1)
@@ -2657,7 +2686,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:SO-8"
+		(property "Footprint" "TinyFRANK:SO-8"
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -2668,7 +2697,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+		(property "Datasheet" ""
 			(at 149.86 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -2679,100 +2708,9 @@
 				)
 			)
 		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+		(property "Description" ""
 			(at 149.86 93.98 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005006785079218.html"
-			(at 149.86 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Availability" ""
-			(at 149.86 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 149.86 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 149.86 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 149.86 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 149.86 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 149.86 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 149.86 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 149.86 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2815,7 +2753,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 196.85 73.66 270)
 		(unit 1)
 		(body_style 1)
@@ -2845,7 +2783,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 196.85 71.882 90)
 			(hide yes)
 			(show_name no)
@@ -2889,8 +2827,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 196.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2899,8 +2838,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 196.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2909,8 +2849,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 196.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2919,8 +2860,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 196.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2929,8 +2871,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 196.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2939,8 +2882,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 196.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2949,8 +2893,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 196.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2959,8 +2904,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 196.85 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 196.85 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 196.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2985,7 +2953,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 97.79 72.39 180)
 		(unit 1)
 		(body_style 1)
@@ -3017,7 +2985,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 99.568 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -3061,8 +3029,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 97.79 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3071,8 +3040,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 97.79 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3081,8 +3051,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 97.79 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3091,8 +3062,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 97.79 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3101,8 +3073,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 97.79 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3111,8 +3084,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 97.79 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3121,8 +3095,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 97.79 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3131,8 +3106,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 97.79 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 97.79 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 97.79 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3157,7 +3155,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 119.38 133.35 180)
 		(unit 1)
 		(body_style 1)
@@ -3189,7 +3187,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 121.158 133.35 90)
 			(hide yes)
 			(show_name no)
@@ -3233,8 +3231,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 119.38 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3243,8 +3242,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 119.38 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3253,8 +3253,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 119.38 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3263,8 +3264,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 119.38 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3273,8 +3275,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 119.38 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3283,8 +3286,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 119.38 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3293,8 +3297,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 119.38 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3303,8 +3308,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 119.38 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 119.38 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 119.38 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3329,7 +3357,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 186.69 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -3406,7 +3434,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 176.53 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -3483,7 +3511,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:C_Small")
+		(lib_id "TinyFRANK:C_Small")
 		(at 109.22 113.03 90)
 		(unit 1)
 		(body_style 1)
@@ -3513,7 +3541,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:C_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:C_0603_1608Metric"
 			(at 109.22 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3535,7 +3563,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Unpolarized capacitor"
 			(at 109.22 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3557,8 +3585,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 109.22 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3567,8 +3596,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 109.22 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3577,8 +3607,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 109.22 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3587,8 +3618,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 109.22 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3597,8 +3629,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 109.22 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3607,8 +3640,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 109.22 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3617,8 +3651,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 109.22 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3627,8 +3662,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 109.22 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 109.22 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 109.22 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3653,7 +3711,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 194.31 119.38 180)
 		(unit 1)
 		(body_style 1)
@@ -3686,7 +3744,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 196.088 119.38 90)
 			(hide yes)
 			(show_name no)
@@ -3730,8 +3788,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 194.31 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3740,8 +3799,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 194.31 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3750,8 +3810,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 194.31 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3760,8 +3821,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 194.31 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3770,8 +3832,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 194.31 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3780,8 +3843,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 194.31 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3790,8 +3854,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 194.31 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3800,8 +3865,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 194.31 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 194.31 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 194.31 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3826,7 +3914,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 149.86 113.03 270)
 		(unit 1)
 		(body_style 1)
@@ -3858,7 +3946,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 149.86 111.252 90)
 			(hide yes)
 			(show_name no)
@@ -3902,8 +3990,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 149.86 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3912,8 +4001,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 149.86 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3922,8 +4012,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 149.86 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3932,8 +4023,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 149.86 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3942,8 +4034,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 149.86 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3952,8 +4045,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 149.86 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3962,8 +4056,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 149.86 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3972,8 +4067,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 149.86 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 149.86 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 149.86 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3998,7 +4116,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:C_Small")
+		(lib_id "TinyFRANK:C_Small")
 		(at 186.69 80.01 180)
 		(unit 1)
 		(body_style 1)
@@ -4028,7 +4146,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:C_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:C_0603_1608Metric"
 			(at 186.69 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4050,7 +4168,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Unpolarized capacitor"
 			(at 186.69 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4072,8 +4190,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 186.69 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4082,8 +4201,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 186.69 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4092,8 +4212,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 186.69 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4102,8 +4223,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 186.69 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4112,8 +4234,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 186.69 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4122,8 +4245,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 186.69 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4132,8 +4256,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 186.69 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4142,8 +4267,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 186.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 186.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 186.69 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4168,7 +4316,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 194.31 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -4201,7 +4349,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 192.532 96.52 90)
 			(hide yes)
 			(show_name no)
@@ -4245,8 +4393,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 194.31 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4255,8 +4404,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 194.31 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4265,8 +4415,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 194.31 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4275,8 +4426,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 194.31 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4285,8 +4437,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 194.31 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4295,8 +4448,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 194.31 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4305,8 +4459,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 194.31 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4315,8 +4470,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 194.31 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 194.31 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 194.31 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4341,7 +4519,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 97.79 66.04 180)
 		(unit 1)
 		(body_style 1)
@@ -4418,7 +4596,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "TinyFRANK:C_Polarized_Small")
 		(at 176.53 80.01 0)
 		(unit 1)
 		(body_style 1)
@@ -4448,7 +4626,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:Capacitor (3528, tantalum, polar)"
+		(property "Footprint" "TinyFRANK:Capacitor (3528, tantalum, polar)"
 			(at 176.53 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4470,100 +4648,9 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor, small symbol"
+		(property "Description" ""
 			(at 176.53 80.01 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 176.53 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Availability" ""
-			(at 176.53 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 176.53 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 176.53 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 176.53 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 176.53 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 176.53 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 176.53 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 176.53 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4588,7 +4675,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 194.31 123.19 0)
 		(unit 1)
 		(body_style 1)
@@ -4665,7 +4752,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:R")
+		(lib_id "TinyFRANK:R")
 		(at 119.38 81.28 180)
 		(unit 1)
 		(body_style 1)
@@ -4697,7 +4784,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:R_0603_1608Metric"
 			(at 121.158 81.28 90)
 			(hide yes)
 			(show_name no)
@@ -4741,8 +4828,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 119.38 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4751,8 +4839,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 119.38 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4761,8 +4850,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 119.38 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4771,8 +4861,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 119.38 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4781,8 +4872,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 119.38 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4791,8 +4883,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 119.38 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4801,8 +4894,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 119.38 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4811,8 +4905,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 119.38 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4837,7 +4954,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "TinyFRANK:VBUS")
 		(at 204.47 73.66 270)
 		(unit 1)
 		(body_style 1)
@@ -4916,7 +5033,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
+		(lib_id "TinyFRANK:LM358")
 		(at 165.1 83.82 0)
 		(unit 3)
 		(body_style 1)
@@ -4949,7 +5066,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:SO-8"
+		(property "Footprint" "TinyFRANK:SO-8"
 			(at 165.1 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4960,7 +5077,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+		(property "Datasheet" ""
 			(at 165.1 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4971,100 +5088,9 @@
 				)
 			)
 		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+		(property "Description" ""
 			(at 165.1 83.82 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/1005006785079218.html"
-			(at 165.1 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Availability" ""
-			(at 165.1 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 165.1 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 165.1 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 165.1 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 165.1 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 165.1 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 165.1 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 165.1 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5107,7 +5133,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 90.17 66.04 180)
 		(unit 1)
 		(body_style 1)
@@ -5184,7 +5210,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 167.64 91.44 90)
 		(unit 1)
 		(body_style 1)
@@ -5261,7 +5287,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:C_Small")
+		(lib_id "TinyFRANK:C_Small")
 		(at 184.15 113.03 90)
 		(unit 1)
 		(body_style 1)
@@ -5291,7 +5317,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:C_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:C_0603_1608Metric"
 			(at 184.15 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5313,7 +5339,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Unpolarized capacitor"
 			(at 184.15 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5335,8 +5361,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 184.15 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5345,8 +5372,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 184.15 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5355,8 +5383,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 184.15 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5365,8 +5394,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 184.15 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5375,8 +5405,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 184.15 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5385,8 +5416,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 184.15 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5395,8 +5427,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 184.15 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5405,8 +5438,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 184.15 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 184.15 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 184.15 113.03 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5431,7 +5487,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:C_Small")
+		(lib_id "TinyFRANK:C_Small")
 		(at 109.22 102.87 90)
 		(unit 1)
 		(body_style 1)
@@ -5461,7 +5517,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:C_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:C_0603_1608Metric"
 			(at 109.22 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5483,7 +5539,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Unpolarized capacitor"
 			(at 109.22 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5505,8 +5561,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 109.22 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5515,8 +5572,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 109.22 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5525,8 +5583,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 109.22 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5535,8 +5594,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 109.22 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5545,8 +5605,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 109.22 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5555,8 +5616,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 109.22 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5565,8 +5627,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 109.22 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5575,8 +5638,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 109.22 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 109.22 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 109.22 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5601,7 +5687,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 128.27 142.24 0)
 		(unit 1)
 		(body_style 1)
@@ -5678,7 +5764,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:C_Small")
+		(lib_id "TinyFRANK:C_Small")
 		(at 184.15 102.87 90)
 		(unit 1)
 		(body_style 1)
@@ -5708,7 +5794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:C_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:C_0603_1608Metric"
 			(at 184.15 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5730,7 +5816,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Unpolarized capacitor"
 			(at 184.15 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5752,8 +5838,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 184.15 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5762,8 +5849,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 184.15 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5772,8 +5860,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 184.15 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5782,8 +5871,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 184.15 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5792,8 +5882,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 184.15 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5802,8 +5893,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 184.15 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5812,8 +5904,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 184.15 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5822,8 +5915,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 184.15 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 184.15 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 184.15 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5848,7 +5964,7 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:C_Small")
+		(lib_id "TinyFRANK:C_Small")
 		(at 128.27 133.35 180)
 		(unit 1)
 		(body_style 1)
@@ -5878,7 +5994,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FRANK:C_0603_1608Metric"
+		(property "Footprint" "TinyFRANK:C_0603_1608Metric"
 			(at 128.27 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -5900,7 +6016,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Unpolarized capacitor"
 			(at 128.27 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -5922,8 +6038,9 @@
 				)
 			)
 		)
-		(property "Availability" ""
+		(property "Height" ""
 			(at 128.27 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5932,8 +6049,9 @@
 				)
 			)
 		)
-		(property "Check_prices" ""
+		(property "MANUFACTURER" ""
 			(at 128.27 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5942,8 +6060,9 @@
 				)
 			)
 		)
-		(property "Description_1" ""
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
 			(at 128.27 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5952,8 +6071,9 @@
 				)
 			)
 		)
-		(property "MF" ""
+		(property "Manufacturer_Name" ""
 			(at 128.27 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5962,8 +6082,9 @@
 				)
 			)
 		)
-		(property "MP" ""
+		(property "Manufacturer_Part_Number" ""
 			(at 128.27 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5972,8 +6093,9 @@
 				)
 			)
 		)
-		(property "Package" ""
+		(property "Mouser Part Number" ""
 			(at 128.27 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5982,8 +6104,9 @@
 				)
 			)
 		)
-		(property "Price" ""
+		(property "Mouser Price/Stock" ""
 			(at 128.27 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5992,8 +6115,31 @@
 				)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "PARTREV" ""
 			(at 128.27 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 128.27 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 128.27 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6018,7 +6164,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "TinyFRANK:GND")
 		(at 119.38 142.24 0)
 		(unit 1)
 		(body_style 1)
