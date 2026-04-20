@@ -579,26 +579,6 @@
 					)
 				)
 			)
-			(symbol "Conn_01x03_Pin_1_0"
-				(pin passive non_logic
-					(at -2.54 2.54 270)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "MP"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
 			(symbol "Conn_01x03_Pin_1_1"
 				(rectangle
 					(start 0.8636 2.667)
@@ -716,6 +696,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input non_logic
+					(at 5.08 5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2412,7 +2410,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "KMR_2"
+			(property "Footprint" "xt8086:Button_SMD_3x4x2mm"
 				(at 16.51 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3062,7 +3060,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "DIP794W53P254L1930H508Q14N"
+			(property "Footprint" "xt8086:DIP-14_W7.94mm_L19.30mm"
 				(at 21.59 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3452,7 +3450,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "DIP787W58P254L1918H508Q14N"
+			(property "Footprint" "xt8086:DIP-14_W7.62mm_L19.18mm"
 				(at 24.13 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6264,7 +6262,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xt8086:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
+		(property "Footprint" "xt8086:JST_SH_1x04_P1.00mm_Vertical"
 			(at 193.04 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -8660,6 +8658,84 @@
 		)
 	)
 	(symbol
+		(lib_id "xt8086:GND")
+		(at 231.14 132.08 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "42819ae1-cca1-4e02-b531-1f3f83a05d14")
+		(property "Reference" "#PWR074"
+			(at 237.49 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 132.0801 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56a5c8bf-3988-4c18-b06a-b61f2fa9b1bb")
+		)
+		(instances
+			(project "xt8086"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "xt8086:VBUS")
 		(at 135.89 45.72 270)
 		(unit 1)
@@ -9081,7 +9157,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xt8086:KMR_2"
+		(property "Footprint" "xt8086:Button_SMD_3x4x2mm"
 			(at 213.36 200.33 0)
 			(hide yes)
 			(show_name no)
@@ -10072,7 +10148,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xt8086:DIP14"
+		(property "Footprint" "xt8086:DIP-14_W7.62mm"
 			(at 152.4 227 0)
 			(hide yes)
 			(show_name no)
@@ -10219,83 +10295,6 @@
 		)
 	)
 	(symbol
-		(lib_id "xt8086:GND")
-		(at 223.52 134.62 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ae5dea60-1573-41b5-a047-6fd5623ee9dc")
-		(property "Reference" "#PWR074"
-			(at 223.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 221.234 132.842 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 223.52 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "204c09b0-639a-4c4c-b08b-9f731b571b39")
-		)
-		(instances
-			(project "xt8086"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
-					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "xt8086:KMR221G_LFS")
 		(at 196.85 90.17 0)
 		(unit 1)
@@ -10327,7 +10326,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xt8086:KMR_2"
+		(property "Footprint" "xt8086:Button_SMD_3x4x2mm"
 			(at 213.36 185.09 0)
 			(hide yes)
 			(show_name no)
@@ -10578,7 +10577,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "xt8086:Mounting Hole (2.7mm)"
+		(property "Footprint" "xt8086:MountingHole_2.7mm"
 			(at 160.02 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -10665,7 +10664,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "xt8086:Mounting Hole (2.7mm)"
+		(property "Footprint" "xt8086:MountingHole_2.7mm"
 			(at 160.02 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -10752,7 +10751,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "xt8086:Mounting Hole (2.7mm)"
+		(property "Footprint" "xt8086:MountingHole_2.7mm"
 			(at 160.02 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -11007,7 +11006,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "xt8086:Mounting Hole (2.7mm)"
+		(property "Footprint" "xt8086:MountingHole_2.7mm"
 			(at 160.02 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -11093,7 +11092,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xt8086:DIP14"
+		(property "Footprint" "xt8086:DIP-14_W7.62mm"
 			(at 78.74 229.54 0)
 			(hide yes)
 			(show_name no)
@@ -11632,7 +11631,7 @@
 		(dnp no)
 		(uuid "e3f0e155-bd5a-4690-b0dd-24af58fcf1a5")
 		(property "Reference" "J3"
-			(at 228.854 128.524 0)
+			(at 226.822 141.986 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11642,7 +11641,7 @@
 			)
 		)
 		(property "Value" "DEBUG"
-			(at 228.854 131.064 0)
+			(at 228.854 144.272 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11651,7 +11650,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xt8086:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical"
+		(property "Footprint" "xt8086:JST_SH_1x03_P1.00mm_Vertical"
 			(at 226.06 137.16 0)
 			(hide yes)
 			(show_name no)

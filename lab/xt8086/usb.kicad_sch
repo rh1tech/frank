@@ -1137,7 +1137,7 @@
 					(justify right)
 				)
 			)
-			(property "Footprint" "LIBS:USB-TYPE-C-31-M-12_lib2"
+			(property "Footprint" "xt8086:USB_C_Receptacle"
 				(at 3.81 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1474,7 +1474,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(property "Footprint" "xt8086:SOT-23-6"
 				(at 1.27 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1935,7 +1935,7 @@
 					)
 				)
 			)
-			(property "Footprint" "FRANK:USB Type A (single)"
+			(property "Footprint" "xt8086:USB_A_Single"
 				(at 3.81 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2712,6 +2712,16 @@
 			(type default)
 		)
 		(uuid "aa290a2b-4db9-4015-89dc-f32a177508ac")
+	)
+	(wire
+		(pts
+			(xy 173.99 83.82) (xy 173.99 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acb4ea3f-b6d2-4bf1-b528-cc96bb9347ed")
 	)
 	(wire
 		(pts
@@ -3898,6 +3908,85 @@
 		)
 	)
 	(symbol
+		(lib_id "xt8086:GND")
+		(at 173.99 83.82 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42345d10-fbea-4697-9b59-1f4ed9c8bd04")
+		(property "Reference" "#PWR076"
+			(at 167.64 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 83.8199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1d69186-4657-41dd-a21f-556d945a7602")
+		)
+		(instances
+			(project "xt8086"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/fc69669c-5428-4356-8e92-0aa932a39979"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "xt8086:USB-C")
 		(at 120.65 92.71 0)
 		(unit 1)
@@ -3931,7 +4020,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "xt8086:USB Type C"
+		(property "Footprint" "xt8086:USB_C_Receptacle"
 			(at 124.46 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4504,7 +4593,7 @@
 		(dnp no)
 		(uuid "7afca36f-5d16-4540-be51-7c10e470b9ce")
 		(property "Reference" "JP3"
-			(at 184.658 87.884 90)
+			(at 177.8 77.978 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4514,7 +4603,7 @@
 			)
 		)
 		(property "Value" "USB M"
-			(at 185.928 89.662 90)
+			(at 179.07 75.946 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4564,6 +4653,9 @@
 		)
 		(pin "3"
 			(uuid "201287cc-514d-44f3-aa3d-ca020b5de71e")
+		)
+		(pin "MP"
+			(uuid "21be4e73-ee55-47ce-a259-d9567715581b")
 		)
 		(instances
 			(project "xt8086"
@@ -4653,6 +4745,85 @@
 		)
 	)
 	(symbol
+		(lib_id "xt8086:GND")
+		(at 184.15 102.87 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "896c117c-42b5-4d15-8c57-e4f10ebf37d8")
+		(property "Reference" "#PWR077"
+			(at 190.5 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 102.8699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 184.15 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2fb9acb0-a01d-448d-ac7a-a3ae2a88fb1d")
+		)
+		(instances
+			(project "xt8086"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/fc69669c-5428-4356-8e92-0aa932a39979"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "xt8086:Conn_01x03_Pin")
 		(at 179.07 97.79 270)
 		(unit 1)
@@ -4664,7 +4835,7 @@
 		(dnp no)
 		(uuid "8f171838-6b7e-4c4d-aea3-379cb0269576")
 		(property "Reference" "JP4"
-			(at 184.658 98.552 90)
+			(at 178.054 112.014 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4674,7 +4845,7 @@
 			)
 		)
 		(property "Value" "USB P"
-			(at 185.928 100.33 90)
+			(at 179.324 109.982 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4724,6 +4895,9 @@
 		)
 		(pin "3"
 			(uuid "eaf9fc1d-ea61-40d6-a6bb-71ba79846be1")
+		)
+		(pin "MP"
+			(uuid "de5a2a79-49ad-4c9a-b0bb-5d1a584e740b")
 		)
 		(instances
 			(project "xt8086"
@@ -5766,7 +5940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xt8086:USB Type A (single)"
+		(property "Footprint" "xt8086:USB_A_Single"
 			(at 88.9 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -6212,7 +6386,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xt8086:Diode (SOD-323)"
+		(property "Footprint" "xt8086:D_SOD-323"
 			(at 149.86 81.28 0)
 			(hide yes)
 			(show_name no)
