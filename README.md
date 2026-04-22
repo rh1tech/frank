@@ -101,7 +101,6 @@ All KiCad project files are in `hardware/`.
 
 | Board | Layout | Compute Module | Latest Rev | Description | Docs |
 |-------|--------|----------------|------------|-------------|------|
-| [FRANK M1](./hardware/frank_m1) | M1 | Pico / Pico 2 (socket) | 2.06 | Full-featured: VGA, HDMI, composite, PIO PSRAM, PS/2, USB (via RP2040-Zero), TDA1387 DAC | [Guide](./docs/frank_m1.md) |
 | [FRANK M2](./hardware/frank_m2) | M2 | Pico 2 (socket) | 2.06 | M2 pinout optimized for RP2350A HSTX, QSPI PSRAM via Pico module | [Guide](./docs/frank_m2.md) |
 | [FRANK FastBeta M1](./hardware/frank_fastbeta_m1) | M1 | Pico / Pico 2 (socket) | 1.04 | Streamlined board for FastBeta ZX Spectrum firmware, HDMI/VGA, PIO PSRAM | [Guide](./docs/frank_fastbeta_m1.md) |
 
@@ -160,8 +159,9 @@ accessories/   Adapter boards (HDMI2VGA, USB2PS2)
 docs/          Assembly guides
 software/      Prebuilt firmware
 archive/       Old board revisions
-lab/           Experimental / WIP
 ```
+
+Experimental and work-in-progress boards are in a separate repo: [frank-lab](https://github.com/rh1tech/frank-lab).
 
 ## Links
 
