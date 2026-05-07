@@ -1,5 +1,9 @@
 # FRANK assembly and usage guide
 
+<p align="center">
+  <img src="./boards/3d/frank-iso.png" alt="FRANK 3D render" width="640">
+</p>
+
 FRANK is the flagship full-size board. It uses a Raspberry Pi Pico (or Pico 2) in a socket as the main compute module. On top of the standard hardware PS/2 port, an extra RP2040-Zero on-board lets you plug in a USB keyboard or mouse and have it appear as a PS/2 device — so you can use either input type without swapping firmware. Components are 0805, so you can hand-solder the whole board with a basic iron and decent flux.
 
 - **PCB size:** 99.5 × 83.1 mm
@@ -86,6 +90,12 @@ The full pick-and-place BOM is in `bom.html`. Here is a summary by part class so
 | Mounting holes 2.7 mm | 4 | M2.5 / M3 |
 
 ## Suggested soldering order
+
+Component placement and silkscreen labels for both sides:
+
+| Top | Bottom |
+|:---:|:------:|
+| <img src="./boards/frank-top.svg" alt="FRANK top silkscreen" width="420"> | <img src="./boards/frank-bottom.svg" alt="FRANK bottom silkscreen" width="420"> |
 
 Work from the smallest, hardest-to-access components outwards, so larger parts don't block your iron later.
 

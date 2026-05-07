@@ -1,5 +1,9 @@
 # FRANK PGA assembly and usage guide
 
+<p align="center">
+  <img src="./boards/3d/frank_pga-iso.png" alt="FRANK PGA 3D render" width="640">
+</p>
+
 FRANK PGA shares the board outline and feature set of FRANK, but it is built around the [Pimoroni PGA2350](https://shop.pimoroni.com/products/pga2350) module instead of a socketed Pico. The PGA2350 is an RP2350A board with on-module flash and PSRAM that drops onto a 47-pin grid. Without the Pico socket the board sits flatter, and native USB can run through a multiplexer to the on-board USB hub.
 
 If you are unsure which to build, FRANK is friendlier to first-time solderers. FRANK PGA suits builders who want everything on one PCB and don't mind soldering a PGA-style module.
@@ -98,6 +102,12 @@ The full pick-and-place BOM is in `bom.html`. Headline counts:
 | Mounting holes 2.7 mm | 4 | M2.5 / M3 |
 
 ## Suggested soldering order
+
+Component placement and silkscreen labels for both sides:
+
+| Top | Bottom |
+|:---:|:------:|
+| <img src="./boards/frank_pga-top.svg" alt="FRANK PGA top silkscreen" width="420"> | <img src="./boards/frank_pga-bottom.svg" alt="FRANK PGA bottom silkscreen" width="420"> |
 
 The PGA2350 module sits flush against the board, so the densest small parts have to go on first. Once the PGA module is down, the area underneath is inaccessible.
 

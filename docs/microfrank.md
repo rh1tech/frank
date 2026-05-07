@@ -1,5 +1,9 @@
 # MicroFRANK assembly and usage guide
 
+<p align="center">
+  <img src="./boards/3d/microfrank-iso.png" alt="MicroFRANK 3D render" width="640">
+</p>
+
 MicroFRANK is the smallest board in the family. It strips FRANK down to the core: RP2350A on-board, flash, PSRAM, HDMI output, MicroSD, and a stacked USB Type-A host port behind a USB hub and multiplexer. There is no VGA, no PS/2, no gamepad port and no ESP-01S socket. Power comes in over USB-C. It is meant for embedded use, hardware development, and as a compact runner for HDMI-only firmware.
 
 If you want a full retro-console feature set, build FRANK or MiniFRANK. Pick MicroFRANK when you need the smallest possible board for development or HDMI-only emulator targets.
@@ -75,6 +79,13 @@ The full pick-and-place BOM is in `bom.html`.
 | Mounting holes 2.7 mm | 4 | M2.5 |
 
 ## Suggested soldering order
+
+Component placement and silkscreen labels for both sides:
+
+| Top | Bottom |
+|:---:|:------:|
+| <img src="./boards/microfrank-top.svg" alt="MicroFRANK top silkscreen" width="420"> | <img src="./boards/microfrank-bottom.svg" alt="MicroFRANK bottom silkscreen" width="420"> |
+
 
 This is the densest of the four boards. A microscope or good magnifier and hot air are strongly recommended.
 

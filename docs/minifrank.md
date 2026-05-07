@@ -1,5 +1,9 @@
 # MiniFRANK assembly and usage guide
 
+<p align="center">
+  <img src="./boards/3d/minifrank-iso.png" alt="MiniFRANK 3D render" width="640">
+</p>
+
 MiniFRANK is the credit-card-sized board. The RP2350A and the W25Q128 flash chip are soldered directly to the PCB, so there is no Pico module socket. PSRAM (ESP-PSRAM64, 8 MB) is also on-board, so most emulators that need PSRAM work without any external modules.
 
 It keeps almost everything from the full-size FRANK (HDMI, VGA, PS/2, ESP-01S WiFi, MicroSD, audio out and tape in) in a much smaller form factor. The trade-offs: only one DB9 gamepad port, no composite output, and no on-board speaker amp. Power comes in over a USB Type-C connector — there is no DC barrel jack on this board.
@@ -87,6 +91,12 @@ The full pick-and-place BOM is in `bom.html`. Headline counts:
 | Mounting holes 2.7 mm | 4 | M2.5 |
 
 ## Suggested soldering order
+
+Component placement and silkscreen labels for both sides:
+
+| Top | Bottom |
+|:---:|:------:|
+| <img src="./boards/minifrank-top.svg" alt="MiniFRANK top silkscreen" width="420"> | <img src="./boards/minifrank-bottom.svg" alt="MiniFRANK bottom silkscreen" width="420"> |
 
 MiniFRANK uses 0603 passives, which are smaller than the 0805 parts on FRANK. A microscope or a good magnifier helps. Hot air is recommended for the RP2350A QFN.
 
