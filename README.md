@@ -30,7 +30,6 @@ All four boards use the M2 GPIO layout, so any firmware build for M2 runs on all
 | Feature | FRANK PGA | FRANK | MiniFRANK | MicroFRANK |
 |---------|:---------:|:-----:|:---------:|:----------:|
 | Compute module | Pimoroni PGA2350 | Pico / Pico 2 (socket) | RP2350A QFN on-board | RP2350A QFN on-board |
-| Helper MCU (RP2040-Zero, USB-to-PS/2 emulation) | — | Yes | — | — |
 | On-board flash | via module | via module | W25Q128 (16 MB) | W25Q128 (16 MB) |
 | On-board PSRAM | via module | via module | 8 MB | 8 MB |
 | HDMI output | Yes | Yes | Yes | Yes |
@@ -38,7 +37,7 @@ All four boards use the M2 GPIO layout, so any firmware build for M2 runs on all
 | Composite (RCA) | Yes | Yes | — | — |
 | TFT display header | Yes | Yes | — | — |
 | Hardware PS/2 port | Yes | Yes | Yes | — |
-| USB-emulated PS/2 (RP2040-Zero) | — | Yes (extra) | — | — |
+| USB-emulated PS/2 (RP2040-Zero) | — | Yes | — | — |
 | Gamepad ports (DB9) | 2 | 2 | 1 | — |
 | Stacked USB Type-A host | Yes | Yes | Yes | Yes |
 | MW7211A USB hub | Yes | Yes | Yes | Yes |
@@ -99,7 +98,7 @@ Over thirty emulators and native ports run on FRANK boards.
 
 ### Murmulator firmware
 
-The original [Murmulator](https://murmulator.tilda.ws/) project provides additional firmware that runs on FRANK boards as well:
+The original [Murmulator](https://murmulator.ru/) project provides additional firmware that runs on FRANK boards as well:
 
 **ZX Spectrum cores:** ZX Spectrum 48K / 128K / +3e (tecnocat, pico-spec, frut-bat, ZX Speccy P, murmulator), ZX Elf (pico-alf).
 
@@ -144,7 +143,10 @@ How you get PSRAM depends on the board:
 ```
 hardware/      Board KiCad projects (frank, frank_pga, minifrank, microfrank)
 docs/          Shared component datasheets and assembly notes
-software/      Pre-built reference firmware
+software/      Pre-built UF2s. Currently ships Hecate, the USB-to-PS/2 bridge
+               firmware for FRANK's on-board RP2040-Zero — flashing it lets a
+               USB keyboard or mouse appear on the hardware PS/2 lines.
+               Source: https://github.com/rh1tech/hecate
 ```
 
 ## Documentation
@@ -161,9 +163,42 @@ The `hardware/<board>/docs/` directories also contain auto-generated BOMs (`bom.
 ## Links
 
 - [rh1.tech/projects/frank](https://rh1.tech/projects/frank) — project website
-- [github.com/rh1tech](https://github.com/rh1tech?q=frank) — firmware repos
 - [rh1tech/frank-archive](https://github.com/rh1tech/frank-archive) — older boards and accessories
 - [rh1tech/frank-lab](https://github.com/rh1tech/frank-lab) — experimental designs
+
+### Firmware repositories
+
+Console emulators:
+
+- [frank-nes](https://github.com/rh1tech/frank-nes) — NES / Famicom (Dendy)
+- [frank-snes](https://github.com/rh1tech/frank-snes) — SNES / Super Famicom
+- [frank-genesis](https://github.com/rh1tech/frank-genesis) — Sega Genesis / Mega Drive
+- [frank-c64](https://github.com/rh1tech/frank-c64) — Commodore 64
+- [frank-apple](https://github.com/rh1tech/frank-apple) — Apple IIe
+- [frank-msx](https://github.com/rh1tech/frank-msx) — MSX / MSX2 / MSX2+
+
+PC emulation:
+
+- [frank-386](https://github.com/rh1tech/frank-386) — IBM PC i386 (DOS, Windows 3.x/95, Linux)
+
+Game engine ports:
+
+- [frank-idtech1](https://github.com/rh1tech/frank-idtech1) — DOOM, Heretic, Hexen, Strife (all-in-one)
+- [frank-doom](https://github.com/rh1tech/frank-doom) — DOOM (standalone)
+- [frank-heretic](https://github.com/rh1tech/frank-heretic) — Heretic
+- [frank-wolf3d](https://github.com/rh1tech/frank-wolf3d) — Wolfenstein 3D
+- [frank-duke3d](https://github.com/rh1tech/frank-duke3d) — Duke Nukem 3D
+- [frank-prince](https://github.com/rh1tech/frank-prince) — Prince of Persia
+- [frank-digger](https://github.com/rh1tech/frank-digger) — Digger Remastered
+- [frank-quest](https://github.com/rh1tech/frank-quest) — ScummVM (AGI, SCI, SCUMM, GOB, KYRA)
+
+OS and utilities:
+
+- [frank-os](https://github.com/rh1tech/frank-os) — Full desktop OS with built-in emulators
+- [frank-kickstart](https://github.com/rh1tech/frank-kickstart) — UF2 firmware launcher
+- [frank-manul](https://github.com/rh1tech/frank-manul) — Text-mode web browser
+- [frank-netcard](https://github.com/rh1tech/frank-netcard) — AT modem firmware for ESP-01
+- [hecate](https://github.com/rh1tech/hecate) — USB-to-PS/2 bridge for the RP2040-Zero
 
 ## Author
 

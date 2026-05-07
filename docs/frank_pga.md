@@ -153,12 +153,12 @@ Bench-test after each major group:
 
 1. Connect HDMI or VGA.
 2. Connect a PS/2 or USB keyboard.
-3. Insert an SD card with firmware on it (or use the on-board buttons to enter BOOTSEL).
+3. Insert a FAT32 SD card with ROMs / disk images. To flash firmware, hold **RP BOOT** while pressing **RP Reset**, then drag-and-drop a `.uf2` file onto the RP2350A's USB drive.
 4. Power on.
 
-The on-board buttons make firmware swaps easier than on the regular FRANK:
+The on-board buttons remove the need to reach for the BOOTSEL button on a Pico module:
 
-- **RP BOOT** — hold while pressing **RP Reset** to enter the RP2350A bootloader.
+- **RP BOOT + RP Reset** — enter the RP2350A bootloader for `.uf2` flashing.
 - **ESP Reset** — resets the ESP-01S WiFi module without power-cycling the board.
 
 ## Connecting PSRAM

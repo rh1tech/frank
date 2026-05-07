@@ -4,7 +4,7 @@
   <img src="./boards/3d/frank-iso.png" alt="FRANK 3D render" width="640">
 </p>
 
-FRANK is the socketed full-size board. It uses a Raspberry Pi Pico (or Pico 2) in a socket as the main compute module, so you can swap the brain at will — handy when you want to try Pico 2, Pico Plus 2 (with PSRAM), a Nyx 2, or any other Pico-pinout module on the same PCB. On top of the standard hardware PS/2 port, an extra RP2040-Zero on-board lets you plug in a USB keyboard or mouse and have it appear as a PS/2 device — so you can use either input type without swapping firmware. Components are 0805, so you can hand-solder the whole board with a basic iron and decent flux.
+FRANK is the socketed full-size board. It uses a Raspberry Pi Pico (or Pico 2) in a socket as the main compute module, so you can swap the brain at will — handy when you want to try Pico 2, Pico Plus 2 (with PSRAM), a Nyx, or any other Pico-pinout module on the same PCB. On top of the standard hardware PS/2 port, an extra RP2040-Zero on-board lets you plug in a USB keyboard or mouse and have it appear as a PS/2 device — so you can use either input type without swapping firmware. Components are 0805, so you can hand-solder the whole board with a basic iron and decent flux.
 
 If you want everything fixed on a single PCB instead, the flagship [FRANK PGA](./frank_pga.md) is the same outline with a soldered-on PGA2350 module, native USB host and ESD protection.
 
@@ -157,7 +157,7 @@ There are three ways to get a PSRAM-equipped Pico 2 into the FRANK socket:
 
 1. **Pimoroni Pico Plus 2 (recommended).** A ready-made Pico 2 with 8 MB PSRAM. Drop it into the socket and you are done.
 2. **Solder a PSRAM chip on top of the flash chip of an RP2350 clone.** SOP-8 flash chips are mostly only on clones (typically black boards), not the original Pico 2 — you cannot do this trick on a genuine Pico 2. See the [Murmulator PSRAM guide](https://murmulator.tilda.ws/) for the connection pattern.
-3. **Build a Nyx 2** — a DIY RP2350 board with integrated PSRAM.
+3. **Build a Nyx** — a DIY RP2350 board with integrated PSRAM.
 
 ## Troubleshooting
 
