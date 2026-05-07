@@ -1,0 +1,196 @@
+(footprint "L_2016_Polarized"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Inductor with Polarity Marking 2016")
+	(property "Reference" "REF**"
+		(at 0 1.5 0)
+		(layer "F.SilkS")
+		(uuid "a0ed4bd3-0e1e-4a58-988b-814e65f2c17c")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.14)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "3.3u"
+		(at 0 1.7 0)
+		(layer "F.Fab")
+		(uuid "bddf30d8-26cf-4873-8a0e-7bab72dc4958")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "196db295-2175-4270-82ad-8984b9961c9d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Inductor"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47a31f2b-cef4-40af-b421-661c1de0b8bb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+	(sheetname "/RP2350A/")
+	(sheetfile "rp2350a.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center -1.5 0)
+		(end -1.358579 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "62ea01a5-f58d-4cae-8424-ab1403cbca35")
+	)
+	(fp_line
+		(start 1.25 1.05)
+		(end 1.25 -1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c808f840-fcb1-421a-869d-245915807c49")
+	)
+	(fp_line
+		(start 1.25 -1.05)
+		(end -1.25 -1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2fe89197-5082-4aa7-813c-dc4299f7f194")
+	)
+	(fp_line
+		(start -1.25 1.05)
+		(end 1.25 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6d92d1d7-29bf-421e-8157-3b58b2492de3")
+	)
+	(fp_line
+		(start -1.25 -1.05)
+		(end -1.25 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a20f7630-3c86-40b4-b7fd-a167d954e419")
+	)
+	(fp_line
+		(start 1 0.8)
+		(end 1 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5eb3b1b5-516c-46ea-af75-67099ebf7ae0")
+	)
+	(fp_line
+		(start 1 -0.8)
+		(end -1 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "daac38b1-d87a-4c13-8aff-3b8379eb4be3")
+	)
+	(fp_line
+		(start -1 0.8)
+		(end 1 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b6f1d758-2ff2-47bb-abcb-7104d3ca003a")
+	)
+	(fp_line
+		(start -1 -0.8)
+		(end -1 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ffd8e7f5-c3ca-4eaf-a0ce-879d9b1c953d")
+	)
+	(fp_circle
+		(center -0.7 0)
+		(end -0.476393 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "8f1fdc99-db1e-4558-8bac-0bb958364590")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1.4 0)
+		(layer "F.Fab")
+		(uuid "4d8ec300-698a-455b-8981-427a5effe694")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.7 0 180)
+		(size 0.7 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5259359a-1b38-4d5d-81a9-b3ed5060940c")
+	)
+	(pad "2" smd rect
+		(at 0.7 0 180)
+		(size 0.7 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ba1d3254-fc47-4a0b-82e9-e9b70786facc")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/Inductor_2016.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
