@@ -51,10 +51,21 @@ hidden_models() {
 board_color() {
   case "$1" in
     frank)      echo "#B30F0FD9" ;;  # red
-    frank_pga)  echo "#1A1A1AFF" ;;  # near-black (fully opaque to avoid ENIG gold bleed-through)
+    frank_pga)  echo "#101418F2" ;;  # near-black, slight cool bias to cancel copper warm tint
     minifrank)  echo "#0F8A3CD9" ;;  # PCB green
     microfrank) echo "#0F8A3CD9" ;;
     *)          echo "#0F8A3CD9" ;;
+  esac
+}
+
+# Per-board copper finish. ENIG (gold) tints traces yellow under
+# translucent mask, which keeps green/red boards on-color but tints
+# black boards brown. For black boards use Immersion silver (silver) so trace
+# bleed-through stays neutral.
+board_finish() {
+  case "$1" in
+    frank_pga)  echo "Immersion silver" ;;
+    *)          echo "ENIG" ;;
   esac
 }
 
@@ -100,9 +111,10 @@ prepare_board() {
   local color="$2"
   local tmp_dir="$3"
   local hidden="$4"
+  local finish="$5"
 
   cp -R "$src_dir/." "$tmp_dir/"
-  python3 - "$tmp_dir" "$color" "$hidden" <<'PY'
+  python3 - "$tmp_dir" "$color" "$hidden" "$finish" <<'PY'
 import re
 import sys
 from pathlib import Path
@@ -110,6 +122,7 @@ from pathlib import Path
 tmp_dir = Path(sys.argv[1])
 color = sys.argv[2]
 hidden = [h for h in sys.argv[3].split("|") if h]
+finish = sys.argv[4]
 
 for pcb in tmp_dir.glob("*.kicad_pcb"):
     s = pcb.read_text()
@@ -138,12 +151,12 @@ for pcb in tmp_dir.glob("*.kicad_pcb"):
     s = inject(s, "F.Mask")
     s = inject(s, "B.Mask")
 
-    # Switch the copper finish to ENIG (gold). Bleed-through from the
-    # translucent mask then tints yellow-green instead of brown, which
-    # keeps red boards red, green boards green, and black boards black.
+    # Switch the copper finish to the per-board choice. ENIG (gold)
+    # tints bleed-through yellow-green for red/green boards; Immersion silver
+    # (silver) keeps black boards neutral.
     s = re.sub(
         r'\(copper_finish "[^"]*"\)',
-        '(copper_finish "ENIG")',
+        f'(copper_finish "{finish}")',
         s,
         count=1,
     )
@@ -251,10 +264,11 @@ for pcb_src in "$HARDWARE_DIR"/*/*.kicad_pcb; do
   color="$(board_color "$board")"
 
   hidden="$(hidden_models "$board")"
-  echo "Preparing ${board} (${color}; hide: ${hidden:-none})..."
+  finish="$(board_finish "$board")"
+  echo "Preparing ${board} (${color}; finish: ${finish}; hide: ${hidden:-none})..."
   tmp_dir="$TMP_ROOT/$board"
   mkdir -p "$tmp_dir"
-  prepare_board "$(dirname "$pcb_src")" "$color" "$tmp_dir" "$hidden"
+  prepare_board "$(dirname "$pcb_src")" "$color" "$tmp_dir" "$hidden" "$finish"
   pcb="$tmp_dir/$(basename "$pcb_src")"
 
   zoom="$(iso_zoom "$board")"
