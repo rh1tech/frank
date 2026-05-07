@@ -4,9 +4,9 @@
   <img src="./boards/3d/microfrank-iso.png" alt="MicroFRANK 3D render" width="640">
 </p>
 
-MicroFRANK is the smallest board in the family. It strips FRANK down to the core: RP2350A on-board, flash, PSRAM, HDMI output, MicroSD, and a stacked USB Type-A host port behind a USB hub and multiplexer. There is no VGA, no PS/2, no gamepad port and no ESP-01S socket. Power comes in over USB-C. It is meant for embedded use, hardware development, and as a compact runner for HDMI-only firmware.
+MicroFRANK is the smallest board in the family. It is a smaller version of FRANK with the RP2350A, flash, PSRAM and the stacked USB host on the PCB itself. There is no VGA, no hardware PS/2, no DB9 gamepad and no ESP-01S socket; keyboards, mice and gamepads connect over USB. Power comes in over USB-C.
 
-If you want a full retro-console feature set, build FRANK or MiniFRANK. Pick MicroFRANK when you need the smallest possible board for development or HDMI-only emulator targets.
+If you want VGA, composite, the DB9 ports, or WiFi, build FRANK or MiniFRANK. Pick MicroFRANK when the size matters and HDMI plus USB is enough.
 
 - **PCB size:** 32 × 74 mm
 - **KiCad project:** [`hardware/microfrank/`](../hardware/microfrank)
@@ -87,7 +87,7 @@ Component placement and silkscreen labels for both sides:
 | <img src="./boards/microfrank-top.svg" alt="MicroFRANK top silkscreen" width="420"> | <img src="./boards/microfrank-bottom.svg" alt="MicroFRANK bottom silkscreen" width="420"> |
 
 
-This is the densest of the four boards. A microscope or good magnifier and hot air are strongly recommended.
+This is the densest of the four boards. A microscope or a good magnifier plus hot air make this much easier.
 
 1. **RP2350A QFN-60.** Apply solder paste, place with tweezers, reflow with hot air at ~280 °C. Inspect every pin under magnification.
 2. **W25Q128JVS flash, ESP-PSRAM64, 12 MHz crystal.** Pin 1 orientation matters.
@@ -122,7 +122,7 @@ Bench-test points:
 
 1. Plug USB-C into the power port to feed 5 V.
 2. Connect HDMI to a display.
-3. Plug a USB keyboard into the stacked USB Type-A host port. There is no PS/2 on this board, so every keyboard has to be USB.
+3. Plug a USB keyboard into the stacked USB Type-A host port. There is no PS/2 on this board, so the keyboard has to be USB.
 4. Insert an SD card with firmware.
 5. Power on with the slide switch.
 
@@ -130,17 +130,17 @@ To enter BOOTSEL for flashing: hold the **RP Boot** button while powering on (or
 
 ## What MicroFRANK cannot do
 
-Be aware before building this board:
+Things to know before ordering this board:
 
-- **No VGA output.** HDMI only.
-- **No composite video.**
-- **No PS/2 port.** Only USB keyboards work — every other board has a hardware PS/2 connector.
-- **No gamepad / DB9 ports.** All input is USB.
-- **No ESP-01S WiFi socket.**
-- **No on-board speaker amplifier.** Line-level audio out only.
-- **No tape input.**
+- No VGA output. HDMI only.
+- No composite video.
+- No PS/2 port. The other three boards have one; here every keyboard or mouse has to be USB.
+- No DB9 gamepad ports. Gamepads have to be USB too.
+- No ESP-01S WiFi socket.
+- No on-board speaker amp. Line-level audio out only.
+- No tape input.
 
-If any of these are required for your firmware, build MiniFRANK or FRANK instead.
+If your firmware needs any of these, build MiniFRANK or FRANK instead.
 
 ## Troubleshooting
 
