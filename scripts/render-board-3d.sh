@@ -51,7 +51,7 @@ hidden_models() {
 board_color() {
   case "$1" in
     frank)      echo "#B30F0FD9" ;;  # red
-    frank_pga)  echo "#1A1A1AE6" ;;  # near-black
+    frank_pga)  echo "#1A1A1AFF" ;;  # near-black (fully opaque to avoid ENIG gold bleed-through)
     minifrank)  echo "#0F8A3CD9" ;;  # PCB green
     microfrank) echo "#0F8A3CD9" ;;
     *)          echo "#0F8A3CD9" ;;
