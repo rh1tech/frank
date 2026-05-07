@@ -4,9 +4,9 @@
   <img src="./boards/3d/frank_pga-iso.png" alt="FRANK PGA 3D render" width="640">
 </p>
 
-FRANK PGA is the flagship full-size board. It is built around the [Pimoroni PGA2350](https://shop.pimoroni.com/products/pga2350) module — an RP2350A board with on-module flash and 8 MB PSRAM that drops onto a 47-pin grid. Without a Pico socket the board sits flatter, native USB runs through a multiplexer to the on-board USB hub, and ESD protection plus dedicated reset / boot buttons are included.
+FRANK PGA is the flagship full-size board. It is built around the [Pimoroni PGA2350](https://shop.pimoroni.com/products/pga2350) module: an RP2350A with on-module flash and 8 MB PSRAM that drops onto a 47-pin grid. Without a Pico socket the board sits flatter, native USB runs through a multiplexer into the on-board USB hub, and there is ESD protection plus dedicated reset and boot buttons.
 
-If you want a socketed alternative, [FRANK](./frank.md) shares the same outline and feature set but uses a Raspberry Pi Pico / Pico 2 in a socket and is friendlier to first-time solderers.
+If you want a socketed alternative, [FRANK](./frank.md) has the same outline and feature set but uses a Raspberry Pi Pico / Pico 2 in a socket and is friendlier to first-time solderers.
 
 - **PCB size:** 99.5 × 83.1 mm
 - **KiCad project:** [`hardware/frank_pga/`](../hardware/frank_pga)
@@ -18,8 +18,8 @@ If you want a socketed alternative, [FRANK](./frank.md) shares the same outline 
 | Topic | FRANK | FRANK PGA |
 |-------|-------|-----------|
 | Compute | Pico / Pico 2 in a socket | Pimoroni PGA2350 (soldered) |
-| USB-emulated PS/2 (RP2040-Zero) | Yes | No. The PGA2350 handles USB directly, so USB keyboards work natively without the helper. The hardware PS/2 port is still present on both boards. |
-| USB host path | Stacked, with hub | Stacked, with hub plus an analog USB multiplexer (74HC4052D switching the D+/D− lines) so the host port can swap between the PGA2350 and a flashing port |
+| USB-emulated PS/2 (RP2040-Zero) | Yes | No. The PGA2350 handles USB directly, so USB keyboards work without a helper. The hardware PS/2 port is on both boards. |
+| USB host path | Stacked, with hub | Stacked, with hub plus an analog USB multiplexer (74HC4052D on the D+/D− lines) so the host port can swap between the PGA2350 and a flashing port |
 | ESP-01 reset and bootsel | Manual | Dedicated push-buttons (RP BOOT, RP Reset, ESP Reset) |
 | ESD protection | — | USBLC6-2SC6 on the USB lines |
 | Audio multiplexer | 1 × 74HC4052D | 2 × 74HC4052D |
@@ -146,7 +146,7 @@ The PGA2350 module sits flush against the board, so the densest small parts have
 Bench-test after each major group:
 
 - After step 1–4: probe the 5 V and 3.3 V rails for shorts before applying power.
-- After step 4: bring up power and check the PGA2350 enumerates over USB (hold BOOT, press Reset, release BOOT — UF2 drive should appear).
+- After step 4: bring up power and check the PGA2350 enumerates over USB (hold BOOT, press Reset, release BOOT; the UF2 drive should appear).
 - After step 9: confirm video on HDMI before adding gamepad and audio jacks.
 
 ## First boot

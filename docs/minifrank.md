@@ -4,9 +4,9 @@
   <img src="./boards/3d/minifrank-iso.png" alt="MiniFRANK 3D render" width="640">
 </p>
 
-MiniFRANK is the credit-card-sized board. The RP2350A and the W25Q128 flash chip are soldered directly to the PCB, so there is no Pico module socket. PSRAM (ESP-PSRAM64, 8 MB) is also on-board, so most emulators that need PSRAM work without any external modules.
+MiniFRANK is the credit-card-sized board. The RP2350A and the W25Q128 flash are soldered directly to the PCB, so there is no Pico socket. PSRAM (ESP-PSRAM64, 8 MB) is also on-board, so emulators that need PSRAM work without any external modules.
 
-It keeps almost everything from the full-size FRANK (HDMI, VGA, PS/2, ESP-01S WiFi, MicroSD, audio out and tape in) in a much smaller form factor. The trade-offs: only one DB9 gamepad port, no composite output, and no on-board speaker amp. Power comes in over a USB Type-C connector — there is no DC barrel jack on this board.
+It keeps most of full-size FRANK (HDMI, VGA, PS/2, ESP-01S WiFi, MicroSD, audio out, tape in) in a smaller outline. The trade-offs: only one DB9 gamepad port, no composite output, and no on-board speaker amp. Power comes in over USB-C; there is no DC barrel jack on this board.
 
 - **PCB size:** 85.6 × 53.98 mm (credit-card sized)
 - **KiCad project:** [`hardware/minifrank/`](../hardware/minifrank)
@@ -155,5 +155,5 @@ To enter the bootloader for flashing:
 | VGA colours wrong | Resistor DAC values incorrect — verify 270 Ω, 470 Ω, 1 kΩ values. |
 | Keyboard doesn't respond | TXS0104 level shifter unsoldered, or PS/2 cable wired to a non-AT keyboard. |
 | Audio distorted | Op-amp (LM358) supply rail noisy; check decoupling caps near it. |
-| ESP-01S not connecting | ESP-01S not flashed with `frank-netcard`. The ESP Reset button only resets — it does not re-flash. |
+| ESP-01S not connecting | ESP-01S not flashed with `frank-netcard`. The ESP Reset button only resets; it does not re-flash. |
 
