@@ -92,6 +92,17 @@ WIDTH=1600
 HEIGHT=1200
 ISO_ROTATE="-25,0,-30"
 
+# Per-board rotation override. The default ISO_ROTATE assumes the
+# board's "top" (silkscreen logo / connector front) faces +Y. Boards
+# whose canvas orientation differs from that need a Z-axis offset
+# baked into the rotation.
+iso_rotate() {
+  case "$1" in
+    microfrank) echo "-25,0,-120" ;;
+    *)          echo "$ISO_ROTATE" ;;
+  esac
+}
+
 # Per-board zoom. With auto-trim the zoom only affects "how much air
 # around the board" survives before trim, so smaller is safer (just
 # avoid going so small the board edges leave the canvas).
@@ -272,8 +283,9 @@ for pcb_src in "$HARDWARE_DIR"/*/*.kicad_pcb; do
   pcb="$tmp_dir/$(basename "$pcb_src")"
 
   zoom="$(iso_zoom "$board")"
-  echo "Rendering ${board} (isometric, zoom ${zoom})..."
-  render "$pcb" "$OUT_DIR/$board-iso.png" "top" "$ISO_ROTATE" 1 "$zoom"
+  rotate="$(iso_rotate "$board")"
+  echo "Rendering ${board} (isometric, zoom ${zoom}, rotate ${rotate})..."
+  render "$pcb" "$OUT_DIR/$board-iso.png" "top" "$rotate" 1 "$zoom"
 
   if [ "$render_all" = "1" ]; then
     echo "Rendering ${board} (top flat)..."
