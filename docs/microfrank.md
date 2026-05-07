@@ -1,0 +1,154 @@
+# MicroFRANK assembly and usage guide
+
+<p align="center">
+  <img src="./boards/3d/microfrank-iso.png" alt="MicroFRANK 3D render" width="640">
+</p>
+
+MicroFRANK is the smallest board in the family. It strips FRANK down to the core: RP2350A on-board, flash, PSRAM, HDMI output, MicroSD, and a stacked USB Type-A host port behind a USB hub and multiplexer. There is no VGA, no PS/2, no gamepad port and no ESP-01S socket. Power comes in over USB-C. It is meant for embedded use, hardware development, and as a compact runner for HDMI-only firmware.
+
+If you want a full retro-console feature set, build FRANK or MiniFRANK. Pick MicroFRANK when you need the smallest possible board for development or HDMI-only emulator targets.
+
+- **PCB size:** 32 × 74 mm
+- **KiCad project:** [`hardware/microfrank/`](../hardware/microfrank)
+- **Gerbers:** [`hardware/microfrank/gerbers/`](../hardware/microfrank/gerbers/)
+- **BOM, schematics PDF, assembly drawing:** [`hardware/microfrank/docs/`](../hardware/microfrank/docs/)
+
+## What's on the board
+
+| Subsystem | Component(s) | Purpose |
+|-----------|--------------|---------|
+| Compute | RP2350A QFN-60 | Soldered directly to the PCB. |
+| Flash | W25Q128JVS | 16 MB SPI flash |
+| PSRAM | ESP-PSRAM64 | 8 MB PSRAM |
+| Crystal | ASE-12 MHz | RP2350A clock |
+| Power | ME6211C33M5 | LDO from USB to 3.3 V |
+| Video | HDMI Type A | Single video output (HDMI only) |
+| Audio | TDA1387T DAC + LM358 op-amp + PJ-320D 3.5 mm | Line-level audio |
+| Storage | MicroSD slot (Molex 0475710001) | ROMs, WADs, disk images |
+| USB host | USB4215 stacked + MW7211A hub + TS3USB221 multiplexer + USBLC6-2SC6 ESD | Stacked USB Type-A host. The hub fans out the RP2350's single USB host port; the multiplexer lets the same port swap between RP2350-driven host mode and a flashing path. |
+| USB power input | USB Type-C | The board takes 5 V over USB-C. |
+| Buttons | 1 × tactile (RP Boot) | For entering BOOTSEL |
+| Slide switches | SK12D07VG3NS, MSK12C02 | Power and config |
+
+## Bill of materials (high-level)
+
+The full pick-and-place BOM is in `bom.html`.
+
+### Active parts
+
+| Ref | Part | Qty | Notes |
+|-----------------|------|-----|-------|
+| U | RP2350A | 1 | QFN-60 |
+| U | W25Q128JVS | 1 | SOIC-8 flash |
+| U | ESP-PSRAM64 | 1 | SOIC-8 PSRAM |
+| Y | ASE-12 MHz | 1 | Crystal oscillator |
+| U | TDA1387T | 1 | DIP-8 audio DAC |
+| U | LM358 | 1 | SOIC-8 op-amp |
+| U | TXS0104ERGYR | 1 | QFN level shifter |
+| U | TS3USB221RSER | 1 | USB switch |
+| U | USBLC6-2SC6 | 1 | USB ESD diode |
+| U | MW7211A | 1 | USB hub |
+| U | ME6211C33M5 | 1 | SOT-23-5 LDO |
+
+### Passives
+
+| Reference style | Value | Qty | Footprint |
+|-----------------|-------|-----|-----------|
+| C | 100 nF | 20 | 0603 |
+| C | 10 µF | 12 | 0603 |
+| C | 4.7 µF | 5 | 0603 |
+| R | 10 kΩ | 9 | 0603 |
+| R | 22 Ω | 6 | 0603 |
+| R | 1 kΩ / 5.1 kΩ / 470 Ω / 47 kΩ / 27 Ω | mixed | 0603 |
+| L | 3.3 µH | 1 | Power inductor |
+| L | 330 Ω ferrite | 1 | 0603 |
+| D | 1N5819WS | 1 | Schottky |
+
+### Connectors and mechanical
+
+| Part | Qty | Purpose |
+|------|-----|---------|
+| HDMI Type A | 1 | HDMI |
+| Molex 0475710001 | 1 | MicroSD slot |
+| USB4215-03-A | 1 | Stacked USB Type-A host |
+| USB Type-C | 1 | Power input |
+| PJ-320D | 1 | 3.5 mm audio out |
+| Slide switch SK12D07VG3NS | 1 | Power |
+| Slide switch MSK12C02 | 1 | Config |
+| Tactile button | 1 | RP Boot |
+| Mounting holes 2.7 mm | 4 | M2.5 |
+
+## Suggested soldering order
+
+Component placement and silkscreen labels for both sides:
+
+| Top | Bottom |
+|:---:|:------:|
+| <img src="./boards/microfrank-top.svg" alt="MicroFRANK top silkscreen" width="420"> | <img src="./boards/microfrank-bottom.svg" alt="MicroFRANK bottom silkscreen" width="420"> |
+
+
+This is the densest of the four boards. A microscope or good magnifier and hot air are strongly recommended.
+
+1. **RP2350A QFN-60.** Apply solder paste, place with tweezers, reflow with hot air at ~280 °C. Inspect every pin under magnification.
+2. **W25Q128JVS flash, ESP-PSRAM64, 12 MHz crystal.** Pin 1 orientation matters.
+3. **0603 decoupling capacitors** around the RP2350A and the flash / PSRAM.
+4. **Other 0603 resistors and capacitors.**
+5. **Surface-mount ICs:**
+   - TXS0104ERGYR (QFN)
+   - TS3USB221RSER
+   - USBLC6-2SC6
+   - MW7211A USB hub
+   - LM358
+   - ME6211C33M5 LDO
+6. **Power inductor (3.3 µH) and the Schottky diode.**
+7. **Tactile button (RP Boot).**
+8. **Slide switches (SK12D07VG3NS, MSK12C02).**
+9. **Through-hole and SMT connectors:**
+   - HDMI Type A
+   - PJ-320D 3.5 mm jack
+   - MicroSD slot (Molex 0475710001)
+   - USB Type-A stacked
+   - USB Type-C (power input)
+10. **TDA1387T DIP-8** (solder directly or socket).
+11. **Mounting hardware** if you are putting it in a project box.
+
+Bench-test points:
+
+- After step 1–2: probe USB power to GND for shorts.
+- After step 5: plug USB in. Hold the RP Boot button while plugging — the RP2350A should appear as `RPI-RP2` mass storage.
+- After step 9: check HDMI output with a known-good firmware UF2.
+
+## First boot
+
+1. Plug USB-C into the power port to feed 5 V.
+2. Connect HDMI to a display.
+3. Plug a USB keyboard into the stacked USB Type-A host port. There is no PS/2 on this board, so every keyboard has to be USB.
+4. Insert an SD card with firmware.
+5. Power on with the slide switch.
+
+To enter BOOTSEL for flashing: hold the **RP Boot** button while powering on (or while pressing reset, depending on the firmware variant).
+
+## What MicroFRANK cannot do
+
+Be aware before building this board:
+
+- **No VGA output.** HDMI only.
+- **No composite video.**
+- **No PS/2 port.** Only USB keyboards work — every other board has a hardware PS/2 connector.
+- **No gamepad / DB9 ports.** All input is USB.
+- **No ESP-01S WiFi socket.**
+- **No on-board speaker amplifier.** Line-level audio out only.
+- **No tape input.**
+
+If any of these are required for your firmware, build MiniFRANK or FRANK instead.
+
+## Troubleshooting
+
+| Symptom | Likely cause |
+|---------|--------------|
+| Board not detected as USB drive | QFN reflow incomplete, especially the thermal pad. Apply more flux and reflow with hot air. |
+| Crashes after a few seconds of running | PSRAM not soldered correctly. |
+| No HDMI signal | Wrong firmware variant for this layout, or HDMI signal traces shorted. |
+| Distorted audio | LM358 op-amp not getting clean 3.3 V; check decoupling caps. |
+| USB devices not enumerating | MW7211A hub or TS3USB221 switch not making contact; reflow. |
+

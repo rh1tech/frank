@@ -1,0 +1,193 @@
+(footprint "Button_SMD_TS1234VW"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Low-profile SMD Tactile Switch")
+	(tags "SPST Tactile Switch")
+	(property "Reference" "REF**"
+		(at 0 -2.3 0)
+		(layer "F.SilkS")
+		(uuid "0fc88032-8838-49cb-b728-e0b2251840d2")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.14)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "TS-1234VW"
+		(at 0 3.75 0)
+		(layer "F.Fab")
+		(uuid "098ec8e4-6659-4ce6-b4c3-ae561d210993")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "74805936-c208-4105-b5fb-f20eadb89936")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83b5bf9c-97c9-49f0-8ff6-aa2e6b65c1c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.75 -1.75)
+		(end 2.75 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "939b0e31-0241-4895-b2b4-6c01ea293938")
+	)
+	(fp_line
+		(start -2.75 1.75)
+		(end -2.75 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "609baf27-9565-4918-929b-7d2384ee11fa")
+	)
+	(fp_line
+		(start -2.75 1.75)
+		(end 2.75 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "905752af-2803-439f-9c1c-5ea0144a412c")
+	)
+	(fp_line
+		(start 2.75 1.75)
+		(end 2.75 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b308757-5d45-4afb-87dd-ad25c66f2c76")
+	)
+	(fp_line
+		(start -2.125 0.19)
+		(end 2.125 0.19)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "ca2112fe-edb8-42a0-8a47-b53650f5321d")
+	)
+	(fp_rect
+		(start -2.9 -1.9)
+		(end 2.9 1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7fb347dd-2e9a-4bf9-9ec3-0d188ec50c8e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -5 0)
+		(layer "F.Fab")
+		(uuid "c6cead17-e57a-4afe-84eb-9de8c8bcf151")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" thru_hole circle
+		(at -2.125 0.19)
+		(size 0.9 0.9)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9346c39e-011c-4607-8847-9ffcf81de980")
+	)
+	(pad "" thru_hole circle
+		(at 2.125 0.19)
+		(size 0.9 0.9)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "62f7b884-8869-4f0b-af58-e7d8276dba93")
+	)
+	(pad "1" smd rect
+		(at -1.176533 -1.005551 90)
+		(size 1.211102 0.846933)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "c07b7b6a-1651-414a-8faa-c37010545bc9")
+	)
+	(pad "1" smd rect
+		(at 1.175313 -1.00508 90)
+		(size 1.21016 0.850626)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "462f8c01-0b27-4d4c-bb7e-6e755bb1e3ab")
+	)
+	(pad "2" smd rect
+		(at 0.000017 -0.71 90)
+		(size 1.803508 0.599996)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "c846a08c-b158-4f58-8470-2f6f9661b011")
+	)
+	(pad "3" smd rect
+		(at -1.87472 1.3)
+		(size 1.252114 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "0ab39e6b-346e-4aee-931e-1db1c1d50082")
+	)
+	(pad "3" smd rect
+		(at 1.875839 1.3)
+		(size 1.252114 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "8c511e82-a806-49f1-ae6e-1808dd1184c7")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/Button_SMD_TS1234VW.step"
+		(offset
+			(xyz 0.5 -0.2 -12.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
