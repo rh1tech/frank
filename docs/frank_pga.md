@@ -4,9 +4,9 @@
   <img src="./boards/3d/frank_pga-iso.png" alt="FRANK PGA 3D render" width="640">
 </p>
 
-FRANK PGA shares the board outline and feature set of FRANK, but it is built around the [Pimoroni PGA2350](https://shop.pimoroni.com/products/pga2350) module instead of a socketed Pico. The PGA2350 is an RP2350A board with on-module flash and PSRAM that drops onto a 47-pin grid. Without the Pico socket the board sits flatter, and native USB can run through a multiplexer to the on-board USB hub.
+FRANK PGA is the flagship full-size board. It is built around the [Pimoroni PGA2350](https://shop.pimoroni.com/products/pga2350) module — an RP2350A board with on-module flash and 8 MB PSRAM that drops onto a 47-pin grid. Without a Pico socket the board sits flatter, native USB runs through a multiplexer to the on-board USB hub, and ESD protection plus dedicated reset / boot buttons are included.
 
-If you are unsure which to build, FRANK is friendlier to first-time solderers. FRANK PGA suits builders who want everything on one PCB and don't mind soldering a PGA-style module.
+If you want a socketed alternative, [FRANK](./frank.md) shares the same outline and feature set but uses a Raspberry Pi Pico / Pico 2 in a socket and is friendlier to first-time solderers.
 
 - **PCB size:** 99.5 × 83.1 mm
 - **KiCad project:** [`hardware/frank_pga/`](../hardware/frank_pga)
@@ -54,7 +54,7 @@ The full pick-and-place BOM is in `bom.html`. Headline counts:
 
 ### Active parts
 
-| Reference style | Part | Qty | Notes |
+| Ref | Part | Qty | Notes |
 |-----------------|------|-----|-------|
 | U | Pimoroni PGA2350 | 1 | Soldered onto the PGA pads. Has flash + PSRAM on-module. |
 | U | TDA1387T | 1 | DIP-8 audio DAC |

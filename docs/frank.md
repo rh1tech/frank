@@ -4,7 +4,9 @@
   <img src="./boards/3d/frank-iso.png" alt="FRANK 3D render" width="640">
 </p>
 
-FRANK is the flagship full-size board. It uses a Raspberry Pi Pico (or Pico 2) in a socket as the main compute module. On top of the standard hardware PS/2 port, an extra RP2040-Zero on-board lets you plug in a USB keyboard or mouse and have it appear as a PS/2 device — so you can use either input type without swapping firmware. Components are 0805, so you can hand-solder the whole board with a basic iron and decent flux.
+FRANK is the socketed full-size board. It uses a Raspberry Pi Pico (or Pico 2) in a socket as the main compute module, so you can swap the brain at will — handy when you want to try Pico 2, Pico Plus 2 (with PSRAM), a Nyx 2, or any other Pico-pinout module on the same PCB. On top of the standard hardware PS/2 port, an extra RP2040-Zero on-board lets you plug in a USB keyboard or mouse and have it appear as a PS/2 device — so you can use either input type without swapping firmware. Components are 0805, so you can hand-solder the whole board with a basic iron and decent flux.
+
+If you want everything fixed on a single PCB instead, the flagship [FRANK PGA](./frank_pga.md) is the same outline with a soldered-on PGA2350 module, native USB host and ESD protection.
 
 - **PCB size:** 99.5 × 83.1 mm
 - **KiCad project:** [`hardware/frank/`](../hardware/frank)
@@ -42,7 +44,7 @@ The full pick-and-place BOM is in `bom.html`. Here is a summary by part class so
 
 ### Active parts
 
-| Reference style | Part | Qty | Notes |
+| Ref | Part | Qty | Notes |
 |-----------------|------|-----|-------|
 | U | Raspberry Pi Pico / Pico 2 | 1 | Socketed, not soldered. Use Pico Plus 2 for built-in PSRAM. |
 | U | RP2040-Zero module | 1 | Soldered as a daughterboard. Handles USB→PS/2. |

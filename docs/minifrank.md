@@ -43,7 +43,7 @@ The full pick-and-place BOM is in `bom.html`. Headline counts:
 
 ### Active parts
 
-| Reference style | Part | Qty | Notes |
+| Ref | Part | Qty | Notes |
 |-----------------|------|-----|-------|
 | U | RP2350A | 1 | QFN-60. Hot-air or hot-plate. |
 | U | W25Q128JVS | 1 | SOIC-8 flash |

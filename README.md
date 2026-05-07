@@ -1,6 +1,6 @@
 # FRANK
 
-FRANK is a hardware emulation platform built around the Raspberry Pi RP2350 (Pico 2 modules and RP2350A QFN). RP2040 / Pico is supported on FRANK's socket as well, but in practice only a handful of firmware (mainly the older ZX Spectrum cores) still target RP2040. Everything modern — IBM PC, NES, SNES, Genesis, the DOOM / id Tech 1 ports, frank-os, and so on — is RP2350-only.
+FRANK is a hardware emulation platform built around the Raspberry Pi RP2350 (Pico 2 modules and RP2350A QFN). RP2040 / Pico is supported on FRANK's socket as well, but in practice only a handful of firmware (mainly the older ZX Spectrum cores) still target RP2040. Everything modern — IBM PC, NES, SNES, Genesis, the DOOM / id Tech 1 ports, FRANK OS, and so on — is RP2350-only.
 
 It started as a fork of the [Murmulator](https://murmulator.tilda.ws/) project by [Alex Ekb](https://t.me/Alex_Eburg). Over time it picked up extra video outputs, audio paths, USB and WiFi support, and several form factors.
 
@@ -18,8 +18,8 @@ Four maintained boards, each with its own KiCad project, gerbers, BOM and assemb
 
 | Board | Render | PCB size | Compute | Best for |
 |-------|:------:|----------|---------|----------|
-| [FRANK](./hardware/frank) | <img src="./docs/boards/3d/frank-iso.png" alt="FRANK" width="220"> | 99.5 × 83.1 mm | Raspberry Pi Pico / Pico 2 (socket) + RP2040-Zero | The flagship. Easiest to solder, every output exposed. |
-| [FRANK PGA](./hardware/frank_pga) | <img src="./docs/boards/3d/frank_pga-iso.png" alt="FRANK PGA" width="220"> | 99.5 × 83.1 mm | Pimoroni PGA2350 (RP2350A module) | Same outputs as FRANK, built on the PGA2350 module with a USB multiplexer. |
+| [FRANK PGA](./hardware/frank_pga) | <img src="./docs/boards/3d/frank_pga-iso.png" alt="FRANK PGA" width="220"> | 99.5 × 83.1 mm | Pimoroni PGA2350 (RP2350A module) | The flagship. Every output on one PCB, native USB host with multiplexer, ESD-protected. |
+| [FRANK](./hardware/frank) | <img src="./docs/boards/3d/frank-iso.png" alt="FRANK" width="220"> | 99.5 × 83.1 mm | Raspberry Pi Pico / Pico 2 (socket) + RP2040-Zero | Socketed alternative. Easiest to solder, swap Pico modules at will, USB-to-PS/2 helper on board. |
 | [MiniFRANK](./hardware/minifrank) | <img src="./docs/boards/3d/minifrank-iso.png" alt="MiniFRANK" width="220"> | 85.6 × 53.98 mm | RP2350A QFN, on-board | Compact full-feature board with WiFi, VGA, HDMI and one gamepad port. |
 | [MicroFRANK](./hardware/microfrank) | <img src="./docs/boards/3d/microfrank-iso.png" alt="MicroFRANK" width="220"> | 32 × 74 mm | RP2350A QFN, on-board | Smallest board. HDMI only, no PS/2, no gamepad. Good for embedded use. |
 
@@ -27,10 +27,10 @@ All four boards use the M2 GPIO layout, so any firmware build for M2 runs on all
 
 ### Comparison table
 
-| Feature | FRANK | FRANK PGA | MiniFRANK | MicroFRANK |
-|---------|:-----:|:---------:|:---------:|:----------:|
-| Compute module | Pico / Pico 2 (socket) | Pimoroni PGA2350 | RP2350A QFN on-board | RP2350A QFN on-board |
-| Helper MCU (RP2040-Zero, USB-to-PS/2 emulation) | Yes | — | — | — |
+| Feature | FRANK PGA | FRANK | MiniFRANK | MicroFRANK |
+|---------|:---------:|:-----:|:---------:|:----------:|
+| Compute module | Pimoroni PGA2350 | Pico / Pico 2 (socket) | RP2350A QFN on-board | RP2350A QFN on-board |
+| Helper MCU (RP2040-Zero, USB-to-PS/2 emulation) | — | Yes | — | — |
 | On-board flash | via module | via module | W25Q128 (16 MB) | W25Q128 (16 MB) |
 | On-board PSRAM | via module | via module | 8 MB | 8 MB |
 | HDMI output | Yes | Yes | Yes | Yes |
@@ -38,12 +38,12 @@ All four boards use the M2 GPIO layout, so any firmware build for M2 runs on all
 | Composite (RCA) | Yes | Yes | — | — |
 | TFT display header | Yes | Yes | — | — |
 | Hardware PS/2 port | Yes | Yes | Yes | — |
-| USB-emulated PS/2 (RP2040-Zero) | Yes (extra) | — | — | — |
+| USB-emulated PS/2 (RP2040-Zero) | — | Yes (extra) | — | — |
 | Gamepad ports (DB9) | 2 | 2 | 1 | — |
 | Stacked USB Type-A host | Yes | Yes | Yes | Yes |
 | MW7211A USB hub | Yes | Yes | Yes | Yes |
-| USB host multiplexer | — | 74HC4052D | TS3USB221 | TS3USB221 |
-| USBLC6 ESD protection | — | Yes | Yes | Yes |
+| USB host multiplexer | 74HC4052D | — | TS3USB221 | TS3USB221 |
+| USBLC6 ESD protection | Yes | — | Yes | Yes |
 | ESP-01S WiFi socket | Yes | Yes | Yes | — |
 | Tape input (3.5 mm) | Yes | Yes | Yes | — |
 | Audio output | 3.5 mm jack | 3.5 mm jack | 3.5 mm jack | 3.5 mm jack |
@@ -151,8 +151,8 @@ software/      Pre-built reference firmware
 
 Each board has its own assembly and usage guide:
 
-- [FRANK assembly and usage guide](./docs/frank.md)
 - [FRANK PGA assembly and usage guide](./docs/frank_pga.md)
+- [FRANK assembly and usage guide](./docs/frank.md)
 - [MiniFRANK assembly and usage guide](./docs/minifrank.md)
 - [MicroFRANK assembly and usage guide](./docs/microfrank.md)
 
