@@ -92,6 +92,24 @@ WIDTH=1600
 HEIGHT=1200
 ISO_ROTATE="-25,0,-30"
 
+# Larger "hero" render dimensions for marketing shots. Currently used
+# only for FRANK PGA on the website's main page.
+HERO_WIDTH=3200
+HERO_HEIGHT=2400
+
+# Lighting rig for the ray tracer. KiCad's defaults give every light
+# its own floor shadow, which stack into a smeared multi-shadow ring.
+# We force a single dominant top light, then add gentle fill from
+# below + camera + a faint high-angle side light so the central
+# shadow stays soft rather than crushed black. Side lights at a steep
+# elevation keep their own shadows close to the main one (acting as
+# a penumbra) instead of fanning out as four secondary shadows.
+LIGHT_TOP="0.85"
+LIGHT_BOTTOM="0.40"
+LIGHT_SIDE="0.15"
+LIGHT_CAMERA="0.40"
+LIGHT_SIDE_ELEVATION="80"
+
 # Per-board rotation override. The default ISO_ROTATE assumes the
 # board's "top" (silkscreen logo / connector front) faces +Y. Boards
 # whose canvas orientation differs from that need a Z-axis offset
@@ -105,13 +123,16 @@ iso_rotate() {
 
 # Per-board zoom. With auto-trim the zoom only affects "how much air
 # around the board" survives before trim, so smaller is safer (just
-# avoid going so small the board edges leave the canvas).
+# avoid going so small the board edges leave the canvas). Keep the
+# zoom small enough that the cast shadow stays inside the canvas —
+# at higher zoom the shadow falls off the bottom edge and trim cannot
+# recover it.
 iso_zoom() {
   case "$1" in
-    frank|frank_pga) echo "0.75" ;;
-    minifrank)       echo "0.85" ;;
-    microfrank)      echo "0.85" ;;
-    *)               echo "0.85" ;;
+    frank|frank_pga) echo "0.65" ;;
+    minifrank)       echo "0.75" ;;
+    microfrank)      echo "0.75" ;;
+    *)               echo "0.75" ;;
   esac
 }
 
@@ -228,16 +249,23 @@ render() {
   local rotate="$4"
   local perspective="$5"
   local zoom="$6"
+  local width="${7:-$WIDTH}"
+  local height="${8:-$HEIGHT}"
 
   local args=(
     pcb render
     --output "$out_png"
-    --width "$WIDTH"
-    --height "$HEIGHT"
+    --width "$width"
+    --height "$height"
     --side "$side"
     --quality high
     --floor
     --background transparent
+    --light-top "$LIGHT_TOP"
+    --light-bottom "$LIGHT_BOTTOM"
+    --light-side "$LIGHT_SIDE"
+    --light-camera "$LIGHT_CAMERA"
+    --light-side-elevation "$LIGHT_SIDE_ELEVATION"
   )
   if [ -n "$rotate" ]; then
     args+=(--rotate "$rotate")
@@ -286,6 +314,15 @@ for pcb_src in "$HARDWARE_DIR"/*/*.kicad_pcb; do
   rotate="$(iso_rotate "$board")"
   echo "Rendering ${board} (isometric, zoom ${zoom}, rotate ${rotate})..."
   render "$pcb" "$OUT_DIR/$board-iso.png" "top" "$rotate" 1 "$zoom"
+
+  # FRANK PGA also gets a larger "hero" render used as the website's
+  # main-page splash. Same camera, just rendered at HERO_WIDTH x
+  # HERO_HEIGHT.
+  if [ "$board" = "frank_pga" ]; then
+    echo "Rendering ${board} (isometric hero, ${HERO_WIDTH}x${HERO_HEIGHT})..."
+    render "$pcb" "$OUT_DIR/$board-iso-hero.png" "top" "$rotate" 1 "$zoom" \
+      "$HERO_WIDTH" "$HERO_HEIGHT"
+  fi
 
   if [ "$render_all" = "1" ]; then
     echo "Rendering ${board} (top flat)..."
