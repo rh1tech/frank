@@ -141,8 +141,9 @@ After soldering, before plugging anything in:
 1. Plug a Raspberry Pi Pico or Pico 2 into the socket. **Mind the orientation** — the silkscreen shows the USB end.
 2. Connect HDMI or VGA to a display.
 3. Connect a PS/2 or USB keyboard.
-4. Insert a FAT32 SD card with firmware (or hold BOOTSEL and copy a `.uf2` directly to the Pico).
-5. Power on with the slide switch.
+4. Insert a FAT32 SD card with ROMs / disk images. The card stores content the firmware reads at runtime — it does not flash the Pico.
+5. To install firmware, hold **BOOTSEL** on the Pico while plugging it into a host PC, then drag-and-drop a `.uf2` file onto the `RPI-RP2` mass-storage drive. Repeat whenever you change firmware.
+6. Power on the FRANK with the slide switch.
 
 If the screen stays dark:
 

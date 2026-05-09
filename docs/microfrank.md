@@ -19,7 +19,7 @@ If you want VGA, composite, the DB9 ports, or WiFi, build FRANK or MiniFRANK. Pi
 |-----------|--------------|---------|
 | Compute | RP2350A QFN-60 | Soldered directly to the PCB. |
 | Flash | W25Q128JVS | 16 MB SPI flash |
-| PSRAM | ESP-PSRAM64 | 8 MB PSRAM |
+| PSRAM | ESP-PSRAM64H | 8 MB PSRAM (SOIC-8) |
 | Crystal | ASE-12 MHz | RP2350A clock |
 | Power | ME6211C33M5 | LDO from USB to 3.3 V |
 | Video | HDMI Type A | Single video output (HDMI only) |
@@ -40,11 +40,10 @@ The full pick-and-place BOM is in `bom.html`.
 |-----------------|------|-----|-------|
 | U | RP2350A | 1 | QFN-60 |
 | U | W25Q128JVS | 1 | SOIC-8 flash |
-| U | ESP-PSRAM64 | 1 | SOIC-8 PSRAM |
+| U | ESP-PSRAM64H | 1 | SOIC-8 PSRAM |
 | Y | ASE-12 MHz | 1 | Crystal oscillator |
 | U | TDA1387T | 1 | DIP-8 audio DAC |
 | U | LM358 | 1 | SOIC-8 op-amp |
-| U | TXS0104ERGYR | 1 | QFN level shifter |
 | U | TS3USB221RSER | 1 | USB switch |
 | U | USBLC6-2SC6 | 1 | USB ESD diode |
 | U | MW7211A | 1 | USB hub |
@@ -90,11 +89,10 @@ Component placement and silkscreen labels for both sides:
 This is the densest of the four boards. A microscope or a good magnifier plus hot air make this much easier.
 
 1. **RP2350A QFN-60.** Apply solder paste, place with tweezers, reflow with hot air at ~280 °C. Inspect every pin under magnification.
-2. **W25Q128JVS flash, ESP-PSRAM64, 12 MHz crystal.** Pin 1 orientation matters.
+2. **W25Q128JVS flash, ESP-PSRAM64H, 12 MHz crystal.** Pin 1 orientation matters.
 3. **0603 decoupling capacitors** around the RP2350A and the flash / PSRAM.
 4. **Other 0603 resistors and capacitors.**
 5. **Surface-mount ICs:**
-   - TXS0104ERGYR (QFN)
    - TS3USB221RSER
    - USBLC6-2SC6
    - MW7211A USB hub
@@ -123,10 +121,10 @@ Bench-test points:
 1. Plug USB-C into the power port to feed 5 V.
 2. Connect HDMI to a display.
 3. Plug a USB keyboard into the stacked USB Type-A host port. There is no PS/2 on this board, so the keyboard has to be USB.
-4. Insert an SD card with firmware.
+4. Insert a FAT32 SD card with ROMs / disk images. The card stores content the firmware reads at runtime — it does not flash the RP2350A.
 5. Power on with the slide switch.
 
-To enter BOOTSEL for flashing: hold the **RP Boot** button while powering on (or while pressing reset, depending on the firmware variant).
+To install or update firmware, hold the **RP Boot** button while powering on (or while pressing reset, depending on the firmware variant). The RP2350A enumerates over USB-C as the `RPI-RP2` mass-storage drive — drag-and-drop a `.uf2` file onto it to flash.
 
 ## What MicroFRANK cannot do
 

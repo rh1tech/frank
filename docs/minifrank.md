@@ -4,7 +4,7 @@
   <img src="./boards/3d/minifrank-iso.png" alt="MiniFRANK 3D render" width="640">
 </p>
 
-MiniFRANK is the credit-card-sized board. The RP2350A and the W25Q128 flash are soldered directly to the PCB, so there is no Pico socket. PSRAM (ESP-PSRAM64, 8 MB) is also on-board, so emulators that need PSRAM work without any external modules.
+MiniFRANK is the credit-card-sized board. The RP2350A and the W25Q128 flash are soldered directly to the PCB, so there is no Pico socket. PSRAM (ESP-PSRAM64H, 8 MB) is also on-board, so emulators that need PSRAM work without any external modules.
 
 It keeps most of full-size FRANK (HDMI, VGA, PS/2, ESP-01S WiFi, MicroSD, audio out, tape in) in a smaller outline. The trade-offs: only one DB9 gamepad port, no composite output, and no on-board speaker amp. Power comes in over USB-C; there is no DC barrel jack on this board.
 
@@ -19,7 +19,7 @@ It keeps most of full-size FRANK (HDMI, VGA, PS/2, ESP-01S WiFi, MicroSD, audio 
 |-----------|--------------|---------|
 | Compute | RP2350A QFN-60 | Soldered directly to the PCB. The board is the Pico. |
 | Flash | W25Q128JVS | 16 MB SPI flash |
-| PSRAM | ESP-PSRAM64 | 8 MB PSRAM |
+| PSRAM | ESP-PSRAM64H | 8 MB PSRAM |
 | Crystal | ASE-12 MHz | RP2350A clock source |
 | Power | AMS1117-3.3 | LDO that drops the 5 V USB-C rail to 3.3 V |
 | Video | HDMI Type A, VGA DE-15 | Two video outs |
@@ -47,7 +47,7 @@ The full pick-and-place BOM is in `bom.html`. Headline counts:
 |-----------------|------|-----|-------|
 | U | RP2350A | 1 | QFN-60. Hot-air or hot-plate. |
 | U | W25Q128JVS | 1 | SOIC-8 flash |
-| U | ESP-PSRAM64 | 1 | SOIC-8 PSRAM |
+| U | ESP-PSRAM64H | 1 | SOIC-8 PSRAM |
 | Y | ASE-12 MHz | 1 | Crystal oscillator (clock for the RP2350A) |
 | U | TDA1387T | 1 | DIP-8 audio DAC |
 | U | LM358 | 1 | SOIC-8 op-amp |
@@ -101,7 +101,7 @@ Component placement and silkscreen labels for both sides:
 MiniFRANK uses 0603 passives, which are smaller than the 0805 parts on FRANK. A microscope or a good magnifier helps. Hot air is recommended for the RP2350A QFN.
 
 1. **RP2350A QFN-60.** Apply solder paste to the pads, place the chip with tweezers, reflow with hot air at ~280 °C until the solder ball signature appears. Inspect under magnification. The thermal pad on the bottom needs a good solder connection, so pre-tin it lightly before placing.
-2. **W25Q128JVS flash and ESP-PSRAM64.** SOIC-8 each, immediately around the RP2350A. Pin 1 markings matter.
+2. **W25Q128JVS flash and ESP-PSRAM64H.** SOIC-8 each, immediately around the RP2350A. Pin 1 markings matter.
 3. **12 MHz crystal (Y1)** — orientation usually does not matter for two-pin crystals, but check the datasheet for any directional marking.
 4. **0603 capacitors and resistors** in the area around the RP2350A. Decoupling caps (100 nF, 10 µF) first.
 5. **Other surface-mount ICs:**
@@ -138,12 +138,12 @@ After step 1–2, before adding more components:
 1. Plug a USB-C cable into the power port to feed 5 V.
 2. Connect HDMI or VGA.
 3. Connect a PS/2 keyboard or a USB keyboard (use the stacked USB Type-A host port for USB).
-4. Insert an SD card with firmware.
+4. Insert a FAT32 SD card with ROMs / disk images. The card stores content the firmware reads at runtime — it does not flash the RP2350A.
 5. Slide the power switch on.
 
-To enter the bootloader for flashing:
+To install or update firmware, put the RP2350A into BOOTSEL mode, then drag-and-drop a `.uf2` file onto the `RPI-RP2` mass-storage drive that appears over USB-C:
 
-- Hold one of the **RP Reset** buttons while applying power, or use the on-board reset combination per the schematic.
+- Hold the BOOT line low (using the on-board reset combination per the schematic) while applying power, or while pressing one of the **RP Reset** buttons.
 
 ## Troubleshooting
 

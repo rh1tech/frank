@@ -22,7 +22,8 @@ If you want a socketed alternative, [FRANK](./frank.md) has the same outline and
 | USB host path | Stacked, with hub | Stacked, with hub plus an analog USB multiplexer (74HC4052D on the D+/D− lines) so the host port can swap between the PGA2350 and a flashing port |
 | ESP-01 reset and bootsel | Manual | Dedicated push-buttons (RP BOOT, RP Reset, ESP Reset) |
 | ESD protection | — | USBLC6-2SC6 on the USB lines |
-| Audio multiplexer | 1 × 74HC4052D | 2 × 74HC4052D |
+| Audio multiplexer | 1 × 74HC4052D | 1 × 74HC4052D |
+| USB-host multiplexer | — | 1 × 74HC4052D on D+/D− to swap between the PGA2350 and a flashing path |
 
 Everything else (HDMI, VGA, composite, gamepad ports, audio path, ESP-01S socket, MicroSD, PS/2, tape input) matches FRANK.
 
@@ -61,7 +62,7 @@ The full pick-and-place BOM is in `bom.html`. Headline counts:
 | U | PAM8403D | 1 | SOP-16 speaker amp |
 | U | LM358 | 1 | SOIC-8 op-amp |
 | U | CD4069UBM | 1 | SOIC-14 hex inverter |
-| U | 74HC4052D | 2 | SOIC-16 analog multiplexer (audio routing) |
+| U | 74HC4052D | 2 | SOIC-16 analog multiplexer (1 × audio routing, 1 × USB host mux on D+/D−) |
 | U | TXS0104EDR | 1 | SOIC-14 level shifter |
 | U | MP1584EN-LF-Z | 1 | SOIC-8 buck |
 | U | AMS1117-3.3 | 1 | SOT-223 LDO |
@@ -114,9 +115,8 @@ The PGA2350 module sits flush against the board, so the densest small parts have
 1. **All 0805 resistors and capacitors** in the area covered by the PGA module first. Match values to silkscreen. Drag-soldering or hot-air both work.
 2. **Surface-mount ICs:**
    - USBLC6-2SC6 (SOT-23-6)
-   - TS3USB221 (or any USB switches)
    - TXS0104EDR
-   - 74HC4052D × 2
+   - 74HC4052D × 2 (one for the audio multiplexer, one for the USB-host multiplexer on D+/D−)
    - CD4069UBM
    - LM358
    - PAM8403D
@@ -153,8 +153,9 @@ Bench-test after each major group:
 
 1. Connect HDMI or VGA.
 2. Connect a PS/2 or USB keyboard.
-3. Insert a FAT32 SD card with ROMs / disk images. To flash firmware, hold **RP BOOT** while pressing **RP Reset**, then drag-and-drop a `.uf2` file onto the RP2350A's USB drive.
-4. Power on.
+3. Insert a FAT32 SD card with ROMs / disk images. The card stores content the firmware reads at runtime — it does not flash the RP2350A.
+4. To install or update firmware, hold **RP BOOT** while pressing **RP Reset**, then drag-and-drop a `.uf2` file onto the `RPI-RP2` mass-storage drive that the RP2350A presents over USB.
+5. Power on.
 
 The on-board buttons remove the need to reach for the BOOTSEL button on a Pico module:
 

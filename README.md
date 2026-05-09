@@ -131,7 +131,7 @@ Most modern firmware (frank-os, frank-quest, frank-386, frank-genesis, frank-sne
 
 How you get PSRAM depends on the board:
 
-- **MiniFRANK and MicroFRANK**: PSRAM is already on-board (8 MB ESP-PSRAM64). Nothing to do.
+- **MiniFRANK and MicroFRANK**: PSRAM is already on-board (8 MB ESP-PSRAM64H). Nothing to do.
 - **FRANK PGA**: the Pimoroni PGA2350 module already includes 8 MB PSRAM. Nothing to do.
 - **FRANK**: the socketed Pico 2 has no PSRAM by default. Three ways to fix this:
   1. **Pimoroni Pico Plus 2 (recommended).** A ready-made Pico 2 with 8 MB PSRAM. Drop it into the socket and you are done.
