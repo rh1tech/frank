@@ -21,14 +21,14 @@ If you want VGA, composite, the DB9 ports, or WiFi, build FRANK or MiniFRANK. Pi
 | Flash | W25Q128JVS | 16 MB SPI flash |
 | PSRAM | ESP-PSRAM64H | 8 MB PSRAM (SOIC-8) |
 | Crystal | ASE-12 MHz | RP2350A clock |
-| Power | ME6211C33M5 | LDO from USB to 3.3 V |
+| Power | ME6211C33M5 | LDO from USB to 3.3V |
 | Video | HDMI Type A | Single video output (HDMI only) |
-| Audio | TDA1387T DAC + LM358 op-amp + PJ-320D 3.5 mm | Line-level audio |
+| Audio | TDA1387T I2S DAC + LM358 op-amp + PJ-320D 3.5mm | Line-level audio |
 | Storage | MicroSD slot (Molex 0475710001) | ROMs, WADs, disk images |
 | USB host | USB4215 stacked + MW7211A hub + TS3USB221 multiplexer + USBLC6-2SC6 ESD | Stacked USB Type-A host. The hub fans out the RP2350's single USB host port; the multiplexer lets the same port swap between RP2350-driven host mode and a flashing path. |
-| USB power input | USB Type-C | The board takes 5 V over USB-C. |
+| USB power input | USB Type-C | The board takes 5V over USB-C. |
 | Buttons | 1 × tactile (RP Boot) | For entering BOOTSEL |
-| Slide switches | SK12D07VG3NS, MSK12C02 | Power and config |
+| Switches | SK12D07VG3NS, MSK12C02 | Power and configuration (TDA ↔ PWM audio source, mono mix) |
 
 ## Bill of materials (high-level)
 
@@ -42,7 +42,7 @@ The full pick-and-place BOM is in `bom.html`.
 | U | W25Q128JVS | 1 | SOIC-8 flash |
 | U | ESP-PSRAM64H | 1 | SOIC-8 PSRAM |
 | Y | ASE-12 MHz | 1 | Crystal oscillator |
-| U | TDA1387T | 1 | DIP-8 audio DAC |
+| U | TDA1387T | 1 | SO-8 audio DAC |
 | U | LM358 | 1 | SOIC-8 op-amp |
 | U | TS3USB221RSER | 1 | USB switch |
 | U | USBLC6-2SC6 | 1 | USB ESD diode |
@@ -71,9 +71,9 @@ The full pick-and-place BOM is in `bom.html`.
 | Molex 0475710001 | 1 | MicroSD slot |
 | USB4215-03-A | 1 | Stacked USB Type-A host |
 | USB Type-C | 1 | Power input |
-| PJ-320D | 1 | 3.5 mm audio out |
-| Slide switch SK12D07VG3NS | 1 | Power |
-| Slide switch MSK12C02 | 1 | Config |
+| PJ-320D | 1 | 3.5mm audio out |
+| Switch SK12D07VG3NS | 1 | Power |
+| Switch MSK12C02 | 1 | Configuration |
 | Tactile button | 1 | RP Boot |
 | Mounting holes 2.7 mm | 4 | M2.5 |
 
@@ -100,14 +100,14 @@ This is the densest of the four boards. A microscope or a good magnifier plus ho
    - ME6211C33M5 LDO
 6. **Power inductor (3.3 µH) and the Schottky diode.**
 7. **Tactile button (RP Boot).**
-8. **Slide switches (SK12D07VG3NS, MSK12C02).**
+8. **Switches (SK12D07VG3NS, MSK12C02).**
 9. **Through-hole and SMT connectors:**
    - HDMI Type A
-   - PJ-320D 3.5 mm jack
+   - PJ-320D 3.5mm jack
    - MicroSD slot (Molex 0475710001)
    - USB Type-A stacked
    - USB Type-C (power input)
-10. **TDA1387T DIP-8** (solder directly or socket).
+10. **TDA1387T** (SO-8 DAC).
 11. **Mounting hardware** if you are putting it in a project box.
 
 Bench-test points:
@@ -118,11 +118,11 @@ Bench-test points:
 
 ## First boot
 
-1. Plug USB-C into the power port to feed 5 V.
-2. Connect HDMI to a display.
+1. Plug USB-C into the power port to feed 5V.
+2. Connect a display to the HDMI output (the only video output on this board).
 3. Plug a USB keyboard into the stacked USB Type-A host port. There is no PS/2 on this board, so the keyboard has to be USB.
 4. Insert a FAT32 SD card with ROMs / disk images. The card stores content the firmware reads at runtime — it does not flash the RP2350A.
-5. Power on with the slide switch.
+5. Power on with the power switch.
 
 To install or update firmware, hold the **RP Boot** button while powering on (or while pressing reset, depending on the firmware variant). The RP2350A enumerates over USB-C as the `RPI-RP2` mass-storage drive — drag-and-drop a `.uf2` file onto it to flash.
 
@@ -147,6 +147,6 @@ If your firmware needs any of these, build MiniFRANK or FRANK instead.
 | Board not detected as USB drive | QFN reflow incomplete, especially the thermal pad. Apply more flux and reflow with hot air. |
 | Crashes after a few seconds of running | PSRAM not soldered correctly. |
 | No HDMI signal | Wrong firmware variant for this layout, or HDMI signal traces shorted. |
-| Distorted audio | LM358 op-amp not getting clean 3.3 V; check decoupling caps. |
+| Distorted audio | LM358 op-amp not getting clean 3.3V; check decoupling caps. |
 | USB devices not enumerating | MW7211A hub or TS3USB221 switch not making contact; reflow. |
 
