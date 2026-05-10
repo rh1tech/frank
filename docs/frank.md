@@ -4,9 +4,9 @@
   <img src="./boards/3d/frank-iso.png" alt="FRANK 3D render" width="640">
 </p>
 
-FRANK is the socketed full-size board. The compute module sits in a socket, so you can swap a Raspberry Pi Pico, Pico 2, Pico Plus 2 (with PSRAM), a Nyx, or any other Pico-pinout module without touching the iron. The hardware PS/2 port works directly, and an on-board RP2040-Zero (running [Hecate](https://github.com/rh1tech/hecate)) bridges USB keyboards and mice onto the PS/2 lines so the same port speaks both protocols. Components are 0805, so the whole board is hand-solderable with a basic iron and decent flux.
+FRANK is the socketed full-size board. The compute module sits in a socket, so you can swap a Raspberry Pi Pico, Pico 2, Pico Plus 2, Nyx, or any other Pico-pinout module without touching the iron. The hardware PS/2 port works directly, and an on-board RP2040-Zero (running [Hecate](https://github.com/rh1tech/hecate)) bridges USB keyboards and mice onto the PS/2 lines so the same port speaks both protocols. Components are 0805, so the whole board is hand-solderable with a basic iron and decent flux.
 
-If you want everything fixed on a single PCB, the flagship [FRANK PGA](./frank_pga.md) shares the same outline but uses a soldered PGA2350 module, native USB host, and ESD protection.
+If you'd rather use a PGA2350 module on the same outline, [FRANK PGA](./frank_pga.md) drops it into a PGA socket.
 
 - **PCB size:** 99.5 × 83.1 mm
 - **KiCad project:** [`hardware/frank/`](../hardware/frank)
@@ -19,24 +19,24 @@ If you want everything fixed on a single PCB, the flagship [FRANK PGA](./frank_p
 |-----------|--------------|---------|
 | Compute | Raspberry Pi Pico / Pico 2 (socket) | Main MCU. Runs the firmware. |
 | Helper MCU | RP2040-Zero | Bridges USB keyboards and mice into the hardware PS/2 lines, so the same port can speak either protocol. This is in addition to the dedicated PS/2 mini-DIN connector. |
-| Power | MP1584EN buck regulator | 5–28 V DC input → 5 V rail |
-| Power | AMS1117-3.3 | 5 V → 3.3 V LDO for the ESP-01S and other 3.3 V parts |
-| Video | HDMI (Type A) | Primary video output |
-| Video | VGA (DE-15) | Secondary video output |
+| Power | MP1584EN buck regulator | 5–28V DC input → 5V rail |
+| Power | AMS1117-3.3 | 5V → 3.3V LDO for the ESP-01S and other 3.3V parts |
+| Video | HDMI (Type A) | HDMI video output |
+| Video | VGA (DE-15) | VGA video output |
 | Video | RCA composite | Soft composite output |
 | Video | TFT display header | For small parallel TFT panels (display.kicad_sch) |
-| Audio out | 3.5 mm jack (PJ-320D) | Line-level audio |
+| Audio out | 3.5mm jack (PJ-320D) | Line-level audio |
 | Audio amp | PAM8403D | Speaker driver with two PAM headers |
-| Audio DAC | TDA1387T | I2S-style DAC for cleaner audio |
-| Audio routing | 74HC4052D + LM358 + CD4069UBM | Audio multiplexer and PWM filter |
-| Tape | 3.5 mm jack (PJ-320D) | Cassette load input for ZX Spectrum and similar |
+| Audio DAC | TDA1387T | I2S DAC |
+| Audio routing | 74HC4052D + LM358 | Audio multiplexer and op-amp buffer |
+| Tape | 3.5mm jack (PJ-320D) + CD4069UBM | Cassette load input for ZX Spectrum and similar; CD4069UBM conditions the tape signal |
 | Storage | MicroSD slot (104031-0811) | ROMs, WADs, disk images |
 | Keyboard | PS/2 (DC3RX19JA2 mini-DIN) | Hardware PS/2 keyboard / mouse |
 | Keyboard / mouse | USB Type-A stacked (USB4215) | Two stacked USB host ports, behind an MW7211A hub. USB devices can also be presented to the firmware as PS/2 via the RP2040-Zero. |
 | Gamepad | 2 × DB9 (104031-0811) | Famicom-compatible controllers |
-| Network | ESP-01S header | Optional WiFi via the Murmulator AT firmware |
-| Level shifting | TXS0104EDR | 3.3 V ↔ 5 V for SD card and other 5 V signals |
-| Configuration | DIP switches | Select video / audio routing options |
+| Network | ESP-01S header | Optional WiFi via [frank-netcard](https://github.com/rh1tech/frank-netcard) |
+| Level shifting | TXS0104EDR | 3.3V ↔ 5V for SD card and other 5V signals |
+| Configuration | Switches | TDA ↔ PWM audio source, tape-in enable, mouse-port pull-ups, mono mix, PAM8403D shutdown |
 
 ## Bill of materials (high-level)
 
@@ -47,11 +47,11 @@ The full pick-and-place BOM is in `bom.html`. Here is a summary by part class so
 | Ref | Part | Qty | Notes |
 |-----------------|------|-----|-------|
 | U | Raspberry Pi Pico / Pico 2 | 1 | Socketed, not soldered. Use Pico Plus 2 for built-in PSRAM. |
-| U | RP2040-Zero module | 1 | Soldered as a daughterboard. Handles USB→PS/2. |
-| U | TDA1387T | 1 | DIP-8 audio DAC |
+| U | RP2040-Zero module | 1 | Soldered through pin headers. Handles USB→PS/2. |
+| U | TDA1387T | 1 | SO-8 audio DAC |
 | U | PAM8403D | 1 | SOP-16 speaker amp |
 | U | LM358 | 1 | SOIC-8 op-amp (audio path) |
-| U | CD4069UBM | 1 | SOIC-14 hex inverter (PWM filter) |
+| U | CD4069UBM | 1 | SOIC-14 hex inverter (tape-in conditioning) |
 | U | 74HC4052D | 1 | SOIC-16 analog multiplexer |
 | U | TXS0104EDR | 1 | SOIC-14 level shifter |
 | U | MP1584EN-LF-Z | 1 | SOIC-8 buck converter |
@@ -80,11 +80,11 @@ The full pick-and-place BOM is in `bom.html`. Here is a summary by part class so
 | Part | Qty | Purpose |
 |------|-----|---------|
 | DC-005-5A-2.0 | 1 | 5.5 × 2.0 mm DC barrel jack |
-| Slide switch SK12D07VG3NS | 1 | Power |
+| Switch SK12D07VG3NS | 1 | Power |
 | RCA-103 | 1 | Composite video |
 | VGA HD15 | 1 | VGA output |
 | HDMI Type A | 1 | HDMI output |
-| PJ-320D | 2 | Audio out + tape in (3.5 mm jacks) |
+| PJ-320D | 2 | Audio out + tape in (3.5mm jacks) |
 | USB4215-03-A | 1 | Stacked USB Type-A (host) |
 | 104031-0811 | 1 | MicroSD slot |
 | DC3RX19JA2 | 1 | PS/2 mini-DIN |
@@ -105,15 +105,15 @@ Work from the smallest, hardest-to-access components outwards, so larger parts d
    - TXS0104EDR, 74HC4052D, CD4069UBM, LM358, PAM8403D
    - MW7211A USB hub
    - MP1584EN buck, AMS1117 LDO
-   - TDA1387T (DIP-8 — solder this from the top, or socket it)
+   - TDA1387T (SO-8)
 2. **0805 resistors and ceramic capacitors.** Tweezers, flux, drag-soldering or hot air. Orientation does not matter for these (they are non-polarised), but match values to silkscreen.
 3. **Diodes (1N5819WS, 1N5822) and the power LED.** Watch polarity (cathode = stripe).
 4. **Power inductor (22 µH)** and any ferrite beads.
 5. **Bulk electrolytics** (100, 220, 680 µF). Polarity matters. The longer leg is positive.
 6. **Through-hole connectors:**
    - DC barrel jack
-   - Slide switch
-   - 3.5 mm jacks (audio + tape)
+   - Power switch
+   - 3.5mm jacks (audio + tape)
    - RCA composite jack
    - HDMI Type A
    - VGA DE-15
@@ -126,29 +126,28 @@ Work from the smallest, hardest-to-access components outwards, so larger parts d
    - RP2040-Zero footprint (you can solder it directly or use headers)
    - ESP-01S 2 × 4 socket
    - TFT display header (only if you plan to use a TFT)
-   - DIP switches and any jumpers
-8. **DAC and audio amp** if you skipped them in step 1 (some builders prefer to socket the TDA1387T).
+   - Configuration switches and any jumpers
+8. **DAC and audio amp** if you skipped them in step 1.
 9. **Mounting hardware:** M2.5 stand-offs through the 2.7 mm holes if you are putting it in a case.
 
 After soldering, before plugging anything in:
 
 - Visual inspection under magnification.
-- Continuity-test the 5 V and 3.3 V rails for shorts to ground.
-- Apply 5 V from the bench supply with current limit at ~150 mA. With no Pico installed, draw should sit well under that.
+- Continuity-test the 5V and 3.3V rails for shorts to ground.
+- Apply 5V from the bench supply with current limit at ~150 mA. With no Pico installed, draw should sit well under that.
 
 ## First boot
 
 1. Plug a Raspberry Pi Pico or Pico 2 into the socket. **Mind the orientation** — the silkscreen shows the USB end.
-2. Connect HDMI or VGA to a display.
+2. Connect a display to one of the video outputs: HDMI, VGA, or RCA composite. The firmware selects which output is active.
 3. Connect a PS/2 or USB keyboard.
 4. Insert a FAT32 SD card with ROMs / disk images. The card stores content the firmware reads at runtime — it does not flash the Pico.
 5. To install firmware, hold **BOOTSEL** on the Pico while plugging it into a host PC, then drag-and-drop a `.uf2` file onto the `RPI-RP2` mass-storage drive. Repeat whenever you change firmware.
-6. Power on the FRANK with the slide switch.
+6. Power on the FRANK with the power switch.
 
 If the screen stays dark:
 
-- Check the DIP switches against the schematic for the video routing you want (HDMI / VGA / composite).
-- Confirm the firmware UF2 matches your Pico (RP2040 vs RP2350) and the M2 layout.
+- Confirm the firmware UF2 matches your Pico (RP2040 vs RP2350) and the M2 layout. The active video output (HDMI / VGA / composite) is selected by firmware, not by switches.
 
 ## Connecting PSRAM
 
@@ -157,18 +156,18 @@ Most modern firmware (frank-os, frank-quest, frank-386, frank-snes, frank-msx, t
 There are three ways to get a PSRAM-equipped Pico 2 into the FRANK socket:
 
 1. **Pimoroni Pico Plus 2 (recommended).** A ready-made Pico 2 with 8 MB PSRAM. Drop it into the socket and you are done.
-2. **Solder a PSRAM chip on top of the flash chip of an RP2350 clone.** SOP-8 flash chips are mostly only on clones (typically the black boards), not on a genuine Pico 2. See the [Murmulator PSRAM guide](https://murmulator.tilda.ws/) for the connection pattern.
+2. **Solder a PSRAM chip on top of the flash chip of an RP2350 clone.** SOP-8 flash chips are mostly only on clones (typically the black boards), not on a genuine Pico 2. See the [Murmulator PSRAM guide](https://murmulator.tilda.ws/) for the wiring.
 3. **Build a Nyx**, a DIY RP2350 board with integrated PSRAM.
 
 ## Troubleshooting
 
 | Symptom | Likely cause |
 |---------|--------------|
-| No video on any output | Wrong firmware (M1 instead of M2), Pico not seated, DIP switches set to a disabled output. |
-| HDMI works but VGA does not | DIP switches routed to HDMI only; or the resistor DAC values on the VGA path are wrong. Double-check the 14× 270 Ω resistors. |
+| No video on any output | Wrong firmware (M1 instead of M2), or Pico not fully seated. |
+| HDMI works but VGA does not | Resistor DAC values on the VGA path are wrong — double-check the 14× 270 Ω resistors. |
 | Hardware PS/2 keyboard ignored | Wrong PS/2 protocol mode (AT vs XT) or the TXS0104 level shifter is not soldered. |
 | USB keyboard not seen as PS/2 | The RP2040-Zero is not flashed with the USB-to-PS/2 firmware. Flash [usb2ps2 firmware](https://github.com/rh1tech/frank-archive) onto it. The hardware PS/2 port keeps working regardless. |
-| No audio | TDA1387T orientation, or audio multiplexer DIP switch routed to a disabled path. |
-| Board reboots under load | Buck regulator drawing too much current, or input voltage too low. Use 9 V / 1 A or higher. |
+| No audio | TDA1387T orientation, or the TDA ↔ PWM source switch set to the wrong position; check the PAM8403D shutdown switch if using the speaker amp. |
+| Board reboots under load | Buck regulator drawing too much current, or input voltage too low. Use 9V / 1 A or higher. |
 | USB hub fails to enumerate | MW7211A solder bridges; reflow the SOIC-16. |
 

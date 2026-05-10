@@ -21,21 +21,21 @@ It keeps most of full-size FRANK (HDMI, VGA, PS/2, ESP-01S WiFi, MicroSD, audio 
 | Flash | W25Q128JVS | 16 MB SPI flash |
 | PSRAM | ESP-PSRAM64H | 8 MB PSRAM |
 | Crystal | ASE-12 MHz | RP2350A clock source |
-| Power | AMS1117-3.3 | LDO that drops the 5 V USB-C rail to 3.3 V |
+| Power | AMS1117-3.3 | LDO that drops the 5V USB-C rail to 3.3V |
 | Video | HDMI Type A, VGA DE-15 | Two video outs |
-| Audio out | PJ-320D 3.5 mm | Line-level via TDA1387T DAC |
-| Audio | LM358 + CD4069UBM | Op-amp buffer and PWM filter (no on-board speaker amp) |
-| Tape in | PJ-320D | Cassette load |
+| Audio out | PJ-320D 3.5mm | Line-level via TDA1387T I2S DAC |
+| Audio | LM358 | Op-amp buffer (no on-board speaker amp) |
+| Tape in | PJ-320D + CD4069UBM | Cassette load; CD4069UBM conditions the tape signal |
 | Storage | MicroSD slot | ROMs, WADs, disk images |
 | Keyboard / mouse | PS/2 (DC3RX19JA2 mini-DIN) | Hardware PS/2 |
 | USB host | USB4215 stacked + MW7211A hub + TS3USB221 multiplexer | Stacked USB Type-A host. The hub fans out the RP2350's single USB host port; the multiplexer lets the same port swap between RP2350-driven host mode and a flashing path. |
-| USB power input | USB Type-C | The board takes 5 V over USB-C. There is no DC barrel jack on this board. |
+| USB power input | USB Type-C | The board takes 5V over USB-C. There is no DC barrel jack on this board. |
 | Gamepad | 1 × DB9 (104031-0811) | Famicom-style controller |
-| Network | ESP-01S socket | Optional WiFi |
-| Level shifting | TXS0104ERGYR | 3.3 V ↔ 5 V (5 V signals: PS/2, gamepad) |
+| Network | ESP-01S socket | Optional WiFi via [frank-netcard](https://github.com/rh1tech/frank-netcard) |
+| Level shifting | TXS0104ERGYR | 3.3V ↔ 5V (5V signals: PS/2, gamepad) |
 | ESD | USBLC6-2SC6 | USB protection |
 | Buttons | 4 × RP Reset, 1 × ESP Reset | Multi-purpose reset buttons |
-| Slide switches | 2 × SK12D07VG3NS | Power / config |
+| Switches | 2 × SK12D07VG3NS | Power + configuration (TDA ↔ PWM audio source, tape-in enable, mouse-port pull-ups, mono mix) |
 
 ## Bill of materials (high-level)
 
@@ -49,7 +49,7 @@ The full pick-and-place BOM is in `bom.html`. Headline counts:
 | U | W25Q128JVS | 1 | SOIC-8 flash |
 | U | ESP-PSRAM64H | 1 | SOIC-8 PSRAM |
 | Y | ASE-12 MHz | 1 | Crystal oscillator (clock for the RP2350A) |
-| U | TDA1387T | 1 | DIP-8 audio DAC |
+| U | TDA1387T | 1 | SO-8 audio DAC |
 | U | LM358 | 1 | SOIC-8 op-amp |
 | U | CD4069UBM | 1 | SOIC-14 hex inverter |
 | U | TXS0104ERGYR | 1 | QFN level shifter |
@@ -81,12 +81,12 @@ The full pick-and-place BOM is in `bom.html`. Headline counts:
 | DC3RX19JA2 | 1 | PS/2 mini-DIN |
 | HDMI Type A | 1 | HDMI |
 | VGA HD15 | 1 | VGA |
-| PJ-320D | 2 | Audio out + tape in |
+| PJ-320D | 2 | Audio out + tape in (3.5mm jacks) |
 | USB4215-03-A | 1 | Stacked USB Type-A host |
 | USB Type-C | 1 | Power input |
 | MicroSD slot | 1 | |
 | DB9 right-angle | 1 | Gamepad |
-| Slide switch SK12D07VG3NS | 2 | Power + config |
+| Switch SK12D07VG3NS | 2 | Power + configuration |
 | Reset buttons | 5 | RP Reset × 4, ESP Reset × 1 |
 | Mounting holes 2.7 mm | 4 | M2.5 |
 
@@ -114,29 +114,29 @@ MiniFRANK uses 0603 passives, which are smaller than the 0805 parts on FRANK. A 
    - AMS1117-3.3
 6. **Power inductor (3.3 µH) and the 1N5819WS Schottky diode.**
 7. **Tactile reset buttons** (4 × RP Reset, 1 × ESP Reset).
-8. **Slide switches** (2 × SK12D07VG3NS).
+8. **Switches** (2 × SK12D07VG3NS).
 9. **Through-hole and SMT connectors** in this order:
    - PS/2 mini-DIN (DC3RX19JA2)
-   - 3.5 mm jacks (audio + tape)
+   - 3.5mm jacks (audio + tape)
    - VGA DE-15
    - HDMI Type A
    - MicroSD slot
    - USB Type-A stacked
    - USB Type-C (power input)
    - DB9 (gamepad)
-10. **DIP-8 TDA1387T** (or socket).
+10. **TDA1387T** (SO-8 DAC).
 11. **ESP-01S 2 × 4 female header** for the WiFi module.
 12. **Mounting hardware** (M2.5 stand-offs into the four 2.7 mm holes).
 
 After step 1–2, before adding more components:
 
-- Probe between VBUS / 3.3 V and GND for shorts.
+- Probe between VBUS / 3.3V and GND for shorts.
 - Plug a USB-C cable into the board's USB-C power port. The RP2350A should appear as `RPI-RP2` mass storage if you hold the BOOT line low while powering on. (BOOT is wired into the RP Reset network on this board; see the schematic for the exact key combination.)
 
 ## First boot
 
-1. Plug a USB-C cable into the power port to feed 5 V.
-2. Connect HDMI or VGA.
+1. Plug a USB-C cable into the power port to feed 5V.
+2. Connect a display to either the HDMI or VGA output. The firmware selects which output is active.
 3. Connect a PS/2 keyboard or a USB keyboard (use the stacked USB Type-A host port for USB).
 4. Insert a FAT32 SD card with ROMs / disk images. The card stores content the firmware reads at runtime — it does not flash the RP2350A.
 5. Slide the power switch on.

@@ -18,7 +18,7 @@ Four maintained boards, each with its own KiCad project, gerbers, BOM and assemb
 
 | Board | Render | PCB size | Compute | Best for |
 |-------|:------:|----------|---------|----------|
-| [FRANK PGA](./hardware/frank_pga) | <img src="./docs/boards/3d/frank_pga-iso.png" alt="FRANK PGA" width="220"> | 99.5 × 83.1 mm | Pimoroni PGA2350 (RP2350A module) | The flagship. Every output on one PCB, native USB host with multiplexer, ESD-protected. |
+| [FRANK PGA](./hardware/frank_pga) | <img src="./docs/boards/3d/frank_pga-iso.png" alt="FRANK PGA" width="220"> | 99.5 × 83.1 mm | Pimoroni PGA2350 (RP2350A module) | Every output on one PCB, native USB host with multiplexer, ESD-protected. |
 | [FRANK](./hardware/frank) | <img src="./docs/boards/3d/frank-iso.png" alt="FRANK" width="220"> | 99.5 × 83.1 mm | Raspberry Pi Pico / Pico 2 (socket) + RP2040-Zero | Socketed alternative. Easiest to solder, swap Pico modules at will, USB-to-PS/2 helper on board. |
 | [MiniFRANK](./hardware/minifrank) | <img src="./docs/boards/3d/minifrank-iso.png" alt="MiniFRANK" width="220"> | 85.6 × 53.98 mm | RP2350A QFN, on-board | Compact full-feature board with WiFi, VGA, HDMI and one gamepad port. |
 | [MicroFRANK](./hardware/microfrank) | <img src="./docs/boards/3d/microfrank-iso.png" alt="MicroFRANK" width="220"> | 32 × 74 mm | RP2350A QFN, on-board | Smallest board. HDMI only, no hardware PS/2 or DB9 gamepad. Keyboards, mice and gamepads connect over the stacked USB host. |
@@ -44,8 +44,8 @@ All four boards use the M2 GPIO layout, so any firmware build for M2 runs on all
 | USB host multiplexer | 74HC4052D | — | TS3USB221 | TS3USB221 |
 | USBLC6 ESD protection | Yes | — | Yes | Yes |
 | ESP-01S WiFi socket | Yes | Yes | Yes | — |
-| Tape input (3.5 mm) | Yes | Yes | Yes | — |
-| Audio output | 3.5 mm jack | 3.5 mm jack | 3.5 mm jack | 3.5 mm jack |
+| Tape input (3.5mm) | Yes | Yes | Yes | — |
+| Audio output | 3.5mm jack | 3.5mm jack | 3.5mm jack | 3.5mm jack |
 | TDA1387 DAC | Yes | Yes | Yes | Yes |
 | PAM8403 speaker amp | Yes | Yes | — | — |
 | Power input | DC barrel jack | DC barrel jack | USB-C | USB-C |
