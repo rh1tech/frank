@@ -1,0 +1,73 @@
+name: Notify consumers
+
+# When a new hardware-docs version is released (board markdown, 3D renders,
+# silkscreen SVGs, gerber sets), dispatch a repository_dispatch event to
+# frank.rh1.tech so the site can pull the latest docs and redeploy.
+#
+# Triggers:
+#   - GitHub release published
+#   - Tag push matching v* / release-*
+#   - Manual via workflow_dispatch
+#
+# Required secret:
+#   PAT_DISPATCH — fine-grained or classic PAT with `contents: write` (Classic:
+#   repo) on rh1tech/frank-rh1-tech. Used to POST to the consumer's
+#   /dispatches endpoint. GITHUB_TOKEN cannot do cross-repo dispatches.
+
+on:
+  release:
+    types: [published]
+  push:
+    tags:
+      - 'v*.*.*'
+      - 'release-*'
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Ref consumers should sync to (tag, branch, or SHA)'
+        required: false
+        default: 'master'
+
+concurrency:
+  group: notify-consumers-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    name: Dispatch hardware-updated to frank.rh1.tech
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Resolve sync ref
+        id: ref
+        env:
+          INPUT_REF: ${{ github.event.inputs.ref }}
+        run: |
+          case "${{ github.event_name }}" in
+            release)            ref="${{ github.event.release.tag_name }}" ;;
+            push)               ref="${GITHUB_REF_NAME}" ;;
+            workflow_dispatch)  ref="${INPUT_REF:-main}" ;;
+            *)                  ref="${GITHUB_SHA}" ;;
+          esac
+          echo "ref=${ref}" >> "$GITHUB_OUTPUT"
+          echo "Sync ref: ${ref}"
+
+      - name: Dispatch to frank.rh1.tech
+        env:
+          GH_TOKEN: ${{ secrets.PAT_DISPATCH }}
+          REF: ${{ steps.ref.outputs.ref }}
+        run: |
+          gh api repos/rh1tech/frank-rh1-tech/dispatches \
+            -f event_type=hardware-updated \
+            -F "client_payload[ref]=${REF}" \
+            -F "client_payload[source_repo]=${GITHUB_REPOSITORY}" \
+            -F "client_payload[source_event]=${{ github.event_name }}"
+
+      - name: Summary
+        run: |
+          {
+            echo "## Notified consumers"
+            echo ""
+            echo "- Sync ref: \`${{ steps.ref.outputs.ref }}\`"
+            echo "- frank.rh1.tech — \`hardware-updated\`"
+          } >> "$GITHUB_STEP_SUMMARY"
