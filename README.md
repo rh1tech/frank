@@ -14,7 +14,7 @@ Experimental and work-in-progress designs live in [rh1tech/frank-lab](https://gi
 
 ## The boards in this repo
 
-Four maintained boards, each with its own KiCad project, gerbers, BOM and assembly drawings.
+Five maintained boards, each with its own KiCad project, gerbers, BOM and assembly drawings.
 
 | Board | Render | PCB size | Compute | Best for |
 |-------|:------:|----------|---------|----------|
@@ -22,8 +22,9 @@ Four maintained boards, each with its own KiCad project, gerbers, BOM and assemb
 | [FRANK](./hardware/frank) | <img src="./docs/boards/3d/frank-iso.png" alt="FRANK" width="220"> | 99.5 × 83.1 mm | Raspberry Pi Pico / Pico 2 (socket) + RP2040-Zero | Socketed alternative. Easiest to solder, swap Pico modules at will, USB-to-PS/2 helper on board. |
 | [MiniFRANK](./hardware/minifrank) | <img src="./docs/boards/3d/minifrank-iso.png" alt="MiniFRANK" width="220"> | 85.6 × 53.98 mm | RP2350A QFN, on-board | Compact full-feature board with WiFi, VGA, HDMI and one gamepad port. |
 | [MicroFRANK](./hardware/microfrank) | <img src="./docs/boards/3d/microfrank-iso.png" alt="MicroFRANK" width="220"> | 32 × 74 mm | RP2350A QFN, on-board | Smallest board. HDMI only, no hardware PS/2 or DB9 gamepad. Keyboards, mice and gamepads connect over the stacked USB host. |
+| [Nyx](./hardware/nyx) | <img src="./docs/boards/3d/nyx-iso.png" alt="Nyx" width="220"> | 51 × 21 mm | RP2350B QFN, on-board | Open-source Pico 2 clone with built-in PSRAM. Drop-in replacement for Pico Plus 2 in the FRANK socket. |
 
-All four boards use the M2 GPIO layout, so any firmware build for M2 runs on all of them (subject to the feature differences below).
+All five boards use the M2 GPIO layout, so any firmware build for M2 runs on all of them (subject to the feature differences below). Nyx is a compute module — it plugs into the FRANK socket and provides the RP2350B, flash and PSRAM; the FRANK motherboard provides all the I/O.
 
 ### Comparison table
 
@@ -135,13 +136,13 @@ How you get PSRAM depends on the board:
 - **FRANK PGA**: the Pimoroni PGA2350 module already includes 8 MB PSRAM. Nothing to do.
 - **FRANK**: the socketed Pico 2 has no PSRAM by default. Three ways to fix this:
   1. **Pimoroni Pico Plus 2 (recommended).** A ready-made Pico 2 with 8 MB PSRAM. Drop it into the socket and you are done.
-  2. **Solder a PSRAM chip on top of the flash chip of an RP2350 clone.** SOP-8 flash chips are mostly only on clones (typically the black boards), not on a genuine Pico 2.
-  3. **Build a Nyx**, a DIY RP2350 board with integrated PSRAM.
+  2. **Build a [Nyx](./hardware/nyx)**, an open-source RP2350B board with integrated 16 MB flash and 8 MB PSRAM. Same form factor as Pico 2, drops straight into the socket.
+  3. **Solder a PSRAM chip on top of the flash chip of an RP2350 clone.** SOP-8 flash chips are mostly only on clones (typically the black boards), not on a genuine Pico 2.
 
 ## Repo layout
 
 ```
-hardware/      Board KiCad projects (frank, frank_pga, minifrank, microfrank)
+hardware/      Board KiCad projects (frank, frank_pga, minifrank, microfrank, nyx)
 docs/          Shared component datasheets and assembly notes
 software/      Pre-built UF2s. Currently ships Hecate, the USB-to-PS/2 bridge
                firmware for FRANK's on-board RP2040-Zero. Once flashed, a USB
@@ -157,6 +158,7 @@ Each board has its own assembly and usage guide:
 - [FRANK assembly and usage guide](./docs/frank.md)
 - [MiniFRANK assembly and usage guide](./docs/minifrank.md)
 - [MicroFRANK assembly and usage guide](./docs/microfrank.md)
+- [Nyx assembly and usage guide](./docs/nyx.md)
 
 The `hardware/<board>/docs/` directories also contain auto-generated BOMs (`bom.html`) and assembly drawings (`assembly.pdf`, `schematics.pdf`) for each PCB revision.
 

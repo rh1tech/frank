@@ -54,6 +54,7 @@ board_color() {
     frank_pga)  echo "#101418F2" ;;  # near-black, slight cool bias to cancel copper warm tint
     minifrank)  echo "#0F8A3CD9" ;;  # PCB green
     microfrank) echo "#0F8A3CD9" ;;
+    nyx)        echo "#0F8A3CD9" ;;  # PCB green
     *)          echo "#0F8A3CD9" ;;
   esac
 }
@@ -117,6 +118,7 @@ LIGHT_SIDE_ELEVATION="80"
 iso_rotate() {
   case "$1" in
     microfrank) echo "-25,0,-120" ;;
+    nyx)        echo "-25,0,-30" ;;
     *)          echo "$ISO_ROTATE" ;;
   esac
 }
@@ -132,6 +134,7 @@ iso_zoom() {
     frank|frank_pga) echo "0.65" ;;
     minifrank)       echo "0.75" ;;
     microfrank)      echo "0.75" ;;
+    nyx)             echo "0.85" ;;
     *)               echo "0.75" ;;
   esac
 }
