@@ -14,45 +14,58 @@ Experimental and work-in-progress designs live in [rh1tech/frank-lab](https://gi
 
 ## The boards in this repo
 
-Five maintained boards, each with its own KiCad project, gerbers, BOM and assembly drawings.
+Seven maintained boards, each with its own KiCad project, gerbers, BOM and assembly drawings, plus two add-on modules ([TurboSound](#modules) and [Hecate](#modules)).
 
 | Board | Render | PCB size | Compute | Best for |
 |-------|:------:|----------|---------|----------|
+| [MegaFRANK](./hardware/megafrank) | <img src="./docs/boards/3d/megafrank-iso.png" alt="MegaFRANK" width="220"> | 149.9 × 99.5 mm | Pimoroni PGA2350 (RP2350B module) | Maximal board — every output plus on-board dual-AY TurboSound, DS3231 RTC and dual power input. |
 | [FRANK PGA](./hardware/frank_pga) | <img src="./docs/boards/3d/frank_pga-iso.png" alt="FRANK PGA" width="220"> | 99.5 × 83.1 mm | Pimoroni PGA2350 (RP2350A module) | Every output on one PCB, native USB host with multiplexer, ESD-protected. |
 | [FRANK](./hardware/frank) | <img src="./docs/boards/3d/frank-iso.png" alt="FRANK" width="220"> | 99.5 × 83.1 mm | Raspberry Pi Pico / Pico 2 (socket) + RP2040-Zero | Socketed alternative. Easiest to solder, swap Pico modules at will, USB-to-PS/2 helper on board. |
 | [MiniFRANK](./hardware/minifrank) | <img src="./docs/boards/3d/minifrank-iso.png" alt="MiniFRANK" width="220"> | 85.6 × 53.98 mm | RP2350A QFN, on-board | Compact full-feature board with WiFi, VGA, HDMI and one gamepad port. |
 | [MicroFRANK](./hardware/microfrank) | <img src="./docs/boards/3d/microfrank-iso.png" alt="MicroFRANK" width="220"> | 32 × 74 mm | RP2350A QFN, on-board | Smallest board. HDMI only, no hardware PS/2 or DB9 gamepad. Keyboards, mice and gamepads connect over the stacked USB host. |
+| [ZeroFRANK](./hardware/zerofrank) | <img src="./docs/boards/3d/zerofrank-iso.png" alt="ZeroFRANK" width="220"> | 65 × 25 mm | RP2350A QFN, on-board | Smallest RP2350A board. HDMI only, USB host for input, no PSRAM. |
 | [Nyx](./hardware/nyx) | <img src="./docs/boards/3d/nyx-iso.png" alt="Nyx" width="220"> | 51 × 21 mm | RP2350B QFN, on-board | Open-source Pico 2 clone with built-in PSRAM. Drop-in replacement for Pico Plus 2 in the FRANK socket. |
 
-All five boards use the M2 GPIO layout, so any firmware build for M2 runs on all of them (subject to the feature differences below). Nyx is a compute module — it plugs into the FRANK socket and provides the RP2350B, flash and PSRAM; the FRANK motherboard provides all the I/O.
+The full-size and compact boards use the M2 GPIO layout, so any firmware build for M2 runs on them (subject to the feature differences below — note ZeroFRANK has no PSRAM, so PSRAM-only firmware will not run on it). Nyx is a compute module — it plugs into the FRANK socket and provides the RP2350B, flash and PSRAM; the FRANK motherboard provides all the I/O.
 
 ### Comparison table
 
-| Feature | FRANK PGA | FRANK | MiniFRANK | MicroFRANK |
-|---------|:---------:|:-----:|:---------:|:----------:|
-| Compute module | Pimoroni PGA2350 | Pico / Pico 2 (socket) | RP2350A QFN on-board | RP2350A QFN on-board |
-| On-board flash | via module | via module | W25Q128 (16 MB) | W25Q128 (16 MB) |
-| On-board PSRAM | via module | via module | 8 MB | 8 MB |
-| HDMI output | Yes | Yes | Yes | Yes |
-| VGA output | Yes | Yes | Yes | — |
-| Composite (RCA) | Yes | Yes | — | — |
-| TFT display header | Yes | Yes | — | — |
-| Hardware PS/2 port | Yes | Yes | Yes | — |
-| USB-emulated PS/2 (RP2040-Zero) | — | Yes | — | — |
-| Gamepad ports (DB9) | 2 | 2 | 1 | — |
-| Stacked USB Type-A host | Yes | Yes | Yes | Yes |
-| MW7211A USB hub | Yes | Yes | Yes | Yes |
-| USB host multiplexer | 74HC4052D | — | TS3USB221 | TS3USB221 |
-| USBLC6 ESD protection | Yes | — | Yes | Yes |
-| ESP-01S WiFi socket | Yes | Yes | Yes | — |
-| Tape input (3.5mm) | Yes | Yes | Yes | — |
-| Audio output | 3.5mm jack | 3.5mm jack | 3.5mm jack | 3.5mm jack |
-| TDA1387 DAC | Yes | Yes | Yes | Yes |
-| PAM8403 speaker amp | Yes | Yes | — | — |
-| Power input | DC barrel jack | DC barrel jack | USB-C | USB-C |
-| Voltage regulator | MP1584 buck + AMS1117 LDO | MP1584 buck + AMS1117 LDO | AMS1117 LDO | ME6211 LDO |
-| Power switch | Slide | Slide | Slide | Slide |
-| Mounting holes | 4 × 2.7 mm | 4 × 2.7 mm | 4 × 2.7 mm | 4 × 2.7 mm |
+| Feature | MegaFRANK | FRANK PGA | FRANK | MiniFRANK | MicroFRANK | ZeroFRANK |
+|---------|:---------:|:---------:|:-----:|:---------:|:----------:|:---------:|
+| Compute module | Pimoroni PGA2350 | Pimoroni PGA2350 | Pico / Pico 2 (socket) | RP2350A QFN on-board | RP2350A QFN on-board | RP2350A QFN on-board |
+| On-board flash | via module | via module | via module | W25Q128 (16 MB) | W25Q128 (16 MB) | QSPI flash |
+| On-board PSRAM | via module | via module | via module | 8 MB | 8 MB | — |
+| HDMI output | Yes | Yes | Yes | Yes | Yes | Yes |
+| VGA output | Yes | Yes | Yes | Yes | — | — |
+| Composite (RCA) | Yes | Yes | Yes | — | — | — |
+| TFT display header | Yes | Yes | Yes | — | — | — |
+| Hardware PS/2 port | Yes | Yes | Yes | Yes | — | — |
+| USB-emulated PS/2 (RP2040-Zero) | — | — | Yes | — | — | — |
+| Gamepad ports (DB9) | 2 | 2 | 2 | 1 | — | — |
+| Stacked USB Type-A host | Yes | Yes | Yes | Yes | Yes | — (USB-C PIO host) |
+| MW7211A USB hub | Yes | Yes | Yes | Yes | Yes | — |
+| USB host multiplexer | 74HC4052D | 74HC4052D | — | TS3USB221 | TS3USB221 | — |
+| USBLC6 ESD protection | Yes | Yes | — | Yes | Yes | Yes |
+| ESP-01S WiFi socket | Yes | Yes | Yes | Yes | — | — |
+| Tape input (3.5mm) | Yes | Yes | Yes | Yes | — | — |
+| Audio output | 3.5mm jack | 3.5mm jack | 3.5mm jack | 3.5mm jack | 3.5mm jack | 3.5mm jack |
+| TDA1387 DAC | Yes | Yes | Yes | Yes | Yes | Yes |
+| PAM8403 speaker amp | Yes | Yes | Yes | — | — | — |
+| Power input | DC barrel jack (×2) | DC barrel jack | DC barrel jack | USB-C | USB-C | USB-C |
+| Voltage regulator | MP1584 buck + AMS1117 LDO | MP1584 buck + AMS1117 LDO | MP1584 buck + AMS1117 LDO | AMS1117 LDO | ME6211 LDO | AMS1117 LDO |
+| Power switch | Slide | Slide | Slide | Slide | Slide | — |
+| Mounting holes | 4 × 2.7 mm | 4 × 2.7 mm | 4 × 2.7 mm | 4 × 2.7 mm | 4 × 2.7 mm | 4 × 2.7 mm |
+
+On-board TurboSound (dual YM2149), a DS3231 real-time clock and a DS2401 silicon serial number are unique to MegaFRANK.
+
+### Modules
+
+Two add-on modules ship alongside the boards:
+
+| Module | Render | PCB size | What it is |
+|--------|:------:|----------|------------|
+| [TurboSound](./hardware/turbosound) | <img src="./docs/boards/3d/turbosound-iso.png" alt="TurboSound" width="220"> | 42 × 79.5 mm | Dual YM2149 / AY-3-8910 sound expansion (socketed DIP-40). **Currently supported only by [MiniFRANK](./docs/minifrank.md)** via its expansion header. |
+| [Hecate](./hardware/hecate) | <img src="./docs/boards/3d/hecate-iso.png" alt="Hecate" width="220"> | 53 × 29 mm | Standalone RP2040 USB-to-PS/2 bridge board. Runs the [Hecate firmware](https://github.com/rh1tech/hecate); presents USB keyboards and mice as PS/2 devices. |
 
 ## Supported software
 
@@ -142,7 +155,8 @@ How you get PSRAM depends on the board:
 ## Repo layout
 
 ```
-hardware/      Board KiCad projects (frank, frank_pga, minifrank, microfrank, nyx)
+hardware/      Board KiCad projects (megafrank, frank_pga, frank, minifrank,
+               microfrank, zerofrank, nyx) plus the turbosound and hecate modules
 docs/          Shared component datasheets and assembly notes
 software/      Pre-built UF2s. Currently ships Hecate, the USB-to-PS/2 bridge
                firmware for FRANK's on-board RP2040-Zero. Once flashed, a USB
@@ -152,13 +166,17 @@ software/      Pre-built UF2s. Currently ships Hecate, the USB-to-PS/2 bridge
 
 ## Documentation
 
-Each board has its own assembly and usage guide:
+Each board and module has its own assembly and usage guide:
 
+- [MegaFRANK assembly and usage guide](./docs/megafrank.md)
 - [FRANK PGA assembly and usage guide](./docs/frank_pga.md)
 - [FRANK assembly and usage guide](./docs/frank.md)
 - [MiniFRANK assembly and usage guide](./docs/minifrank.md)
 - [MicroFRANK assembly and usage guide](./docs/microfrank.md)
+- [ZeroFRANK assembly and usage guide](./docs/zerofrank.md)
 - [Nyx assembly and usage guide](./docs/nyx.md)
+- [TurboSound module guide](./docs/turbosound.md)
+- [Hecate (USB-to-PS/2 bridge) guide](./docs/hecate.md)
 
 The `hardware/<board>/docs/` directories also contain auto-generated BOMs (`bom.html`) and assembly drawings (`assembly.pdf`, `schematics.pdf`) for each PCB revision.
 
