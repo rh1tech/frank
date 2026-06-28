@@ -55,6 +55,9 @@ board_color() {
     minifrank)  echo "#0F8A3CD9" ;;  # PCB green
     microfrank) echo "#0F8A3CD9" ;;
     nyx)        echo "#0F8A3CD9" ;;  # PCB green
+    megafrank)  echo "#123C8EE6" ;;  # dark blue
+    turbosound) echo "#5B2A8CE6" ;;  # purple
+    hecate)     echo "#C9A21EE6" ;;  # yellow
     *)          echo "#0F8A3CD9" ;;
   esac
 }
@@ -66,6 +69,8 @@ board_color() {
 board_finish() {
   case "$1" in
     frank_pga)  echo "Immersion silver" ;;
+    megafrank)  echo "Immersion silver" ;;  # keep dark blue neutral, no gold tint
+    turbosound) echo "Immersion silver" ;;  # keep purple clean
     *)          echo "ENIG" ;;
   esac
 }

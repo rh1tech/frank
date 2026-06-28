@@ -23,18 +23,18 @@ Seven maintained boards, each with its own KiCad project, gerbers, BOM and assem
 | [FRANK](./hardware/frank) | <img src="./docs/boards/3d/frank-iso.png" alt="FRANK" width="220"> | 99.5 × 83.1 mm | Raspberry Pi Pico / Pico 2 (socket) + RP2040-Zero | Socketed alternative. Easiest to solder, swap Pico modules at will, USB-to-PS/2 helper on board. |
 | [MiniFRANK](./hardware/minifrank) | <img src="./docs/boards/3d/minifrank-iso.png" alt="MiniFRANK" width="220"> | 85.6 × 53.98 mm | RP2350A QFN, on-board | Compact full-feature board with WiFi, VGA, HDMI and one gamepad port. |
 | [MicroFRANK](./hardware/microfrank) | <img src="./docs/boards/3d/microfrank-iso.png" alt="MicroFRANK" width="220"> | 32 × 74 mm | RP2350A QFN, on-board | Smallest board. HDMI only, no hardware PS/2 or DB9 gamepad. Keyboards, mice and gamepads connect over the stacked USB host. |
-| [ZeroFRANK](./hardware/zerofrank) | <img src="./docs/boards/3d/zerofrank-iso.png" alt="ZeroFRANK" width="220"> | 65 × 25 mm | RP2350A QFN, on-board | Smallest RP2350A board. HDMI only, USB host for input, no PSRAM. |
+| [ZeroFRANK](./hardware/zerofrank) | <img src="./docs/boards/3d/zerofrank-iso.png" alt="ZeroFRANK" width="220"> | 65 × 25 mm | RP2350A QFN, on-board | Smallest RP2350A board. HDMI only, USB host for input, on-board flash + PSRAM + I²S audio. |
 | [Nyx](./hardware/nyx) | <img src="./docs/boards/3d/nyx-iso.png" alt="Nyx" width="220"> | 51 × 21 mm | RP2350B QFN, on-board | Open-source Pico 2 clone with built-in PSRAM. Drop-in replacement for Pico Plus 2 in the FRANK socket. |
 
-The full-size and compact boards use the M2 GPIO layout, so any firmware build for M2 runs on them (subject to the feature differences below — note ZeroFRANK has no PSRAM, so PSRAM-only firmware will not run on it). Nyx is a compute module — it plugs into the FRANK socket and provides the RP2350B, flash and PSRAM; the FRANK motherboard provides all the I/O.
+The full-size and compact boards use the M2 GPIO layout, so any firmware build for M2 runs on them (subject to the feature differences below). Nyx is a compute module — it plugs into the FRANK socket and provides the RP2350B, flash and PSRAM; the FRANK motherboard provides all the I/O.
 
 ### Comparison table
 
 | Feature | MegaFRANK | FRANK PGA | FRANK | MiniFRANK | MicroFRANK | ZeroFRANK |
 |---------|:---------:|:---------:|:-----:|:---------:|:----------:|:---------:|
 | Compute module | Pimoroni PGA2350 | Pimoroni PGA2350 | Pico / Pico 2 (socket) | RP2350A QFN on-board | RP2350A QFN on-board | RP2350A QFN on-board |
-| On-board flash | via module | via module | via module | W25Q128 (16 MB) | W25Q128 (16 MB) | QSPI flash |
-| On-board PSRAM | via module | via module | via module | 8 MB | 8 MB | — |
+| On-board flash | via module | via module | via module | W25Q128 (16 MB) | W25Q128 (16 MB) | W25Q128 (16 MB) |
+| On-board PSRAM | via module | via module | via module | 8 MB | 8 MB | 8 MB |
 | HDMI output | Yes | Yes | Yes | Yes | Yes | Yes |
 | VGA output | Yes | Yes | Yes | Yes | — | — |
 | Composite (RCA) | Yes | Yes | Yes | — | — | — |
