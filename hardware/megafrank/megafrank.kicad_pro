@@ -1,6 +1,26 @@
 {
   "board": {
-    "3dviewports": [],
+    "3dviewports": [
+      {
+        "name": "vp1",
+        "ww": 1.0,
+        "wx": -7.438752174377441,
+        "wy": 12.068501472473145,
+        "wz": -23.236454010009766,
+        "xw": 0.0,
+        "xx": 0.8816162943840027,
+        "xy": -0.3003633916378021,
+        "xz": 0.36405304074287415,
+        "yw": 0.0,
+        "yx": 0.4190549850463867,
+        "yy": 0.8530310392379761,
+        "yz": -0.3110167682170868,
+        "zw": 0.0,
+        "zx": -0.21713010966777802,
+        "zy": 0.42675521969795227,
+        "zz": 0.8779148459434509
+      }
+    ],
     "design_settings": {
       "defaults": {
         "apply_defaults_to_fp_barcodes": false,
@@ -39,9 +59,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.02,
-          "width": 3.74
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -51,7 +71,23 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.15
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.15,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -61,68 +97,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "annular_width|223390000|118025000|4702f179-432c-4bfb-b23d-88ea43588b05|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "annular_width|223390000|122275000|c402c4ce-5222-4ded-a381-d9bad89fc6cc|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "annular_width|223390000|126600280|50c94850-0f50-4552-b64c-968b6c6c517b|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "annular_width|223390000|130850280|543d707c-8399-4200-9a00-ca3662b243e2|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "annular_width|223390000|135175017|97b564be-3a1f-450d-abe7-dcb1599ac665|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "annular_width|223390000|139425017|46954d06-d291-43de-840d-ad1d377e458f|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "clearance|217975000|103475000|bcdde40a-80a9-4211-a083-a5ca3fb3f56b|49c4de0a-680a-47e6-95c5-4820e206139c",
-          ""
-        ],
-        [
-          "clearance|217975000|97800000|40c77cd9-83ce-474d-89c9-dd25fa812219|102c1047-29ac-4914-8007-ec33c68e7b30",
-          ""
-        ],
-        [
-          "footprint_symbol_field_mismatch|183100000|120700000|c23792d7-d038-4542-b76e-fe4cd0acd175|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "footprint_symbol_field_mismatch|196100000|77800000|e3a923b7-bfef-42cb-a21d-e8ce1b1f4106|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "footprint_symbol_field_mismatch|196100000|85600000|51716801-7eb9-4811-8f54-ebda74de12dd|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "footprint_symbol_field_mismatch|201954900|120182200|cb1c9ae2-133c-46be-8e73-9ffdc172fa27|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "footprint_symbol_mismatch|183100000|120700000|c23792d7-d038-4542-b76e-fe4cd0acd175|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_overlap|184420000|105880000|01a245f2-93e8-4094-9020-c627845768e4|c44c44c7-83b7-4028-8820-ee8b128a3af5",
-          ""
-        ],
-        [
-          "silk_overlap|184420000|105900000|32cd092c-37a6-4ae4-9161-ed22d71f4a05|c44c44c7-83b7-4028-8820-ee8b128a3af5",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -746,7 +721,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerbers/1_01",
+      "plot": "gerbers/1_02-u4/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "docs/1/04/fastbeta_hdmi.step",
@@ -1119,7 +1094,7 @@
         "uuid": "8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR197-201,C52-53,J21,R133-137,S11",
     "variants": []
   },
   "sheets": [
@@ -1172,16 +1147,20 @@
       "PSRAM"
     ],
     [
+      "3817edc5-ec38-47b6-a331-73c18c09aca9",
+      "USB Stacked1"
+    ],
+    [
+      "184b1853-75ad-4368-84b4-1d08baefb3ce",
+      "USB Multiplexer"
+    ],
+    [
       "dc233d7b-e8a2-4b56-a3eb-98bc515b348e",
       "USB Hub"
     ],
     [
       "34f704ec-275b-4a20-97af-9479c3af78d4",
       "PGA2350"
-    ],
-    [
-      "184b1853-75ad-4368-84b4-1d08baefb3ce",
-      "USB Multiplexer"
     ],
     [
       "cfb26b75-cbe0-41a5-9bd3-7624f34c9c9a",
@@ -1241,10 +1220,10 @@
     ]
   ],
   "text_variables": {
-    "DATE": "2026-06-04",
+    "DATE": "2026-07-08",
     "MODEL": "M2",
     "NAME": "MEGA FRANK",
-    "VERSION": "1.01"
+    "VERSION": "1.02-U4"
   },
   "tuning_profiles": {
     "meta": {
