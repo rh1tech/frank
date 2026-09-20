@@ -60,7 +60,7 @@ board_color() {
     hecate)     echo "#C9A21EE6" ;;  # yellow
     frank_next)   echo "#101418F2" ;;  # near-black, flagship finish
     frank_core2u) echo "#0F8A3CD9" ;;  # PCB green
-    frank_core2_proto) echo "#0E6E7AE6" ;;  # teal
+    frank_core2_proto) echo "#0F8A3CD9" ;;  # PCB green
     oldskool)     echo "#0F8A3CD9" ;;  # PCB green, period-correct
     dino_z80)     echo "#8C3A1EE6" ;;  # burnt orange
     xt8086_beta)  echo "#2B2F7AE6" ;;  # indigo
@@ -149,8 +149,8 @@ iso_zoom() {
     microfrank)      echo "0.75" ;;
     nyx)             echo "0.85" ;;
     frank_next)      echo "0.72" ;;
-    frank_core2u)    echo "0.82" ;;
-    frank_core2_proto) echo "0.85" ;;
+    frank_core2u)    echo "0.72" ;;
+    frank_core2_proto) echo "0.70" ;;
     oldskool)        echo "0.68" ;;
     dino_z80)        echo "0.68" ;;
     xt8086_beta)     echo "0.68" ;;
