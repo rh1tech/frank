@@ -58,6 +58,13 @@ board_color() {
     megafrank)  echo "#123C8EE6" ;;  # dark blue
     turbosound) echo "#5B2A8CE6" ;;  # purple
     hecate)     echo "#C9A21EE6" ;;  # yellow
+    frank_next)   echo "#101418F2" ;;  # near-black, flagship finish
+    frank_core2)  echo "#0E6E7AE6" ;;  # teal
+    frank_core2u) echo "#0E6E7AE6" ;;  # teal, same family as Core 2
+    oldskool)     echo "#0F8A3CD9" ;;  # PCB green, period-correct
+    dino_z80)     echo "#8C3A1EE6" ;;  # burnt orange
+    xt8086_beta)  echo "#2B2F7AE6" ;;  # indigo
+    xt8086_alpha) echo "#2B2F7AE6" ;;
     *)          echo "#0F8A3CD9" ;;
   esac
 }
@@ -71,6 +78,7 @@ board_finish() {
     frank_pga)  echo "Immersion silver" ;;
     megafrank)  echo "Immersion silver" ;;  # keep dark blue neutral, no gold tint
     turbosound) echo "Immersion silver" ;;  # keep purple clean
+    frank_next) echo "Immersion silver" ;;  # flagship, matches near-black mask
     *)          echo "ENIG" ;;
   esac
 }
@@ -140,6 +148,13 @@ iso_zoom() {
     minifrank)       echo "0.75" ;;
     microfrank)      echo "0.75" ;;
     nyx)             echo "0.85" ;;
+    frank_next)      echo "0.72" ;;
+    frank_core2)     echo "0.78" ;;
+    frank_core2u)    echo "0.82" ;;
+    oldskool)        echo "0.68" ;;
+    dino_z80)        echo "0.68" ;;
+    xt8086_beta)     echo "0.68" ;;
+    xt8086_alpha)    echo "0.68" ;;
     *)               echo "0.75" ;;
   esac
 }
@@ -326,7 +341,7 @@ for pcb_src in "$HARDWARE_DIR"/*/*.kicad_pcb; do
   # FRANK PGA also gets a larger "hero" render used as the website's
   # main-page splash. Same camera, just rendered at HERO_WIDTH x
   # HERO_HEIGHT.
-  if [ "$board" = "frank_pga" ]; then
+  if [ "$board" = "frank_next" ]; then
     echo "Rendering ${board} (isometric hero, ${HERO_WIDTH}x${HERO_HEIGHT})..."
     render "$pcb" "$OUT_DIR/$board-iso-hero.png" "top" "$rotate" 1 "$zoom" \
       "$HERO_WIDTH" "$HERO_HEIGHT"
