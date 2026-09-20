@@ -14,7 +14,7 @@ Experimental and work-in-progress designs live in [rh1tech/frank-lab](https://gi
 
 ## The boards in this repo
 
-Eleven maintained boards, each with its own KiCad project, gerbers, BOM and assembly drawings, plus two add-on modules ([TurboSound](#modules) and [Hecate](#modules)) and three [retro-CPU boards](#retro-cpu-boards).
+Ten maintained boards and one published prototype, each with its own KiCad project, gerbers, BOM and assembly drawings, plus two add-on modules ([TurboSound](#modules) and [Hecate](#modules)) and three [retro-CPU boards](#retro-cpu-boards).
 
 | Board | Render | PCB size | Compute | Best for |
 |-------|:------:|----------|---------|----------|
@@ -24,13 +24,13 @@ Eleven maintained boards, each with its own KiCad project, gerbers, BOM and asse
 | [FRANK](./hardware/frank) | <img src="./docs/boards/3d/frank-iso.png" alt="FRANK" width="220"> | 99.5 × 83.1 mm | Raspberry Pi Pico / Pico 2 (socket) + RP2040-Zero | Socketed alternative. Easiest to solder, swap Pico modules at will, USB-to-PS/2 helper on board. |
 | [Old Skool FRANK](./hardware/oldskool) | <img src="./docs/boards/3d/oldskool-iso.png" alt="Old Skool FRANK" width="220"> | 100.0 × 79.0 mm | Pimoroni PGA2350 (RP2350B module) | The retro-connector board: HDMI **and** VGA, hardware PS/2, DB9 gamepad. Only 2-layer design, easiest to hand-assemble. |
 | [MiniFRANK](./hardware/minifrank) | <img src="./docs/boards/3d/minifrank-iso.png" alt="MiniFRANK" width="220"> | 85.6 × 53.98 mm | RP2350A QFN, on-board | Compact full-feature board with WiFi, VGA, HDMI and one gamepad port. |
-| [FRANK Core 2](./hardware/frank_core2) | <img src="./docs/boards/3d/frank_core2-iso.png" alt="FRANK Core 2" width="220"> | 80.56 × 53.98 mm | RP2350B + RP2350A, both on-board | FRANK Next shrunk: same dual-die architecture with an ESP-01 socket and two USB-A ports. |
-| [FRANK Core 2U](./hardware/frank_core2u) | <img src="./docs/boards/3d/frank_core2u-iso.png" alt="FRANK Core 2U" width="220"> | 67.0 × 55.0 mm | RP2350B + RP2350A, both on-board | Smallest dual-die board. Video, sound, storage and USB only — no WiFi, no RTC. |
+| [FRANK Core 2U](./hardware/frank_core2u) | <img src="./docs/boards/3d/frank_core2u-iso.png" alt="FRANK Core 2U" width="220"> | 67.0 × 55.0 mm | RP2350B + RP2350A, both on-board | Smallest usable dual-die board. Video, sound, storage and USB only — no WiFi, no RTC. |
+| [FRANK Core 2 Proto](./hardware/frank_core2_proto) | <img src="./docs/boards/3d/frank_core2_proto-iso.png" alt="FRANK Core 2 Proto" width="220"> | 55.0 × 55.0 mm | RP2350B + RP2350A, both on-board | Prototype. Core 2U without the USB host side — the dual-die topology at its smallest. |
 | [MicroFRANK](./hardware/microfrank) | <img src="./docs/boards/3d/microfrank-iso.png" alt="MicroFRANK" width="220"> | 32 × 74 mm | RP2350A QFN, on-board | Smallest single-die board. HDMI only, no hardware PS/2 or DB9 gamepad. Keyboards, mice and gamepads connect over the stacked USB host. |
 | [ZeroFRANK](./hardware/zerofrank) | <img src="./docs/boards/3d/zerofrank-iso.png" alt="ZeroFRANK" width="220"> | 65 × 25 mm | RP2350A QFN, on-board | Smallest RP2350A board. HDMI only, USB host for input, on-board flash + PSRAM + I²S audio. |
 | [Nyx](./hardware/nyx) | <img src="./docs/boards/3d/nyx-iso.png" alt="Nyx" width="220"> | 51 × 21 mm | RP2350B QFN, on-board | Open-source Pico 2 clone with built-in PSRAM. Drop-in replacement for Pico Plus 2 in the FRANK socket. |
 
-The full-size and compact boards use the M2 GPIO layout, so any firmware build for M2 runs on them (subject to the feature differences below). FRANK Next, Core 2 and Core 2U are the exception: they carry two RP2350 dies and firmware must be built for that split, or the slave simply sits idle. Nyx is a compute module — it plugs into the FRANK socket and provides the RP2350B, flash and PSRAM; the FRANK motherboard provides all the I/O.
+The full-size and compact boards use the M2 GPIO layout, so any firmware build for M2 runs on them (subject to the feature differences below). FRANK Next, Core 2U and Core 2 Proto are the exception: they carry two RP2350 dies and firmware must be built for that split, or the slave simply sits idle. Nyx is a compute module — it plugs into the FRANK socket and provides the RP2350B, flash and PSRAM; the FRANK motherboard provides all the I/O.
 
 ### Comparison: full-size boards
 
@@ -64,8 +64,8 @@ On-board TurboSound (dual YM2149), a DS3231 real-time clock and a DS2401 silicon
 
 ### Comparison: compact boards
 
-| Feature | FRANK Next | MiniFRANK | Core 2 | Core 2U | MicroFRANK | ZeroFRANK |
-|---------|:----------:|:---------:|:------:|:-------:|:----------:|:---------:|
+| Feature | FRANK Next | MiniFRANK | Core 2U | Core 2 Proto | MicroFRANK | ZeroFRANK |
+|---------|:----------:|:---------:|:-------:|:------------:|:----------:|:---------:|
 | Compute | RP2350B + RP2350A | RP2350A QFN | RP2350B + RP2350A | RP2350B + RP2350A | RP2350A QFN | RP2350A QFN |
 | On-board flash | 2 × W25Q128 | W25Q128 | 2 × W25Q128 | 2 × W25Q128 | W25Q128 | W25Q128 |
 | On-board PSRAM | 2 × 8 MB | 8 MB | 2 × 8 MB | 2 × 8 MB | 8 MB | 8 MB |
@@ -73,19 +73,19 @@ On-board TurboSound (dual YM2149), a DS3231 real-time clock and a DS2401 silicon
 | VGA output | — | Yes | — | — | — | — |
 | Hardware PS/2 port | — | Yes | — | — | — | — |
 | Gamepad ports (DB9) | — | 1 | — | — | — | — |
-| USB Type-A host ports | 3 | 2 (stacked) | 2 | 2 | 2 (stacked) | — (USB-C PIO host) |
-| USB hub | CH334F | MW7211A | CH334F | MW7211A | MW7211A | — |
-| USB host multiplexer | TS3USB221 × 2 | TS3USB221 | TS3USB221 | TS3USB221 | TS3USB221 | — |
+| USB Type-A host ports | 3 | 2 (stacked) | 2 | — | 2 (stacked) | — (USB-C PIO host) |
+| USB hub | CH334F | MW7211A | MW7211A | — | MW7211A | — |
+| USB host multiplexer | TS3USB221 × 2 | TS3USB221 | TS3USB221 | — | TS3USB221 | — |
 | USB serial bridge | CH343P | — | — | — | — | — |
-| WiFi | ESP8266EX on-board | ESP-01S socket | ESP-01 socket | — | — | — |
-| Real-time clock | DS3231MZ | — | DS3231MZ | — | — | — |
-| Tape input (3.5mm) | Yes | Yes | Yes | Yes | — | — |
-| Audio DAC | TLV320DAC3100 | TDA1387 | TLV320DAC3100 | TDA1387T + LM358 | TDA1387 | TDA1387 |
-| Power input | USB-C | USB-C | USB-C | USB-C | USB-C | USB-C |
-| Voltage regulator | SY8089 buck | AMS1117 LDO | SY8089 buck | AMS1117 LDO | ME6211 LDO | AMS1117 LDO |
+| WiFi | ESP8266EX on-board | ESP-01S socket | — | — | — | — |
+| Real-time clock | DS3231MZ | — | — | — | — | — |
+| Tape input (3.5mm) | Yes | Yes | Yes | — | — | — |
+| Audio DAC | TLV320DAC3100 | TDA1387 | TDA1387T + LM358 | TDA1387T + LM358 | TDA1387 | TDA1387 |
+| Power input | USB-C | USB-C | USB-C | USB-C × 2 | USB-C | USB-C |
+| Voltage regulator | SY8089 buck | AMS1117 LDO | AMS1117 LDO | AMS1117 LDO | ME6211 LDO | AMS1117 LDO |
 | Mounting holes | 4 × 2.5 mm plated | 4 × 2.7 mm | 4 × 2.5 mm plated | 4 × 2.5 mm plated | 4 × 2.7 mm | 4 × 2.7 mm |
 
-FRANK Next, Core 2 and Core 2U share the dual-RP2350 architecture: an RP2350B master for emulation and an RP2350A slave for USB host, audio and housekeeping. Core 2U comes from a different subsystem generation than Core 2 — ESP-PSRAM64H instead of APS6404L, a discrete TDA1387T audio chain instead of the TLV320DAC3100 codec, and no WiFi or RTC.
+FRANK Next, Core 2U and Core 2 Proto share the dual-RP2350 architecture: an RP2350B master for emulation and an RP2350A slave for USB host, audio and housekeeping. Core 2U and Core 2 Proto come from a different subsystem generation than FRANK Next — ESP-PSRAM64H memory, a discrete TDA1387T audio chain instead of the TLV320DAC3100 codec, an AMS1117 LDO instead of a switching buck, and no WiFi or RTC. Core 2 Proto is Core 2U minus its host side: same two dies, no hub, no USB-A, no tape input and no power switch.
 
 ## Retro CPU boards
 
@@ -186,7 +186,7 @@ Most modern firmware (frank-os, frank-quest, frank-386, frank-genesis, frank-sne
 
 How you get PSRAM depends on the board:
 
-- **FRANK Next, Core 2 and Core 2U**: 8 MB PSRAM per die, both dies on-board. Nothing to do.
+- **FRANK Next, Core 2U and Core 2 Proto**: 8 MB PSRAM per die, both dies on-board. Nothing to do.
 - **MiniFRANK, MicroFRANK and ZeroFRANK**: PSRAM is already on-board (8 MB). Nothing to do.
 - **FRANK PGA, MegaFRANK and Old Skool FRANK**: the Pimoroni PGA2350 module already includes 8 MB PSRAM. Nothing to do.
 - **FRANK**: the socketed Pico 2 has no PSRAM by default. Three ways to fix this:
@@ -198,7 +198,7 @@ How you get PSRAM depends on the board:
 
 ```
 hardware/      Board KiCad projects (frank_next, megafrank, frank_pga, frank,
-               oldskool, minifrank, frank_core2, frank_core2u, microfrank,
+               oldskool, minifrank, frank_core2u, frank_core2_proto, microfrank,
                zerofrank, nyx), the retro-CPU boards (dino_z80, xt8086_beta,
                xt8086_alpha) plus the turbosound and hecate modules
 docs/          Shared component datasheets and assembly notes
@@ -218,8 +218,8 @@ Each board and module has its own assembly and usage guide:
 - [FRANK assembly and usage guide](./docs/frank.md)
 - [Old Skool FRANK assembly and usage guide](./docs/oldskool.md)
 - [MiniFRANK assembly and usage guide](./docs/minifrank.md)
-- [FRANK Core 2 assembly and usage guide](./docs/frank_core2.md)
 - [FRANK Core 2U assembly and usage guide](./docs/frank_core2u.md)
+- [FRANK Core 2 Proto assembly and usage guide](./docs/frank_core2_proto.md)
 - [MicroFRANK assembly and usage guide](./docs/microfrank.md)
 - [ZeroFRANK assembly and usage guide](./docs/zerofrank.md)
 - [Nyx assembly and usage guide](./docs/nyx.md)

@@ -6,7 +6,7 @@
 
 FRANK Core 2U is the smallest dual-RP2350 board. It keeps the two-die architecture — an RP2350B master and an RP2350A slave, each with 16 MB flash and 8 MB PSRAM — in a 67 × 55 mm outline, and strips the board back to video, sound, storage and USB.
 
-Despite the shared name it is not a smaller [Core 2](./frank_core2.md): it comes from a different subsystem generation. Memory is ESP-PSRAM64H in SO-8 rather than APS6404L, the clocks are ASE oscillators rather than crystals, audio is a discrete TDA1387T and LM358 chain rather than the TLV320DAC3100 codec, the hub is an MW7211A rather than a CH334F, and power is a plain AMS1117-3.3 rather than a switching buck. There is **no WiFi and no real-time clock** on this board.
+It is the production form of [Core 2 Proto](./frank_core2_proto.md), which carries the same two dies, the same ESP-PSRAM64H memory, the same ASE oscillators and the same TDA1387T audio chain on a square 55 × 55 mm outline. Core 2U adds 12 mm of width and spends all of it on host connectivity: the MW7211A hub, two USB Type-A ports, the TS3USB221 multiplexer, a tape input and a power switch. Compared with [FRANK Next](./frank_next.md) this is a different and simpler subsystem generation — a plain AMS1117-3.3 rather than a switching buck, and a discrete DAC rather than a codec. There is **no WiFi and no real-time clock** on this board.
 
 - **PCB size:** 67.00 × 55.00 mm
 - **Compute:** RP2350B QFN-80 (master) + RP2350A QFN-60 (slave), both on-board
@@ -67,7 +67,7 @@ MW7211A hub, the TDA1387T DAC with its LM358 buffer and the AMS1117-3.3 regulato
 ## Firmware compatibility
 
 Core 2U has 16 MB flash and 8 MB PSRAM per die, so PSRAM-requiring firmware runs. Compared
-with Core 2 and FRANK Next, firmware must not expect WiFi or a real-time clock — neither is
+with FRANK Next, firmware must not expect WiFi or a real-time clock — neither is
 fitted — and audio is a discrete TDA1387T I²S DAC rather than a TLV320DAC3100 codec, so the
 audio driver differs. Video is HDMI only; input is USB only.
 
@@ -83,4 +83,4 @@ audio driver differs. Video is HDMI only; input is USB only.
 - **Board runs hot:** the AMS1117 is a linear regulator dropping 5 V to 3.3 V. Warm is normal;
   too hot to touch means check for a short on the 3.3 V rail.
 - **No audio:** audio is the discrete TDA1387T + LM358 chain — check both and the jack wiring.
-- **Expecting WiFi or an RTC:** neither is fitted on this board. Use Core 2 or FRANK Next.
+- **Expecting WiFi or an RTC:** neither is fitted on this board. Use [FRANK Next](./frank_next.md).
