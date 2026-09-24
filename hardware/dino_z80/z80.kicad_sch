@@ -1875,52 +1875,8 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "/IORQ, /RFSH, /HALT and /BUSACK are deliberately unconnected.\n/IORQ is redundant: /MREQ low = memory; /MREQ high with /RD or /WR low = I/O;\n/M1 low with /MREQ, /RD and /WR high = interrupt acknowledge.\n/RFSH is redundant: refresh cycles leave both /RD and /WR inactive."
-		(exclude_from_sim no)
-		(at 40.64 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "524ef51b-6184-4576-87cd-73d87f22eee8")
-	)
-	(text "Vcc is VBUS (5 V), so the Z80 runs fully in Zilog spec and at its rated speed.\nVBUS is downstream of the Q3 load switch and feeds the 3V3 buck, so the CPU and\nthe RP2350B power up and down together - no sequencing hazard.\nThe bus connects straight to GPIO with no level shifters: RP2350B GP0-GP39 are\n5 V fault-tolerant, and the Z80's data and control inputs are TTL (V_IH 2.2 V),\nwhich a 3.3 V GPIO drives cleanly."
-		(exclude_from_sim no)
-		(at 40.64 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "934fe890-51bc-4157-8d82-507132042624")
-	)
-	(text "R7 holds the CPU in reset while GP29 is hi-Z during RP2350B boot.\nR8-R15 (200R) limit fault current if firmware ever drives the data bus\nagainst the Z80 - that contention is now 5 V vs 3.3 V, so keep them fitted.\nR69 (1K) limits /M1 during the ~1 ms at power-on when VBUS is up but the\n3V3 buck is still soft-starting: /M1 is a driven output and is high in reset."
-		(exclude_from_sim no)
-		(at 40.64 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "98dc7ccd-c082-4e02-8464-ec85d583e7ee")
-	)
-	(text "The RP2350B generates CLK and can stop it, so the CPU is frozen whenever the\nemulator needs time. That removes all wait-state logic: /WAIT is tied high.\nU2 must be a CMOS, FULLY STATIC part - an NMOS Z8400 loses state when the\nclock stops.\nCLK goes through U17 (74HCT125): HCT inputs are TTL (V_IH 2.0 V) so GP28's\n3.3 V drives it, and its push-pull output swings to 5 V, meeting the Z80's\nV_IHC = Vcc-0.6 = 4.4 V. Every parameter is now inside spec.\nR4 holds the buffer input low while GP28 is hi-Z, so the CPU clock parks low.\n/NMI is driven, not tied: stopping the clock freezes the CPU but cannot read\nits registers, so a snapshot save has to vector in through NMI (the Z80 will\nrefuse INT after DI)."
-		(exclude_from_sim no)
-		(at 40.64 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "ea4071a1-6df3-423c-884d-4feb749cbfea")
-	)
 	(junction
-		(at 99.06 50.8)
+		(at 63.5 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25f8e453-177a-46a9-8cc5-0dc8fc2078ba")
@@ -1938,7 +1894,7 @@
 		(uuid "4474493e-3a21-4f91-8ea8-ee78697d3308")
 	)
 	(junction
-		(at 88.9 39.37)
+		(at 53.34 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69596202-8cf5-4fe0-8efb-ebe330af2eb8")
@@ -1950,19 +1906,19 @@
 		(uuid "8e488a2c-6cbf-478f-816f-a98c1c07d01c")
 	)
 	(junction
-		(at 99.06 48.26)
+		(at 63.5 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8042fec-2bbb-4de0-8c39-47910462a36f")
 	)
 	(junction
-		(at 88.9 41.91)
+		(at 53.34 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ecb18631-a721-40fc-8712-fbb9f05ce101")
 	)
 	(no_connect
-		(at 132.08 41.91)
+		(at 96.52 99.06)
 		(uuid "016e1725-0101-45a9-892a-e795456cb14e")
 	)
 	(no_connect
@@ -1970,11 +1926,11 @@
 		(uuid "95214478-1f15-4966-8df8-c8587be8d04b")
 	)
 	(no_connect
-		(at 132.08 39.37)
+		(at 96.52 96.52)
 		(uuid "9dbd64ca-b634-4988-8aa1-99bd6690b530")
 	)
 	(no_connect
-		(at 132.08 36.83)
+		(at 96.52 93.98)
 		(uuid "bd4233d4-35da-4a98-8bd5-ed0ffe579fd9")
 	)
 	(no_connect
@@ -2031,7 +1987,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 41.91) (xy 88.9 45.72)
+			(xy 53.34 99.06) (xy 53.34 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2051,7 +2007,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 53.34) (xy 99.06 53.34)
+			(xy 68.58 110.49) (xy 63.5 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2161,7 +2117,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 27.94) (xy 93.98 27.94)
+			(xy 68.58 85.09) (xy 58.42 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2171,7 +2127,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 39.37) (xy 88.9 39.37)
+			(xy 68.58 96.52) (xy 53.34 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2211,7 +2167,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 48.26) (xy 99.06 44.45)
+			(xy 63.5 105.41) (xy 63.5 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2231,7 +2187,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 36.83) (xy 88.9 36.83)
+			(xy 68.58 93.98) (xy 53.34 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2371,7 +2327,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 19.05) (xy 118.11 15.24)
+			(xy 82.55 76.2) (xy 82.55 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2381,7 +2337,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 48.26) (xy 99.06 53.34)
+			(xy 63.5 105.41) (xy 63.5 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2391,7 +2347,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 48.26) (xy 99.06 48.26)
+			(xy 68.58 105.41) (xy 63.5 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2431,7 +2387,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 25.4) (xy 99.06 21.59)
+			(xy 63.5 82.55) (xy 63.5 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2461,7 +2417,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 50.8) (xy 99.06 50.8)
+			(xy 68.58 107.95) (xy 63.5 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2471,7 +2427,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 59.69) (xy 118.11 63.5)
+			(xy 82.55 116.84) (xy 82.55 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2501,7 +2457,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 36.83) (xy 88.9 41.91)
+			(xy 53.34 93.98) (xy 53.34 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2541,7 +2497,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 25.4) (xy 99.06 25.4)
+			(xy 68.58 82.55) (xy 63.5 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2651,7 +2607,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 27.94) (xy 142.24 27.94)
+			(xy 96.52 85.09) (xy 106.68 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2721,7 +2677,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 41.91) (xy 88.9 41.91)
+			(xy 68.58 99.06) (xy 53.34 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2790,7 +2746,7 @@
 		(uuid "a3aedbf1-ee33-4db8-8975-e9ae5c65c045")
 	)
 	(label "CLK"
-		(at 93.98 27.94 180)
+		(at 58.42 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2810,7 +2766,7 @@
 		(uuid "ca0a4024-1602-4a02-8211-b74694dc4bbc")
 	)
 	(label "CLK_5V"
-		(at 142.24 27.94 0)
+		(at 106.68 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3428,7 +3384,7 @@
 	)
 	(symbol
 		(lib_id "dino:GND")
-		(at 99.06 21.59 180)
+		(at 63.5 78.74 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3438,7 +3394,7 @@
 		(dnp no)
 		(uuid "2106b174-24df-4cc7-8369-1ecfcefb9608")
 		(property "Reference" "#PWR013"
-			(at 99.06 25.4 0)
+			(at 63.5 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3449,7 +3405,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 17.78 0)
+			(at 63.5 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3459,7 +3415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 21.59 0)
+			(at 63.5 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3470,7 +3426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 21.59 0)
+			(at 63.5 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3481,7 +3437,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\""
-			(at 99.06 21.59 0)
+			(at 63.5 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4129,7 +4085,7 @@
 	)
 	(symbol
 		(lib_id "dino:74HCT125")
-		(at 118.11 41.91 0)
+		(at 82.55 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4139,7 +4095,7 @@
 		(dnp no)
 		(uuid "5f68a72d-23ed-4cc8-8d7d-1cca9685ae38")
 		(property "Reference" "U1"
-			(at 105.41 17.78 0)
+			(at 69.85 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4149,7 +4105,7 @@
 			)
 		)
 		(property "Value" "74HCT125"
-			(at 105.41 15.24 0)
+			(at 69.85 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4159,7 +4115,7 @@
 			)
 		)
 		(property "Footprint" "dino:SOIC127P600X175-14N"
-			(at 118.11 41.91 0)
+			(at 82.55 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4170,7 +4126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 41.91 0)
+			(at 82.55 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4181,7 +4137,7 @@
 			)
 		)
 		(property "Description" "Quad buffer with 3-state outputs, TTL-level inputs, SO-14"
-			(at 118.11 41.91 0)
+			(at 82.55 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4244,7 +4200,7 @@
 	)
 	(symbol
 		(lib_id "dino:GND")
-		(at 88.9 45.72 0)
+		(at 53.34 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4254,7 +4210,7 @@
 		(dnp no)
 		(uuid "653a842f-555c-40fe-8c0a-400b75a4ffac")
 		(property "Reference" "#PWR012"
-			(at 88.9 41.91 0)
+			(at 53.34 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4265,7 +4221,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 49.53 0)
+			(at 53.34 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4275,7 +4231,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 45.72 0)
+			(at 53.34 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4286,7 +4242,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 45.72 0)
+			(at 53.34 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4297,7 +4253,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\""
-			(at 88.9 45.72 0)
+			(at 53.34 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4400,7 +4356,7 @@
 	)
 	(symbol
 		(lib_id "dino:GND")
-		(at 118.11 63.5 0)
+		(at 82.55 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4410,7 +4366,7 @@
 		(dnp no)
 		(uuid "71ba1eec-a762-469d-8466-868aeb3f2b4f")
 		(property "Reference" "#PWR016"
-			(at 118.11 59.69 0)
+			(at 82.55 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4421,7 +4377,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 67.31 0)
+			(at 82.55 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4431,7 +4387,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 63.5 0)
+			(at 82.55 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4442,7 +4398,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 63.5 0)
+			(at 82.55 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4453,7 +4409,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\""
-			(at 118.11 63.5 0)
+			(at 82.55 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5255,7 +5211,7 @@
 	)
 	(symbol
 		(lib_id "dino:VBUS")
-		(at 99.06 44.45 0)
+		(at 63.5 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5265,7 +5221,7 @@
 		(dnp no)
 		(uuid "b02c5d8c-3973-46b1-8ebc-cee8639ea407")
 		(property "Reference" "#PWR014"
-			(at 99.06 40.64 0)
+			(at 63.5 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5276,7 +5232,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 99.06 48.26 0)
+			(at 63.5 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5286,7 +5242,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 44.45 0)
+			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5297,7 +5253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 44.45 0)
+			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5308,7 +5264,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 99.06 44.45 0)
+			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5569,7 +5525,7 @@
 	)
 	(symbol
 		(lib_id "dino:VBUS")
-		(at 118.11 15.24 0)
+		(at 82.55 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5579,7 +5535,7 @@
 		(dnp no)
 		(uuid "ccf68c35-57f8-4882-8559-1da13d805b04")
 		(property "Reference" "#PWR015"
-			(at 118.11 11.43 0)
+			(at 82.55 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5590,7 +5546,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 118.11 19.05 0)
+			(at 82.55 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5600,7 +5556,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 15.24 0)
+			(at 82.55 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5611,7 +5567,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 15.24 0)
+			(at 82.55 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5622,7 +5578,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 118.11 15.24 0)
+			(at 82.55 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

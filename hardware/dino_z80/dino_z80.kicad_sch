@@ -1818,6 +1818,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "dino:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP2"
+				(at 1.2701 -2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "HDMI Audio"
+				(at -1.2699 -2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "dino:VBUS"
 			(power global)
 			(pin_numbers
@@ -2073,6 +2253,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 161.29 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6e9f6e5-d525-4625-b3e4-2e3c4379e566")
+	)
 	(no_connect
 		(at 165.1 54.61)
 		(uuid "dbe3ef60-7bde-4524-9bc5-54973681e903")
@@ -2143,7 +2329,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 49.53) (xy 165.1 49.53)
+			(xy 154.94 49.53) (xy 161.29 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2193,7 +2379,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 180.34) (xy 170.18 182.88)
+			(xy 246.38 154.94) (xy 246.38 157.48)
 		)
 		(stroke
 			(width 0)
@@ -2273,7 +2459,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 180.34) (xy 160.02 182.88)
+			(xy 236.22 154.94) (xy 236.22 157.48)
 		)
 		(stroke
 			(width 0)
@@ -2383,6 +2569,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 49.53) (xy 165.1 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97aeadee-c543-4fd9-ae2d-bba061757c0b")
+	)
+	(wire
+		(pts
 			(xy 137.16 88.9) (xy 142.24 88.9)
 		)
 		(stroke
@@ -2393,7 +2589,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 180.34) (xy 180.34 182.88)
+			(xy 256.54 154.94) (xy 256.54 157.48)
 		)
 		(stroke
 			(width 0)
@@ -2573,7 +2769,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 180.34) (xy 190.5 182.88)
+			(xy 266.7 154.94) (xy 266.7 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3149,8 +3345,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 170.18 182.88 0)
+		(lib_id "dino:SolderJumper_2_Open")
+		(at 161.29 44.45 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3158,30 +3354,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "208c8bf2-5a97-4d2d-bab7-0ff4749920fd")
-		(property "Reference" "#PWR06"
-			(at 170.18 189.23 0)
-			(hide yes)
+		(uuid "138b58f2-7f01-430d-aa1f-c0af0aea2582")
+		(property "Reference" "JP3"
+			(at 158.75 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "GND"
-			(at 170.18 186.69 0)
+		(property "Value" "USB Test"
+			(at 163.83 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 170.18 182.88 0)
+		(property "Footprint" "dino:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 161.29 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3192,7 +3389,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 182.88 0)
+			(at 161.29 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 161.29 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa5e761e-fb2c-483a-b4e6-24ab36b02c36")
+		)
+		(pin "2"
+			(uuid "2e8a90b3-4a18-4a53-a7a4-811385dfa4c1")
+		)
+		(instances
+			(project "dino_z80"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "JP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "208c8bf2-5a97-4d2d-bab7-0ff4749920fd")
+		(property "Reference" "#PWR06"
+			(at 246.38 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3203,7 +3480,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 182.88 0)
+			(at 246.38 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3576,7 +3853,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 182.88 0)
+		(at 236.22 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3586,7 +3863,7 @@
 		(dnp no)
 		(uuid "35cb590f-238c-4992-b7af-5e2bc0fc6a46")
 		(property "Reference" "#PWR04"
-			(at 160.02 189.23 0)
+			(at 236.22 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3597,7 +3874,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 186.69 0)
+			(at 236.22 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3607,7 +3884,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 182.88 0)
+			(at 236.22 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3618,7 +3895,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 182.88 0)
+			(at 236.22 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3629,7 +3906,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 182.88 0)
+			(at 236.22 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4000,8 +4277,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 180.34 182.88 0)
+		(lib_id "dino:+3V3")
+		(at 161.29 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4009,9 +4286,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "50feee67-20c2-4412-a697-c8fa6f7afbf4")
-		(property "Reference" "#PWR07"
-			(at 180.34 189.23 0)
+		(uuid "465a76e7-a545-4d48-8cc8-e48fdd0701da")
+		(property "Reference" "#PWR0207"
+			(at 161.29 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4021,18 +4298,19 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 180.34 186.69 0)
+		(property "Value" "+3V3"
+			(at 161.29 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 182.88 0)
+			(at 161.29 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4043,7 +4321,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 182.88 0)
+			(at 161.29 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4054,7 +4332,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 182.88 0)
+			(at 161.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "369d2d50-f015-4eb8-b4cc-3557bba5fd2f")
+		)
+		(instances
+			(project "dino_z80"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
+					(reference "#PWR0207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 256.54 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "50feee67-20c2-4412-a697-c8fa6f7afbf4")
+		(property "Reference" "#PWR07"
+			(at 256.54 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 256.54 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 256.54 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4155,8 +4510,8 @@
 		)
 	)
 	(symbol
-		(lib_id "dino:GND")
-		(at 165.1 52.07 270)
+		(lib_id "dino:+3V3")
+		(at 165.1 52.07 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4176,14 +4531,15 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 160.02 52.07 90)
+		(property "Value" "+3V3"
+			(at 162.56 52.07 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4233,7 +4589,7 @@
 	)
 	(symbol
 		(lib_id "dino:MountingHole_Pad")
-		(at 180.34 177.8 0)
+		(at 256.54 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -4244,7 +4600,7 @@
 		(fields_autoplaced yes)
 		(uuid "b234f1db-6c54-4ade-b20a-d723ad4d7b2b")
 		(property "Reference" "H3"
-			(at 182.88 176.5299 0)
+			(at 259.08 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4255,7 +4611,8 @@
 			)
 		)
 		(property "Value" "Hole 2.5mm"
-			(at 182.88 179.0699 0)
+			(at 259.08 153.6699 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4266,7 +4623,7 @@
 			)
 		)
 		(property "Footprint" "dino:MountingHole_2.5mm_Pad_Via"
-			(at 180.34 177.8 0)
+			(at 256.54 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4277,7 +4634,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 177.8 0)
+			(at 256.54 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4288,7 +4645,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 180.34 177.8 0)
+			(at 256.54 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4299,7 +4656,7 @@
 			)
 		)
 		(property "AliExpress" ""
-			(at 180.34 177.8 0)
+			(at 256.54 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4323,7 +4680,7 @@
 	)
 	(symbol
 		(lib_id "dino:MountingHole_Pad")
-		(at 170.18 177.8 0)
+		(at 246.38 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -4334,7 +4691,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5bcbd9c-b7f6-4b1f-897d-0433365af664")
 		(property "Reference" "H2"
-			(at 172.72 176.5299 0)
+			(at 248.92 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4345,7 +4702,8 @@
 			)
 		)
 		(property "Value" "Hole 2.5mm"
-			(at 172.72 179.0699 0)
+			(at 248.92 153.6699 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4356,7 +4714,7 @@
 			)
 		)
 		(property "Footprint" "dino:MountingHole_2.5mm_Pad_Via"
-			(at 170.18 177.8 0)
+			(at 246.38 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4367,7 +4725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 177.8 0)
+			(at 246.38 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4378,7 +4736,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 170.18 177.8 0)
+			(at 246.38 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4389,7 +4747,7 @@
 			)
 		)
 		(property "AliExpress" ""
-			(at 170.18 177.8 0)
+			(at 246.38 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4413,7 +4771,7 @@
 	)
 	(symbol
 		(lib_id "dino:MountingHole_Pad")
-		(at 190.5 177.8 0)
+		(at 266.7 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -4424,7 +4782,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba009387-7c69-4d58-8d0e-2218d2d5d34e")
 		(property "Reference" "H4"
-			(at 193.04 176.5299 0)
+			(at 269.24 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4435,7 +4793,8 @@
 			)
 		)
 		(property "Value" "Hole 2.5mm"
-			(at 193.04 179.0699 0)
+			(at 269.24 153.6699 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4446,7 +4805,7 @@
 			)
 		)
 		(property "Footprint" "dino:MountingHole_2.5mm_Pad_Via"
-			(at 190.5 177.8 0)
+			(at 266.7 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4457,7 +4816,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 177.8 0)
+			(at 266.7 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4468,7 +4827,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 190.5 177.8 0)
+			(at 266.7 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4479,7 +4838,7 @@
 			)
 		)
 		(property "AliExpress" ""
-			(at 190.5 177.8 0)
+			(at 266.7 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4761,7 +5120,7 @@
 	)
 	(symbol
 		(lib_id "dino:MountingHole_Pad")
-		(at 160.02 177.8 0)
+		(at 236.22 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -4772,7 +5131,7 @@
 		(fields_autoplaced yes)
 		(uuid "d053af13-36ce-43bf-978f-c3b31f019440")
 		(property "Reference" "H1"
-			(at 162.56 176.5299 0)
+			(at 238.76 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4783,7 +5142,8 @@
 			)
 		)
 		(property "Value" "Hole 2.5mm"
-			(at 162.56 179.0699 0)
+			(at 238.76 153.6699 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4794,7 +5154,7 @@
 			)
 		)
 		(property "Footprint" "dino:MountingHole_2.5mm_Pad_Via"
-			(at 160.02 177.8 0)
+			(at 236.22 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4805,7 +5165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 177.8 0)
+			(at 236.22 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4816,7 +5176,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 160.02 177.8 0)
+			(at 236.22 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4827,7 +5187,7 @@
 			)
 		)
 		(property "AliExpress" ""
-			(at 160.02 177.8 0)
+			(at 236.22 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5143,7 +5503,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 182.88 0)
+		(at 266.7 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5153,7 +5513,7 @@
 		(dnp no)
 		(uuid "ee92af5d-c59c-4d57-8e99-d73fbc5c4faf")
 		(property "Reference" "#PWR08"
-			(at 190.5 189.23 0)
+			(at 266.7 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5164,7 +5524,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 186.69 0)
+			(at 266.7 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5174,7 +5534,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 182.88 0)
+			(at 266.7 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5185,7 +5545,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 182.88 0)
+			(at 266.7 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5196,7 +5556,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 182.88 0)
+			(at 266.7 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
