@@ -93,11 +93,8 @@ These are not emulation boards. Each carries a real vintage CPU in a DIP-40 sock
 
 | Board | Render | PCB size | CPU | Notes |
 |-------|:------:|----------|-----|-------|
-| [Dino Z80](./hardware/dino_z80) | <img src="./docs/boards/3d/dino_z80-iso.png" alt="Dino Z80" width="220"> | 99.5 × 80.0 mm | Zilog Z84C0020PEC (Z80) | HDMI via on-board MS9288A, PC speaker, tape input, three power sources. |
-| [XT8086 Beta](./hardware/xt8086_beta) | <img src="./docs/boards/3d/xt8086_beta-iso.png" alt="XT8086 Beta" width="220"> | 99.5 × 80.0 mm | Intel 8086 (minimum mode) | IBM PC XT class machine. HDMI via MS9288A, DS3231 RTC, stacked USB host. |
-| [XT8086 Alpha](./hardware/xt8086_alpha) | <img src="./docs/boards/3d/xt8086_alpha-iso.png" alt="XT8086 Alpha" width="220"> | 99.9 × 78.0 mm | Intel 8086 (minimum mode) | The earlier 8086 design: PGA2350 module, VGA and composite outputs. Superseded by the Beta. |
+| [XT8086 Alpha](./hardware/xt8086_alpha) | <img src="./docs/boards/3d/xt8086_alpha-iso.png" alt="XT8086 Alpha" width="220"> | 99.9 × 78.0 mm | Intel 8086 (minimum mode) | The earlier 8086 design: PGA2350 module, VGA and composite outputs. Superseded by XT8086 Beta, now in [frank-lab](https://github.com/rh1tech/frank-lab). |
 
-Dino Z80 and XT8086 Beta share an outline, mounting pattern and power/video architecture — they are the same platform with a different CPU socketed into it. XT8086 Alpha is a **separate version stream**, not an earlier revision of the Beta.
 
 ### Modules
 
@@ -199,8 +196,7 @@ How you get PSRAM depends on the board:
 ```
 hardware/      Board KiCad projects (frank_next, megafrank, frank_pga, frank,
                oldskool, minifrank, frank_core2u, frank_core2_proto, microfrank,
-               zerofrank, nyx), the retro-CPU boards (dino_z80, xt8086_beta,
-               xt8086_alpha) plus the turbosound and hecate modules
+               zerofrank, nyx), the retro-CPU board xt8086_alpha, plus the turbosound and hecate modules
 docs/          Shared component datasheets and assembly notes
 software/      Pre-built UF2s. Currently ships Hecate, the USB-to-PS/2 bridge
                firmware for FRANK's on-board RP2040-Zero. Once flashed, a USB
@@ -223,8 +219,6 @@ Each board and module has its own assembly and usage guide:
 - [MicroFRANK assembly and usage guide](./docs/microfrank.md)
 - [ZeroFRANK assembly and usage guide](./docs/zerofrank.md)
 - [Nyx assembly and usage guide](./docs/nyx.md)
-- [Dino Z80 assembly and usage guide](./docs/dino_z80.md)
-- [XT8086 Beta assembly and usage guide](./docs/xt8086_beta.md)
 - [TurboSound module guide](./docs/turbosound.md)
 - [Hecate (USB-to-PS/2 bridge) guide](./docs/hecate.md)
 
