@@ -480,6 +480,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "FRANK:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "FRANK:R"
 			(pin_numbers
 				(hide yes)
@@ -897,121 +1012,17 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FRANK:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
+	)
+	(text "RV-3032-C7: backup switchover is DISABLED on delivery.\nFirmware must write EEPROM C0h: BSM=10 (LSM), TCM=00 (trickle charger off, primary cell),\noptionally NCLKE=1 to stop the 32.768kHz CLKOUT. Persist with EERD=1, then EECMD (3Fh) = 11h (update all config EEPROM)."
+		(exclude_from_sim no)
+		(at 120.65 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
+			(justify left)
 		)
+		(uuid "0fecfc68-cf7b-475d-b120-215563dbb796")
 	)
 	(junction
 		(at 158.75 101.6)
@@ -1052,6 +1063,16 @@
 			(type default)
 		)
 		(uuid "3a9a085b-9006-457a-a6db-e32acd8584fa")
+	)
+	(wire
+		(pts
+			(xy 146.05 123.19) (xy 140.97 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462ae970-ea66-486b-bb9f-183b7640ed18")
 	)
 	(wire
 		(pts
@@ -1134,291 +1155,6 @@
 			(justify right)
 		)
 		(uuid "a42b5c2c-61fe-43d1-aa74-d00730dfa138")
-	)
-	(wire
-		(pts
-			(xy 146.05 123.19) (xy 140.97 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "462ae970-ea66-486b-bb9f-183b7640ed18")
-	)
-	(text "RV-3032-C7: backup switchover is DISABLED on delivery.\nFirmware must write EEPROM C0h: BSM=10 (LSM), TCM=00 (trickle charger off, primary cell),\noptionally NCLKE=1 to stop the 32.768kHz CLKOUT. Persist with EERD=1, then EECMD (3Fh) = 11h (update all config EEPROM)."
-		(exclude_from_sim no)
-		(at 120.65 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0fecfc68-cf7b-475d-b120-215563dbb796")
-	)
-	(symbol
-		(lib_id "FRANK:R")
-		(at 156.21 90.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ce6fab2-5b2c-479e-a19b-d35728e14f07")
-		(property "Reference" "R71"
-			(at 153.67000000000002 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1K"
-			(at 153.67000000000002 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
-			(at 157.988 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
-			(at 156.21 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C21190"
-			(at 156.21 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fb63a151-abe4-4e0f-ba0c-18476c0e124b")
-		)
-		(pin "2"
-			(uuid "7e918c29-78bd-451d-b348-c2772a4b1236")
-		)
-		(instances
-			(project "frank_next"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
-					(reference "R71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FRANK:R")
-		(at 140.97 127 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ab4ceef-0c6c-421c-b31a-1404cc83c71a")
-		(property "Reference" "R72"
-			(at 138.43 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 138.43 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "FRANK:R_0603_1608Metric"
-			(at 142.748 127 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8763490791224557568"
-			(at 140.97 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 140.97 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2906982"
-			(at 140.97 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "23d87442-db65-4c99-abf5-1ed8be2bd394")
-		)
-		(pin "2"
-			(uuid "5189d217-27dc-40fb-a0c8-81c661b19d8d")
-		)
-		(instances
-			(project "frank_next"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
-					(reference "R72")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FRANK:GND")
-		(at 140.97 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd4911a5-9789-4c3e-8f42-47de3c3866ed")
-		(property "Reference" "#PWR0245"
-			(at 140.97 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 140.97 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a37e440e-c8b5-4c50-8195-75364b8b4795")
-		)
-		(instances
-			(project "frank_next"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
-					(reference "#PWR0245")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "FRANK:GND")
@@ -1646,6 +1382,192 @@
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
 					(reference "#PWR0147")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 140.97 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ab4ceef-0c6c-421c-b31a-1404cc83c71a")
+		(property "Reference" "R72"
+			(at 138.43 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 138.43 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 142.748 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8763490791224557568"
+			(at 140.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 140.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2906982"
+			(at 140.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23d87442-db65-4c99-abf5-1ed8be2bd394")
+		)
+		(pin "2"
+			(uuid "5189d217-27dc-40fb-a0c8-81c661b19d8d")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
+					(reference "R72")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 156.21 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ce6fab2-5b2c-479e-a19b-d35728e14f07")
+		(property "Reference" "R71"
+			(at 153.67 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K"
+			(at 153.67 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 157.988 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
+			(at 156.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 156.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb63a151-abe4-4e0f-ba0c-18476c0e124b")
+		)
+		(pin "2"
+			(uuid "7e918c29-78bd-451d-b348-c2772a4b1236")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
+					(reference "R71")
 					(unit 1)
 				)
 			)
@@ -2004,6 +1926,84 @@
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
 					(reference "#PWR0145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:GND")
+		(at 140.97 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd4911a5-9789-4c3e-8f42-47de3c3866ed")
+		(property "Reference" "#PWR0245"
+			(at 140.97 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 140.97 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a37e440e-c8b5-4c50-8195-75364b8b4795")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
+					(reference "#PWR0245")
 					(unit 1)
 				)
 			)
