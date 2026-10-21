@@ -480,7 +480,147 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FRANK:DS3231MZ"
+		(symbol "FRANK:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FRANK:RV-3032-C7"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -497,8 +637,8 @@
 					(justify right)
 				)
 			)
-			(property "Value" "DS3231MZ"
-				(at 11.43 8.89 0)
+			(property "Value" "RV-3032-C7"
+				(at 12.7 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -508,7 +648,7 @@
 					(justify right)
 				)
 			)
-			(property "Footprint" "FRANK:SO-8_3.9x4.9mm_P1.27mm"
+			(property "Footprint" "FRANK:RV-3032-C7"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -519,7 +659,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586180066687012864"
+			(property "Datasheet" "https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3032-C7_App-Manual.pdf"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -530,7 +670,7 @@
 					)
 				)
 			)
-			(property "Description" "±5ppm, I2C Real-Time Clock SOIC-8"
+			(property "Description" "±2.5ppm DTCXO I2C Real-Time Clock Module with backup switchover, C7 3.2x1.5mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -541,7 +681,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "RTC TCXO Realtime Time Clock MEMS I2C"
+			(property "LCSC" "C5127802"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -552,7 +692,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* FRANK:SO-8_3.9x4.9mm*"
+			(property "Manufacturer_Name" "Micro Crystal AG"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -563,7 +703,40 @@
 					)
 				)
 			)
-			(symbol "DS3231MZ_0_1"
+			(property "Manufacturer_Part_Number" "RV-3032-C7 32.768KHZ-2.5PPM-TA-QC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "RTC TCXO Realtime Time Clock I2C RV-3032"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "FRANK:RV-3032-C7*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RV-3032-C7_0_1"
 				(rectangle
 					(start -10.16 7.62)
 					(end 10.16 -7.62)
@@ -576,11 +749,11 @@
 					)
 				)
 			)
-			(symbol "DS3231MZ_1_1"
-				(pin open_collector line
-					(at 12.7 5.08 180)
+			(symbol "RV-3032-C7_1_1"
+				(pin passive line
+					(at -2.54 10.16 270)
 					(length 2.54)
-					(name "32KHZ"
+					(name "VBACKUP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -595,10 +768,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 10.16 270)
+				(pin bidirectional line
+					(at -12.7 2.54 0)
 					(length 2.54)
-					(name "VCC"
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -616,7 +789,7 @@
 				(pin open_collector line
 					(at 12.7 -2.54 180)
 					(length 2.54)
-					(name "~{INT}/SQW"
+					(name "~{INT}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -631,10 +804,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -12.7 -5.08 0)
 					(length 2.54)
-					(name "~{RST}"
+					(name "EVI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -652,7 +825,7 @@
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
-					(name "GND"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -668,9 +841,9 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 10.16 270)
+					(at 0 10.16 270)
 					(length 2.54)
-					(name "VBAT"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -685,10 +858,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 2.54 0)
+				(pin output line
+					(at 12.7 5.08 180)
 					(length 2.54)
-					(name "SDA"
+					(name "CLKOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -841,32 +1014,28 @@
 		)
 	)
 	(junction
-		(at 165.1 100.33)
+		(at 158.75 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5119768-6b1c-4619-8263-ec593f348398")
 	)
 	(junction
-		(at 162.56 96.52)
+		(at 156.21 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8777a4a-6f5a-4ab0-8833-d8f559dd8919")
 	)
 	(no_connect
-		(at 152.4 121.92)
-		(uuid "2f8ab5d9-003b-40b0-8f8a-768dd6feea83")
-	)
-	(no_connect
-		(at 177.8 119.38)
+		(at 171.45 120.65)
 		(uuid "52985163-e6bd-4474-aa4c-563440cdcecb")
 	)
 	(no_connect
-		(at 177.8 111.76)
+		(at 171.45 113.03)
 		(uuid "b129e8b0-7429-4a4f-b68f-ff897b36746c")
 	)
 	(wire
 		(pts
-			(xy 168.91 100.33) (xy 165.1 100.33)
+			(xy 162.56 101.6) (xy 158.75 101.6)
 		)
 		(stroke
 			(width 0)
@@ -876,7 +1045,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 92.71) (xy 162.56 106.68)
+			(xy 156.21 93.98) (xy 156.21 107.95)
 		)
 		(stroke
 			(width 0)
@@ -886,7 +1055,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 96.52) (xy 151.13 96.52)
+			(xy 146.05 97.79) (xy 144.78 97.79)
 		)
 		(stroke
 			(width 0)
@@ -896,7 +1065,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 100.33) (xy 165.1 106.68)
+			(xy 158.75 101.6) (xy 158.75 107.95)
 		)
 		(stroke
 			(width 0)
@@ -906,7 +1075,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 134.62) (xy 165.1 127)
+			(xy 158.75 135.89) (xy 158.75 128.27)
 		)
 		(stroke
 			(width 0)
@@ -916,7 +1085,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 97.79) (xy 165.1 100.33)
+			(xy 158.75 99.06) (xy 158.75 101.6)
 		)
 		(stroke
 			(width 0)
@@ -926,7 +1095,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 100.33) (xy 175.26 100.33)
+			(xy 170.18 101.6) (xy 168.91 101.6)
 		)
 		(stroke
 			(width 0)
@@ -936,7 +1105,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 96.52) (xy 162.56 96.52)
+			(xy 153.67 97.79) (xy 156.21 97.79)
 		)
 		(stroke
 			(width 0)
@@ -946,7 +1115,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape input)
-		(at 152.4 114.3 180)
+		(at 146.05 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -957,7 +1126,7 @@
 	)
 	(hierarchical_label "SCL"
 		(shape input)
-		(at 152.4 111.76 180)
+		(at 146.05 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -966,9 +1135,30 @@
 		)
 		(uuid "a42b5c2c-61fe-43d1-aa74-d00730dfa138")
 	)
+	(wire
+		(pts
+			(xy 146.05 123.19) (xy 140.97 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462ae970-ea66-486b-bb9f-183b7640ed18")
+	)
+	(text "RV-3032-C7: backup switchover is DISABLED on delivery.\nFirmware must write EEPROM C0h: BSM=10 (LSM), TCM=00 (trickle charger off, primary cell),\noptionally NCLKE=1 to stop the 32.768kHz CLKOUT. Persist with EERD=1, then EECMD (3Fh) = 11h (update all config EEPROM)."
+		(exclude_from_sim no)
+		(at 120.65 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0fecfc68-cf7b-475d-b120-215563dbb796")
+	)
 	(symbol
-		(lib_id "FRANK:GND")
-		(at 165.1 134.62 0)
+		(lib_id "FRANK:R")
+		(at 156.21 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -977,9 +1167,195 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "00a4423e-340d-43dd-965a-622dee2853e4")
-		(property "Reference" "#PWR0146"
-			(at 165.1 140.97 0)
+		(uuid "5ce6fab2-5b2c-479e-a19b-d35728e14f07")
+		(property "Reference" "R71"
+			(at 153.67000000000002 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K"
+			(at 153.67000000000002 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 157.988 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
+			(at 156.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 156.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb63a151-abe4-4e0f-ba0c-18476c0e124b")
+		)
+		(pin "2"
+			(uuid "7e918c29-78bd-451d-b348-c2772a4b1236")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
+					(reference "R71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:R")
+		(at 140.97 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ab4ceef-0c6c-421c-b31a-1404cc83c71a")
+		(property "Reference" "R72"
+			(at 138.43 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 138.43 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FRANK:R_0603_1608Metric"
+			(at 142.748 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8763490791224557568"
+			(at 140.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 140.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2906982"
+			(at 140.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23d87442-db65-4c99-abf5-1ed8be2bd394")
+		)
+		(pin "2"
+			(uuid "5189d217-27dc-40fb-a0c8-81c661b19d8d")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
+					(reference "R72")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:GND")
+		(at 140.97 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd4911a5-9789-4c3e-8f42-47de3c3866ed")
+		(property "Reference" "#PWR0245"
+			(at 140.97 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -990,7 +1366,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 139.7 0)
+			(at 140.97 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1000,7 +1376,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 134.62 0)
+			(at 140.97 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1011,7 +1387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 134.62 0)
+			(at 140.97 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1022,7 +1398,85 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 134.62 0)
+			(at 140.97 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a37e440e-c8b5-4c50-8195-75364b8b4795")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/8250c2aa-47db-4ab1-9875-cac59d36fec7"
+					(reference "#PWR0245")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:GND")
+		(at 158.75 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00a4423e-340d-43dd-965a-622dee2853e4")
+		(property "Reference" "#PWR0146"
+			(at 158.75 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1046,7 +1500,7 @@
 	)
 	(symbol
 		(lib_id "FRANK:GND")
-		(at 151.13 96.52 270)
+		(at 144.78 97.79 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1056,7 +1510,7 @@
 		(dnp no)
 		(uuid "14689909-c79a-48b1-baf3-5fc970b41c28")
 		(property "Reference" "#PWR0143"
-			(at 144.78 96.52 0)
+			(at 138.43 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1067,7 +1521,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.7358 96.393 0)
+			(at 140.3858 97.663 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1077,7 +1531,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 96.52 0)
+			(at 144.78 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1088,7 +1542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 96.52 0)
+			(at 144.78 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1099,7 +1553,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 151.13 96.52 0)
+			(at 144.78 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1122,7 +1576,7 @@
 	)
 	(symbol
 		(lib_id "FRANK:GND")
-		(at 175.26 100.33 90)
+		(at 168.91 101.6 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1132,7 +1586,7 @@
 		(dnp no)
 		(uuid "2714ae25-1f23-4005-b91a-4a84bae1a88b")
 		(property "Reference" "#PWR0147"
-			(at 181.61 100.33 0)
+			(at 175.26 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1143,7 +1597,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.6542 100.203 0)
+			(at 173.3042 101.473 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1153,7 +1607,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 100.33 0)
+			(at 168.91 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1164,7 +1618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 100.33 0)
+			(at 168.91 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1175,7 +1629,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 100.33 0)
+			(at 168.91 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1198,8 +1652,8 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:DS3231MZ")
-		(at 165.1 116.84 0)
+		(lib_id "FRANK:RV-3032-C7")
+		(at 158.75 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1210,7 +1664,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f72f72a-1734-4bcf-a15d-2a025484aaf4")
 		(property "Reference" "U11"
-			(at 167.2433 127 0)
+			(at 160.8933 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1220,8 +1674,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DS3231MZ"
-			(at 167.2433 129.54 0)
+		(property "Value" "RV-3032-C7"
+			(at 160.8933 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1231,8 +1685,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FRANK:SO-8_3.9x4.9mm_P1.27mm"
-			(at 165.1 129.54 0)
+		(property "Footprint" "FRANK:RV-3032-C7"
+			(at 158.75 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1242,8 +1696,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586180066687012864"
-			(at 165.1 132.08 0)
+		(property "Datasheet" "https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3032-C7_App-Manual.pdf"
+			(at 158.75 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1253,8 +1707,8 @@
 				)
 			)
 		)
-		(property "Description" "±5ppm, I2C Real-Time Clock SOIC-8"
-			(at 165.1 116.84 0)
+		(property "Description" "±2.5ppm DTCXO I2C Real-Time Clock Module with backup switchover, C7 3.2x1.5mm"
+			(at 158.75 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1264,8 +1718,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C107410"
-			(at 0 0 0)
+		(property "LCSC" "C5127802"
+			(at -6.35 1.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1310,7 +1764,7 @@
 	)
 	(symbol
 		(lib_id "FRANK:C")
-		(at 156.21 96.52 90)
+		(at 149.86 97.79 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1320,7 +1774,7 @@
 		(dnp no)
 		(uuid "78af14d2-ed2c-40c4-b4f2-fd55739ca99c")
 		(property "Reference" "C69"
-			(at 157.734 100.33 90)
+			(at 151.384 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1331,7 +1785,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 158.242 92.71 90)
+			(at 151.892 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1342,7 +1796,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:C_0603_1608Metric"
-			(at 160.02 95.5548 0)
+			(at 153.67 96.8248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1353,7 +1807,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
-			(at 156.21 96.52 0)
+			(at 149.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1364,7 +1818,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 156.21 96.52 0)
+			(at 149.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1375,7 +1829,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 0 0 0)
+			(at -6.35 1.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1402,7 +1856,7 @@
 	)
 	(symbol
 		(lib_id "FRANK:GND")
-		(at 162.56 69.85 180)
+		(at 156.21 63.5 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1413,7 +1867,7 @@
 		(fields_autoplaced yes)
 		(uuid "9863c295-1dc7-4700-993a-2f799c0f78d2")
 		(property "Reference" "#PWR0144"
-			(at 162.56 63.5 0)
+			(at 156.21 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1424,7 +1878,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 162.56 64.77 0)
+			(at 156.21 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1434,7 +1888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 69.85 0)
+			(at 156.21 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1445,7 +1899,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 69.85 0)
+			(at 156.21 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1456,7 +1910,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 162.56 69.85 0)
+			(at 156.21 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1480,7 +1934,7 @@
 	)
 	(symbol
 		(lib_id "FRANK:+3V3")
-		(at 165.1 97.79 0)
+		(at 158.75 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1490,7 +1944,7 @@
 		(dnp no)
 		(uuid "ba25874e-f386-4a49-aa78-e949db675dd9")
 		(property "Reference" "#PWR0145"
-			(at 165.1 101.6 0)
+			(at 158.75 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1501,7 +1955,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 165.1 91.44 90)
+			(at 158.75 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1511,7 +1965,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 97.79 0)
+			(at 158.75 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1522,7 +1976,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 97.79 0)
+			(at 158.75 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1533,7 +1987,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 165.1 97.79 0)
+			(at 158.75 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1557,7 +2011,7 @@
 	)
 	(symbol
 		(lib_id "FRANK:Battery_CR1220")
-		(at 162.56 69.85 270)
+		(at 156.21 63.5 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1568,7 +2022,7 @@
 		(fields_autoplaced yes)
 		(uuid "c836fd7d-cbe7-407b-9232-1f10bb448a8f")
 		(property "Reference" "BT1"
-			(at 166.37 80.0099 90)
+			(at 160.02 73.6599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1579,7 +2033,7 @@
 			)
 		)
 		(property "Value" "CR1220"
-			(at 166.37 82.5499 90)
+			(at 160.02 76.1999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1590,7 +2044,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:Battery_CR1220"
-			(at 67.64 88.9 0)
+			(at 61.29 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1602,7 +2056,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603321855239467008"
-			(at -32.36 88.9 0)
+			(at -38.71 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1614,7 +2068,7 @@
 			)
 		)
 		(property "Description" "CR1220 Cell Holder"
-			(at 162.56 69.85 0)
+			(at 156.21 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1625,7 +2079,7 @@
 			)
 		)
 		(property "LCSC" "C5199899"
-			(at 0 0 0)
+			(at -6.35 1.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1636,7 +2090,7 @@
 			)
 		)
 		(property "Height" "14.33"
-			(at -232.36 88.9 0)
+			(at -238.71 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1648,7 +2102,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Keystone Electronics"
-			(at -532.36 88.9 0)
+			(at -538.71 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1660,7 +2114,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "1174"
-			(at -632.36 88.9 0)
+			(at -638.71 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1688,7 +2142,7 @@
 	)
 	(symbol
 		(lib_id "FRANK:C")
-		(at 172.72 100.33 90)
+		(at 166.37 101.6 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1698,7 +2152,7 @@
 		(dnp no)
 		(uuid "d5f57ed1-8615-4870-a1b0-473b537c3f21")
 		(property "Reference" "C70"
-			(at 174.244 104.14 90)
+			(at 167.894 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1709,7 +2163,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 174.752 96.52 90)
+			(at 168.402 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1720,7 +2174,7 @@
 			)
 		)
 		(property "Footprint" "FRANK:C_0603_1608Metric"
-			(at 176.53 99.3648 0)
+			(at 170.18 100.6348 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1731,7 +2185,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
-			(at 172.72 100.33 0)
+			(at 166.37 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1742,7 +2196,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 172.72 100.33 0)
+			(at 166.37 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1753,7 +2207,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 0 0 0)
+			(at -6.35 1.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1764,7 +2218,7 @@
 			)
 		)
 		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 172.72 100.33 0)
+			(at 166.37 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
