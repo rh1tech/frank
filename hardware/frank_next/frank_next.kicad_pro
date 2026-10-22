@@ -67,10 +67,6 @@
       ],
       "drc_exclusions": [
         [
-          "footprint_symbol_field_mismatch|122400000|96850000|c65ab49a-ed51-4707-b505-b468e96fbe1c|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "footprint_type_mismatch|191603500|90391667|63a5c551-a891-4e09-aa85-2b1eb5a63c40|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -192,6 +188,10 @@
         ],
         [
           "silk_edge_clearance|209569985|99750000|06ef6d55-79c8-4d8d-a2d2-636af15c6b82|eccb4c87-5730-4fe7-b0dd-8cadce5fc57d",
+          ""
+        ],
+        [
+          "solder_mask_bridge|115895000|90500000|2bbeacad-44a0-493c-a271-f90328474530|d90e21a1-24fd-4ae7-845c-5612d9717788",
           ""
         ],
         [
@@ -935,6 +935,25 @@
       },
       {
         "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -966,6 +985,42 @@
       {
         "netclass": "RF",
         "pattern": "Net-(U9-LNA)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+1V1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+1V1_A"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+1V8"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/USB/VBUS_IN*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/USB/+5V_BUCK"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Audio/+5V_SPK"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/USB/VDD33"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/USB/USB A Port */VBUS_P"
       }
     ]
   },
