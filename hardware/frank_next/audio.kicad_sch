@@ -2429,10 +2429,22 @@
 		(uuid "14b77467-0bb0-486c-a8d0-fdc6aa545b67")
 	)
 	(junction
+		(at 125.73 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16a6417d-f170-425f-9b02-10e9bf560585")
+	)
+	(junction
 		(at 157.48 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b5949d3-1448-4748-a5a2-34670af7640b")
+	)
+	(junction
+		(at 162.56 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ea8b2cc-629f-422d-b2d9-f22dcb740e2b")
 	)
 	(junction
 		(at 152.4 83.82)
@@ -2483,6 +2495,12 @@
 		(uuid "6f2a4f54-de20-4a55-bd48-1bd30e279001")
 	)
 	(junction
+		(at 106.68 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7eacd06c-522b-4e6b-b036-3c6ffd8d483a")
+	)
+	(junction
 		(at 203.2 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2511,6 +2529,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6f9751e-3494-4044-8295-14d0b356d7a5")
+	)
+	(junction
+		(at 162.56 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d98d27b0-43da-486a-ba51-01b4215c3812")
 	)
 	(junction
 		(at 158.75 137.16)
@@ -2722,6 +2746,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 109.22) (xy 167.64 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41d497c7-b631-4098-bea4-7f1cb18d32e2")
+	)
+	(wire
+		(pts
 			(xy 130.81 63.5) (xy 130.81 48.26)
 		)
 		(stroke
@@ -2829,6 +2863,16 @@
 			(type default)
 		)
 		(uuid "88ff9ef6-4992-458a-a59b-bf71fdcca644")
+	)
+	(wire
+		(pts
+			(xy 125.73 86.36) (xy 125.73 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a19aa38-0e35-4513-a2ff-44b71ba20f63")
 	)
 	(wire
 		(pts
@@ -2952,6 +2996,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 114.3) (xy 113.03 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4a41dad-257d-4651-9642-335d502a32b1")
+	)
+	(wire
+		(pts
 			(xy 153.67 129.54) (xy 148.59 129.54)
 		)
 		(stroke
@@ -2999,6 +3053,26 @@
 			(type default)
 		)
 		(uuid "f3a27c44-9146-41c5-af48-ba1043ba2c8e")
+	)
+	(wire
+		(pts
+			(xy 120.65 86.36) (xy 125.73 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4043d20-a87c-4dce-9221-7f3709082000")
+	)
+	(wire
+		(pts
+			(xy 162.56 101.6) (xy 167.64 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f49da8be-4da0-4b3b-a0a0-f5613215c2e7")
 	)
 	(wire
 		(pts
@@ -3155,6 +3229,84 @@
 			(justify right)
 		)
 		(uuid "bec22ae7-c94a-4c8d-bbc1-cfdf94ba57af")
+	)
+	(symbol
+		(lib_id "FRANK:GND")
+		(at 113.03 86.36 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "02e5468a-2cb0-49c5-beb4-32e53acede3b")
+		(property "Reference" "#PWR0257"
+			(at 106.68 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee48ae16-b365-4dd6-b288-068ec740c4d5")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
+					(reference "#PWR0257")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "FRANK:R_Small")
@@ -3438,6 +3590,84 @@
 		)
 	)
 	(symbol
+		(lib_id "FRANK:GND")
+		(at 106.68 106.68 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "08fa9994-98ca-4657-b034-1867f86eee75")
+		(property "Reference" "#PWR0258"
+			(at 106.68 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "778fb3d3-8b89-4b0e-924a-75e70167099c")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
+					(reference "#PWR0258")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FRANK:+3V3")
 		(at 203.2 140.97 180)
 		(unit 1)
@@ -3604,7 +3834,7 @@
 		(dnp no)
 		(uuid "12690ecb-cfba-4566-9335-a9a6ce2cc85a")
 		(property "Reference" "C49"
-			(at 165.1 134.62 0)
+			(at 166.37 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3615,7 +3845,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 166.37 132.08 0)
+			(at 167.64 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3966,7 +4196,7 @@
 		(dnp no)
 		(uuid "1d177fef-4977-44c5-abdd-b4fce649dafc")
 		(property "Reference" "C50"
-			(at 160.02 104.14 0)
+			(at 168.91 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3977,7 +4207,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 160.02 106.68 0)
+			(at 171.45 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4721,7 +4951,7 @@
 		(dnp no)
 		(uuid "471166a9-e76e-4967-af07-8b7f4ecd0ae1")
 		(property "Reference" "C48"
-			(at 151.13 104.14 0)
+			(at 152.4 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4732,7 +4962,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 151.13 106.68 0)
+			(at 149.86 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4807,109 +5037,6 @@
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
 					(reference "C48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FRANK:C")
-		(at 162.56 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e5839357-1673-4f71-95db-76a2d34f4e86")
-		(property "Reference" "C106"
-			(at 156.21 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 156.21 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "FRANK:C_0603_1608Metric"
-			(at 163.5252 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8568525238768373760"
-			(at 162.56 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 162.56 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C96446"
-			(at 5.08 0.0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 162.56 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5977e0e6-cbc0-4f15-be8c-20b5f0bfa32a")
-		)
-		(pin "2"
-			(uuid "6e90d346-cfa0-4a66-be30-55e2b5469f73")
-		)
-		(instances
-			(project "frank_next"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
-					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -5030,7 +5157,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 111.76 90)
+			(at 113.03 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5080,84 +5207,6 @@
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
 					(reference "#PWR082")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FRANK:GND")
-		(at 113.03 86.36 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "02e5468a-2cb0-49c5-beb4-32e53acede3b")
-		(property "Reference" "#PWR0257"
-			(at 106.68 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 110.49 86.36 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ee48ae16-b365-4dd6-b288-068ec740c4d5")
-		)
-		(instances
-			(project "frank_next"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
-					(reference "#PWR0257")
 					(unit 1)
 				)
 			)
@@ -5752,7 +5801,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 88.9 90)
+			(at 119.38 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5976,7 +6025,7 @@
 		(dnp no)
 		(uuid "92a82dbb-35b6-4b58-9754-3c6232eea7fb")
 		(property "Reference" "L3"
-			(at 175.26 123.952 90)
+			(at 175.26 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5986,7 +6035,7 @@
 			)
 		)
 		(property "Value" "330R 2A"
-			(at 175.26 126.492 90)
+			(at 175.26 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6336,7 +6385,7 @@
 		(dnp no)
 		(uuid "a070cc9e-33cf-42a2-b835-936468ff979f")
 		(property "Reference" "R35"
-			(at 124.46 86.36 90)
+			(at 123.19 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6437,7 +6486,7 @@
 		(dnp no)
 		(uuid "a60348cf-e4dd-4d27-9ee9-79de2b4e5b34")
 		(property "Reference" "C41"
-			(at 98.679 111.6584 0)
+			(at 99.06 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6448,7 +6497,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 98.679 109.347 0)
+			(at 100.33 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6523,109 +6572,6 @@
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
 					(reference "C41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FRANK:C")
-		(at 106.68 110.49 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c9fdbc87-d4fa-4686-b479-3d99582d2895")
-		(property "Reference" "C105"
-			(at 103.759 111.6584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 103.759 109.347 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "FRANK:C_0603_1608Metric"
-			(at 105.7148 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
-			(at 106.68 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 106.68 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C96446"
-			(at 5.08 0.0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
-			(at 106.68 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "023636c9-9b01-4cba-b1ed-c593aca2d67b")
-		)
-		(pin "2"
-			(uuid "855d2b78-dcf3-481b-aa51-605aa2e2cbe6")
-		)
-		(instances
-			(project "frank_next"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
-					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -7187,6 +7133,109 @@
 		)
 	)
 	(symbol
+		(lib_id "FRANK:C")
+		(at 106.68 110.49 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c9fdbc87-d4fa-4686-b479-3d99582d2895")
+		(property "Reference" "C105"
+			(at 113.03 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 113.03 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FRANK:C_0603_1608Metric"
+			(at 105.7148 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
+			(at 106.68 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 5.08 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
+			(at 106.68 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "023636c9-9b01-4cba-b1ed-c593aca2d67b")
+		)
+		(pin "2"
+			(uuid "855d2b78-dcf3-481b-aa51-605aa2e2cbe6")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
+					(reference "C105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FRANK:GND")
 		(at 128.27 48.26 0)
 		(mirror y)
@@ -7337,6 +7386,109 @@
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
 					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FRANK:C")
+		(at 162.56 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e5839357-1673-4f71-95db-76a2d34f4e86")
+		(property "Reference" "C106"
+			(at 160.02 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 160.02 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FRANK:C_0603_1608Metric"
+			(at 163.5252 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8568525238768373760"
+			(at 162.56 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 162.56 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 5.08 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress" "https://www.aliexpress.com/item/33008008276.html"
+			(at 162.56 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5977e0e6-cbc0-4f15-be8c-20b5f0bfa32a")
+		)
+		(pin "2"
+			(uuid "6e90d346-cfa0-4a66-be30-55e2b5469f73")
+		)
+		(instances
+			(project "frank_next"
+				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -7703,84 +7855,6 @@
 		)
 	)
 	(symbol
-		(lib_id "FRANK:GND")
-		(at 106.68 106.68 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "08fa9994-98ca-4657-b034-1867f86eee75")
-		(property "Reference" "#PWR0258"
-			(at 106.68 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 106.68 104.14 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "778fb3d3-8b89-4b0e-924a-75e70167099c")
-		)
-		(instances
-			(project "frank_next"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/cd0bdb7e-4f98-427b-bf6c-8f3efd7f72c3"
-					(reference "#PWR0258")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "FRANK:C")
 		(at 128.27 72.39 0)
 		(unit 1)
@@ -7872,87 +7946,4 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 120.65 86.36) (xy 125.73 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4043d20-a87c-4dce-9221-7f3709082000")
-	)
-
-	(wire
-		(pts
-			(xy 125.73 86.36) (xy 125.73 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a19aa38-0e35-4513-a2ff-44b71ba20f63")
-	)
-
-	(junction
-		(at 125.73 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16a6417d-f170-425f-9b02-10e9bf560585")
-	)
-
-	(wire
-		(pts
-			(xy 106.68 114.3) (xy 113.03 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4a41dad-257d-4651-9642-335d502a32b1")
-	)
-
-	(junction
-		(at 106.68 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7eacd06c-522b-4e6b-b036-3c6ffd8d483a")
-	)
-
-	(wire
-		(pts
-			(xy 162.56 101.6) (xy 167.64 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f49da8be-4da0-4b3b-a0a0-f5613215c2e7")
-	)
-
-	(junction
-		(at 162.56 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2ea8b2cc-629f-422d-b2d9-f22dcb740e2b")
-	)
-
-	(wire
-		(pts
-			(xy 162.56 109.22) (xy 167.64 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41d497c7-b631-4098-bea4-7f1cb18d32e2")
-	)
-
-	(junction
-		(at 162.56 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d98d27b0-43da-486a-ba51-01b4215c3812")
-	)
-
 )
