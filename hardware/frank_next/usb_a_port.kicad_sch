@@ -1341,6 +1341,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "CH217A: current-limited VBUS switch for this port, enabled by the\nhub PWREN, over-current reported on OVCUR. The ISET resistor sets the limit.\nTPD4S012: ESD protection for D+ / D- / VBUS."
+		(exclude_from_sim no)
+		(at 95 115 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b9ecb049-72b6-40af-8a14-2c77f0b02ef6")
+	)
 	(junction
 		(at 190.5 87.63)
 		(diameter 0)
@@ -1635,17 +1646,6 @@
 		)
 		(uuid "ffdbbdcb-f81f-4bfd-b2b3-cc77d7b4032e")
 	)
-	(text "CH217A: current-limited VBUS switch for this port, enabled by the\nhub PWREN, over-current reported on OVCUR. The ISET resistor sets the limit.\nTPD4S012: ESD protection for D+ / D- / VBUS."
-		(exclude_from_sim no)
-		(at 95 115 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b9ecb049-72b6-40af-8a14-2c77f0b02ef6")
-	)
 	(symbol
 		(lib_id "FRANK:GND")
 		(at 167.64 90.17 270)
@@ -1744,7 +1744,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4765dd66-f03d-4608-bbb3-3389cac9d938")
-		(property "Reference" "R911"
+		(property "Reference" "R71"
 			(at 200.66 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1817,15 +1817,15 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/59117b12-5b6b-44b2-a156-736b6d28e254"
-					(reference "R931")
+					(reference "R73")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/d4a81e63-9f27-4c05-b8ea-3f61c07d2a95"
-					(reference "R911")
+					(reference "R71")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/e58c2f74-a038-4d16-c9fb-4a72d18e3b06"
-					(reference "R921")
+					(reference "R72")
 					(unit 1)
 				)
 			)
@@ -2101,7 +2101,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9785df57-9b17-4463-9bbf-e9de390f8e93")
-		(property "Reference" "C912"
+		(property "Reference" "C101"
 			(at 193.421 82.6516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2187,15 +2187,15 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/59117b12-5b6b-44b2-a156-736b6d28e254"
-					(reference "C931")
+					(reference "C105")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/d4a81e63-9f27-4c05-b8ea-3f61c07d2a95"
-					(reference "C912")
+					(reference "C101")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/e58c2f74-a038-4d16-c9fb-4a72d18e3b06"
-					(reference "C921")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -2212,7 +2212,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a22523c7-a8e2-4c6a-a02e-9d4f8a92c58e")
-		(property "Reference" "U912"
+		(property "Reference" "U24"
 			(at 177.8 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2297,15 +2297,15 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/59117b12-5b6b-44b2-a156-736b6d28e254"
-					(reference "U932")
+					(reference "U28")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/d4a81e63-9f27-4c05-b8ea-3f61c07d2a95"
-					(reference "U912")
+					(reference "U24")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/e58c2f74-a038-4d16-c9fb-4a72d18e3b06"
-					(reference "U922")
+					(reference "U26")
 					(unit 1)
 				)
 			)
@@ -2323,7 +2323,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d070415a-6719-4045-95fb-67fa9fa0b67a")
-		(property "Reference" "U911"
+		(property "Reference" "U23"
 			(at 135.89 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2470,15 +2470,15 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/59117b12-5b6b-44b2-a156-736b6d28e254"
-					(reference "U931")
+					(reference "U27")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/d4a81e63-9f27-4c05-b8ea-3f61c07d2a95"
-					(reference "U911")
+					(reference "U23")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/e58c2f74-a038-4d16-c9fb-4a72d18e3b06"
-					(reference "U921")
+					(reference "U25")
 					(unit 1)
 				)
 			)
@@ -2496,7 +2496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dca389f8-1937-4b5d-937f-fb0335d1c2dc")
-		(property "Reference" "J911"
+		(property "Reference" "J12"
 			(at 102.87 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2589,15 +2589,15 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/59117b12-5b6b-44b2-a156-736b6d28e254"
-					(reference "J931")
+					(reference "J14")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/d4a81e63-9f27-4c05-b8ea-3f61c07d2a95"
-					(reference "J911")
+					(reference "J12")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/e58c2f74-a038-4d16-c9fb-4a72d18e3b06"
-					(reference "J921")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -2614,7 +2614,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e17f9101-ff37-462e-8840-fde285f0461b")
-		(property "Reference" "C911"
+		(property "Reference" "C100"
 			(at 115.189 83.7184 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2700,15 +2700,15 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/59117b12-5b6b-44b2-a156-736b6d28e254"
-					(reference "C932")
+					(reference "C104")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/d4a81e63-9f27-4c05-b8ea-3f61c07d2a95"
-					(reference "C911")
+					(reference "C100")
 					(unit 1)
 				)
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/f1d639df-8edc-4be9-b42e-c646a992536b/e58c2f74-a038-4d16-c9fb-4a72d18e3b06"
-					(reference "C922")
+					(reference "C102")
 					(unit 1)
 				)
 			)

@@ -1006,6 +1006,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "U29 74HC4052: S1 = GND, S0 = UART_SEL (R75 pull-up; JP2 switch 2 / JP3 on root sheet).\nS0 high (default): ESP8266 TX / RX <-> RP2350B (RP_RX / RP_TX).\nS0 low: ESP8266 TX / RX <-> CH343P (TTL_RXD / TTL_TXD).\nR76 / R74 10K keep the deselected RX inputs idle-high."
+		(exclude_from_sim no)
+		(at 100 145 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2a53258e-9593-4cdf-a727-aca866b55b9f")
+	)
 	(junction
 		(at 186.69 67.31)
 		(diameter 0)
@@ -1421,17 +1432,6 @@
 		)
 		(uuid "f8169d20-6096-45ef-9b93-a42816bb8f25")
 	)
-	(text "U651 74HC4052: S1 = GND, S0 = UART_SEL (R651 pull-up; JP1 switch 2 / JP2 on root sheet).\nS0 high (default): ESP8266 TX / RX <-> RP2350B (RP_RX / RP_TX).\nS0 low: ESP8266 TX / RX <-> CH343P (TTL_RXD / TTL_TXD).\nR652 / R653 10K keep the deselected RX inputs idle-high."
-		(exclude_from_sim no)
-		(at 100 145 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "2a53258e-9593-4cdf-a727-aca866b55b9f")
-	)
 	(symbol
 		(lib_id "FRANK:GND")
 		(at 157.48 77.47 180)
@@ -1521,7 +1521,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1599b530-24a7-41be-9905-38a98f8a5c01")
-		(property "Reference" "C651"
+		(property "Reference" "C106"
 			(at 129.54 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1594,7 +1594,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/a3f19c48-52d7-4e6b-9012-7bd3e0a5f164"
-					(reference "C651")
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -2307,7 +2307,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9d48292c-bc41-862f-956c-4f80e0889166")
-		(property "Reference" "R652"
+		(property "Reference" "R76"
 			(at 190.5 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2380,7 +2380,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/a3f19c48-52d7-4e6b-9012-7bd3e0a5f164"
-					(reference "R652")
+					(reference "R76")
 					(unit 1)
 				)
 			)
@@ -2397,7 +2397,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5157862-ed0f-487b-bdb5-06ccc502cffd")
-		(property "Reference" "R651"
+		(property "Reference" "R75"
 			(at 167.64 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2470,7 +2470,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/a3f19c48-52d7-4e6b-9012-7bd3e0a5f164"
-					(reference "R651")
+					(reference "R75")
 					(unit 1)
 				)
 			)
@@ -2487,7 +2487,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bc4b6296-eb2c-f390-a79e-bd09cb6e2932")
-		(property "Reference" "R653"
+		(property "Reference" "R74"
 			(at 134.62 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2560,7 +2560,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/a3f19c48-52d7-4e6b-9012-7bd3e0a5f164"
-					(reference "R653")
+					(reference "R74")
 					(unit 1)
 				)
 			)
@@ -2577,7 +2577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c0a719db-c17f-4a48-bc80-973b828fd89a")
-		(property "Reference" "U651"
+		(property "Reference" "U29"
 			(at 167.64 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2750,7 +2750,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/a3f19c48-52d7-4e6b-9012-7bd3e0a5f164"
-					(reference "U651")
+					(reference "U29")
 					(unit 1)
 				)
 			)

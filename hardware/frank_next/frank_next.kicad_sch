@@ -919,6 +919,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Inter-MCU bus nets: RP2350/<n>B/<m>A/<func> = RP2350B GPIO<n> <-> RP2350A GPIO<m>.\nTwo 8-bit lanes (D0-D7 + CLK + VALID each), plus FS and DB_MS / DB_SM.\nCLK lines: R9 / R11 100R (RP2350B sheet) + R1 / R3 33R here - series damping.\nRP2350A RUN: R2 pull-up; RP2350B GPIO43 holds it in reset via R13 1K."
+		(exclude_from_sim no)
+		(at 178 105 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b3661c1f-3da6-4890-ad32-073cbd2dbc79")
+	)
+	(text "Mode switch JP2 (ON = pin shorted to GND):\n1 USB_SEL   OFF (R55 pull-up): USB-C J11 -> RP2350A USB\n            ON: USB-C J11 -> CH343P USB-UART\n2 UART_SEL  OFF (R75 pull-up): ESP8266 UART <-> RP2350B GPIO45/46\n            ON: ESP8266 UART <-> CH343P\nBoth ON = flash / debug the ESP8266 from J11.\nJP1 / JP3: solder-jumper alternatives to switch 1 / 2."
+		(exclude_from_sim no)
+		(at 178 50 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b61788aa-7544-4877-9488-a5f8cdb9aeae")
+	)
 	(junction
 		(at 251.46 30.48)
 		(diameter 0)
@@ -2277,28 +2299,6 @@
 		)
 		(uuid "efc0e234-3e4f-47ef-89e6-c4a68a177af0")
 	)
-	(text "Mode switch JP1 (ON = pin shorted to GND):\n1 USB_SEL   OFF (R802 pull-up): USB-C J801 -> RP2350A USB\n            ON: USB-C J801 -> CH343P USB-UART\n2 UART_SEL  OFF (R651 pull-up): ESP8266 UART <-> RP2350B GPIO45/46\n            ON: ESP8266 UART <-> CH343P\nBoth ON = flash / debug the ESP8266 from J801.\nJP3 / JP2: solder-jumper alternatives to switch 1 / 2."
-		(exclude_from_sim no)
-		(at 178 50 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b61788aa-7544-4877-9488-a5f8cdb9aeae")
-	)
-	(text "Inter-MCU bus nets: RP2350/<n>B/<m>A/<func> = RP2350B GPIO<n> <-> RP2350A GPIO<m>.\nTwo 8-bit lanes (D0-D7 + CLK + VALID each), plus FS and DB_MS / DB_SM.\nCLK lines: R101 / R115 100R (RP2350B sheet) + R3 / R1 33R here - series damping.\nRP2350A RUN: R2 pull-up; RP2350B GPIO43 holds it in reset via R113 1K."
-		(exclude_from_sim no)
-		(at 178 105 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b3661c1f-3da6-4890-ad32-073cbd2dbc79")
-	)
 	(symbol
 		(lib_id "FRANK:DS05-127-2-02BK-SMT-TR")
 		(at 212.09 27.94 0)
@@ -2310,7 +2310,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ea65deb-4ae8-4838-84bd-b021c6e5150a")
-		(property "Reference" "JP1"
+		(property "Reference" "JP2"
 			(at 227.33 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2444,7 +2444,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
-					(reference "JP1")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -2539,7 +2539,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34281406-8dde-41ab-b830-2b090e605f46")
-		(property "Reference" "R3"
+		(property "Reference" "R1"
 			(at 123.19 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2623,7 +2623,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
-					(reference "R3")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -2641,7 +2641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "352d64ab-8487-42d9-bf06-1318db91f2e7")
-		(property "Reference" "H4"
+		(property "Reference" "H3"
 			(at 339.09 214.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2702,7 +2702,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
-					(reference "H4")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -2720,7 +2720,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5d825940-6c46-4346-a77b-a06c2f42328e")
-		(property "Reference" "JP3"
+		(property "Reference" "JP1"
 			(at 201.93 34.2899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2784,7 +2784,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
-					(reference "JP3")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -2802,7 +2802,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6463f7ba-32f7-4097-8d75-21d2cecb7ce4")
-		(property "Reference" "H3"
+		(property "Reference" "H4"
 			(at 339.09 222.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2863,7 +2863,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
-					(reference "H3")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -3291,7 +3291,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "92a7d17e-77a2-448b-828e-18a992f91d8c")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 144.78 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3375,7 +3375,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3704,7 +3704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e49c7f5a-9146-43e9-9d82-e88421d6c800")
-		(property "Reference" "JP2"
+		(property "Reference" "JP3"
 			(at 254 34.2899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3768,7 +3768,7 @@
 		(instances
 			(project "frank_next"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
-					(reference "JP2")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
