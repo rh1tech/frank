@@ -3,8 +3,8 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "USB Type A receptacle, horizontal through-hole (DIP), short body 6.8mm. LQIH USB-51. 4 signal THT pins (0.60x0.30, pitch 2.5/2.0/2.5, span 7.00) + 2 oval shield slots (0.80x1.70, span 12.80, offset 1.45).")
-	(tags "USB USB_A Female Receptacle THT DIP horizontal short USB-51")
+	(descr "USB Type A receptacle, horizontal through-hole (DIP), short body 10 mm. SHOU HAN AF 10.0 HC6.3 (LCSC C456017). 4 signal THT pins (0.60x0.30, pitch 2.5/2.0/2.5, span 7.00) + 2 oval shield slots (0.80x1.60 in 1.6x3.0 pads, span 12.80, 1.20 in front of the pin row).")
+	(tags "USB USB_A Female Receptacle THT DIP horizontal short AF10.0")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
 		(layer "F.SilkS")
@@ -28,7 +28,7 @@
 			)
 		)
 	)
-	(property "Datasheet" "USB-51"
+	(property "Datasheet" "https://www.lcsc.com/datasheet/C456017.pdf"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -41,7 +41,7 @@
 			)
 		)
 	)
-	(property "Description" "USB Type A receptacle, horizontal THT, short body 6.8mm"
+	(property "Description" "USB Type A receptacle, horizontal THT, short body 10 mm, SHOU HAN AF 10.0 HC6.3"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -57,8 +57,8 @@
 	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -6.65 -2.849999)
-		(end -6.65 -1.95)
+		(start -6.65 -2.85)
+		(end -6.65 -2)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -67,17 +67,7 @@
 		(uuid "f1b147ae-ccec-450c-86c4-69ca17c85c22")
 	)
 	(fp_line
-		(start -6.65 1.95)
-		(end -6.65 2.1)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "0348e01e-3a97-430a-8fe4-2e910563cbd8")
-	)
-	(fp_line
-		(start -6.65 2.1)
+		(start -5.2 2.1)
 		(end -4.6 2.1)
 		(stroke
 			(width 0.12)
@@ -118,7 +108,7 @@
 	)
 	(fp_line
 		(start 4.4 2.1)
-		(end 6.65 2.1)
+		(end 5.2 2.1)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -127,8 +117,8 @@
 		(uuid "ad8d5b71-1ad2-40cc-8f5b-c88e377139b6")
 	)
 	(fp_line
-		(start 6.65 -2.849999)
-		(end 6.65 -1.95)
+		(start 6.65 -2.85)
+		(end 6.65 -2)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -136,19 +126,9 @@
 		(layer "F.SilkS")
 		(uuid "d45eb850-528c-4f1f-bbbf-9488f8b3d357")
 	)
-	(fp_line
-		(start 6.65 1.95)
-		(end 6.65 2.1)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "78f422a6-7376-482b-82b0-52c4c1c0dfe3")
-	)
 	(fp_circle
-		(center -4.8 1.45)
-		(end -4.65 1.45)
+		(center 4.8 1.45)
+		(end 4.95 1.45)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -158,8 +138,8 @@
 		(uuid "c958ddec-724d-43f8-a743-84d4ff03f181")
 	)
 	(fp_line
-		(start -7.6 -8.35)
-		(end 7.6 -8.35)
+		(start -7.65 -8.55)
+		(end 7.65 -8.55)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -168,8 +148,8 @@
 		(uuid "e267face-bd33-47e5-993e-8fe619cf9c62")
 	)
 	(fp_line
-		(start -7.6 2.35)
-		(end -7.6 -8.35)
+		(start -7.65 2.5)
+		(end -7.65 -8.55)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -178,8 +158,8 @@
 		(uuid "b14e85cf-2fe2-4393-bad7-ec17e9bc3974")
 	)
 	(fp_line
-		(start 7.6 -8.35)
-		(end 7.6 2.35)
+		(start 7.65 -8.55)
+		(end 7.65 2.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -188,8 +168,8 @@
 		(uuid "cb1fb6bd-b3a4-4edc-8d2c-baa200e8f8a4")
 	)
 	(fp_line
-		(start 7.6 2.35)
-		(end -7.6 2.35)
+		(start 7.65 2.5)
+		(end -7.65 2.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -198,8 +178,8 @@
 		(uuid "5bcf02d1-fcc3-46d5-bc5d-70baeff08c2e")
 	)
 	(fp_line
-		(start -7.3 -1)
-		(end -7.3 1)
+		(start -7.15 -4.05)
+		(end -7.15 1.7)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -208,8 +188,8 @@
 		(uuid "06e5da6a-2b77-43f9-a94a-adf6fc787958")
 	)
 	(fp_line
-		(start -7.3 1)
-		(end -6.55 1)
+		(start -7.15 1.7)
+		(end -6.55 1.7)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -218,8 +198,8 @@
 		(uuid "1223a421-5441-4ff9-83ac-6f6789309089")
 	)
 	(fp_line
-		(start -6.55 -8)
-		(end 6.55 -8)
+		(start -6.55 -8.3)
+		(end 6.55 -8.3)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -228,8 +208,8 @@
 		(uuid "640e3ad7-1832-4df3-a017-f9330db27d30")
 	)
 	(fp_line
-		(start -6.55 -1)
-		(end -7.3 -1)
+		(start -6.55 -4.05)
+		(end -7.15 -4.05)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -238,8 +218,8 @@
 		(uuid "a885e134-2b66-46a1-8704-3dc03f7b55d1")
 	)
 	(fp_line
-		(start -6.55 2)
-		(end -6.55 -8)
+		(start -6.55 1.7)
+		(end -6.55 -8.3)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -248,8 +228,8 @@
 		(uuid "0dfafbd2-711a-48c0-8124-290f29b88003")
 	)
 	(fp_line
-		(start -5.55 -8)
-		(end -5.55 -7)
+		(start -5.55 -8.3)
+		(end -5.55 -7.3)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -258,8 +238,8 @@
 		(uuid "5a917be4-db8a-4a9b-b7df-4c8ff501694e")
 	)
 	(fp_line
-		(start -5.55 -7)
-		(end 5.55 -7)
+		(start -5.55 -7.3)
+		(end 5.55 -7.3)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -268,8 +248,8 @@
 		(uuid "24f09c0a-0f76-49a2-a458-45df3142bb25")
 	)
 	(fp_line
-		(start 5.55 -8)
-		(end 5.55 -7)
+		(start 5.55 -8.3)
+		(end 5.55 -7.3)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -278,8 +258,8 @@
 		(uuid "7f284a7a-5154-4015-b01b-cc4fb7840b9d")
 	)
 	(fp_line
-		(start 6.55 -8)
-		(end 6.55 2)
+		(start 6.55 -8.3)
+		(end 6.55 1.7)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -288,8 +268,8 @@
 		(uuid "fe175a04-a986-4d72-b3a6-9732ff330378")
 	)
 	(fp_line
-		(start 6.55 -1)
-		(end 7.3 -1)
+		(start 6.55 -4.05)
+		(end 7.15 -4.05)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -298,8 +278,8 @@
 		(uuid "425282c9-21c3-4181-b380-372abb79da59")
 	)
 	(fp_line
-		(start 6.55 2)
-		(end -6.55 2)
+		(start 6.55 1.7)
+		(end -6.55 1.7)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -308,8 +288,8 @@
 		(uuid "555fd062-e068-494a-a564-eff09d61bc58")
 	)
 	(fp_line
-		(start 7.3 -1)
-		(end 7.3 1)
+		(start 7.15 -4.05)
+		(end 7.15 1.7)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -318,8 +298,8 @@
 		(uuid "26e231c2-b0c7-4eaf-9dfa-45e50aa0163d")
 	)
 	(fp_line
-		(start 7.3 1)
-		(end 6.55 1)
+		(start 7.15 1.7)
+		(end 6.55 1.7)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -362,7 +342,7 @@
 		(remove_unused_layers no)
 		(uuid "d912ea43-d25c-49bb-8847-2c259dd55200")
 	)
-	(pad "4" thru_hole rect
+	(pad "4" thru_hole circle
 		(at -3.5 1.45)
 		(size 1.5 1.5)
 		(drill 1)
@@ -371,9 +351,9 @@
 		(uuid "1f0b0259-c0b7-432e-ab4d-dc0833052570")
 	)
 	(pad "5" thru_hole oval
-		(at -6.4 0)
-		(size 2.5 3.5)
-		(drill oval 0.8 1.7)
+		(at -6.4 0.25)
+		(size 1.6 3)
+		(drill oval 0.8 1.6)
 		(property pad_prop_mechanical)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
@@ -381,9 +361,9 @@
 		(uuid "a5c3915c-819e-4171-baf3-d49076c7d6e0")
 	)
 	(pad "5" thru_hole oval
-		(at 6.4 0)
-		(size 2.5 3.5)
-		(drill oval 0.8 1.7)
+		(at 6.4 0.25)
+		(size 1.6 3)
+		(drill oval 0.8 1.6)
 		(property pad_prop_mechanical)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
@@ -391,15 +371,15 @@
 		(uuid "5d2f4663-3d81-4989-83d5-48898fc5ad6a")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3d/USB_A_Short.step"
+	(model "${KIPRJMOD}/3d/USB_A_AF10.0_HC6.3.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 2.9 3.35)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz 0 0 180)
 		)
 	)
 )
